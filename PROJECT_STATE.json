@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "05_3D_ASSETS",
-  "current_task": "T05_3D_ASSETS",
+  "current_stage": "06_ANIMATION",
+  "current_task": "T06_ANIMATION",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -52,7 +52,7 @@
     "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 5,
+    "checkpoints": 6,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -95,14 +95,22 @@
       "task_id": "T04_STORYBOARD",
       "summary": "Stage 04 STORYBOARD VERIFIED. 58/58 shots carry the 18-field production spec (MASTER_SHOT_PLAN/CAMERA_PLAN/BLOCKING/STORYBOARD.md + BEAT_BOARD); 9 original reference panels + PANEL_INDEX; SHOT_REGISTRY story slots VERIFIED (overall IN_PROGRESS); RENDER_MANIFEST 10 scenes NOT_STARTED; master axis + motivated-movement rule enforced; validate PASS.",
       "git_commit": "a62a51d90a17297f3a95b3e8bf869ab69c2a65c5"
+    },
+    {
+      "checkpoint_id": "CP-0006",
+      "utc": "2026-10-07T23:28:38Z",
+      "actor": "master_controller",
+      "task_id": "T05_3D_ASSETS",
+      "summary": "Stage 05 3D ASSET PIPELINE VERIFIED. Procedural bpy pipeline: 37 assets (3 chars/14 props/3 envs/15 mats/2 textures), 10 independent scene builders, hierarchy rigs; 49/49 stub-harness checks; inventory coverage 40/40 (0 BLOCKED); ENGINE_DECISION: BLENDER_BPY_PROCEDURAL cloud, Blender absent locally (no fabricated runs).",
+      "git_commit": "2939c50be04e6d99a3aea4e2c565a61165a990c6"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0005",
-    "utc": "2026-10-07T22:56:40Z",
-    "task_id": "T04_STORYBOARD",
-    "git_commit": "1b08c2f62d6b452a1a8b69defc3f9a1327cb604b",
-    "summary": "Stage 04 STORYBOARD VERIFIED. 58/58 shots carry the 18-field production spec (MASTER_SHOT_PLAN/CAMERA_PLAN/BLOCKING/STORYBOARD.md + BEAT_BOARD); 9 original reference panels + PANEL_INDEX; SHOT_REGISTRY story slots VERIFIED (overall IN_PROGRESS); RENDER_MANIFEST 10 scenes NOT_STARTED; master axis + motivated-movement rule enforced; validate PASS."
+    "checkpoint_id": "CP-0006",
+    "utc": "2026-10-07T23:28:38Z",
+    "task_id": "T05_3D_ASSETS",
+    "git_commit": "2939c50be04e6d99a3aea4e2c565a61165a990c6",
+    "summary": "Stage 05 3D ASSET PIPELINE VERIFIED. Procedural bpy pipeline: 37 assets (3 chars/14 props/3 envs/15 mats/2 textures), 10 independent scene builders, hierarchy rigs; 49/49 stub-harness checks; inventory coverage 40/40 (0 BLOCKED); ENGINE_DECISION: BLENDER_BPY_PROCEDURAL cloud, Blender absent locally (no fabricated runs)."
   },
   "last_updated": "2026-10-07T23:28:38Z",
   "updated_by": "master_controller",
