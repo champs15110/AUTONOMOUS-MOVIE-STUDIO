@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "03_CHARACTER_WORLD",
-  "current_task": "T03_CHARACTER_WORLD",
+  "current_stage": "04_STORYBOARD",
+  "current_task": "T04_STORYBOARD",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -50,7 +50,7 @@
     "scenes_planned": 0,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 3,
+    "checkpoints": 4,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -77,16 +77,24 @@
       "task_id": "T02_SCREENPLAY",
       "summary": "Stage 02 SCREENPLAY VERIFIED. 10 scenes / 58 shots / 302.0s / frames 1-7248. FINAL_SCREENPLAY.md, SHOT_LIST.json+csv, CONTINUITY_BIBLE.md. Independent verifier PASS: unique ids, contiguous timecodes+frames, runtime in target, 92-turn ledger exact, cause-and-effect tracked. ERR-0002 (stage-01 turn_budget misattribution) logged and mitigated.",
       "git_commit": "7a7cdc79c82bfa3150ba8e54b457860356f25762"
+    },
+    {
+      "checkpoint_id": "CP-0004",
+      "utc": "2026-10-07T19:16:10Z",
+      "actor": "master_controller",
+      "task_id": "T03_CHARACTER_WORLD",
+      "summary": "Stage 03 CHARACTER_WORLD VERIFIED. Full visual bible: 3 characters / 3 environments / 14 props / 8 original reference images / asset inventory with provenance. Consistency vs screenplay: zero unmapped tokens.",
+      "git_commit": "6c947c99a944b393d93f0c2bd324faee81520e35"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0003",
-    "utc": "2026-10-07T18:43:33Z",
-    "task_id": "T02_SCREENPLAY",
-    "git_commit": "7a7cdc79c82bfa3150ba8e54b457860356f25762",
-    "summary": "Stage 02 SCREENPLAY VERIFIED. 10 scenes / 58 shots / 302.0s / frames 1-7248. FINAL_SCREENPLAY.md, SHOT_LIST.json+csv, CONTINUITY_BIBLE.md. Independent verifier PASS: unique ids, contiguous timecodes+frames, runtime in target, 92-turn ledger exact, cause-and-effect tracked. ERR-0002 (stage-01 turn_budget misattribution) logged and mitigated."
+    "checkpoint_id": "CP-0004",
+    "utc": "2026-10-07T19:16:10Z",
+    "task_id": "T03_CHARACTER_WORLD",
+    "git_commit": "6c947c99a944b393d93f0c2bd324faee81520e35",
+    "summary": "Stage 03 CHARACTER_WORLD VERIFIED. Full visual bible: 3 characters / 3 environments / 14 props / 8 original reference images / asset inventory with provenance. Consistency vs screenplay: zero unmapped tokens."
   },
-  "last_updated": "2026-10-07T19:16:09Z",
+  "last_updated": "2026-10-07T19:16:10Z",
   "updated_by": "master_controller",
-  "notes": "Stage 03 CHARACTER_WORLD VERIFIED. 3 characters, 3 environments, 14 props, 8 original reference images, full asset inventory with provenance. current_task is a pointer only - T04 has not started."
+  "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
