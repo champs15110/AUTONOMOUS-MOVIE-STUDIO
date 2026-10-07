@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "film_title": "UNNAMED_PLACEHOLDER_DO_NOT_SHIP",
+  "logline": null,
+  "category": "Film & Animation",
+  "created_utc": "2026-10-07T17:26:37Z",
+  "last_updated": "2026-10-07T17:26:37Z",
+
+  "creative_constraints": {
+    "originality": "MANDATORY: original characters, original story, original designs and dialogue.",
+    "copyright": "No copying of copyrighted characters, stories, dialogue, scenes or distinctive designs. No look-alike references. No trademarked assets.",
+    "music": "Original composition or explicitly public-domain / CC-licensed material only. Provenance must be recorded per asset.",
+    "asset_provenance": "Every asset in 06_ASSETS and 10_AUDIO must carry a provenance record (generated / authored / license + source)."
+  },
+
+  "target_spec": {
+    "duration_seconds": { "target": 300, "min": 180, "max": 420 },
+    "aspect_ratio": "16:9",
+    "resolution": { "width": 1920, "height": 1080 },
+    "fps": 24,
+    "total_frames_at_target": 7200,
+    "colour": { "space": "sRGB", "depth": "8-bit delivery, 16-bit intermediates where possible" },
+    "structure": ["Beginning / hook", "Escalation", "Climax", "Resolution"],
+    "retention": {
+      "hook_deadline_seconds": 8,
+      "rule": "A compelling visual or question inside the first 8 seconds; a turn every 20-40s; no dead air longer than 6s."
+    },
+    "narrative_requirement": "Complete beginning, middle, climax and ending. No unresolved cliffhanger."
+  },
+
+  "delivery_spec": {
+    "container": "mp4",
+    "video_codec": "h264",
+    "video_profile": "high",
+    "pixel_format": "yuv420p",
+    "crf": 18,
+    "preset": "slow",
+    "movflags": "+faststart",
+    "audio_codec": "aac",
+    "audio_bitrate_kbps": 320,
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2,
+    "loudness": { "integrated_lufs_target": -16, "integrated_lufs_tolerance": 1.5, "true_peak_dbtp_max": -1.5 },
+    "final_path": "FINAL/FINAL_FILM.mp4"
+  },
+
+  "scene_plan": {
+    "target_scene_count": { "min": 6, "target": 8, "max": 12 },
+    "target_scene_seconds": { "min": 20, "max": 45 },
+    "target_shot_seconds": { "min": 1.5, "max": 8 },
+    "render_unit": "SCENE",
+    "rule": "The film is NEVER rendered as a single job. Every scene is independently renderable and independently re-renderable."
+  },
+
+  "pipeline": {
+    "render_engine_candidates": [
+      {
+        "id": "blender_headless_cpu",
+        "engine": "Blender (Cycles CPU / Eevee Next)",
+        "notes": "Primary candidate. Procedural geometry + materials, no GPU required. Requires a Blender install in the runtime.",
+        "status": "NOT_VERIFIED"
+      },
+      {
+        "id": "python_software_raster",
+        "engine": "Custom Python/NumPy software 3D pipeline",
+        "notes": "Fallback if Blender cannot be installed. Fully CPU, deterministic, no external binaries. Lower fidelity, stylised look.",
+        "status": "FEASIBLE_IN_SANDBOX"
+      }
+    ],
+    "engine_decision_task": "T05_3D_ASSETS",
+    "compositing_engine": "ffmpeg",
+    "audio_engine": "ffmpeg + programmatic synthesis (no external sample libraries assumed)",
+    "constraints": {
+      "local_gpu": false,
+      "kaggle_dependency": false,
+      "paid_api_dependency": false
+    }
+  },
+
+  "environment_detected": {
+    "detected_at_utc": "2026-10-07T17:26:37Z",
+    "detected_by": "master_controller",
+    "git": "present",
+    "python3": "3.11.2",
+    "node": "v22.22.3",
+    "gh": "present",
+    "jq": "present",
+    "ffmpeg": "ABSENT",
+    "blender": "ABSENT",
+    "implication": "Render/mux tooling must be installed or a dependency-free fallback built before T12_FINAL_RENDER. Tracked as risk R-001 / R-002."
+  },
+
+  "risks": [
+    {
+      "risk_id": "R-001",
+      "risk": "ffmpeg not present in runtime; blocks audio mux, conform and final MP4 authoring.",
+      "mitigation": "Attempt install at T12; if unavailable, build a minimal MP4/M4A muxer or pure-python encoder fallback. Verify before any scene render is declared final."
+    },
+    {
+      "risk_id": "R-002",
+      "risk": "Blender not present in runtime; blocks the primary 3D engine.",
+      "mitigation": "Attempt install at T05; if unavailable, switch to python_software_raster fallback and re-scope visual style to a stylised look."
+    },
+    {
+      "risk_id": "R-003",
+      "risk": "Loss of completed work through reliance on conversation memory.",
+      "mitigation": "Repository is the single source of truth. Checkpoint rule in AGENT_PROTOCOL.md is mandatory after every successful operation."
+    },
+    {
+      "risk_id": "R-004",
+      "risk": "Single long fragile render job loses everything on failure.",
+      "mitigation": "Scene-level render checkpointing (SCENE -> PREVIEW -> QC -> FINAL RENDER -> VERIFY) per 13_RENDER/RENDER_MANIFEST.json."
+    }
+  ],
+
+  "naming_conventions": {
+    "scene_id": "SCnn",
+    "shot_id": "SCnn_SHmmm",
+    "frame_range": "f####",
+    "asset": "ASSET_<category>_<name>",
+    "file_case": "UPPER_SNAKE_CASE for deliverables, lower_snake_case for working files",
+    "versions": "_v01, _v02 ... never overwrite a locked/verified artefact; write a new version."
+  },
+
+  "stage_definitions": [
+    { "stage_id": "01_DEVELOPMENT",       "folder": "01_DEVELOPMENT",    "task_id": "T01_DEVELOPMENT" },
+    { "stage_id": "02_SCREENPLAY",        "folder": "02_SCREENPLAY",     "task_id": "T02_SCREENPLAY" },
+    { "stage_id": "03_CHARACTER_WORLD",   "folder": "03_CHARACTERS",     "task_id": "T03_CHARACTER_WORLD" },
+    { "stage_id": "04_STORYBOARD",        "folder": "05_STORYBOARD",     "task_id": "T04_STORYBOARD" },
+    { "stage_id": "05_3D_ASSETS",         "folder": "06_ASSETS",         "task_id": "T05_3D_ASSETS" },
+    { "stage_id": "06_ANIMATION",         "folder": "07_ANIMATION",      "task_id": "T06_ANIMATION" },
+    { "stage_id": "07_CAMERA",            "folder": "08_CAMERA",         "task_id": "T07_CAMERA" },
+    { "stage_id": "08_LIGHTING_VFX",      "folder": "09_LIGHTING_VFX",   "task_id": "T08_LIGHTING_VFX" },
+    { "stage_id": "09_AUDIO",             "folder": "10_AUDIO",          "task_id": "T09_AUDIO" },
+    { "stage_id": "10_EDIT",              "folder": "11_EDIT",           "task_id": "T10_EDIT" },
+    { "stage_id": "11_QC",                "folder": "12_QC",             "task_id": "T11_QC" },
+    { "stage_id": "12_FINAL_RENDER",      "folder": "13_RENDER",         "task_id": "T12_FINAL_RENDER" },
+    { "stage_id": "13_FINAL_VERIFICATION","folder": "FINAL",             "task_id": "T13_FINAL_VERIFICATION" }
+  ],
+
+  "status_enum": [
+    "NOT_STARTED",
+    "IN_PROGRESS",
+    "PARTIAL",
+    "READY",
+    "VERIFIED",
+    "FAILED",
+    "BLOCKED",
+    "COMPLETE"
+  ],
+
+  "shot_stage_enum": [
+    "story", "assets", "animation", "camera", "lighting", "audio", "render", "QC"
+  ],
+
+  "retry_policy": {
+    "max_retries_per_task": 3,
+    "on_failure": "Log to ERROR_LOG.json, classify, change approach, then retry. Never re-run an identical failed command.",
+    "on_exhausted": "Mark BLOCKED and escalate in CHANGELOG.md; preserve all completed outputs."
+  },
+
+  "checkpoint_policy": {
+    "source_of_truth": "repository",
+    "conversation_memory_is_authoritative": false,
+    "after_every_successful_operation": [
+      "verify output",
+      "update PROJECT_STATE.json",
+      "update TASK_QUEUE.json",
+      "update CHANGELOG.md",
+      "save/commit checkpoint"
+    ],
+    "on_failure": "preserve everything already completed; never restart completed work unnecessarily"
+  },
+
+  "completion_condition": {
+    "required_artefact": "FINAL/FINAL_FILM.mp4",
+    "rule": "The project is COMPLETE only when FINAL/FINAL_FILM.mp4 exists AND has passed technical verification in T13. Scripts, plans and renders alone are not completion."
+  }
+}

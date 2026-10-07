@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "last_updated": "2026-10-07T17:26:37Z",
+  "populated_by_task": "T04_STORYBOARD",
+  "status": "EMPTY_AWAITING_STORYBOARD",
+  "lifecycle": ["SCENE", "PREVIEW", "QC", "FINAL_RENDER", "VERIFY"],
+  "lifecycle_status_enum": ["NOT_STARTED", "IN_PROGRESS", "PARTIAL", "READY", "VERIFIED", "FAILED", "BLOCKED", "COMPLETE"],
+  "scene_schema": {
+    "scene_id": "SCnn",
+    "title": null,
+    "shots": [],
+    "start_frame": 0,
+    "end_frame": 0,
+    "duration_seconds": 0.0,
+    "stage": {
+      "SCENE":         { "status": "NOT_STARTED", "artefact": null, "utc": null },
+      "PREVIEW":       { "status": "NOT_STARTED", "artefact": null, "utc": null },
+      "QC":            { "status": "NOT_STARTED", "artefact": null, "utc": null },
+      "FINAL_RENDER":  { "status": "NOT_STARTED", "artefact": null, "utc": null },
+      "VERIFY":        { "status": "NOT_STARTED", "artefact": null, "utc": null }
+    },
+    "overall_status": "NOT_STARTED",
+    "retry_count": 0,
+    "last_error": null,
+    "checkpoint": null
+  },
+  "rules": [
+    "NEVER render the whole film as one job.",
+    "A scene may only enter FINAL_RENDER after its PREVIEW has passed QC.",
+    "A scene may only enter VERIFY after FINAL_RENDER produced an artefact on disk.",
+    "If a scene fails, re-render that scene alone. Verified scene outputs are never regenerated.",
+    "The master assembly is built only from scenes whose VERIFY status is VERIFIED."
+  ],
+  "scenes": []
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "last_updated": "2026-10-07T17:26:37Z",
+  "status_enum": ["NOT_STARTED", "IN_PROGRESS", "PARTIAL", "READY", "VERIFIED", "FAILED", "BLOCKED", "COMPLETE"],
+  "field_spec": {
+    "task_id": "stable unique id, never reused",
+    "stage": "stage folder / stage_id from MASTER_CONFIG.stage_definitions",
+    "status": "one of status_enum",
+    "dependencies": "task_ids that must be VERIFIED or COMPLETE before this task may start",
+    "input_files": "repository-relative paths this task reads",
+    "output_files": "repository-relative paths this task must produce",
+    "retry_count": "number of attempts already made",
+    "last_error": "exact error text of the most recent failure, or null",
+    "checkpoint": "checkpoint_id recorded when this task last successfully checkpointed, or null"
+  },
+
+  "tasks": [
+    {
+      "task_id": "T01_DEVELOPMENT",
+      "stage": "01_DEVELOPMENT",
+      "title": "Concept, premise, genre, tone, theme and story spine",
+      "status": "NOT_STARTED",
+      "dependencies": [],
+      "input_files": ["MASTER_CONFIG.json", "AGENT_PROTOCOL.md"],
+      "output_files": [
+        "01_DEVELOPMENT/concept/PREMISE.md",
+        "01_DEVELOPMENT/concept/STORY_SPINE.md",
+        "01_DEVELOPMENT/concept/TONE_AND_STYLE.md",
+        "01_DEVELOPMENT/concept/ORIGINALITY_ATTESTATION.md"
+      ],
+      "acceptance": [
+        "One original premise with a clear protagonist, want, obstacle and change.",
+        "Story spine with beginning, escalation, climax and resolution mapped to a ~5 minute runtime.",
+        "Retention plan: hook inside 8s, a turn every 20-40s.",
+        "Originality attestation naming zero borrowed characters, stories, dialogue or designs."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T02_SCREENPLAY",
+      "stage": "02_SCREENPLAY",
+      "title": "Locked screenplay with scene breakdown and timing",
+      "status": "NOT_STARTED",
+      "dependencies": ["T01_DEVELOPMENT"],
+      "input_files": ["01_DEVELOPMENT/concept/STORY_SPINE.md", "MASTER_CONFIG.json"],
+      "output_files": [
+        "02_SCREENPLAY/drafts/SCREENPLAY_v01.md",
+        "02_SCREENPLAY/locked/SCREENPLAY_LOCKED.md",
+        "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json"
+      ],
+      "acceptance": [
+        "Screenplay total runtime lands inside 180-420s, target 300s.",
+        "SCENE_BREAKDOWN.json defines every scene id (SCnn), slug, intent, duration and characters.",
+        "Scene count inside MASTER_CONFIG.scene_plan bounds.",
+        "All dialogue original."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T03_CHARACTER_WORLD",
+      "stage": "03_CHARACTER_WORLD",
+      "title": "Original character designs, bios and world/locations",
+      "status": "NOT_STARTED",
+      "dependencies": ["T02_SCREENPLAY"],
+      "input_files": ["02_SCREENPLAY/locked/SCREENPLAY_LOCKED.md", "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json"],
+      "output_files": [
+        "03_CHARACTERS/CHARACTER_BIBLE.json",
+        "04_WORLD/WORLD_BIBLE.json",
+        "03_CHARACTERS/design/CHARACTER_DESIGNS.md",
+        "04_WORLD/locations/LOCATION_DESIGNS.md",
+        "06_ASSETS/ASSET_INVENTORY.json"
+      ],
+      "acceptance": [
+        "Each character has silhouette-readable design, palette, proportions and buildable geometry description.",
+        "Each location has layout, palette, key props and lighting mood.",
+        "ASSET_INVENTORY.json lists every model/texture/material needed with provenance fields.",
+        "Designs are original and documented as such."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T04_STORYBOARD",
+      "stage": "04_STORYBOARD",
+      "title": "Beat board, shot list, shot registry and animatic plan",
+      "status": "NOT_STARTED",
+      "dependencies": ["T03_CHARACTER_WORLD"],
+      "input_files": ["02_SCREENPLAY/locked/SCENE_BREAKDOWN.json", "03_CHARACTERS/CHARACTER_BIBLE.json", "04_WORLD/WORLD_BIBLE.json"],
+      "output_files": [
+        "05_STORYBOARD/beat_board/BEAT_BOARD.md",
+        "05_STORYBOARD/SHOT_LIST.json",
+        "05_STORYBOARD/panels/PANEL_INDEX.md",
+        "SHOT_REGISTRY.json",
+        "13_RENDER/RENDER_MANIFEST.json"
+      ],
+      "acceptance": [
+        "Every shot has a unique id SCnn_SHmmm and a frame range.",
+        "SHOT_REGISTRY.json created with all 8 stage slots per shot (story/assets/animation/camera/lighting/audio/render/QC) at NOT_STARTED.",
+        "RENDER_MANIFEST.json created with one entry per scene and the 5-state render lifecycle.",
+        "Sum of shot durations equals planned runtime inside tolerance."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Populates the two registry files created empty at initialization."
+    },
+    {
+      "task_id": "T05_3D_ASSETS",
+      "stage": "05_3D_ASSETS",
+      "title": "Render engine decision + buildable 3D models, rigs, materials",
+      "status": "NOT_STARTED",
+      "dependencies": ["T04_STORYBOARD"],
+      "input_files": ["06_ASSETS/ASSET_INVENTORY.json", "03_CHARACTERS/CHARACTER_BIBLE.json", "04_WORLD/WORLD_BIBLE.json", "MASTER_CONFIG.json"],
+      "output_files": [
+        "06_ASSETS/ENGINE_DECISION.json",
+        "06_ASSETS/models/ASSET_INDEX.json",
+        "06_ASSETS/rigs/RIG_INDEX.json",
+        "06_ASSETS/materials/MATERIAL_INDEX.json"
+      ],
+      "acceptance": [
+        "Render engine chosen and proven executable in this runtime (evidence captured in ENGINE_DECISION.json).",
+        "Every inventoried asset exists or has an explicit BLOCKED entry with cause.",
+        "Each asset opens/loads without error and is listed in an index with provenance."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Engine decision point. Risk R-002 lives here."
+    },
+    {
+      "task_id": "T06_ANIMATION",
+      "stage": "06_ANIMATION",
+      "title": "Per-shot layout, blocking and polish animation",
+      "status": "NOT_STARTED",
+      "dependencies": ["T05_3D_ASSETS"],
+      "input_files": ["SHOT_REGISTRY.json", "05_STORYBOARD/SHOT_LIST.json", "06_ASSETS/models/ASSET_INDEX.json", "06_ASSETS/rigs/RIG_INDEX.json"],
+      "output_files": [
+        "07_ANIMATION/ANIMATION_INDEX.json",
+        "SHOT_REGISTRY.json"
+      ],
+      "acceptance": [
+        "Every shot has animation data and SHOT_REGISTRY.json animation slot != NOT_STARTED.",
+        "Timing matches the shot's frame range.",
+        "No shot is left at NOT_STARTED without a logged error."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Checkpoint per shot, not per stage."
+    },
+    {
+      "task_id": "T07_CAMERA",
+      "stage": "07_CAMERA",
+      "title": "Camera rigs, lens choices and per-shot moves",
+      "status": "NOT_STARTED",
+      "dependencies": ["T06_ANIMATION"],
+      "input_files": ["SHOT_REGISTRY.json", "05_STORYBOARD/SHOT_LIST.json", "07_ANIMATION/ANIMATION_INDEX.json"],
+      "output_files": [
+        "08_CAMERA/CAMERA_INDEX.json",
+        "SHOT_REGISTRY.json"
+      ],
+      "acceptance": [
+        "Every shot has a camera move, lens/FOV and framing note.",
+        "SHOT_REGISTRY.json camera slot != NOT_STARTED for all shots.",
+        "Camera never intersects geometry or clips through set pieces (checked in QC)."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T08_LIGHTING_VFX",
+      "stage": "08_LIGHTING_VFX",
+      "title": "Per-scene lighting setups, VFX and compositing grades",
+      "status": "NOT_STARTED",
+      "dependencies": ["T07_CAMERA"],
+      "input_files": ["SHOT_REGISTRY.json", "04_WORLD/WORLD_BIBLE.json", "08_CAMERA/CAMERA_INDEX.json"],
+      "output_files": [
+        "09_LIGHTING_VFX/LIGHTING_INDEX.json",
+        "09_LIGHTING_VFX/vfx/VFX_INDEX.json",
+        "SHOT_REGISTRY.json"
+      ],
+      "acceptance": [
+        "Every shot has a lighting setup reference and a grade/compositing note.",
+        "SHOT_REGISTRY.json lighting slot != NOT_STARTED for all shots.",
+        "Exposure within legal broadcast range at QC."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T09_AUDIO",
+      "stage": "09_AUDIO",
+      "title": "Music, SFX, voice and mix stems",
+      "status": "NOT_STARTED",
+      "dependencies": ["T02_SCREENPLAY"],
+      "input_files": ["02_SCREENPLAY/locked/SCENE_BREAKDOWN.json", "05_STORYBOARD/SHOT_LIST.json"],
+      "output_files": [
+        "10_AUDIO/AUDIO_INDEX.json",
+        "10_AUDIO/music/MUSIC_CUE_SHEET.json",
+        "10_AUDIO/sfx/SFX_CUE_SHEET.json",
+        "10_AUDIO/mix/MIX_PLAN.json"
+      ],
+      "acceptance": [
+        "Every scene has music and ambience coverage; no silent gap longer than 6s unless intentional.",
+        "All audio is original or license-documented in AUDIO_INDEX.json.",
+        "Mix plan targets -16 LUFS integrated, true peak <= -1.5 dBTP, 48kHz stereo."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Only dependency is T02 - audio can run in parallel with visuals from that point."
+    },
+    {
+      "task_id": "T10_EDIT",
+      "stage": "10_EDIT",
+      "title": "Timeline assembly, conform and cut",
+      "status": "NOT_STARTED",
+      "dependencies": ["T08_LIGHTING_VFX", "T09_AUDIO"],
+      "input_files": ["SHOT_REGISTRY.json", "13_RENDER/RENDER_MANIFEST.json", "10_AUDIO/AUDIO_INDEX.json", "05_STORYBOARD/SHOT_LIST.json"],
+      "output_files": [
+        "11_EDIT/timeline/EDIT_DECISION_LIST.json",
+        "11_EDIT/conform/CONFORM_NOTES.md"
+      ],
+      "acceptance": [
+        "EDL lists every shot in order with in/out frames and audio assignments.",
+        "Total cut runtime inside 180-420s, target 300s.",
+        "No missing shot references."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T11_QC",
+      "stage": "11_QC",
+      "title": "Technical + continuity QC of scenes and cut",
+      "status": "NOT_STARTED",
+      "dependencies": ["T10_EDIT"],
+      "input_files": ["11_EDIT/timeline/EDIT_DECISION_LIST.json", "13_RENDER/RENDER_MANIFEST.json", "MASTER_CONFIG.json"],
+      "output_files": [
+        "12_QC/reports/QC_REPORT.json",
+        "12_QC/technical/TECHNICAL_CHECKS.json",
+        "SHOT_REGISTRY.json"
+      ],
+      "acceptance": [
+        "Every scene passes preview QC before it is allowed a final render.",
+        "Every shot has a QC slot status recorded in SHOT_REGISTRY.json.",
+        "Continuity, timing and loudness issues either fixed or explicitly waived with reason."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": null
+    },
+    {
+      "task_id": "T12_FINAL_RENDER",
+      "stage": "12_FINAL_RENDER",
+      "title": "Scene-by-scene final render and assembly",
+      "status": "NOT_STARTED",
+      "dependencies": ["T11_QC"],
+      "input_files": ["13_RENDER/RENDER_MANIFEST.json", "11_EDIT/timeline/EDIT_DECISION_LIST.json", "MASTER_CONFIG.json"],
+      "output_files": [
+        "13_RENDER/final/SCENE_RENDERS_MANIFEST.json",
+        "13_RENDER/RENDER_MANIFEST.json"
+      ],
+      "acceptance": [
+        "Each scene rendered independently through SCENE -> PREVIEW -> QC -> FINAL RENDER -> VERIFY.",
+        "Each verified scene render exists on disk with matching frame count and duration.",
+        "A failed scene is re-rendered alone; other scene outputs are never touched.",
+        "Concatenated master assembled from verified scene renders only."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Risk R-001 lives here. NEVER one monolithic render job."
+    },
+    {
+      "task_id": "T13_FINAL_VERIFICATION",
+      "stage": "13_FINAL_VERIFICATION",
+      "title": "Verify FINAL/FINAL_FILM.mp4 technically - the only completion gate",
+      "status": "NOT_STARTED",
+      "dependencies": ["T12_FINAL_RENDER"],
+      "input_files": ["13_RENDER/final/SCENE_RENDERS_MANIFEST.json", "MASTER_CONFIG.json"],
+      "output_files": [
+        "FINAL/FINAL_FILM.mp4",
+        "12_QC/reports/FINAL_VERIFICATION.json",
+        "FINAL/DELIVERY_NOTES.md"
+      ],
+      "acceptance": [
+        "FINAL/FINAL_FILM.mp4 exists, is a valid playable MP4 and decodes end to end.",
+        "Duration inside 180-420s, 1920x1080, 16:9, 24fps, h264 yuv420p, AAC audio, +faststart.",
+        "Audio present throughout, loudness within spec.",
+        "FINAL_VERIFICATION.json records probe output, sha256 and PASS.",
+        "Only then may overall_status become COMPLETE."
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null,
+      "notes": "Project is NOT complete until this task is VERIFIED."
+    }
+  ]
+}

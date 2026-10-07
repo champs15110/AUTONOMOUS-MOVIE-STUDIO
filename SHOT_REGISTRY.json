@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "last_updated": "2026-10-07T17:26:37Z",
+  "populated_by_task": "T04_STORYBOARD",
+  "status": "EMPTY_AWAITING_STORYBOARD",
+  "shot_id_format": "SCnn_SHmmm",
+  "shot_stage_enum": ["story", "assets", "animation", "camera", "lighting", "audio", "render", "QC"],
+  "shot_schema": {
+    "shot_id": "SCnn_SHmmm",
+    "scene_id": "SCnn",
+    "index_in_scene": 1,
+    "story": {
+      "beat": "what the shot accomplishes narratively",
+      "description": "action on screen",
+      "dialogue": "original dialogue or null",
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "status": "NOT_STARTED"
+    },
+    "assets": { "required": [], "status": "NOT_STARTED" },
+    "animation": { "file": null, "status": "NOT_STARTED" },
+    "camera": { "move": null, "lens_mm": null, "file": null, "status": "NOT_STARTED" },
+    "lighting": { "setup": null, "grade": null, "file": null, "status": "NOT_STARTED" },
+    "audio": { "music_cue": null, "sfx": [], "voice": null, "status": "NOT_STARTED" },
+    "render": { "preview": null, "final": null, "frames": null, "status": "NOT_STARTED" },
+    "QC": { "report": null, "issues": [], "status": "NOT_STARTED" },
+    "overall_status": "NOT_STARTED",
+    "retry_count": 0,
+    "last_error": null,
+    "checkpoint": null
+  },
+  "rules": [
+    "A shot is complete only when all eight stage slots are VERIFIED.",
+    "A shot is added to PROJECT_STATE.completed_shots only after overall_status becomes VERIFIED.",
+    "A shot that fails is added to PROJECT_STATE.failed_shots and retried alone; sibling shots are never re-rendered.",
+    "Frame ranges across shots in a scene must be contiguous and non-overlapping."
+  ],
+  "shots": []
+}

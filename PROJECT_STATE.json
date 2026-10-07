@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "film_title": "UNNAMED_PLACEHOLDER_DO_NOT_SHIP",
+  "current_stage": "01_DEVELOPMENT",
+  "current_task": "T01_DEVELOPMENT",
+  "overall_status": "NOT_STARTED",
+
+  "completed_stages": [],
+
+  "failed_tasks": [],
+  "blocked_tasks": [],
+
+  "completed_shots": [],
+  "failed_shots": [],
+
+  "rendered_scenes": [],
+  "verified_scenes": [],
+
+  "final_mp4_status": "NOT_STARTED",
+  "final_mp4": {
+    "path": "FINAL/FINAL_FILM.mp4",
+    "exists": false,
+    "verified": false,
+    "verified_at_utc": null,
+    "duration_seconds": null,
+    "resolution": null,
+    "fps": null,
+    "size_bytes": null,
+    "sha256": null,
+    "qc_report": null
+  },
+
+  "stage_status": {
+    "01_DEVELOPMENT": "NOT_STARTED",
+    "02_SCREENPLAY": "NOT_STARTED",
+    "03_CHARACTER_WORLD": "NOT_STARTED",
+    "04_STORYBOARD": "NOT_STARTED",
+    "05_3D_ASSETS": "NOT_STARTED",
+    "06_ANIMATION": "NOT_STARTED",
+    "07_CAMERA": "NOT_STARTED",
+    "08_LIGHTING_VFX": "NOT_STARTED",
+    "09_AUDIO": "NOT_STARTED",
+    "10_EDIT": "NOT_STARTED",
+    "11_QC": "NOT_STARTED",
+    "12_FINAL_RENDER": "NOT_STARTED",
+    "13_FINAL_VERIFICATION": "NOT_STARTED"
+  },
+
+  "counters": {
+    "shots_planned": 0,
+    "shots_complete": 0,
+    "scenes_planned": 0,
+    "scenes_rendered": 0,
+    "scenes_verified": 0,
+    "checkpoints": 1,
+    "errors_logged": 0
+  },
+
+  "checkpoints": [
+    {
+      "checkpoint_id": "CP-0001",
+      "utc": "2026-10-07T17:26:37Z",
+      "actor": "master_controller",
+      "task_id": "T00_INITIALIZATION",
+      "summary": "Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling.",
+      "git_commit": null
+    }
+  ],
+
+  "last_checkpoint": {
+    "checkpoint_id": "CP-0001",
+    "utc": "2026-10-07T17:26:37Z",
+    "task_id": "T00_INITIALIZATION",
+    "git_commit": null,
+    "summary": "Workspace initialized."
+  },
+
+  "last_updated": "2026-10-07T17:26:37Z",
+  "updated_by": "master_controller",
+  "notes": "Initialization only. No creative work started by design. Next task: T01_DEVELOPMENT."
+}

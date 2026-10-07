@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "AMS-2026-001",
+  "last_updated": "2026-10-07T17:26:37Z",
+  "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
+  "entry_schema": {
+    "error_id": "ERR-nnnn",
+    "utc": "ISO-8601 timestamp",
+    "task_id": "task that failed",
+    "shot_id": "shot that failed, if any",
+    "scene_id": "scene that failed, if any",
+    "command_or_step": "exact command or step executed",
+    "error_text": "exact stderr / exception text, truncated only with an explicit marker",
+    "classification": "one of: MISSING_DEPENDENCY | BAD_INPUT | RESOURCE_EXHAUSTED | TIMEOUT | PERMISSION | LOGIC_ERROR | DATA_CORRUPTION | NETWORK | TOOL_ABSENT | UNKNOWN",
+    "probable_cause": "best current hypothesis",
+    "impact": "what is now unusable, if anything",
+    "preserved_outputs": "completed artefacts that were kept",
+    "recovery_attempted": "what was tried next (must differ from the failed command)",
+    "resolution": "RESOLVED | MITIGATED | UNRESOLVED_BLOCKED",
+    "retry_count_after": "task retry_count after this event"
+  },
+  "classification_enum": [
+    "MISSING_DEPENDENCY",
+    "BAD_INPUT",
+    "RESOURCE_EXHAUSTED",
+    "TIMEOUT",
+    "PERMISSION",
+    "LOGIC_ERROR",
+    "DATA_CORRUPTION",
+    "NETWORK",
+    "TOOL_ABSENT",
+    "UNKNOWN"
+  ],
+  "pre_flight_warnings": [
+    {
+      "error_id": "WARN-0001",
+      "utc": "2026-10-07T17:26:37Z",
+      "task_id": "T00_INITIALIZATION",
+      "note": "ffmpeg is absent from the runtime (verified: `command -v ffmpeg` -> not found). Required for T12/T13. Tracked as risk R-001; resolve or build a fallback before final render.",
+      "classification": "TOOL_ABSENT",
+      "severity": "INFO"
+    },
+    {
+      "error_id": "WARN-0002",
+      "utc": "2026-10-07T17:26:37Z",
+      "task_id": "T00_INITIALIZATION",
+      "note": "blender is absent from the runtime (verified: `command -v blender` -> not found). Primary 3D engine unavailable until installed. Tracked as risk R-002; fallback engine documented in MASTER_CONFIG.pipeline.",
+      "classification": "TOOL_ABSENT",
+      "severity": "INFO"
+    }
+  ],
+  "errors": []
+}

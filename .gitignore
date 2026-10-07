@@ -1,0 +1,26 @@
+# --- state backups (one-generation .bak written by tools/studio.py) ---
+*.bak
+*.tmp
+
+# --- render intermediates: never commit frame sequences ---
+13_RENDER/frames/**
+!13_RENDER/frames/.gitkeep
+*.exr
+*.hdr
+*.psd
+
+# --- scratch / caches ---
+.tmp/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.venv/
+
+# --- large working media (previews and scene renders are checkpointed by manifest,
+#     re-generable, and must stay out of Git) ---
+13_RENDER/previews/*.mp4
+13_RENDER/final/*.mp4
+
+# --- the deliverable IS tracked ---
+!FINAL/FINAL_FILM.mp4
