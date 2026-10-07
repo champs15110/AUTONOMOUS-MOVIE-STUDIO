@@ -1,0 +1,255 @@
+{
+  "utc": "2026-10-07T23:27:53Z",
+  "harness": "tools/blender_stub (structural, no rendering)",
+  "checks": [
+    {
+      "name": "material MAT_BRASS_AGED",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_BRASS_POLISHED",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_IRON_RUSTED",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_GLASS_DRUM",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_WATER_DARK",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_STONE_BARNACLE",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_WOOD_ROTTED",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_ROPE_HEMP",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_CLOTH_COAT",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_SKIN_CHILD",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_AMBER_GLOW",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_SPARK_GLOW",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_WHITEGOLD",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_EYE_SHUTTER",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_GAUGE_DIAL",
+      "status": "PASS",
+      "detail": "4 nodes"
+    },
+    {
+      "name": "texture gauge_dial.png",
+      "status": "PASS",
+      "detail": "6291 bytes"
+    },
+    {
+      "name": "texture noise_tile.png",
+      "status": "PASS",
+      "detail": "45737 bytes"
+    },
+    {
+      "name": "asset PROP_KEY",
+      "status": "PASS",
+      "detail": "5 objects"
+    },
+    {
+      "name": "asset PROP_GAUGE",
+      "status": "PASS",
+      "detail": "4 objects"
+    },
+    {
+      "name": "asset PROP_MAINSPRING",
+      "status": "PASS",
+      "detail": "2 objects"
+    },
+    {
+      "name": "asset PROP_POLE",
+      "status": "PASS",
+      "detail": "4 objects"
+    },
+    {
+      "name": "asset PROP_PILLAR",
+      "status": "PASS",
+      "detail": "4 objects"
+    },
+    {
+      "name": "asset PROP_LAMP",
+      "status": "PASS",
+      "detail": "4 objects"
+    },
+    {
+      "name": "asset PROP_SPARK",
+      "status": "PASS",
+      "detail": "3 objects"
+    },
+    {
+      "name": "asset PROP_DOOR",
+      "status": "PASS",
+      "detail": "5 objects"
+    },
+    {
+      "name": "asset PROP_STAIR",
+      "status": "PASS",
+      "detail": "15 objects"
+    },
+    {
+      "name": "asset PROP_SOCKET",
+      "status": "PASS",
+      "detail": "3 objects"
+    },
+    {
+      "name": "asset PROP_BURNER",
+      "status": "PASS",
+      "detail": "5 objects"
+    },
+    {
+      "name": "asset PROP_BELLBUOY",
+      "status": "PASS",
+      "detail": "3 objects"
+    },
+    {
+      "name": "asset PROP_STALL",
+      "status": "PASS",
+      "detail": "6 objects"
+    },
+    {
+      "name": "asset PROP_RAIL",
+      "status": "PASS",
+      "detail": "7 objects"
+    },
+    {
+      "name": "asset CHAR_WICK",
+      "status": "PASS",
+      "detail": "24 objects"
+    },
+    {
+      "name": "asset CHAR_WICK_shell",
+      "status": "PASS",
+      "detail": "19 objects"
+    },
+    {
+      "name": "asset CHAR_SHIP",
+      "status": "PASS",
+      "detail": "6 objects"
+    },
+    {
+      "name": "asset CHAR_CHILD",
+      "status": "PASS",
+      "detail": "12 objects"
+    },
+    {
+      "name": "asset LOC_PLAZA",
+      "status": "PASS",
+      "detail": "32 objects, landmarks ['lit_lamp', 'pillar', 'quay_edge_x', 'tower']"
+    },
+    {
+      "name": "asset LOC_STREETS",
+      "status": "PASS",
+      "detail": "34 objects, landmarks ['coping', 'gantry', 'stall']"
+    },
+    {
+      "name": "asset LOC_TOWER",
+      "status": "PASS",
+      "detail": "30 objects, landmarks ['beacon', 'burner_top', 'chamber', 'door', 'gallery']"
+    },
+    {
+      "name": "instancing mechanism",
+      "status": "PASS",
+      "detail": "linked duplicate shares mesh data"
+    },
+    {
+      "name": "scene SC01",
+      "status": "PASS",
+      "detail": "frames 1-768, objects {'SC01_ENV': 32, 'SC01_CHARS': 24, 'SC01_PROPS': 4, 'SC01_LIGHTS': 2, 'SC01_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC02",
+      "status": "PASS",
+      "detail": "frames 769-1560, objects {'SC02_ENV': 32, 'SC02_CHARS': 30, 'SC02_PROPS': 0, 'SC02_LIGHTS': 3, 'SC02_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC03",
+      "status": "PASS",
+      "detail": "frames 1561-2208, objects {'SC03_ENV': 32, 'SC03_CHARS': 24, 'SC03_PROPS': 4, 'SC03_LIGHTS': 1, 'SC03_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC04",
+      "status": "PASS",
+      "detail": "frames 2209-2928, objects {'SC04_ENV': 34, 'SC04_CHARS': 24, 'SC04_PROPS': 4, 'SC04_LIGHTS': 2, 'SC04_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC05",
+      "status": "PASS",
+      "detail": "frames 2929-3792, objects {'SC05_ENV': 34, 'SC05_CHARS': 27, 'SC05_PROPS': 0, 'SC05_LIGHTS': 2, 'SC05_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC06",
+      "status": "PASS",
+      "detail": "frames 3793-4464, objects {'SC06_ENV': 30, 'SC06_CHARS': 27, 'SC06_PROPS': 0, 'SC06_LIGHTS': 2, 'SC06_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC07",
+      "status": "PASS",
+      "detail": "frames 4465-5472, objects {'SC07_ENV': 30, 'SC07_CHARS': 27, 'SC07_PROPS': 4, 'SC07_LIGHTS': 2, 'SC07_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC08",
+      "status": "PASS",
+      "detail": "frames 5473-6288, objects {'SC08_ENV': 30, 'SC08_CHARS': 27, 'SC08_PROPS': 4, 'SC08_LIGHTS': 2, 'SC08_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC09",
+      "status": "PASS",
+      "detail": "frames 6289-6768, objects {'SC09_ENV': 30, 'SC09_CHARS': 6, 'SC09_PROPS': 0, 'SC09_LIGHTS': 2, 'SC09_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "name": "scene SC10",
+      "status": "PASS",
+      "detail": "frames 6769-7248, objects {'SC10_ENV': 30, 'SC10_CHARS': 31, 'SC10_PROPS': 4, 'SC10_LIGHTS': 1, 'SC10_CAM': 1}, lights ok, camera ok"
+    }
+  ],
+  "total": 49,
+  "passed": 49,
+  "failed": 0,
+  "overall": "PASS"
+}

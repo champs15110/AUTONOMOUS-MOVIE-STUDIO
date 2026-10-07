@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "created_utc": "2026-10-07T23:27:53Z",
+  "note": "Rigs are hierarchy-based (parent/child pivots). Full deformation rigs are a later animation-stage concern; no animation has been authored yet.",
+  "rig_count": 3,
+  "rigs": [
+    {
+      "rig_id": "RIG_WICK",
+      "character": "CHAR_WICK",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_WICK",
+      "hierarchy": [
+        "CHAR_WICK(root)",
+        "WICK_torso",
+        "WICK_head",
+        "WICK_eyeL",
+        "WICK_eyeR",
+        "WICK_armL",
+        "WICK_armR",
+        "WICK_legL",
+        "WICK_legR",
+        "PROP_KEY(back mount)"
+      ],
+      "type": "procedural_parent_hierarchy",
+      "version": "1.0.0",
+      "status": "STUB_TESTED"
+    },
+    {
+      "rig_id": "RIG_SHIP",
+      "character": "CHAR_SHIP",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_SHIP",
+      "hierarchy": [
+        "CHAR_SHIP(root)",
+        "SHIP_hull",
+        "SHIP_mast",
+        "SHIP_sail"
+      ],
+      "type": "procedural_parent_hierarchy",
+      "version": "1.0.0",
+      "status": "STUB_TESTED"
+    },
+    {
+      "rig_id": "RIG_CHILD",
+      "character": "CHAR_CHILD",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_CHILD",
+      "hierarchy": [
+        "CHAR_CHILD(root)",
+        "CHILD_coat",
+        "CHILD_head",
+        "CHILD_armL",
+        "CHILD_armR",
+        "CHILD_legL",
+        "CHILD_legR"
+      ],
+      "type": "procedural_parent_hierarchy",
+      "version": "1.0.0",
+      "status": "STUB_TESTED"
+    }
+  ]
+}

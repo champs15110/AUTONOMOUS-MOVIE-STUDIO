@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "created_utc": "2026-10-07T23:27:53Z",
+  "note": "Models are procedural bpy builders; no binary model files are produced locally. blend outputs land in 06_ASSETS/blender/scenes/ on the cloud layer.",
+  "model_count": 20,
+  "models": [
+    {
+      "asset_id": "PROP_KEY",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_KEY",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_GAUGE",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_GAUGE",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_GAUGE_DIAL",
+        "MAT_BRASS_AGED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_MAINSPRING",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_MAINSPRING",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_POLE",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_POLE",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_AMBER_GLOW",
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_PILLAR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_PILLAR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_LAMP",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_LAMP",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_AMBER_GLOW",
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_SPARK",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_SPARK",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_SPARK_GLOW",
+        "MAT_GLASS_DRUM"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_DOOR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_DOOR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_STAIR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_STAIR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_SOCKET",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_SOCKET",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_BURNER",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_BURNER",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_BELLBUOY",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_BELLBUOY",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_BRASS_AGED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_STALL",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_STALL",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_RAIL",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_RAIL",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_WICK",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_WICK",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED",
+        "MAT_GLASS_DRUM",
+        "MAT_GAUGE_DIAL",
+        "MAT_EYE_SHUTTER",
+        "MAT_IRON_RUSTED",
+        "PROP_KEY",
+        "PROP_GAUGE",
+        "PROP_SPARK"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_SHIP",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_SHIP",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_WOOD_ROTTED",
+        "MAT_ROPE_HEMP",
+        "MAT_AMBER_GLOW"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_CHILD",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_CHILD",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_CLOTH_COAT",
+        "MAT_SKIN_CHILD",
+        "PROP_KEY"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_PLAZA",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_PLAZA",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_PILLAR",
+        "PROP_LAMP",
+        "MAT_STONE_BARNACLE",
+        "MAT_WATER_DARK",
+        "MAT_WOOD_ROTTED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_STREETS",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_STREETS",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_STALL",
+        "PROP_RAIL",
+        "MAT_WATER_DARK",
+        "MAT_WOOD_ROTTED",
+        "MAT_STONE_BARNACLE",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_TOWER",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_TOWER",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_DOOR",
+        "PROP_STAIR",
+        "PROP_BURNER",
+        "MAT_IRON_RUSTED",
+        "MAT_STONE_BARNACLE",
+        "MAT_WHITEGOLD",
+        "MAT_GLASS_DRUM"
+      ],
+      "status": "STUB_TESTED"
+    }
+  ]
+}

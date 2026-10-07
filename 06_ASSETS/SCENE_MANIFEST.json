@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T05_3D_ASSETS",
+  "project_id": "AMS-2026-001",
+  "created_utc": "2026-10-07T23:27:53Z",
+  "local_validation": "tools/blender_stub (structural, no rendering)",
+  "scene_count": 10,
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "title": "THE WINDING",
+      "builder": "06_ASSETS/scenes/build_SC01.py",
+      "independent": true,
+      "frame_start": 1,
+      "frame_end": 768,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC01_ENV",
+        "SC01_CHARS",
+        "SC01_PROPS",
+        "SC01_LIGHTS",
+        "SC01_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_PLAZA",
+        "PROP_POLE"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC01_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC01.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 1-768, objects {'SC01_ENV': 32, 'SC01_CHARS': 24, 'SC01_PROPS': 4, 'SC01_LIGHTS': 2, 'SC01_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC02",
+      "title": "THE DEAD PILLAR",
+      "builder": "06_ASSETS/scenes/build_SC02.py",
+      "independent": true,
+      "frame_start": 769,
+      "frame_end": 1560,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC02_ENV",
+        "SC02_CHARS",
+        "SC02_PROPS",
+        "SC02_LIGHTS",
+        "SC02_CAM"
+      ],
+      "assets_used": [
+        "CHAR_SHIP",
+        "CHAR_WICK",
+        "LOC_PLAZA"
+      ],
+      "lights": 3,
+      "camera_placeholder": "CAM_SC02_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC02.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 769-1560, objects {'SC02_ENV': 32, 'SC02_CHARS': 30, 'SC02_PROPS': 0, 'SC02_LIGHTS': 3, 'SC02_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC03",
+      "title": "SETTING OUT",
+      "builder": "06_ASSETS/scenes/build_SC03.py",
+      "independent": true,
+      "frame_start": 1561,
+      "frame_end": 2208,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC03_ENV",
+        "SC03_CHARS",
+        "SC03_PROPS",
+        "SC03_LIGHTS",
+        "SC03_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_PLAZA",
+        "PROP_POLE"
+      ],
+      "lights": 1,
+      "camera_placeholder": "CAM_SC03_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC03.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 1561-2208, objects {'SC03_ENV': 32, 'SC03_CHARS': 24, 'SC03_PROPS': 4, 'SC03_LIGHTS': 1, 'SC03_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC04",
+      "title": "THE FLOODED STREET",
+      "builder": "06_ASSETS/scenes/build_SC04.py",
+      "independent": true,
+      "frame_start": 2209,
+      "frame_end": 2928,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC04_ENV",
+        "SC04_CHARS",
+        "SC04_PROPS",
+        "SC04_LIGHTS",
+        "SC04_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_STREETS",
+        "PROP_POLE"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC04_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC04.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 2209-2928, objects {'SC04_ENV': 34, 'SC04_CHARS': 24, 'SC04_PROPS': 4, 'SC04_LIGHTS': 2, 'SC04_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC05",
+      "title": "THE GANTRY",
+      "builder": "06_ASSETS/scenes/build_SC05.py",
+      "independent": true,
+      "frame_start": 2929,
+      "frame_end": 3792,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC05_ENV",
+        "SC05_CHARS",
+        "SC05_PROPS",
+        "SC05_LIGHTS",
+        "SC05_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_STREETS"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC05_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC05.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 2929-3792, objects {'SC05_ENV': 34, 'SC05_CHARS': 27, 'SC05_PROPS': 0, 'SC05_LIGHTS': 2, 'SC05_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC06",
+      "title": "THE TOWER BASE",
+      "builder": "06_ASSETS/scenes/build_SC06.py",
+      "independent": true,
+      "frame_start": 3793,
+      "frame_end": 4464,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC06_ENV",
+        "SC06_CHARS",
+        "SC06_PROPS",
+        "SC06_LIGHTS",
+        "SC06_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_TOWER"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC06_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC06.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 3793-4464, objects {'SC06_ENV': 30, 'SC06_CHARS': 27, 'SC06_PROPS': 0, 'SC06_LIGHTS': 2, 'SC06_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC07",
+      "title": "THE CLIMB",
+      "builder": "06_ASSETS/scenes/build_SC07.py",
+      "independent": true,
+      "frame_start": 4465,
+      "frame_end": 5472,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC07_ENV",
+        "SC07_CHARS",
+        "SC07_PROPS",
+        "SC07_LIGHTS",
+        "SC07_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_TOWER",
+        "PROP_POLE"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC07_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC07.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 4465-5472, objects {'SC07_ENV': 30, 'SC07_CHARS': 27, 'SC07_PROPS': 4, 'SC07_LIGHTS': 2, 'SC07_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC08",
+      "title": "THE BURNER",
+      "builder": "06_ASSETS/scenes/build_SC08.py",
+      "independent": true,
+      "frame_start": 5473,
+      "frame_end": 6288,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC08_ENV",
+        "SC08_CHARS",
+        "SC08_PROPS",
+        "SC08_LIGHTS",
+        "SC08_CAM"
+      ],
+      "assets_used": [
+        "CHAR_WICK",
+        "LOC_TOWER",
+        "PROP_POLE"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC08_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC08.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 5473-6288, objects {'SC08_ENV': 30, 'SC08_CHARS': 27, 'SC08_PROPS': 4, 'SC08_LIGHTS': 2, 'SC08_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC09",
+      "title": "THE LIGHT",
+      "builder": "06_ASSETS/scenes/build_SC09.py",
+      "independent": true,
+      "frame_start": 6289,
+      "frame_end": 6768,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC09_ENV",
+        "SC09_CHARS",
+        "SC09_PROPS",
+        "SC09_LIGHTS",
+        "SC09_CAM"
+      ],
+      "assets_used": [
+        "CHAR_SHIP",
+        "LOC_TOWER"
+      ],
+      "lights": 2,
+      "camera_placeholder": "CAM_SC09_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC09.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 6289-6768, objects {'SC09_ENV': 30, 'SC09_CHARS': 6, 'SC09_PROPS': 0, 'SC09_LIGHTS': 2, 'SC09_CAM': 1}, lights ok, camera ok"
+    },
+    {
+      "scene_id": "SC10",
+      "title": "ONE TURN",
+      "builder": "06_ASSETS/scenes/build_SC10.py",
+      "independent": true,
+      "frame_start": 6769,
+      "frame_end": 7248,
+      "fps": 24,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "aspect_ratio": "16:9",
+      "collections": [
+        "SC10_ENV",
+        "SC10_CHARS",
+        "SC10_PROPS",
+        "SC10_LIGHTS",
+        "SC10_CAM"
+      ],
+      "assets_used": [
+        "CHAR_CHILD",
+        "CHAR_WICK",
+        "LOC_TOWER",
+        "PROP_POLE"
+      ],
+      "lights": 1,
+      "camera_placeholder": "CAM_SC10_placeholder",
+      "blend_output": "06_ASSETS/blender/scenes/SC10.blend",
+      "status": "STUB_TESTED",
+      "test_detail": "frames 6769-7248, objects {'SC10_ENV': 30, 'SC10_CHARS': 31, 'SC10_PROPS': 4, 'SC10_LIGHTS': 1, 'SC10_CAM': 1}, lights ok, camera ok"
+    }
+  ]
+}

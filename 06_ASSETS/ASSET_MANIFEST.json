@@ -1,0 +1,724 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T05_3D_ASSETS",
+  "project_id": "AMS-2026-001",
+  "film_title": "NINETY-TWO TURNS",
+  "created_utc": "2026-10-07T23:27:53Z",
+  "populated_by": "06_ASSETS/scripts/build_manifests.py",
+  "local_validation": "tools/blender_stub (structural, no rendering)",
+  "test_results": "06_ASSETS/BUILD_TEST_RESULTS.json",
+  "asset_count": 37,
+  "assets": [
+    {
+      "asset_id": "TEX_GAUGE_DIAL",
+      "asset_type": "texture",
+      "source": "06_ASSETS/scripts/make_textures.py",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "GENERATED_LOCAL+STUB_TESTED"
+    },
+    {
+      "asset_id": "TEX_NOISE_TILE",
+      "asset_type": "texture",
+      "source": "06_ASSETS/scripts/make_textures.py",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "GENERATED_LOCAL+STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_BRASS_AGED",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_brass_aged",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_NOISE_TILE"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_BRASS_POLISHED",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_brass_polished",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_IRON_RUSTED",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_iron_rusted",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_NOISE_TILE"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_GLASS_DRUM",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_glass_drum",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_WATER_DARK",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_water_dark",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_NOISE_TILE"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_STONE_BARNACLE",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_stone_barnacle",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_NOISE_TILE"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_WOOD_ROTTED",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_wood_rotted",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_NOISE_TILE"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_ROPE_HEMP",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_rope_hemp",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_CLOTH_COAT",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_cloth_coat",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_SKIN_CHILD",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_skin_child",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_AMBER_GLOW",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_amber_glow",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_SPARK_GLOW",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_spark_glow",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_WHITEGOLD",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_whitegold",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_EYE_SHUTTER",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_eye_shutter",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_GAUGE_DIAL",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_gauge_dial",
+      "version": "1.0.0",
+      "dependencies": [
+        "TEX_GAUGE_DIAL"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_KEY",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_KEY",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_GAUGE",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_GAUGE",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_GAUGE_DIAL",
+        "MAT_BRASS_AGED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_MAINSPRING",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_MAINSPRING",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_POLE",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_POLE",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_AMBER_GLOW",
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_PILLAR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_PILLAR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_LAMP",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_LAMP",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_AMBER_GLOW",
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_SPARK",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_SPARK",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_SPARK_GLOW",
+        "MAT_GLASS_DRUM"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_DOOR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_DOOR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_STAIR",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_STAIR",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_SOCKET",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_SOCKET",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_POLISHED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_BURNER",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_BURNER",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_BELLBUOY",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_BELLBUOY",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED",
+        "MAT_BRASS_AGED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_STALL",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_STALL",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_WOOD_ROTTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "PROP_RAIL",
+      "asset_type": "prop",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_prop_RAIL",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_WICK",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_WICK",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_BRASS_AGED",
+        "MAT_BRASS_POLISHED",
+        "MAT_GLASS_DRUM",
+        "MAT_GAUGE_DIAL",
+        "MAT_EYE_SHUTTER",
+        "MAT_IRON_RUSTED",
+        "PROP_KEY",
+        "PROP_GAUGE",
+        "PROP_SPARK"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_SHIP",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_SHIP",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_WOOD_ROTTED",
+        "MAT_ROPE_HEMP",
+        "MAT_AMBER_GLOW"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "CHAR_CHILD",
+      "asset_type": "character",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_char_CHILD",
+      "version": "1.0.0",
+      "dependencies": [
+        "MAT_CLOTH_COAT",
+        "MAT_SKIN_CHILD",
+        "PROP_KEY"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_PLAZA",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_PLAZA",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_PILLAR",
+        "PROP_LAMP",
+        "MAT_STONE_BARNACLE",
+        "MAT_WATER_DARK",
+        "MAT_WOOD_ROTTED",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_STREETS",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_STREETS",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_STALL",
+        "PROP_RAIL",
+        "MAT_WATER_DARK",
+        "MAT_WOOD_ROTTED",
+        "MAT_STONE_BARNACLE",
+        "MAT_IRON_RUSTED"
+      ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "LOC_TOWER",
+      "asset_type": "environment",
+      "source": "06_ASSETS/scripts/ams_assets.py#build_env_TOWER",
+      "version": "1.0.0",
+      "dependencies": [
+        "PROP_DOOR",
+        "PROP_STAIR",
+        "PROP_BURNER",
+        "MAT_IRON_RUSTED",
+        "MAT_STONE_BARNACLE",
+        "MAT_WHITEGOLD",
+        "MAT_GLASS_DRUM"
+      ],
+      "status": "STUB_TESTED"
+    }
+  ],
+  "inventory_coverage": [
+    {
+      "inventory_id": "ASSET_MODEL_WICK",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "CHAR_WICK",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_SHIP",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "CHAR_SHIP",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_CHILD",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "CHAR_CHILD",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_PILLAR",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_PILLAR",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_LAMPPOST",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_LAMP",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_PLAZA_KIT",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "LOC_PLAZA",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_STREETS_KIT",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "LOC_STREETS",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_GANTRY",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "LOC_STREETS",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_STALL",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_STALL",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_RAIL",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_RAIL",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_TOWER",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "LOC_TOWER",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_STAIR",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_STAIR",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_DOOR",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_DOOR",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_BURNER",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_BURNER",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_SOCKET",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_SOCKET",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_KEY",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_KEY",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_GAUGE",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_GAUGE",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_MAINSPRING",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_MAINSPRING",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_POLE",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_POLE",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_SPARK",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_SPARK",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "ASSET_MODEL_BELLBUOY",
+      "kind": "model",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "PROP_BELLBUOY",
+      "status": "STUB_TESTED",
+      "note": "procedural bpy builder is the source of truth; dir is the cloud export slot"
+    },
+    {
+      "inventory_id": "MAT_BRASS_AGED",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_BRASS_AGED",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_VERDIGRIS",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_BRASS_AGED",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_IRON_RUSTED",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_IRON_RUSTED",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_STONE_WET",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_STONE_BARNACLE",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_WATER",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_WATER_DARK",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_GLASS_CHEST",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_GLASS_DRUM",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_EMBER",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_SPARK_GLOW",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_AMBER_LIGHT",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_AMBER_GLOW",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "MAT_OILSKIN",
+      "kind": "material",
+      "resolution": "RESOLVED_BY_BUILDER",
+      "resolved_to": "MAT_CLOTH_COAT",
+      "status": "STUB_TESTED",
+      "note": "T03 material name mapped to the procedural node material"
+    },
+    {
+      "inventory_id": "ANIM_GAUGE_NEEDLE",
+      "kind": "data",
+      "resolution": "DEFERRED",
+      "resolved_to": "T06_ANIMATION",
+      "status": "DEFERRED",
+      "note": "animation channel, not a build asset; needle geometry exists in PROP_GAUGE"
+    },
+    {
+      "inventory_id": "GAIT_RHYTHM_TRACK",
+      "kind": "data",
+      "resolution": "DEFERRED",
+      "resolved_to": "T09_AUDIO",
+      "status": "DEFERRED",
+      "note": "audio/animation timing data, not a 3D build asset"
+    },
+    {
+      "inventory_id": "REF_WICK_MODEL_SHEET",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "03_CHARACTERS/REFERENCE_IMAGES/WICK_model_sheet.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_WICK_PERFORMANCE",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "03_CHARACTERS/REFERENCE_IMAGES/WICK_performance_sheet.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_CHILD_SHIP",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "03_CHARACTERS/REFERENCE_IMAGES/CHILD_and_SHIP_reference.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_PLAZA",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "04_WORLD/REFERENCE_IMAGES/LOC_PLAZA_winding_plaza.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_STREETS",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_TOWER_EXT",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_exterior.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_BURNER",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    },
+    {
+      "inventory_id": "REF_PROPS",
+      "kind": "reference_image",
+      "resolution": "EXISTS",
+      "resolved_to": "04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png",
+      "status": "EXISTS",
+      "note": "reference image from Stage 03"
+    }
+  ],
+  "inventory_unresolved": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T05_3D_ASSETS",
+  "created_utc": "2026-10-07T23:27:53Z",
+  "decision": "BLENDER_BPY_PROCEDURAL",
+  "summary": "Build engine: Blender via procedural .bpy scripts (this repo). Blender is NOT installed in this runtime, so local execution is proven through the structural stub harness; real execution happens on a cloud Blender/render layer with the documented commands. Render engine: EEVEE-Next primary on the cloud layer, Cycles with denoising + low samples as quality fallback; the T12 assembly keeps the pre-existing python_software_raster fallback if no cloud layer materialises (risks R-001/R-002).",
+  "blender_local": {
+    "available": false,
+    "which": null,
+    "searched": [
+      "PATH (shutil.which)",
+      "/opt",
+      "/usr/local",
+      "/snap"
+    ],
+    "found_dirs": []
+  },
+  "local_validation": {
+    "harness": "tools/blender_stub (structural, no rendering)",
+    "command": "python3 06_ASSETS/scripts/run_build_tests.py",
+    "checks_total": 49,
+    "checks_passed": 49,
+    "overall": "PASS",
+    "results_file": "06_ASSETS/BUILD_TEST_RESULTS.json",
+    "standalone_scene_run": "PYTHONPATH=tools/blender_stub python3 06_ASSETS/scenes/build_SC08.py (executed, exit 0)"
+  },
+  "cloud_execution": {
+    "build_scene": "blender -b -P 06_ASSETS/scenes/build_SCnn.py   # saves 06_ASSETS/blender/scenes/SCnn.blend",
+    "test_local_without_blender": "PYTHONPATH=tools/blender_stub python3 06_ASSETS/scenes/build_SCnn.py",
+    "render_preview": "blender -b 06_ASSETS/blender/scenes/SCnn.blend -o //preview_#### -s <start> -e <end> -a"
+  },
+  "render_engine": {
+    "primary": "BLENDER_EEVEE_NEXT",
+    "fallback": "CYCLES_low_samples_denoised",
+    "last_resort": "python_software_raster (T12, R-001)"
+  },
+  "risks": [
+    "R-001 ffmpeg absent locally",
+    "R-002 blender absent locally"
+  ],
+  "honesty_note": "No Blender execution is claimed locally. STUB_TESTED means the builder logic ran under the structural harness; visual/render correctness is unverified until the cloud layer runs the same scripts."
+}

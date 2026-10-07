@@ -3,6 +3,38 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-07 — Stage 05 3D ASSET PIPELINE complete (T05_3D_ASSETS → VERIFIED)
+
+### Added
+
+- **`06_ASSETS/scripts/`** — `ams_blender_lib.py` (scene config 24 fps / 1920×1080, from_pydata primitives, lights, camera, linked-duplicate instancing, conditional .blend save), `ams_assets.py` (3 characters, 14 props, 3 environments, scene specs, `build_scene()`), `make_textures.py`, `write_scene_builders.py`, `run_build_tests.py`, `build_manifests.py`.
+- **`06_ASSETS/materials/ams_materials.py`** — 15 procedural node materials; dial uses generated coordinates (no UV dependency).
+- **`06_ASSETS/scenes/build_SC01.py … build_SC10.py`** — ten independently executable scene builders (env + characters + props + materials + lights + camera placeholder + exact frame ranges).
+- **`06_ASSETS/textures/gauge_dial.png`, `noise_tile.png`** — generated locally in pure Python (dial: 0-100 ticks, red 0-40 arc).
+- **`06_ASSETS/ASSET_MANIFEST.json`** — 37 assets with asset_id/type/source/version/dependencies/status, plus `inventory_coverage` resolving all 40 T03 inventory ids (30 STUB_TESTED, 8 EXISTS, 2 DEFERRED with cause, 0 BLOCKED).
+- **`06_ASSETS/SCENE_MANIFEST.json`**, **`models/ASSET_INDEX.json`**, **`rigs/RIG_INDEX.json`**, **`materials/MATERIAL_INDEX.json`**, **`ENGINE_DECISION.json`**, **`BUILD_TEST_RESULTS.json`**, **`BLENDER_BUILD_README.md`**.
+- **`tools/blender_stub/`** — structural bpy stand-in so builders execute without Blender (no rendering, no fabrication of Blender runs).
+
+### Engine decision
+
+- Blender **absent** in this runtime (PATH + /opt + /usr/local + /snap probed). Decision `BLENDER_BPY_PROCEDURAL`: builds run on a cloud Blender layer via documented commands; render EEVEE-Next primary, Cycles low-sample fallback, `python_software_raster` last resort at T12 (R-001/R-002).
+
+### Verified
+
+- `run_build_tests.py` → **49/49** (15 materials, 2 textures, 14 props, 4 character variants, 3 environments, instancing shares mesh data, 10 scenes each asserting frames == SHOT_LIST, 24 fps, 1920×1080, camera + lights + collections).
+- Standalone proof: `PYTHONPATH=tools/blender_stub python3 06_ASSETS/scenes/build_SC08.py` exit 0.
+- `build_manifests.py` reports zero non-passing statuses; `studio.py validate` PASS.
+
+### Changed
+
+- `TASK_QUEUE.json` T05 `output_files` re-pointed to the eight produced files (contract indexes all retained).
+
+### Deliberately not done
+
+- No animation (hierarchy rigs only), no `.blend`/renders in Git, no claim of local Blender execution.
+
+---
+
 ## 2026-10-07 — Stage 04 STORYBOARD complete (T04_STORYBOARD → VERIFIED)
 
 ### Added
