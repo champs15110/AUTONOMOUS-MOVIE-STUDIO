@@ -219,4 +219,5 @@ instruction.
 |---|---|---|---|---|
 | CP-0001 | 2026-10-07 17:26:37 UTC | T00_INITIALIZATION | Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling. | f2618e8 |
 | CP-0002 | 2026-10-07 17:56:28 UTC | T01_DEVELOPMENT | Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated. | 35c4570 |
+| CP-0003 | 2026-10-07 18:43:33 UTC | T02_SCREENPLAY | Stage 02 SCREENPLAY VERIFIED. 10 scenes / 58 shots / 302.0s / frames 1-7248. FINAL_SCREENPLAY.md, SHOT_LIST.json+csv, CONTINUITY_BIBLE.md. Independent verifier PASS: unique ids, contiguous timecodes+frames, runtime in target, 92-turn ledger exact, cause-and-effect tracked. ERR-0002 (stage-01 turn_budget misattribution) logged and mitigated. | 7a7cdc7 |
 <!-- CHECKPOINT_TABLE_END -->

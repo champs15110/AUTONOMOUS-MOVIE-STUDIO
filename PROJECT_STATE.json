@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "02_SCREENPLAY",
-  "current_task": "T02_SCREENPLAY",
+  "current_stage": "03_CHARACTER_WORLD",
+  "current_task": "T03_CHARACTER_WORLD",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -49,7 +49,7 @@
     "scenes_planned": 0,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 2,
+    "checkpoints": 3,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -68,16 +68,24 @@
       "task_id": "T01_DEVELOPMENT",
       "summary": "Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated.",
       "git_commit": "35c45701055613b31401c2c59ffc9db9977a1fec"
+    },
+    {
+      "checkpoint_id": "CP-0003",
+      "utc": "2026-10-07T18:43:33Z",
+      "actor": "master_controller",
+      "task_id": "T02_SCREENPLAY",
+      "summary": "Stage 02 SCREENPLAY VERIFIED. 10 scenes / 58 shots / 302.0s / frames 1-7248. FINAL_SCREENPLAY.md, SHOT_LIST.json+csv, CONTINUITY_BIBLE.md. Independent verifier PASS: unique ids, contiguous timecodes+frames, runtime in target, 92-turn ledger exact, cause-and-effect tracked. ERR-0002 (stage-01 turn_budget misattribution) logged and mitigated.",
+      "git_commit": "7a7cdc79c82bfa3150ba8e54b457860356f25762"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0002",
-    "utc": "2026-10-07T17:56:28Z",
-    "task_id": "T01_DEVELOPMENT",
-    "git_commit": "35c45701055613b31401c2c59ffc9db9977a1fec",
-    "summary": "Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated."
+    "checkpoint_id": "CP-0003",
+    "utc": "2026-10-07T18:43:33Z",
+    "task_id": "T02_SCREENPLAY",
+    "git_commit": "7a7cdc79c82bfa3150ba8e54b457860356f25762",
+    "summary": "Stage 02 SCREENPLAY VERIFIED. 10 scenes / 58 shots / 302.0s / frames 1-7248. FINAL_SCREENPLAY.md, SHOT_LIST.json+csv, CONTINUITY_BIBLE.md. Independent verifier PASS: unique ids, contiguous timecodes+frames, runtime in target, 92-turn ledger exact, cause-and-effect tracked. ERR-0002 (stage-01 turn_budget misattribution) logged and mitigated."
   },
-  "last_updated": "2026-10-07T18:43:24Z",
+  "last_updated": "2026-10-07T18:43:33Z",
   "updated_by": "master_controller",
-  "notes": "Stage 02 SCREENPLAY VERIFIED. 58 shots across 10 scenes, 302s, all invariants verified. current_task is a pointer only - T03 has not started."
+  "notes": "Stage 02 SCREENPLAY VERIFIED and checkpointed (CP-0003). 58 shots across 10 scenes, 302.0s, frames 1-7248, all invariants independently verified. current_task is a pointer only - T03_CHARACTER_WORLD is NOT_STARTED and no design work has begun."
 }
