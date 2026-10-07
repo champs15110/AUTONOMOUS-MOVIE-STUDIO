@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:49:53Z",
+  "last_updated": "2026-10-07T18:42:41Z",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -65,6 +65,22 @@
       "recovery_attempted": "Rewrote line 215 in place with python (byte-exact, no fuzzy matching), then re-ran jq and the full arithmetic check. Future edits to this file use python or full-file rewrites, never cross-field fuzzy matches.",
       "resolution": "MITIGATED",
       "retry_count_after": 1
+    },
+    {
+      "error_id": "ERR-0002",
+      "utc": "2026-10-07T18:42:41Z",
+      "task_id": "T01_DEVELOPMENT",
+      "shot_id": null,
+      "scene_id": null,
+      "command_or_step": "reading 01_DEVELOPMENT/MASTER_FILM_BRIEF.json turn_budget during T02",
+      "error_text": "turn_budget.costs rows 4-6 attributed costs to the wrong scenes. Row 'B06 Storm crossing, the pole is lost' cost=18 -> 40, but the pole is lost in SC05 (B05) and the 18-turn cost is the tower door in SC06. Row 'B07 Forcing the sealed tower door' cost=9 -> 31 was actually the stair giving way. Row 'B08 The stair gives way' cost=9 -> 22 was actually SC07 exposure. Costs and the 92->1 gauge chain were correct throughout; only the labels were wrong.",
+      "classification": "LOGIC_ERROR",
+      "probable_cause": "T01 wrote the turn_budget as a flat list of beats (B03-B10) while story_beats used scene ids (SC03-SC08). The two numbering schemes drifted apart and were never cross-checked, so a stage-01 deliverable was marked VERIFIED with misattributed costs.",
+      "impact": "None downstream - caught at T02 before any scene breakdown was authored. Had it shipped, the continuity ledger would have credited the tower door's 18 turns to a storm crossing.",
+      "preserved_outputs": "All of stage 01: MASTER_FILM_BRIEF.md, MASTER_FILM_BRIEF.json, RESEARCH.md. Costs, gauge chain, scene plan, runtime and retention cadence all untouched.",
+      "recovery_attempted": "Rewrote the labels in both the JSON and the MD, added an explicit 'scene' field to every turn_budget row so the mapping is machine-checkable, and added a generator assertion that per-scene gauge deltas equal the budget rows for that scene. Verified costs and gauge chain were byte-identical before and after.",
+      "resolution": "MITIGATED",
+      "retry_count_after": 2
     }
   ]
 }

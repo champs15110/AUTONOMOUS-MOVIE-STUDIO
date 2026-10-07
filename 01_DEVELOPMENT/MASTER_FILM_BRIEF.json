@@ -162,42 +162,50 @@
     "start": 92,
     "costs": [
       {
-        "beat": "B03 Setting out across the plaza",
+        "scene": "SC03",
+        "beat": "Setting out across the plaza",
         "cost": 8,
         "gauge_after": 84
       },
       {
-        "beat": "B04 Climbing the flooded street",
+        "scene": "SC04",
+        "beat": "Climbing the flooded street",
         "cost": 13,
         "gauge_after": 71
       },
       {
-        "beat": "B05 Sheltering the spark through the gantry collapse",
+        "scene": "SC05",
+        "beat": "Gantry crossing: the pole is lost, the spark is sheltered",
         "cost": 13,
         "gauge_after": 58
       },
       {
-        "beat": "B06 Storm crossing, the pole is lost",
+        "scene": "SC06",
+        "beat": "Forcing the sealed tower door",
         "cost": 18,
         "gauge_after": 40
       },
       {
-        "beat": "B07 Forcing the sealed tower door",
+        "scene": "SC06",
+        "beat": "The stair gives way",
         "cost": 9,
         "gauge_after": 31
       },
       {
-        "beat": "B08 The stair gives way",
+        "scene": "SC07",
+        "beat": "Exposure on the rivets; the remaining stair collapses",
         "cost": 9,
         "gauge_after": 22
       },
       {
-        "beat": "B09 The outside climb in the gale",
+        "scene": "SC07",
+        "beat": "The outside climb in the gale",
         "cost": 16,
         "gauge_after": 6
       },
       {
-        "beat": "B10 The last pull to the burner",
+        "scene": "SC08",
+        "beat": "The last pull to the burner",
         "cost": 5,
         "gauge_after": 1
       }
@@ -207,7 +215,8 @@
     "ignition_cost": 1,
     "gauge_at_zero": 0,
     "turns_given_back_in_ending": 1,
-    "symmetry": "The film opens on four turns of a key that fail. It closes on one turn of a key that holds."
+    "symmetry": "The film opens on four turns of a key that fail. It closes on one turn of a key that holds.",
+    "note": "Labels corrected at T02: costs and the 92->1 gauge chain were always correct, but rows 4-6 attributed costs to the wrong scene (the pole is lost in SC05, not SC06). Each row now carries an explicit scene id."
   },
   "story_beats": [
     {

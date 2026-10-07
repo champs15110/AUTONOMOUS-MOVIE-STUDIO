@@ -42,7 +42,9 @@
     "narrative_requirement": "Complete beginning, middle, climax and ending. No unresolved cliffhanger.",
     "locked_runtime_seconds": 302,
     "locked_scene_count": 10,
-    "dialogue": "none - the film is wordless by design"
+    "dialogue": "none - the film is wordless by design",
+    "locked_shot_count": 58,
+    "locked_frame_count": 7248
   },
   "delivery_spec": {
     "container": "mp4",

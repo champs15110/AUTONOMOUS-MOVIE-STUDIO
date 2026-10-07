@@ -3,6 +3,94 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-07 — Stage 02 SCREENPLAY complete (T02_SCREENPLAY → VERIFIED)
+
+**Locked:** *NINETY-TWO TURNS* — **10 scenes, 58 shots, 302.0 s (5:02), frames 1–7248 @ 24 fps.**
+Concept unchanged; no story problem warranted a rewrite.
+
+### Added
+
+- **`02_SCREENPLAY/FINAL_SCREENPLAY.md`** (1 591 lines) — full production screenplay. Every
+  scene block carries `scene_id`, `timecode`, `duration`, `location`, `characters`,
+  `story_purpose`, `action`, `dialogue`, `emotion`, `props`, `environment_action` and
+  `transition`. Every scene is divided into shots carrying `shot_id`, `scene_id`, `time_in`,
+  `time_out`, `duration`, `action`, `character_state`, `character_position`, `prop_state`,
+  `camera_intention`, `sound`, `dialogue` and `continuity_notes`.
+- **`02_SCREENPLAY/SHOT_LIST.json`** (2 107 lines) — 10 scene records + 58 shot records with
+  absolute timecodes, 1-based contiguous frame ranges, per-shot gauge values and transitions.
+- **`02_SCREENPLAY/SHOT_LIST.csv`** (58 rows, 22 columns) — spreadsheet-ready shot list.
+- **`02_SCREENPLAY/CONTINUITY_BIBLE.md`** (244 lines) — full 57-row countdown ledger, prop
+  state ledgers (key, lamp-pole, spark, mainspring, socket), permanent world damage, a
+  14-link cause-and-effect chain, weather progression, sound/music continuity, camera
+  grammar and the eight things that must never change.
+- **`02_SCREENPLAY/build_shot_list.py`** — generator; emits JSON + CSV from one table and
+  asserts every invariant before writing.
+- **`02_SCREENPLAY/build_docs.py`** — emits both markdown documents from the verified JSON,
+  so prose and data cannot drift.
+- **`02_SCREENPLAY/verify_shot_list.py`** — independent verifier. Reads only the emitted
+  artefacts; does **not** import the generator.
+
+### Verified
+
+`python3 02_SCREENPLAY/verify_shot_list.py` → **PASS** (exit 0):
+
+- **58 shot ids, all unique**, all matching `SCnn_SHmmm`, numbered from `_SH001` per scene.
+- **Timecodes contiguous** — every shot starts exactly where the previous ends; zero
+  overlaps, zero gaps, at shot *and* scene level; each scene's shots exactly fill its range.
+- **Frames 1–7248 contiguous**, no double-counted frames.
+- **Runtime 302.0 s** — inside the 180–420 s window, +2.0 s from the 300 s target.
+- Every shot inside 1.5–8 s; every scene inside 20–45 s; 10 scenes inside 6–12; 58 shots
+  inside the planned 52–60.
+- All 13 required shot fields populated on all 58 shots; all 11 required scene fields
+  populated; `dialogue` is `none` in all 58 shots.
+- **Countdown:** settles at 92 in `SC01_SH002` (00:09); falls monotonically; 91 spent; 1 at
+  the burner; first 0 at `SC08_SH006`; rises **exactly once** at `SC10_SH005`; ends at 1.
+- **Cause and effect:** the lamp-pole is lost at `SC05_SH003`, proven absent across all 21
+  intervening shots, recovered at `SC07_SH005`; spark introduced `SC05_SH005`, removed
+  `SC08_SH002`; socket revealed `SC08_SH004`; no human before `SC10`.
+- **JSON ↔ CSV parity** — row count, order, timecodes, durations.
+- Cross-document check: all 58 shot headers and all 9 per-shot field labels appear exactly
+  58 times in the screenplay; all 57 ledger rows match the JSON; every shot id cited in both
+  documents is real.
+
+### Changed
+
+- **`TASK_QUEUE.json`** — `T02_SCREENPLAY.output_files` replaced with the director-issued
+  set. `SCENE_BREAKDOWN` content now lives in the `scenes` array of `SHOT_LIST.json`, so the
+  `02_SCREENPLAY/locked/` files were superseded. Re-pointed every downstream reference:
+  `T03`, `T04`, `T06`, `T07`, `T09`, `T10`, `T11` now read `02_SCREENPLAY/SHOT_LIST.json`.
+  `T04_STORYBOARD` no longer produces a second shot list — its job is now beat board,
+  panels/animatic and populating the two registries from the 58 locked shots. `T11_QC` gains
+  `CONTINUITY_BIBLE.md` as an input.
+- **`MASTER_CONFIG.json`** — `locked_shot_count: 58`, `locked_frame_count: 7248`.
+- **`01_DEVELOPMENT/MASTER_FILM_BRIEF.json` / `.md`** — `turn_budget` labels corrected (see
+  `ERR-0002`). Costs and the 92→1 gauge chain are byte-identical; each row now carries an
+  explicit `scene` id.
+
+### Failures recorded
+
+- **`ERR-0002`** (`LOGIC_ERROR`, `MITIGATED`) — stage 01's `turn_budget` attributed costs to
+  the wrong scenes because it was numbered by beat (`B03`–`B10`) while `story_beats` was
+  numbered by scene (`SC03`–`SC08`), and the two were never cross-checked. A stage-01
+  deliverable had therefore been marked `VERIFIED` with misattributed costs. Caught at T02
+  before any scene breakdown existed. Fixed in both files; a generator assertion now ties
+  per-scene gauge deltas to the budget rows for that scene.
+
+### Caught before shipping (not logged as errors)
+
+Four defects caught by the generator's assertions or the independent verifier before any
+artefact was written: a 10 s shot exceeding the 8 s config maximum (split into two); a
+gauge discontinuity at `SC05_SH007`; a missing `action` column in the CSV; and an incorrect
+total-spend assertion that had to account for the ignition turn separately.
+
+### Deliberately not done
+
+No 3D animation, no assets, no storyboards. `T03_CHARACTER_WORLD` remains `NOT_STARTED`.
+`SHOT_REGISTRY.json` and `RENDER_MANIFEST.json` stay empty — populating them from the 58
+locked shots is `T04_STORYBOARD`'s job.
+
+---
+
 ## 2026-10-07 — Stage 01 DEVELOPMENT complete (T01_DEVELOPMENT → VERIFIED)
 
 **Film locked:** ***NINETY-TWO TURNS*** — a wordless cinematic 3D animated fable, 302 s

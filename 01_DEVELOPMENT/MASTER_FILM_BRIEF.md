@@ -105,17 +105,17 @@ has 92 turns of stored energy and no way to make more. **Everything costs turns.
 The conflict escalates arithmetically. This is not a metaphor the film states; it is a
 budget the audience can audit:
 
-| Beat | Cost | Gauge after |
-|---|---:|---:|
-| Setting out across the plaza | 8 | 84 |
-| Climbing the flooded street | 13 | 71 |
-| Sheltering the spark through the gantry collapse | 13 | 58 |
-| Storm crossing — the pole is lost | 18 | 40 |
-| Forcing the sealed tower door | 9 | 31 |
-| The stair gives way | 9 | 22 |
-| The outside climb in the gale | 16 | 6 |
-| The last pull to the burner | 5 | **1** |
-| **Total** | **91** | |
+| Scene | What it costs | Cost | Gauge after |
+|---|---|---:|---:|
+| SC03 | Setting out across the plaza | 8 | 84 |
+| SC04 | Climbing the flooded street | 13 | 71 |
+| SC05 | Gantry crossing — the pole is lost, the spark is sheltered | 13 | 58 |
+| SC06 | Forcing the sealed tower door | 18 | 40 |
+| SC06 | The stair gives way | 9 | 31 |
+| SC07 | Exposure on the rivets; the remaining stair collapses | 9 | 22 |
+| SC07 | The outside climb in the gale | 16 | 6 |
+| SC08 | The last pull to the burner | 5 | **1** |
+| | **Total** | **91** | |
 
 92 − 91 = **1**. She arrives at the burner with exactly one turn and nothing to spare.
 
