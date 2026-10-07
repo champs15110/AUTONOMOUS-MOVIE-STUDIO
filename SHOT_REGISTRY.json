@@ -1,11 +1,20 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:26:37Z",
+  "last_updated": "2026-10-07T22:53:58Z",
   "populated_by_task": "T04_STORYBOARD",
-  "status": "EMPTY_AWAITING_STORYBOARD",
+  "status": "POPULATED",
   "shot_id_format": "SCnn_SHmmm",
-  "shot_stage_enum": ["story", "assets", "animation", "camera", "lighting", "audio", "render", "QC"],
+  "shot_stage_enum": [
+    "story",
+    "assets",
+    "animation",
+    "camera",
+    "lighting",
+    "audio",
+    "render",
+    "QC"
+  ],
   "shot_schema": {
     "shot_id": "SCnn_SHmmm",
     "scene_id": "SCnn",
@@ -19,13 +28,43 @@
       "duration_seconds": 0.0,
       "status": "NOT_STARTED"
     },
-    "assets": { "required": [], "status": "NOT_STARTED" },
-    "animation": { "file": null, "status": "NOT_STARTED" },
-    "camera": { "move": null, "lens_mm": null, "file": null, "status": "NOT_STARTED" },
-    "lighting": { "setup": null, "grade": null, "file": null, "status": "NOT_STARTED" },
-    "audio": { "music_cue": null, "sfx": [], "voice": null, "status": "NOT_STARTED" },
-    "render": { "preview": null, "final": null, "frames": null, "status": "NOT_STARTED" },
-    "QC": { "report": null, "issues": [], "status": "NOT_STARTED" },
+    "assets": {
+      "required": [],
+      "status": "NOT_STARTED"
+    },
+    "animation": {
+      "file": null,
+      "status": "NOT_STARTED"
+    },
+    "camera": {
+      "move": null,
+      "lens_mm": null,
+      "file": null,
+      "status": "NOT_STARTED"
+    },
+    "lighting": {
+      "setup": null,
+      "grade": null,
+      "file": null,
+      "status": "NOT_STARTED"
+    },
+    "audio": {
+      "music_cue": null,
+      "sfx": [],
+      "voice": null,
+      "status": "NOT_STARTED"
+    },
+    "render": {
+      "preview": null,
+      "final": null,
+      "frames": null,
+      "status": "NOT_STARTED"
+    },
+    "QC": {
+      "report": null,
+      "issues": [],
+      "status": "NOT_STARTED"
+    },
     "overall_status": "NOT_STARTED",
     "retry_count": 0,
     "last_error": null,
@@ -37,5 +76,3196 @@
     "A shot that fails is added to PROJECT_STATE.failed_shots and retried alone; sibling shots are never re-rendered.",
     "Frame ranges across shots in a scene must be contiguous and non-overlapping."
   ],
-  "shots": []
+  "shots": [
+    {
+      "shot_id": "SC01_SH001",
+      "scene_id": "SC01",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "Extreme macro. A brass winding key seated in a back plate. It turns - once, twice, three times. On the fourth turn the ratchet slips and the key overshoots with no bite.",
+        "dialogue": null,
+        "start_frame": 1,
+        "end_frame": 132,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC01_SH002",
+      "scene_id": "SC01",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "Macro on the glass chest drum. Inside, the coil tightens - then a single spring tooth shears off, pings against the glass and falls out of frame. The needle swings upward, hesitates, sags, and settles on 92.",
+        "dialogue": null,
+        "start_frame": 133,
+        "end_frame": 216,
+        "duration_seconds": 3.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC01_SH003",
+      "scene_id": "SC01",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "Hold on the gauge. 92. The needle trembles once and is still. Out of focus, warm amber lamp light drifts across the glass.",
+        "dialogue": null,
+        "start_frame": 217,
+        "end_frame": 336,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC01_SH004",
+      "scene_id": "SC01",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "Slow pull back and up. The frame opens out to reveal WICK - forty centimetres of aged brass - alone on a barnacled stone quay. Behind her, a drowned harbour town. One lamp still burns on a post. Dusk.",
+        "dialogue": null,
+        "start_frame": 337,
+        "end_frame": 528,
+        "duration_seconds": 8.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC01_SH005",
+      "scene_id": "SC01",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "WICK's shutter eyes open - the apertures irising up from black. She looks down at her own chest gauge, and holds on what it says.",
+        "dialogue": null,
+        "start_frame": 529,
+        "end_frame": 648,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC01_SH006",
+      "scene_id": "SC01",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "Open mid-action on an unexplained mechanism. Establish that WICK is finite, that her refill has just failed, and put the number 92 on screen inside eight seconds. Withhold the world until second 14. (beat: HOOK, emotion: curiosity, then dread)",
+        "description": "Her point of view: the dark, unlit beacon tower on the horizon across black water. Hold. She does not move.",
+        "dialogue": null,
+        "start_frame": 649,
+        "end_frame": 768,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH001",
+      "scene_id": "SC02",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "WICK at the winding pillar, a brass column at the centre of the plaza. She backs up to it and raises herself onto the socket - a practised, habitual, daily motion.",
+        "dialogue": null,
+        "start_frame": 769,
+        "end_frame": 924,
+        "duration_seconds": 6.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH002",
+      "scene_id": "SC02",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "Macro on the socket: stripped, the teeth worn away. The key enters and spins free with no bite. She withdraws and tries again. And again.",
+        "dialogue": null,
+        "start_frame": 925,
+        "end_frame": 1032,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH003",
+      "scene_id": "SC02",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "Wide over the harbour to the horizon. A single amber running light, low on the water, moving toward the reef line.",
+        "dialogue": null,
+        "start_frame": 1033,
+        "end_frame": 1176,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH004",
+      "scene_id": "SC02",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "Reverse, from the waterline: the beacon tower, black against a bruised sky, unlit.",
+        "dialogue": null,
+        "start_frame": 1177,
+        "end_frame": 1320,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH005",
+      "scene_id": "SC02",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "Close on WICK's chest. The gauge reads 92. The dark tower is reflected in her shutter lenses.",
+        "dialogue": null,
+        "start_frame": 1321,
+        "end_frame": 1440,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC02_SH006",
+      "scene_id": "SC02",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "Make the cost of the failure concrete: the pillar is stripped and she cannot recharge. Establish the ship, the reef and the tower in a nine-second three-point eyeline, so the audience knows exactly what she is walking toward and what happens if she does not get there. (beat: STAKE, emotion: dread hardening into resolve)",
+        "description": "She reaches down and lifts the lamp-pole from the stone. It is taller than she is. She sets it against her shoulder, takes one step toward the tower.",
+        "dialogue": null,
+        "start_frame": 1441,
+        "end_frame": 1560,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC03_SH001",
+      "scene_id": "SC03",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Teach the film's grammar: movement spends turns, and the gauge is the receipt. Also the only genuinely beautiful, calm passage in the film - it earns the storm and gives the audience something to grieve for. (beat: DEPARTURE, emotion: wonder, underpinned by a counting dread)",
+        "description": "Lateral tracking. WICK crosses the plaza. With every stride the gauge ticks down: 92, 90, 88.",
+        "dialogue": null,
+        "start_frame": 1561,
+        "end_frame": 1704,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC03_SH002",
+      "scene_id": "SC03",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Teach the film's grammar: movement spends turns, and the gauge is the receipt. Also the only genuinely beautiful, calm passage in the film - it earns the storm and gives the audience something to grieve for. (beat: DEPARTURE, emotion: wonder, underpinned by a counting dread)",
+        "description": "Insert on the gauge. 88 to 86. The needle moves in discrete, audible steps rather than smoothly.",
+        "dialogue": null,
+        "start_frame": 1705,
+        "end_frame": 1824,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC03_SH003",
+      "scene_id": "SC03",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Teach the film's grammar: movement spends turns, and the gauge is the receipt. Also the only genuinely beautiful, calm passage in the film - it earns the storm and gives the audience something to grieve for. (beat: DEPARTURE, emotion: wonder, underpinned by a counting dread)",
+        "description": "Wide. The drowned harbour in full: barnacled arches, kelp swaying in the shallows, rooftops under black water. Beautiful, and completely empty.",
+        "dialogue": null,
+        "start_frame": 1825,
+        "end_frame": 1992,
+        "duration_seconds": 7.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC03_SH004",
+      "scene_id": "SC03",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Teach the film's grammar: movement spends turns, and the gauge is the receipt. Also the only genuinely beautiful, calm passage in the film - it earns the storm and gives the audience something to grieve for. (beat: DEPARTURE, emotion: wonder, underpinned by a counting dread)",
+        "description": "She passes a row of harbour lamp posts, all dead. She does not stop. Behind her, the one lamp that still burns.",
+        "dialogue": null,
+        "start_frame": 1993,
+        "end_frame": 2112,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC03_SH005",
+      "scene_id": "SC03",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Teach the film's grammar: movement spends turns, and the gauge is the receipt. Also the only genuinely beautiful, calm passage in the film - it earns the storm and gives the audience something to grieve for. (beat: DEPARTURE, emotion: wonder, underpinned by a counting dread)",
+        "description": "Gauge reads 84. She reaches the edge of the plaza. Beyond it, the street is black water.",
+        "dialogue": null,
+        "start_frame": 2113,
+        "end_frame": 2208,
+        "duration_seconds": 4.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH001",
+      "scene_id": "SC04",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "Wide, low. The flooded lane. For a forty-centimetre machine this is a flood. She stops at the edge.",
+        "dialogue": null,
+        "start_frame": 2209,
+        "end_frame": 2328,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH002",
+      "scene_id": "SC04",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "She climbs a submerged market stall. Grip, haul, grip. Water sheets off her. Gauge 84 to 80.",
+        "dialogue": null,
+        "start_frame": 2329,
+        "end_frame": 2460,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH003",
+      "scene_id": "SC04",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "Railing traverse, hand over hand. Rain begins - sparse first drops on the water. Gauge 80 to 77.",
+        "dialogue": null,
+        "start_frame": 2461,
+        "end_frame": 2568,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH004",
+      "scene_id": "SC04",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "THE DROP. Her grip fails and she goes under. Bubbles. The gauge flickers, the needle stuttering. The surface becomes a bright ceiling above her.",
+        "dialogue": null,
+        "start_frame": 2569,
+        "end_frame": 2712,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH005",
+      "scene_id": "SC04",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "Underwater, looking up. Her shutter eyes glow amber in the murk. She plants her feet on the lane floor and pushes.",
+        "dialogue": null,
+        "start_frame": 2713,
+        "end_frame": 2832,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC04_SH006",
+      "scene_id": "SC04",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "First real obstacle and first near-failure. Water that is ankle-deep for us is a flood for her. Establish that the world is hostile to her specifically, and that a mistake is survivable but expensive. (beat: OBSTACLE_1, emotion: alarm)",
+        "description": "She breaks the surface and hauls herself onto a wall coping, sparking. Steam comes off her brass. Gauge 75 to 71.",
+        "dialogue": null,
+        "start_frame": 2833,
+        "end_frame": 2928,
+        "duration_seconds": 4.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH001",
+      "scene_id": "SC05",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "Wide. The gantry walkway spans the lane, rusted and swaying in the rising wind. She steps onto it.",
+        "dialogue": null,
+        "start_frame": 2929,
+        "end_frame": 3048,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH002",
+      "scene_id": "SC05",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "Midway. A gust hits. She braces with the pole held horizontal. Gauge 71 to 68.",
+        "dialogue": null,
+        "start_frame": 3049,
+        "end_frame": 3180,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH003",
+      "scene_id": "SC05",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "THE POLE GOES. A second gust takes the lamp-pole out of her grip. It spins away, strikes the water and is gone.",
+        "dialogue": null,
+        "start_frame": 3181,
+        "end_frame": 3288,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH004",
+      "scene_id": "SC05",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "She stands without it. Looks at her empty hand. Looks at the tower. Decides. The wind drops for one beat.",
+        "dialogue": null,
+        "start_frame": 3289,
+        "end_frame": 3432,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH005",
+      "scene_id": "SC05",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "She opens her chest drum. Inside: a live spark, taken from the last burning harbour lamp. She closes the glass against the rain.",
+        "dialogue": null,
+        "start_frame": 3433,
+        "end_frame": 3576,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH006",
+      "scene_id": "SC05",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "She moves on, one arm now curled across her chest to shield the glass. The spark is drawing power as she walks. Gauge 64 to 60.",
+        "dialogue": null,
+        "start_frame": 3577,
+        "end_frame": 3696,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC05_SH007",
+      "scene_id": "SC05",
+      "index_in_scene": 7,
+      "story": {
+        "beat": "Midpoint reversal. She loses her tool, and takes the spark into her own body to protect it - so from here the thing she is saving is the thing consuming her. Establish the film's signature image: an amber spark behind rain-streaked glass. (beat: OBSTACLE_2_AND_LOSS, emotion: loss, then tenderness, then a colder determination)",
+        "description": "Gauge insert: 60 to 58. Rack focus past the needle to the tower door ahead through the rain.",
+        "dialogue": null,
+        "start_frame": 3697,
+        "end_frame": 3792,
+        "duration_seconds": 4.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC06_SH001",
+      "scene_id": "SC06",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "The most expensive single action in the film, and the moment the needle enters the red arc. Then take the easy route away: the stair is gone, so the only way up is outside. (beat: OBSTACLE_3, emotion: foreboding)",
+        "description": "The tower door: iron, swollen, barnacled. She stands at its foot. She is very small against it.",
+        "dialogue": null,
+        "start_frame": 3793,
+        "end_frame": 3912,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC06_SH002",
+      "scene_id": "SC06",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "The most expensive single action in the film, and the moment the needle enters the red arc. Then take the easy route away: the stair is gone, so the only way up is outside. (beat: OBSTACLE_3, emotion: foreboding)",
+        "description": "She levers it. Shoulder against the plate. It gives an inch. She resets and pushes again. It swings. Gauge falls fast: 58 to 49 to 40.",
+        "dialogue": null,
+        "start_frame": 3913,
+        "end_frame": 4080,
+        "duration_seconds": 7.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC06_SH003",
+      "scene_id": "SC06",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "The most expensive single action in the film, and the moment the needle enters the red arc. Then take the easy route away: the stair is gone, so the only way up is outside. (beat: OBSTACLE_3, emotion: foreboding)",
+        "description": "Gauge insert. The needle crosses into the RED ARC of the dial. Hold.",
+        "dialogue": null,
+        "start_frame": 4081,
+        "end_frame": 4200,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC06_SH004",
+      "scene_id": "SC06",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "The most expensive single action in the film, and the moment the needle enters the red arc. Then take the easy route away: the stair is gone, so the only way up is outside. (beat: OBSTACLE_3, emotion: foreboding)",
+        "description": "Interior. She steps in. A spiral stair rises into darkness, lit only by her own amber glow. Water runs down the inside of the wall.",
+        "dialogue": null,
+        "start_frame": 4201,
+        "end_frame": 4344,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC06_SH005",
+      "scene_id": "SC06",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "The most expensive single action in the film, and the moment the needle enters the red arc. Then take the easy route away: the stair is gone, so the only way up is outside. (beat: OBSTACLE_3, emotion: foreboding)",
+        "description": "The stair ends. A gap. Broken iron hanging. Beyond it, the wall - and through a breach, the storm outside. Gauge 35 to 31.",
+        "dialogue": null,
+        "start_frame": 4345,
+        "end_frame": 4464,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH001",
+      "scene_id": "SC07",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "She goes out through the breach onto the riveted plating. The gale hits her flat. She presses herself against the iron. Gauge 31 to 28.",
+        "dialogue": null,
+        "start_frame": 4465,
+        "end_frame": 4596,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH002",
+      "scene_id": "SC07",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "The remaining section of stair tears away from the tower and falls. She watches it go. Gauge 28 to 25.",
+        "dialogue": null,
+        "start_frame": 4597,
+        "end_frame": 4728,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH003",
+      "scene_id": "SC07",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "The climb. Hand over hand on rivets. Rain. The horizon tilts as she gains height. Gauge 25 to 22.",
+        "dialogue": null,
+        "start_frame": 4729,
+        "end_frame": 4920,
+        "duration_seconds": 8.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH004",
+      "scene_id": "SC07",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "GRIP LOSS. A gust peels her off the iron. She swings on one arm over the drop. Gauge 22 to 20.",
+        "dialogue": null,
+        "start_frame": 4921,
+        "end_frame": 5064,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH005",
+      "scene_id": "SC07",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "Her free hand closes on something: the lamp-pole, wedged in the ironwork. It came up the tower with the storm.",
+        "dialogue": null,
+        "start_frame": 5065,
+        "end_frame": 5184,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH006",
+      "scene_id": "SC07",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "She uses the pole as a brace and hauls herself back onto the iron. Gauge 20 to 14.",
+        "dialogue": null,
+        "start_frame": 5185,
+        "end_frame": 5304,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH007",
+      "scene_id": "SC07",
+      "index_in_scene": 7,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "The last stretch. Her limbs stutter. The gait breaks down entirely - she is dragging herself upward. Gauge 14 to 9.",
+        "dialogue": null,
+        "start_frame": 5305,
+        "end_frame": 5400,
+        "duration_seconds": 4.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC07_SH008",
+      "scene_id": "SC07",
+      "index_in_scene": 8,
+      "story": {
+        "beat": "Longest scene and the escalation peak. The rig itself degrades as the spring weakens, so the animation carries the information rather than the plot. Return the lamp-pole as a brace so the earlier loss pays off mechanically, not sentimentally. (beat: ESCALATION_PEAK, emotion: desperation, then a single moment of recognition)",
+        "description": "She reaches the gallery rail and pulls herself over, collapsing into the lee. Gauge 9 to 6. The burner chamber door is ahead.",
+        "dialogue": null,
+        "start_frame": 5401,
+        "end_frame": 5472,
+        "duration_seconds": 3.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH001",
+      "scene_id": "SC08",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "Interior, the burner chamber. Cold, enormous brass. Her glow is the only light in it. She is tiny.",
+        "dialogue": null,
+        "start_frame": 5473,
+        "end_frame": 5592,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH002",
+      "scene_id": "SC08",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "She climbs the last few rungs to the burner, opens her chest and lifts the spark out. Gauge 6 to 3.",
+        "dialogue": null,
+        "start_frame": 5593,
+        "end_frame": 5724,
+        "duration_seconds": 5.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH003",
+      "scene_id": "SC08",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "She offers the spark to the burner. Nothing catches. She repositions and tries again. Nothing.",
+        "dialogue": null,
+        "start_frame": 5725,
+        "end_frame": 5832,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH004",
+      "scene_id": "SC08",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "THE REVEAL. A static shot of the burner's heart: no wick, no oil, no flint. A socket. Cold brass. The exact diameter of a mainspring.",
+        "dialogue": null,
+        "start_frame": 5833,
+        "end_frame": 5952,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH005",
+      "scene_id": "SC08",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "On WICK. She looks at the socket. She looks at her own empty chest. A long beat - the whole decision, played without a cut.",
+        "dialogue": null,
+        "start_frame": 5953,
+        "end_frame": 6072,
+        "duration_seconds": 5.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH006",
+      "scene_id": "SC08",
+      "index_in_scene": 6,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "She unspools her own mainspring and threads it into the socket. The gauge falls: 3, 2, 1. Then the ratchet engages.",
+        "dialogue": null,
+        "start_frame": 6073,
+        "end_frame": 6216,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC08_SH007",
+      "scene_id": "SC08",
+      "index_in_scene": 7,
+      "story": {
+        "beat": "Climax and twist. The burner has no wick, no oil and no flint - only a socket the exact diameter of a mainspring. The reveal is played as a locked-off static shot in silence. The sacrifice must be mechanical and honest, not magical. (beat: CLIMAX_AND_TWIST, emotion: recognition, sacrifice, awe)",
+        "description": "Her shutter eyes go dark. A beat of black. Then - IGNITION. The beacon floods the frame until it is white-gold.",
+        "dialogue": null,
+        "start_frame": 6217,
+        "end_frame": 6288,
+        "duration_seconds": 3.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC09_SH001",
+      "scene_id": "SC09",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Payoff and deliberate decompression. The ship turns, the reef slides past, dawn comes up. Held long and uncut so the relief lands physically, and so the contrast sets up the final scene. (beat: PAYOFF, emotion: relief, then mourning)",
+        "description": "Exterior. The beam sweeps out across black water. Rain turns to light inside the shaft.",
+        "dialogue": null,
+        "start_frame": 6289,
+        "end_frame": 6480,
+        "duration_seconds": 8.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC09_SH002",
+      "scene_id": "SC09",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Payoff and deliberate decompression. The ship turns, the reef slides past, dawn comes up. Held long and uncut so the relief lands physically, and so the contrast sets up the final scene. (beat: PAYOFF, emotion: relief, then mourning)",
+        "description": "Far out: the running light. It pauses. Then it turns - toward harbour. The reef line slides past behind it.",
+        "dialogue": null,
+        "start_frame": 6481,
+        "end_frame": 6624,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC09_SH003",
+      "scene_id": "SC09",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Payoff and deliberate decompression. The ship turns, the reef slides past, dawn comes up. Held long and uncut so the relief lands physically, and so the contrast sets up the final scene. (beat: PAYOFF, emotion: relief, then mourning)",
+        "description": "Dawn comes up grey-gold over the water. The beacon dims as the dark goes. Then: the chamber, dark again, and WICK's silhouette at the foot of the burner.",
+        "dialogue": null,
+        "start_frame": 6625,
+        "end_frame": 6768,
+        "duration_seconds": 6.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC10_SH001",
+      "scene_id": "SC10",
+      "index_in_scene": 1,
+      "story": {
+        "beat": "Resolution and loop. The child gives her one turn - not a restoration, a beginning. The macro of the key turning mirrors the opening shot frame for frame so the film loops cleanly, and the last sound is the same click the film opened on. (beat: RESOLUTION_AND_LOOP, emotion: mourning resolving into hope)",
+        "description": "Dawn light in the chamber. WICK's shell, slumped at the foot of the burner, still holding the pole. Gauge: 0.",
+        "dialogue": null,
+        "start_frame": 6769,
+        "end_frame": 6876,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC10_SH002",
+      "scene_id": "SC10",
+      "index_in_scene": 2,
+      "story": {
+        "beat": "Resolution and loop. The child gives her one turn - not a restoration, a beginning. The macro of the key turning mirrors the opening shot frame for frame so the film loops cleanly, and the last sound is the same click the film opened on. (beat: RESOLUTION_AND_LOOP, emotion: mourning resolving into hope)",
+        "description": "Footsteps. A child enters, backlit in the doorway - oversized coat, bare feet, small. Sees her.",
+        "dialogue": null,
+        "start_frame": 6877,
+        "end_frame": 6984,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC10_SH003",
+      "scene_id": "SC10",
+      "index_in_scene": 3,
+      "story": {
+        "beat": "Resolution and loop. The child gives her one turn - not a restoration, a beginning. The macro of the key turning mirrors the opening shot frame for frame so the film loops cleanly, and the last sound is the same click the film opened on. (beat: RESOLUTION_AND_LOOP, emotion: mourning resolving into hope)",
+        "description": "The child kneels. Takes the key from WICK's back. Hesitates.",
+        "dialogue": null,
+        "start_frame": 6985,
+        "end_frame": 7092,
+        "duration_seconds": 4.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC10_SH004",
+      "scene_id": "SC10",
+      "index_in_scene": 4,
+      "story": {
+        "beat": "Resolution and loop. The child gives her one turn - not a restoration, a beginning. The macro of the key turning mirrors the opening shot frame for frame so the film loops cleanly, and the last sound is the same click the film opened on. (beat: RESOLUTION_AND_LOOP, emotion: mourning resolving into hope)",
+        "description": "MACRO - mirroring SC01_SH001 exactly. The key turns. One turn. The ratchet catches.",
+        "dialogue": null,
+        "start_frame": 7093,
+        "end_frame": 7176,
+        "duration_seconds": 3.5,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "shot_id": "SC10_SH005",
+      "scene_id": "SC10",
+      "index_in_scene": 5,
+      "story": {
+        "beat": "Resolution and loop. The child gives her one turn - not a restoration, a beginning. The macro of the key turning mirrors the opening shot frame for frame so the film loops cleanly, and the last sound is the same click the film opened on. (beat: RESOLUTION_AND_LOOP, emotion: mourning resolving into hope)",
+        "description": "Macro on the chest drum. Inside, the coil catches. The shutter eyes flicker open. The needle lifts off zero. Cut to black on the second click.",
+        "dialogue": null,
+        "start_frame": 7177,
+        "end_frame": 7248,
+        "duration_seconds": 3.0,
+        "status": "VERIFIED"
+      },
+      "assets": {
+        "required": [],
+        "status": "NOT_STARTED"
+      },
+      "animation": {
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "camera": {
+        "move": null,
+        "lens_mm": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "lighting": {
+        "setup": null,
+        "grade": null,
+        "file": null,
+        "status": "NOT_STARTED"
+      },
+      "audio": {
+        "music_cue": null,
+        "sfx": [],
+        "voice": null,
+        "status": "NOT_STARTED"
+      },
+      "render": {
+        "preview": null,
+        "final": null,
+        "frames": null,
+        "status": "NOT_STARTED"
+      },
+      "QC": {
+        "report": null,
+        "issues": [],
+        "status": "NOT_STARTED"
+      },
+      "overall_status": "IN_PROGRESS",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    }
+  ]
 }

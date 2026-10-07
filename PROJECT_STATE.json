@@ -2,13 +2,14 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "04_STORYBOARD",
-  "current_task": "T04_STORYBOARD",
+  "current_stage": "05_3D_ASSETS",
+  "current_task": "T05_3D_ASSETS",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
     "02_SCREENPLAY",
-    "03_CHARACTER_WORLD"
+    "03_CHARACTER_WORLD",
+    "04_STORYBOARD"
   ],
   "failed_tasks": [],
   "blocked_tasks": [],
@@ -33,7 +34,7 @@
     "01_DEVELOPMENT": "VERIFIED",
     "02_SCREENPLAY": "VERIFIED",
     "03_CHARACTER_WORLD": "VERIFIED",
-    "04_STORYBOARD": "NOT_STARTED",
+    "04_STORYBOARD": "VERIFIED",
     "05_3D_ASSETS": "NOT_STARTED",
     "06_ANIMATION": "NOT_STARTED",
     "07_CAMERA": "NOT_STARTED",
@@ -45,12 +46,12 @@
     "13_FINAL_VERIFICATION": "NOT_STARTED"
   },
   "counters": {
-    "shots_planned": 0,
+    "shots_planned": 58,
     "shots_complete": 0,
-    "scenes_planned": 0,
+    "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 4,
+    "checkpoints": 5,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -85,16 +86,24 @@
       "task_id": "T03_CHARACTER_WORLD",
       "summary": "Stage 03 CHARACTER_WORLD VERIFIED. Full visual bible: 3 characters / 3 environments / 14 props / 8 original reference images / asset inventory with provenance. Consistency vs screenplay: zero unmapped tokens.",
       "git_commit": "6c947c99a944b393d93f0c2bd324faee81520e35"
+    },
+    {
+      "checkpoint_id": "CP-0005",
+      "utc": "2026-10-07T22:56:40Z",
+      "actor": "master_controller",
+      "task_id": "T04_STORYBOARD",
+      "summary": "Stage 04 STORYBOARD VERIFIED. 58/58 shots carry the 18-field production spec (MASTER_SHOT_PLAN/CAMERA_PLAN/BLOCKING/STORYBOARD.md + BEAT_BOARD); 9 original reference panels + PANEL_INDEX; SHOT_REGISTRY story slots VERIFIED (overall IN_PROGRESS); RENDER_MANIFEST 10 scenes NOT_STARTED; master axis + motivated-movement rule enforced; validate PASS.",
+      "git_commit": "1b08c2f62d6b452a1a8b69defc3f9a1327cb604b"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0004",
-    "utc": "2026-10-07T19:16:10Z",
-    "task_id": "T03_CHARACTER_WORLD",
-    "git_commit": "6c947c99a944b393d93f0c2bd324faee81520e35",
-    "summary": "Stage 03 CHARACTER_WORLD VERIFIED. Full visual bible: 3 characters / 3 environments / 14 props / 8 original reference images / asset inventory with provenance. Consistency vs screenplay: zero unmapped tokens."
+    "checkpoint_id": "CP-0005",
+    "utc": "2026-10-07T22:56:40Z",
+    "task_id": "T04_STORYBOARD",
+    "git_commit": "1b08c2f62d6b452a1a8b69defc3f9a1327cb604b",
+    "summary": "Stage 04 STORYBOARD VERIFIED. 58/58 shots carry the 18-field production spec (MASTER_SHOT_PLAN/CAMERA_PLAN/BLOCKING/STORYBOARD.md + BEAT_BOARD); 9 original reference panels + PANEL_INDEX; SHOT_REGISTRY story slots VERIFIED (overall IN_PROGRESS); RENDER_MANIFEST 10 scenes NOT_STARTED; master axis + motivated-movement rule enforced; validate PASS."
   },
-  "last_updated": "2026-10-07T19:16:10Z",
+  "last_updated": "2026-10-07T22:56:40Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }

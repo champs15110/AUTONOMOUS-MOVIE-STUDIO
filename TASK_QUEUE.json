@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T19:16:10Z",
+  "last_updated": "2026-10-07T22:56:40Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -126,7 +126,7 @@
       "task_id": "T04_STORYBOARD",
       "stage": "04_STORYBOARD",
       "title": "Beat board, shot list, shot registry and animatic plan",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T03_CHARACTER_WORLD"
       ],
@@ -137,6 +137,10 @@
         "04_WORLD/WORLD_MANIFEST.json"
       ],
       "output_files": [
+        "05_STORYBOARD/MASTER_SHOT_PLAN.json",
+        "05_STORYBOARD/CAMERA_PLAN.json",
+        "05_STORYBOARD/BLOCKING_PLAN.json",
+        "05_STORYBOARD/STORYBOARD.md",
         "05_STORYBOARD/beat_board/BEAT_BOARD.md",
         "05_STORYBOARD/panels/PANEL_INDEX.md",
         "SHOT_REGISTRY.json",
@@ -151,8 +155,8 @@
       ],
       "retry_count": 0,
       "last_error": null,
-      "checkpoint": null,
-      "notes": "The shot list is authored at T02, not here. T04 turns it into a beat board, panels/animatic, and populates SHOT_REGISTRY.json and RENDER_MANIFEST.json from the 58 locked shots."
+      "checkpoint": "CP-0005",
+      "notes": "Contract re-pointed to the director-issued deliverable set (4 plan files + beat board + panel index + the two registries); 9 reference panels in 05_STORYBOARD/panels/."
     },
     {
       "task_id": "T05_3D_ASSETS",

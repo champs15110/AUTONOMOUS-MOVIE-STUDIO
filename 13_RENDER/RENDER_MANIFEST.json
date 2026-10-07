@@ -1,11 +1,26 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:26:37Z",
+  "last_updated": "2026-10-07T22:53:32Z",
   "populated_by_task": "T04_STORYBOARD",
-  "status": "EMPTY_AWAITING_STORYBOARD",
-  "lifecycle": ["SCENE", "PREVIEW", "QC", "FINAL_RENDER", "VERIFY"],
-  "lifecycle_status_enum": ["NOT_STARTED", "IN_PROGRESS", "PARTIAL", "READY", "VERIFIED", "FAILED", "BLOCKED", "COMPLETE"],
+  "status": "POPULATED",
+  "lifecycle": [
+    "SCENE",
+    "PREVIEW",
+    "QC",
+    "FINAL_RENDER",
+    "VERIFY"
+  ],
+  "lifecycle_status_enum": [
+    "NOT_STARTED",
+    "IN_PROGRESS",
+    "PARTIAL",
+    "READY",
+    "VERIFIED",
+    "FAILED",
+    "BLOCKED",
+    "COMPLETE"
+  ],
   "scene_schema": {
     "scene_id": "SCnn",
     "title": null,
@@ -14,11 +29,31 @@
     "end_frame": 0,
     "duration_seconds": 0.0,
     "stage": {
-      "SCENE":         { "status": "NOT_STARTED", "artefact": null, "utc": null },
-      "PREVIEW":       { "status": "NOT_STARTED", "artefact": null, "utc": null },
-      "QC":            { "status": "NOT_STARTED", "artefact": null, "utc": null },
-      "FINAL_RENDER":  { "status": "NOT_STARTED", "artefact": null, "utc": null },
-      "VERIFY":        { "status": "NOT_STARTED", "artefact": null, "utc": null }
+      "SCENE": {
+        "status": "NOT_STARTED",
+        "artefact": null,
+        "utc": null
+      },
+      "PREVIEW": {
+        "status": "NOT_STARTED",
+        "artefact": null,
+        "utc": null
+      },
+      "QC": {
+        "status": "NOT_STARTED",
+        "artefact": null,
+        "utc": null
+      },
+      "FINAL_RENDER": {
+        "status": "NOT_STARTED",
+        "artefact": null,
+        "utc": null
+      },
+      "VERIFY": {
+        "status": "NOT_STARTED",
+        "artefact": null,
+        "utc": null
+      }
     },
     "overall_status": "NOT_STARTED",
     "retry_count": 0,
@@ -32,5 +67,396 @@
     "If a scene fails, re-render that scene alone. Verified scene outputs are never regenerated.",
     "The master assembly is built only from scenes whose VERIFY status is VERIFIED."
   ],
-  "scenes": []
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "title": "THE WINDING",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC02",
+      "title": "THE DEAD PILLAR",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC03",
+      "title": "SETTING OUT",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC04",
+      "title": "THE FLOODED STREET",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC05",
+      "title": "THE GANTRY",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC06",
+      "title": "THE TOWER BASE",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC07",
+      "title": "THE CLIMB",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC08",
+      "title": "THE BURNER",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC09",
+      "title": "THE LIGHT",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    },
+    {
+      "scene_id": "SC10",
+      "title": "ONE TURN",
+      "shots": [],
+      "start_frame": 0,
+      "end_frame": 0,
+      "duration_seconds": 0.0,
+      "stage": {
+        "SCENE": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "PREVIEW": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "QC": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "FINAL_RENDER": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        },
+        "VERIFY": {
+          "status": "NOT_STARTED",
+          "artefact": null,
+          "utc": null
+        }
+      },
+      "overall_status": "NOT_STARTED",
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": null
+    }
+  ]
 }
