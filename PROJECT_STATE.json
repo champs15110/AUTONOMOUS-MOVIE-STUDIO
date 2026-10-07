@@ -93,7 +93,7 @@
       "actor": "master_controller",
       "task_id": "T04_STORYBOARD",
       "summary": "Stage 04 STORYBOARD VERIFIED. 58/58 shots carry the 18-field production spec (MASTER_SHOT_PLAN/CAMERA_PLAN/BLOCKING/STORYBOARD.md + BEAT_BOARD); 9 original reference panels + PANEL_INDEX; SHOT_REGISTRY story slots VERIFIED (overall IN_PROGRESS); RENDER_MANIFEST 10 scenes NOT_STARTED; master axis + motivated-movement rule enforced; validate PASS.",
-      "git_commit": "1b08c2f62d6b452a1a8b69defc3f9a1327cb604b"
+      "git_commit": "a62a51d90a17297f3a95b3e8bf869ab69c2a65c5"
     }
   ],
   "last_checkpoint": {
