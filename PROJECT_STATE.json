@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "01_DEVELOPMENT",
-  "current_task": "T01_DEVELOPMENT",
+  "current_stage": "02_SCREENPLAY",
+  "current_task": "T02_SCREENPLAY",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT"
@@ -48,7 +48,7 @@
     "scenes_planned": 0,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 1,
+    "checkpoints": 2,
     "errors_logged": 1
   },
   "checkpoints": [
@@ -59,16 +59,24 @@
       "task_id": "T00_INITIALIZATION",
       "summary": "Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling.",
       "git_commit": "f2618e81d9a38dd9931e0b6a893a7240eda3a037"
+    },
+    {
+      "checkpoint_id": "CP-0002",
+      "utc": "2026-10-07T17:56:28Z",
+      "actor": "master_controller",
+      "task_id": "T01_DEVELOPMENT",
+      "summary": "Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated.",
+      "git_commit": "35c45701055613b31401c2c59ffc9db9977a1fec"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0001",
-    "utc": "2026-10-07T17:26:37Z",
-    "task_id": "T00_INITIALIZATION",
-    "git_commit": "f2618e81d9a38dd9931e0b6a893a7240eda3a037",
-    "summary": "Workspace initialized."
+    "checkpoint_id": "CP-0002",
+    "utc": "2026-10-07T17:56:28Z",
+    "task_id": "T01_DEVELOPMENT",
+    "git_commit": "35c45701055613b31401c2c59ffc9db9977a1fec",
+    "summary": "Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated."
   },
-  "last_updated": "2026-10-07T17:55:50Z",
+  "last_updated": "2026-10-07T17:56:28Z",
   "updated_by": "master_controller",
-  "notes": "Stage 01 DEVELOPMENT complete. Concept locked: NINETY-TWO TURNS, a wordless 302s 3D animated fable. Screenplay production not started, per instruction."
+  "notes": "Stage 01 DEVELOPMENT VERIFIED and checkpointed. Concept locked: NINETY-TWO TURNS, a wordless 302s 3D animated fable. current_task is a pointer only - T02_SCREENPLAY is NOT_STARTED and no screenplay work has begun, per director instruction."
 }

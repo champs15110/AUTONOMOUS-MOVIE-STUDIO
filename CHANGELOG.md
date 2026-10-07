@@ -130,4 +130,5 @@ instruction.
 | Checkpoint | UTC | Task | Summary | Commit |
 |---|---|---|---|---|
 | CP-0001 | 2026-10-07 17:26:37 UTC | T00_INITIALIZATION | Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling. | f2618e8 |
+| CP-0002 | 2026-10-07 17:56:28 UTC | T01_DEVELOPMENT | Stage 01 DEVELOPMENT VERIFIED. Film locked: NINETY-TWO TURNS - wordless 3D animated fable, 302s, 10 scenes, 92-turn countdown. Brief (.md+.json) and RESEARCH.md created; 68/68 coherence checks pass; ERR-0001 logged and mitigated. | 35c4570 |
 <!-- CHECKPOINT_TABLE_END -->

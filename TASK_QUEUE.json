@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:55:50Z",
+  "last_updated": "2026-10-07T17:56:28Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -50,7 +50,7 @@
       ],
       "retry_count": 1,
       "last_error": "jq -e . -> JSON CORRUPT. Line 215 became: \"gauge\": \"31 to 22 to 14 to 6\", She goes outside, ... The old_text pattern spanned into the adjacent \"action\" field and the new_text dropped the '\"action\": \"The remaining stair gives way entirely.' prefix, leaving a dangling string literal.",
-      "checkpoint": null,
+      "checkpoint": "CP-0002",
       "notes": "Director-issued deliverable set (MASTER_FILM_BRIEF.md/.json + RESEARCH.md) supersedes the originally drafted concept/*.md file list. The originality attestation now lives as section 10 of MASTER_FILM_BRIEF.md rather than as a standalone file. AGENT_PROTOCOL.md section 9 updated to match."
     },
     {
