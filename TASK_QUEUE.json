@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T18:43:33Z",
+  "last_updated": "2026-10-07T19:16:09Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -92,7 +92,7 @@
       "task_id": "T03_CHARACTER_WORLD",
       "stage": "03_CHARACTER_WORLD",
       "title": "Original character designs, bios and world/locations",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T02_SCREENPLAY"
       ],
@@ -102,22 +102,25 @@
         "01_DEVELOPMENT/MASTER_FILM_BRIEF.json"
       ],
       "output_files": [
-        "03_CHARACTERS/CHARACTER_BIBLE.json",
-        "04_WORLD/WORLD_BIBLE.json",
-        "03_CHARACTERS/design/CHARACTER_DESIGNS.md",
-        "04_WORLD/locations/LOCATION_DESIGNS.md",
+        "03_CHARACTERS/CHARACTER_BIBLE.md",
+        "03_CHARACTERS/CHARACTER_MANIFEST.json",
+        "04_WORLD/WORLD_BIBLE.md",
+        "04_WORLD/PROP_BIBLE.md",
+        "04_WORLD/WORLD_MANIFEST.json",
         "06_ASSETS/ASSET_INVENTORY.json"
       ],
       "acceptance": [
-        "Each character has silhouette-readable design, palette, proportions and buildable geometry description.",
-        "Each location has layout, palette, key props and lighting mood.",
-        "ASSET_INVENTORY.json lists every model/texture/material needed with provenance fields.",
-        "Designs are original and documented as such."
+        "Every character defines name, role, personality, body proportions, height, silhouette, face, eyes, mouth, clothing, materials, colors, accessories, expressions, body language and movement style.",
+        "Every environment defines architecture, scale, materials, lighting, atmosphere, time of day, weather and important background elements.",
+        "Every important prop defines design, scale, material, purpose and continuity requirements.",
+        "Original reference images generated and stored under 03_CHARACTERS/REFERENCE_IMAGES and 04_WORLD/REFERENCE_IMAGES.",
+        "ASSET_INVENTORY.json lists every model/texture/material with provenance.",
+        "Designs original and documented as such; consistent with the screenplay shot list."
       ],
       "retry_count": 0,
       "last_error": null,
       "checkpoint": null,
-      "notes": null
+      "notes": "Director-issued deliverable set: CHARACTER_BIBLE.md + CHARACTER_MANIFEST.json + WORLD_BIBLE.md + PROP_BIBLE.md + WORLD_MANIFEST.json + ASSET_INVENTORY.json. World files placed in the existing 04_WORLD stage folder (not a new 03_WORLD) so downstream references stay valid. Generated from the manifests by tools/build_design_bibles.py."
     },
     {
       "task_id": "T04_STORYBOARD",
@@ -130,8 +133,8 @@
       "input_files": [
         "02_SCREENPLAY/SHOT_LIST.json",
         "02_SCREENPLAY/CONTINUITY_BIBLE.md",
-        "03_CHARACTERS/CHARACTER_BIBLE.json",
-        "04_WORLD/WORLD_BIBLE.json"
+        "03_CHARACTERS/CHARACTER_MANIFEST.json",
+        "04_WORLD/WORLD_MANIFEST.json"
       ],
       "output_files": [
         "05_STORYBOARD/beat_board/BEAT_BOARD.md",
@@ -160,9 +163,9 @@
         "T04_STORYBOARD"
       ],
       "input_files": [
+        "03_CHARACTERS/CHARACTER_MANIFEST.json",
+        "04_WORLD/WORLD_MANIFEST.json",
         "06_ASSETS/ASSET_INVENTORY.json",
-        "03_CHARACTERS/CHARACTER_BIBLE.json",
-        "04_WORLD/WORLD_BIBLE.json",
         "MASTER_CONFIG.json"
       ],
       "output_files": [
@@ -246,7 +249,7 @@
       ],
       "input_files": [
         "SHOT_REGISTRY.json",
-        "04_WORLD/WORLD_BIBLE.json",
+        "04_WORLD/WORLD_MANIFEST.json",
         "08_CAMERA/CAMERA_INDEX.json"
       ],
       "output_files": [

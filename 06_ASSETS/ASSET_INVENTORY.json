@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T03_CHARACTER_WORLD",
+  "project_id": "AMS-2026-001",
+  "film_title": "NINETY-TWO TURNS",
+  "created_utc": "2026-10-07T18:43:33Z",
+  "provenance_rule": "Every asset carries provenance: 'authored' (built in-house), 'generated' (AI concept reference only, replaced by authored geometry at T05), or 'license + source'. No asset may enter 06_ASSETS/models or textures without one of these.",
+  "notes": "Paths under models/textures are reserved for T05_3D_ASSETS, which turns these design records into buildable geometry. At T03 the records define WHAT to build and from where.",
+
+  "assets": [
+    { "asset_id": "ASSET_MODEL_WICK", "kind": "model", "name": "WICK hero automaton", "source_record": "03_CHARACTERS/CHARACTER_MANIFEST.json#CHAR_WICK", "path": "06_ASSETS/models/wick/", "provenance": "authored", "used_in": ["SC01","SC02","SC03","SC04","SC05","SC06","SC07","SC08","SC10"] },
+    { "asset_id": "ASSET_MODEL_SHIP", "kind": "model", "name": "the returning ship (silhouette)", "source_record": "03_CHARACTERS/CHARACTER_MANIFEST.json#CHAR_SHIP", "path": "06_ASSETS/models/ship/", "provenance": "authored", "used_in": ["SC02","SC09"] },
+    { "asset_id": "ASSET_MODEL_CHILD", "kind": "model", "name": "the child", "source_record": "03_CHARACTERS/CHARACTER_MANIFEST.json#CHAR_CHILD", "path": "06_ASSETS/models/child/", "provenance": "authored", "used_in": ["SC10"] },
+
+    { "asset_id": "ASSET_MODEL_PILLAR", "kind": "model", "name": "winding pillar + stripped socket", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_PILLAR", "path": "06_ASSETS/models/pillar/", "provenance": "authored", "used_in": ["SC01","SC02","SC03"] },
+    { "asset_id": "ASSET_MODEL_LAMPPOST", "kind": "model", "name": "harbour lamp post (instanced)", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_LAMP", "path": "06_ASSETS/models/lamppost/", "provenance": "authored", "used_in": ["SC01","SC03"] },
+    { "asset_id": "ASSET_MODEL_PLAZA_KIT", "kind": "model", "name": "plaza quay modular kit", "source_record": "04_WORLD/WORLD_MANIFEST.json#LOC_PLAZA", "path": "06_ASSETS/models/plaza_kit/", "provenance": "authored", "used_in": ["SC01","SC02","SC03"] },
+    { "asset_id": "ASSET_MODEL_STREETS_KIT", "kind": "model", "name": "flooded street facade modular kit", "source_record": "04_WORLD/WORLD_MANIFEST.json#LOC_STREETS", "path": "06_ASSETS/models/streets_kit/", "provenance": "authored", "used_in": ["SC04","SC05"] },
+    { "asset_id": "ASSET_MODEL_GANTRY", "kind": "model", "name": "gantry walkway", "source_record": "04_WORLD/WORLD_MANIFEST.json#LOC_STREETS", "path": "06_ASSETS/models/gantry/", "provenance": "authored", "used_in": ["SC05"] },
+    { "asset_id": "ASSET_MODEL_STALL", "kind": "model", "name": "submerged market stall", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_STALL", "path": "06_ASSETS/models/stall/", "provenance": "authored", "used_in": ["SC04"] },
+    { "asset_id": "ASSET_MODEL_RAIL", "kind": "model", "name": "iron railing / gantry railings", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_RAIL", "path": "06_ASSETS/models/rail/", "provenance": "authored", "used_in": ["SC04","SC05"] },
+    { "asset_id": "ASSET_MODEL_TOWER", "kind": "model", "name": "tidelight tower (exterior, breach, gallery, chamber shell)", "source_record": "04_WORLD/WORLD_MANIFEST.json#LOC_TOWER", "path": "06_ASSETS/models/tower/", "provenance": "authored", "used_in": ["SC06","SC07","SC08","SC09","SC10"] },
+    { "asset_id": "ASSET_MODEL_STAIR", "kind": "model", "name": "spiral stair (broken variant)", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_STAIR", "path": "06_ASSETS/models/stair/", "provenance": "authored", "used_in": ["SC06","SC07"] },
+    { "asset_id": "ASSET_MODEL_DOOR", "kind": "model", "name": "iron tower door", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_DOOR", "path": "06_ASSETS/models/door/", "provenance": "authored", "used_in": ["SC06"] },
+    { "asset_id": "ASSET_MODEL_BURNER", "kind": "model", "name": "burner mechanism", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_BURNER", "path": "06_ASSETS/models/burner/", "provenance": "authored", "used_in": ["SC08","SC09","SC10"] },
+    { "asset_id": "ASSET_MODEL_SOCKET", "kind": "model", "name": "burner socket", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_SOCKET", "path": "06_ASSETS/models/socket/", "provenance": "authored", "used_in": ["SC08"] },
+
+    { "asset_id": "ASSET_MODEL_KEY", "kind": "model", "name": "winding key", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_KEY", "path": "06_ASSETS/models/key/", "provenance": "authored", "used_in": ["SC01","SC02","SC10"] },
+    { "asset_id": "ASSET_MODEL_GAUGE", "kind": "model", "name": "chest gauge", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_GAUGE", "path": "06_ASSETS/models/gauge/", "provenance": "authored", "used_in": ["SC01","SC02","SC03","SC04","SC05","SC06","SC07","SC08","SC10"] },
+    { "asset_id": "ASSET_MODEL_MAINSPRING", "kind": "model", "name": "mainspring (sheared variant)", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_MAINSPRING", "path": "06_ASSETS/models/mainspring/", "provenance": "authored", "used_in": ["SC01","SC08"] },
+    { "asset_id": "ASSET_MODEL_POLE", "kind": "model", "name": "lamp-pole", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_POLE", "path": "06_ASSETS/models/pole/", "provenance": "authored", "used_in": ["SC01","SC02","SC03","SC04","SC05","SC07","SC10"] },
+    { "asset_id": "ASSET_MODEL_SPARK", "kind": "model", "name": "the spark ember + chest glass", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_SPARK", "path": "06_ASSETS/models/spark/", "provenance": "authored", "used_in": ["SC05","SC06","SC07","SC08"] },
+    { "asset_id": "ASSET_MODEL_BELLBUOY", "kind": "model", "name": "bell buoy", "source_record": "04_WORLD/WORLD_MANIFEST.json#PROP_BELLBUOY", "path": "06_ASSETS/models/bellbuoy/", "provenance": "authored", "used_in": ["SC02","SC09"] },
+
+    { "asset_id": "MAT_BRASS_AGED", "kind": "material", "name": "aged brass, satin", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["all"] },
+    { "asset_id": "MAT_VERDIGRIS", "kind": "material", "name": "verdigris in crevices", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["all"] },
+    { "asset_id": "MAT_IRON_RUSTED", "kind": "material", "name": "rusted iron, riveted", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC04","SC05","SC06","SC07","SC08","SC09","SC10"] },
+    { "asset_id": "MAT_STONE_WET", "kind": "material", "name": "wet barnacled stone", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC01","SC02","SC03","SC04","SC05"] },
+    { "asset_id": "MAT_WATER", "kind": "material", "name": "water plane, animated normal map (no fluid sim)", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC01","SC03","SC04","SC05","SC09"] },
+    { "asset_id": "MAT_GLASS_CHEST", "kind": "material", "name": "clear chest glass", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC01","SC05","SC08","SC10"] },
+    { "asset_id": "MAT_EMBER", "kind": "material", "name": "emissive amber ember", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC05","SC06","SC07","SC08"] },
+    { "asset_id": "MAT_AMBER_LIGHT", "kind": "material", "name": "emissive amber lamp/eye/beacon", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC01","SC02","SC08","SC09","SC10"] },
+    { "asset_id": "MAT_OILSKIN", "kind": "material", "name": "waxed oilskin, matte", "path": "06_ASSETS/materials/", "provenance": "authored", "used_in": ["SC10"] },
+
+    { "asset_id": "ANIM_GAUGE_NEEDLE", "kind": "data", "name": "gauge needle value track (driven by shot-list gauge fields)", "source_record": "02_SCREENPLAY/SHOT_LIST.json", "path": "07_ANIMATION/", "provenance": "generated", "used_in": ["all"] },
+    { "asset_id": "GAIT_RHYTHM_TRACK", "kind": "data", "name": "WICK footfall tick rhythm (degrades SC04->SC07)", "source_record": "02_SCREENPLAY/CONTINUITY_BIBLE.md#5", "path": "10_AUDIO/", "provenance": "generated", "used_in": ["SC03","SC04","SC05","SC06","SC07"] },
+
+    { "asset_id": "REF_WICK_MODEL_SHEET", "kind": "reference_image", "name": "WICK model sheet", "path": "03_CHARACTERS/REFERENCE_IMAGES/WICK_model_sheet.png", "provenance": "generated - AI concept reference, replaced by authored geometry at T05", "used_in": ["design"] },
+    { "asset_id": "REF_WICK_PERFORMANCE", "kind": "reference_image", "name": "WICK performance sheet", "path": "03_CHARACTERS/REFERENCE_IMAGES/WICK_performance_sheet.png", "provenance": "generated - AI concept reference, replaced by authored geometry at T05", "used_in": ["design"] },
+    { "asset_id": "REF_CHILD_SHIP", "kind": "reference_image", "name": "child and ship reference", "path": "03_CHARACTERS/REFERENCE_IMAGES/CHILD_and_SHIP_reference.png", "provenance": "generated - AI concept reference, replaced by authored geometry at T05", "used_in": ["design"] },
+    { "asset_id": "REF_PLAZA", "kind": "reference_image", "name": "winding plaza", "path": "04_WORLD/REFERENCE_IMAGES/LOC_PLAZA_winding_plaza.png", "provenance": "generated - AI concept reference", "used_in": ["design"] },
+    { "asset_id": "REF_STREETS", "kind": "reference_image", "name": "flooded streets", "path": "04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png", "provenance": "generated - AI concept reference", "used_in": ["design"] },
+    { "asset_id": "REF_TOWER_EXT", "kind": "reference_image", "name": "tower exterior", "path": "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_exterior.png", "provenance": "generated - AI concept reference", "used_in": ["design"] },
+    { "asset_id": "REF_BURNER", "kind": "reference_image", "name": "burner chamber + socket", "path": "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png", "provenance": "generated - AI concept reference", "used_in": ["design"] },
+    { "asset_id": "REF_PROPS", "kind": "reference_image", "name": "props master sheet", "path": "04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png", "provenance": "generated - AI concept reference", "used_in": ["design"] }
+  ]
+}

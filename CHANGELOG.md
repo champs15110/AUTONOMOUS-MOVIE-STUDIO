@@ -3,6 +3,69 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-07 — Stage 03 CHARACTER_WORLD complete (T03_CHARACTER_WORLD → VERIFIED)
+
+**Locked:** the complete visual production bible. 3 characters, 3 environments, 14 props,
+8 original reference images, and a full asset inventory with provenance. No animation begun.
+
+### Added
+
+- **`03_CHARACTERS/CHARACTER_BIBLE.md`** (130 lines) + **`CHARACTER_MANIFEST.json`** —
+  WICK, THE RETURNING SHIP and THE CHILD, each with name, role, personality, body
+  proportions, height, silhouette, face, eyes, mouth, clothing, materials, colours,
+  accessories, expressions, body language, movement style, continuity notes and provenance.
+- **`04_WORLD/WORLD_BIBLE.md`** (119 lines) + **`WORLD_MANIFEST.json`** — the three
+  environments (Winding Plaza, Flooded Streets, Tidelight Tower), each with architecture,
+  scale, materials, lighting, atmosphere, time of day, weather, important background
+  elements, palette, modularity and continuity notes, plus global lighting / weather /
+  colour-script rules.
+- **`04_WORLD/PROP_BIBLE.md`** (261 lines) — 14 props, each with design, scale, material,
+  purpose and continuity requirements.
+- **`06_ASSETS/ASSET_INVENTORY.json`** — every model / material / data asset with
+  provenance (`authored` / `generated` / `license + source`) and scene usage.
+- **`03_CHARACTERS/REFERENCE_IMAGES/`** — WICK model sheet, WICK performance sheet,
+  child + ship reference.
+- **`04_WORLD/REFERENCE_IMAGES/`** — plaza, flooded streets, tower exterior, burner chamber
+  (with the socket inset), props master sheet.
+- **`tools/build_design_bibles.py`** — generates the three `.md` bibles from the two
+  manifests and asserts every required field is present per character / environment / prop.
+
+### Verified
+
+`tools/build_design_bibles.py` → all 3 characters, 3 environments, 14 props carry every
+required field. A dedicated consistency check (read-only, run against SHOT_LIST) confirmed:
+
+- every brief character id matches its manifest entry and carries all 16 character fields;
+- every brief location id and scene list matches an environment entry, and all 10
+  SHOT_LIST locations resolve to a designed environment;
+- every named prop / character token across all 58 shots and 10 scene prop lists maps to a
+  designed character or prop, or a documented environment set-piece — **zero unmapped**;
+- prop continuity requirements (pole lost SC05_SH003 / recovered SC07_SH005, socket reveal
+  SC08_SH004, key to child SC10_SH003) mirror the Stage-02 continuity bible;
+- every asset carries provenance; all 8 reference images exist on disk.
+
+### Changed
+
+- **`TASK_QUEUE.json`** — `T03_CHARACTER_WORLD.output_files` set to the director-issued six.
+  `CHARACTER_DESIGNS.md` / `LOCATION_DESIGNS.md` superseded by the bibles. Re-pointed
+  `T04`, `T05` and `T08` to read the machine-readable manifests
+  (`CHARACTER_MANIFEST.json`, `WORLD_MANIFEST.json`) instead of the never-created
+  `*_BIBLE.json` files.
+
+### Deviation from the request
+
+The request named `03_WORLD/`. The repo's world stage folder is `04_WORLD/` (created at
+init and referenced by T04/T05/T08), so all world files were written there to keep the
+dependency graph valid. No `03_WORLD/` folder was created. If a literal `03_WORLD/` is
+required it is a one-line move plus a re-point; nothing downstream would silently break.
+
+### Deliberately not done
+
+No animation, no rigging, no storyboards. `SHOT_REGISTRY.json` and `RENDER_MANIFEST.json`
+remain empty. `T04_STORYBOARD` remains `NOT_STARTED`.
+
+---
+
 ## 2026-10-07 — Stage 02 SCREENPLAY complete (T02_SCREENPLAY → VERIFIED)
 
 **Locked:** *NINETY-TWO TURNS* — **10 scenes, 58 shots, 302.0 s (5:02), frames 1–7248 @ 24 fps.**

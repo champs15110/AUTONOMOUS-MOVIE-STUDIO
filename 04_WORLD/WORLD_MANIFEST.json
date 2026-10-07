@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T03_CHARACTER_WORLD",
+  "project_id": "AMS-2026-001",
+  "film_title": "NINETY-TWO TURNS",
+  "created_utc": "2026-10-07T18:43:33Z",
+  "world_director_note": "The world is a drowned coastal town, so EVERYTHING is repurposed, barnacled and wet. Nothing is decorative. The world is modular and instanced to stay CPU-renderable. Three sets carry the whole film; the tower carries five of ten scenes through relighting alone.",
+
+  "reference_images": [
+    "04_WORLD/REFERENCE_IMAGES/LOC_PLAZA_winding_plaza.png",
+    "04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png",
+    "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_exterior.png",
+    "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png",
+    "04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"
+  ],
+
+  "global_rules": {
+    "lighting": "Almost entirely practical and motivated: one lamp, one spark, one beacon, one dawn. One warm light source per scene except the ignition. Volumetric shafts through rain. Heavy silhouette work so shapes read at any size.",
+    "weather_progression": "SC01-SC03 still and calm. Rain begins sparse at SC04_SH003, steady by SC04_SH006. Full storm SC05-SC06 with wind from camera-right. Full gale SC07. Calm SC09-SC10. Rain never stops until SC09.",
+    "water": "A shaded plane with an animated normal map; gentle in SC03, violent from SC05. Largely hidden by rain and fog. No fluid simulation.",
+    "color_script": [
+      { "scenes": ["SC01", "SC02", "SC03"], "key": "cold teal, one warm practical", "purpose": "isolation, dusk" },
+      { "scenes": ["SC04", "SC05"], "key": "storm slate, deep teal, amber spark", "purpose": "threat plus the thing worth protecting" },
+      { "scenes": ["SC06", "SC07"], "key": "near-monochrome, high contrast, storm-white rim", "purpose": "the world reduced to effort" },
+      { "scenes": ["SC08"], "key": "black to full amber", "purpose": "the largest contrast event" },
+      { "scenes": ["SC09", "SC10"], "key": "dawn rose-gold over wet stone", "purpose": "release, warmth returned" }
+    ]
+  },
+
+  "environments": [
+    {
+      "id": "LOC_PLAZA",
+      "name": "The Winding Plaza",
+      "scenes": ["SC01", "SC02", "SC03"],
+      "architecture": "A barnacled stone harbour quay. Flagged stone paving, a low sea wall, and a row of cast-iron lamp posts. At the centre, the winding pillar: a fluted brass column ~2 m tall topped with a key socket. Behind the quay, the drowned town - submerged rooftops, arches and chimneys - rises out of black water. The unlit lighthouse tower stands on the far horizon.",
+      "scale": "Built at human scale so WICK reads as tiny against it. The pillar is 5x her height; the lamp posts ~7x. The town behind is vast and empty.",
+      "materials": ["wet barnacled stone", "cast iron, rusted at the base", "aged brass pillar with verdigris", "kelp and algae", "still black water"],
+      "lighting": "Dusk. A single warm practical from the one still-burning lamp post. Everything else cold teal ambient. The pillar and posts are dark except for that one lamp.",
+      "atmosphere": "Quiet, patient, going dark. Heavy damp haze over the water. No birds.",
+      "time_of_day": "Dusk, the last light of the day. Lit at dusk only; left behind at 01:32.",
+      "weather": "Still. No wind yet. The last calm of the film.",
+      "important_background_elements": ["the winding pillar (stripped socket)", "the row of dead lamp posts", "the ONE burning lamp post", "the drowned rooftops and arches", "the unlit tower on the horizon", "kelp in the shallows"],
+      "palette": ["teal #2e4b52", "wet stone grey #5c6468", "brass #b98a3d", "amber #ffb457"],
+      "modularity": "Quay kit of repeatable flag stones and sea-wall blocks; lamp posts and rooftops are instanced variants.",
+      "continuity_notes": [
+        "Only one lamp burns, and it is always the same lamp - the source of the spark.",
+        "The water line established here is the reference for SC03-SC04.",
+        "The tower on the horizon must sit at the same bearing as SC02_SH004."
+      ],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_PLAZA_winding_plaza.png"]
+    },
+    {
+      "id": "LOC_STREETS",
+      "name": "The Flooded Streets",
+      "scenes": ["SC04", "SC05"],
+      "architecture": "A narrow half-submerged lane of the old town. Stone and timber shopfronts with dark empty windows and submerged doorways on both sides; a collapsed awning; a wrought-iron railing along one side just above the waterline; a submerged wooden market stall mid-lane. Overhead, a rusted steel gantry walkway spans the lane on iron brackets, its plating perforated and corroded.",
+      "scale": "Shot from water level so a 40 cm character reads against a flood. The gantry is ~2.5 m above the water - a serious climb for her.",
+      "materials": ["waterlogged timber", "stained stone", "rusted wrought iron", "corroded steel gantry plating", "black reflective water"],
+      "lighting": "Storm light, deep teal, near-flat and cold. The water is the brightest surface; reflections do the lighting. The spark becomes the only warm source once introduced.",
+      "atmosphere": "Treacherous, closing in. The street is a channel that funnels wind.",
+      "time_of_day": "Dusk deepening into night. The darkest interior-feeling space before the tower.",
+      "weather": "First raindrops at SC04_SH003, steady by SC04_SH006. Full storm and horizontal rain by SC05. Gantry swaying in gusts.",
+      "important_background_elements": ["the gantry walkway (sways, and carries the pole loss)", "the iron railing", "the submerged market stall (her first climb)", "the wall coping she hauls onto", "black water with first ripples"],
+      "palette": ["storm slate #46525a", "deep teal #1f3d44", "cold steel #6b7880", "amber spark #ffb457"],
+      "modularity": "Shopfronts are a repeatable facade module instanced along a curve; the gantry is one hero asset.",
+      "continuity_notes": [
+        "Water level must match SC03_SH005 (same lane, other side) and stay constant through SC04-SC05.",
+        "Wind direction is camera-right for all of SC05.",
+        "The gantry plating the pole hits must be the same plating the pole is later found wedged in (SC07_SH005) - the storm carries it to the tower."
+      ],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png"]
+    },
+    {
+      "id": "LOC_TOWER",
+      "name": "The Tidelight Tower",
+      "scenes": ["SC06", "SC07", "SC08", "SC09", "SC10"],
+      "architecture": "A tapering iron lighthouse. Exterior: riveted iron plates in vertical courses, riveted handholds, narrow service bands, a railed gallery near the top and the glass lantern room above. A section of the internal spiral stair has torn away, leaving a jagged breach to the exterior. Interior: a cold stairwell where water runs down the wall; at the top, the burner chamber - an enormous room holding the giant brass burner mechanism under a curved glass-and-iron roof.",
+      "scale": "The tallest vertical set in the film. SC06 reads her small at the door; SC07 reads the sea far below; SC08 reads her tiny inside the vast chamber. The burner is room-sized; the socket is small by contrast.",
+      "materials": ["riveted black iron, rust-streaked", "salt-stained brass on the burner", "cold glass lens rings", "wet iron floor", "curved storm glass roof"],
+      "lighting": "SC06-SC07: storm-white rim outside, near-monochrome. Interior from SC06_SH004: her chest glow is the ONLY light until the ignition. SC08: black to full amber at the ignition. SC09: the beam, then dawn. SC10: dawn rose-gold.",
+      "atmosphere": "Vast, vertical, unforgiving - then, after the ignition, transcendent.",
+      "time_of_day": "Night for SC06-SC08. The beam sweeps the dark at SC09. Dawn for SC10.",
+      "weather": "Full gale on the exterior at SC07, dropping sharply inside the gallery lee at SC07_SH008. Calm by SC09-SC10.",
+      "important_background_elements": ["the iron door, swollen and barnacled", "the broken spiral stair and the exterior breach", "the riveted handholds and service bands (the climb)", "the gallery rail", "the burner with its single socket", "the curved glass roof, dripping"],
+      "palette": ["black iron #10151a", "storm white #dfe6ea", "amber ignition #ffb457", "dawn rose #e8b08c"],
+      "modularity": "One vertical set reused across five scenes through relighting and camera height - the highest reuse ratio in the film. The climb and the ignition share geometry.",
+      "continuity_notes": [
+        "The breach in SC06_SH005 must match the exit in SC07_SH001.",
+        "The stair is destroyed at SC07_SH002 - no intact stair in any later shot.",
+        "From SC06_SH004 to SC08_SH002 her glow is the only interior light.",
+        "SC10 is the same burner chamber relit at dawn; pose must match SC09_SH003."
+      ],
+      "reference_images": [
+        "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_exterior.png",
+        "04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png"
+      ]
+    }
+  ],
+
+  "props": [
+    {
+      "id": "PROP_KEY", "name": "the winding key",
+      "design": "T-shaped brass key, worn square drive, rounded bow.",
+      "scale": "~12 cm - large relative to WICK, small in a human hand.",
+      "material": "worn brass",
+      "purpose": "Her charging interface; the film's opening and closing image; the object handed across the whole story.",
+      "continuity_requirements": ["Seated in her back SC01-SC10_SH002.", "Removed by the child SC10_SH003; in the child's hand SC10_SH003-005.", "The same asset mirrors SC01_SH001 and SC10_SH004."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_GAUGE", "name": "the chest gauge",
+      "design": "Round brass-cased clock gauge set beside the mainspring inside the chest drum; white enamelled dial, black needle, RED ARC painted on the lower portion.",
+      "scale": "~6 cm dial, legible at shot scale.",
+      "material": "brass, enamel, steel needle",
+      "purpose": "The diegetic countdown - the film's spine.",
+      "continuity_requirements": ["Needle value driven by the shot list gauge fields - it is animated data, not a texture.", "Red arc entered at SC06_SH003; never before.", "Framing is locked: same lens/angle/key for every insert."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_MAINSPRING", "name": "the mainspring",
+      "design": "Blued-steel coiled clock mainspring, loosely wound, with one tooth visibly sheared off.",
+      "scale": "Fills the chest drum; matches the socket diameter exactly.",
+      "material": "blued steel",
+      "purpose": "Her energy source and, at the climax, the fuel she gives the beacon.",
+      "continuity_requirements": ["Sheared tooth from SC01_SH002 onward.", "Inside the chest SC01-SC08_SH005; installed in the burner from SC08_SH006; cannot be put back."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_POLE", "name": "the lamp-pole",
+      "design": "Tall thin wrought-iron pole with a brass lamp cup at the top; taller than WICK.",
+      "scale": "~60 cm, 1.5x her height.",
+      "material": "wrought iron, brass cup",
+      "purpose": "Her tool and, once lost, her loss; recovered as a climbing brace that saves her.",
+      "continuity_requirements": ["Present SC02_SH006-SC05_SH002.", "LOST at SC05_SH003.", "ABSENT SC05_SH004-SC07_SH004 - must not appear.", "Recovered wedged in the tower ironwork SC07_SH005; present through SC10_SH005."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_PILLAR", "name": "the winding pillar",
+      "design": "Fluted brass column ~2 m tall, topped with a key socket whose teeth are worn smooth.",
+      "scale": "5x WICK's height.",
+      "material": "aged brass, verdigris",
+      "purpose": "The broken recharge - the inciting failure.",
+      "continuity_requirements": ["Socket stripped from SC02_SH002; never usable again.", "SC01-SC03 only."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_LAMP", "name": "harbour lamp posts / one burning lamp",
+      "design": "Cast-iron harbour lamp post head; unlit posts are cold and dark, the one burning post holds a warm amber flame.",
+      "scale": "~2.8 m; 7x WICK.",
+      "material": "cast iron, glass flame cup",
+      "purpose": "The town's dead lights, and the single source of the spark.",
+      "continuity_requirements": ["All dead except ONE; the burning one is always the same lamp (SC01_SH004, SC03_SH004).", "That lamp is extinguished off-screen when she takes the spark."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_SPARK", "name": "the spark + chest glass",
+      "design": "A small live ember glowing warm amber, held behind a curved piece of the chest glass.",
+      "scale": "Fits inside the chest drum.",
+      "material": "emissive ember, clear glass",
+      "purpose": "The cargo she protects at the cost of herself - the second act's emotional image.",
+      "continuity_requirements": ["Introduced SC05_SH005 behind the glass.", "Chest glows SC05_SH005-SC08_SH002 (only interior light).", "Removed into the hand SC08_SH002; finds nothing SC08_SH003-005; consumed at ignition SC08_SH007."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_DOOR", "name": "the iron tower door",
+      "design": "A heavy riveted iron plate, swollen and barnacled at the waterline.",
+      "scale": "Tall relative to WICK; she must lever it.",
+      "material": "riveted iron, barnacle",
+      "purpose": "The most expensive single action (18 turns).",
+      "continuity_requirements": ["Shut SC01-SC06_SH001; forced at SC06_SH002; stands open thereafter."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_STAIR", "name": "the spiral stair",
+      "design": "Cast-iron spiral staircase with jagged broken treads.",
+      "scale": "Human scale; a serious climb for her.",
+      "material": "cast iron",
+      "purpose": "The easy route that is taken away.",
+      "continuity_requirements": ["Partially intact SC06_SH004-005.", "Torn away entirely at SC07_SH002; no intact stair after."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_SOCKET", "name": "the burner socket",
+      "design": "A round machined brass socket with a ratchet ring around its rim; empty; NO wick, NO oil, NO flint.",
+      "scale": "Small on the giant burner; exactly the mainspring's diameter.",
+      "material": "machined brass",
+      "purpose": "The climax reveal and the twist.",
+      "continuity_requirements": ["Never shown before SC08_SH004.", "Must visibly accept the mainspring at SC08_SH006.", "Match its diameter to the spring in design."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png", "04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_BURNER", "name": "the burner mechanism",
+      "design": "A room-sized brass burner of concentric rings and cold lens banks on a heavy pedestal.",
+      "scale": "Fills the chamber; dwarfs WICK.",
+      "material": "cold brass, glass lens rings",
+      "purpose": "The destination; houses the socket.",
+      "continuity_requirements": ["Cold and dark SC06-SC08_SH005.", "Ignites SC08_SH007 and sweeps SC09; dims at dawn SC09_SH003."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_TOWER_burner_chamber.png"]
+    },
+    {
+      "id": "PROP_BELLBUOY", "name": "the bell buoy",
+      "design": "A small weathered bell on a float, on a line astern of the ship.",
+      "scale": "small, distant",
+      "material": "rusted iron, bronze bell",
+      "purpose": "The ship's motif in sound; irregular at SC02, in rhythm with the beacon at SC09.",
+      "continuity_requirements": ["SC02_SH003 and SC09_SH002 only."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/PROPS_master_sheet.png"]
+    },
+    {
+      "id": "PROP_STALL", "name": "the submerged market stall",
+      "design": "A half-sunken wooden market stall, tilted, waterlogged.",
+      "scale": "A platform WICK can climb.",
+      "material": "waterlogged timber",
+      "purpose": "Her first climb in the flooded street.",
+      "continuity_requirements": ["SC04 only; position fixed as the first step out of the water."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png"]
+    },
+    {
+      "id": "PROP_RAIL", "name": "iron railing and gantry railings",
+      "design": "Wrought-iron railing along the lane; corroded steel railings on the gantry.",
+      "scale": "human height; a horizontal line across frame.",
+      "material": "wrought iron / steel",
+      "purpose": "Her traverse in SC04 and the gantry edge in SC05.",
+      "continuity_requirements": ["SC04_SH003 railing and SC05 gantry railings are the same ironwork family."],
+      "reference_images": ["04_WORLD/REFERENCE_IMAGES/LOC_STREETS_flooded_streets.png"]
+    }
+  ]
+}
