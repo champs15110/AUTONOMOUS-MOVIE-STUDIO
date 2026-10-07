@@ -5,18 +5,13 @@
   "current_stage": "01_DEVELOPMENT",
   "current_task": "T01_DEVELOPMENT",
   "overall_status": "NOT_STARTED",
-
   "completed_stages": [],
-
   "failed_tasks": [],
   "blocked_tasks": [],
-
   "completed_shots": [],
   "failed_shots": [],
-
   "rendered_scenes": [],
   "verified_scenes": [],
-
   "final_mp4_status": "NOT_STARTED",
   "final_mp4": {
     "path": "FINAL/FINAL_FILM.mp4",
@@ -30,7 +25,6 @@
     "sha256": null,
     "qc_report": null
   },
-
   "stage_status": {
     "01_DEVELOPMENT": "NOT_STARTED",
     "02_SCREENPLAY": "NOT_STARTED",
@@ -46,7 +40,6 @@
     "12_FINAL_RENDER": "NOT_STARTED",
     "13_FINAL_VERIFICATION": "NOT_STARTED"
   },
-
   "counters": {
     "shots_planned": 0,
     "shots_complete": 0,
@@ -56,7 +49,6 @@
     "checkpoints": 1,
     "errors_logged": 0
   },
-
   "checkpoints": [
     {
       "checkpoint_id": "CP-0001",
@@ -64,18 +56,16 @@
       "actor": "master_controller",
       "task_id": "T00_INITIALIZATION",
       "summary": "Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling.",
-      "git_commit": null
+      "git_commit": "f2618e81d9a38dd9931e0b6a893a7240eda3a037"
     }
   ],
-
   "last_checkpoint": {
     "checkpoint_id": "CP-0001",
     "utc": "2026-10-07T17:26:37Z",
     "task_id": "T00_INITIALIZATION",
-    "git_commit": null,
+    "git_commit": "f2618e81d9a38dd9931e0b6a893a7240eda3a037",
     "summary": "Workspace initialized."
   },
-
   "last_updated": "2026-10-07T17:26:37Z",
   "updated_by": "master_controller",
   "notes": "Initialization only. No creative work started by design. Next task: T01_DEVELOPMENT."

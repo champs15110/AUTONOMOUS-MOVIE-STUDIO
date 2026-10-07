@@ -56,4 +56,5 @@ Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
 | Checkpoint | UTC | Task | Summary | Commit |
 |---|---|---|---|---|
+| CP-0001 | 2026-10-07 17:26:37 UTC | T00_INITIALIZATION | Workspace initialized: 14 stage folders, state/config/task/error files, agent protocol, shot + render registries, controller tooling. | f2618e8 |
 <!-- CHECKPOINT_TABLE_END -->
