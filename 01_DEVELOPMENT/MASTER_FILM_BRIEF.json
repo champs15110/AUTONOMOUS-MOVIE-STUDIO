@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T01_DEVELOPMENT",
+  "project_id": "AMS-2026-001",
+  "created_utc": "2026-10-07T17:26:37Z",
+  "title": "NINETY-TWO TURNS",
+  "title_notes": {
+    "why": "The number is the film's spine: a diegetic countdown the audience can read in every shot. Specific numbers create instant, wordless stakes.",
+    "alternates_considered": [
+      "THE LAST WIND",
+      "TIDELIGHT",
+      "WICK",
+      "NINETY-ONE"
+    ]
+  },
+  "logline": "A wind-up lamplighter whose charging pillar has broken has exactly ninety-two turns of stored energy left, and one night to light the harbour beacon before the last ship home is wrecked on the reef. Every step costs a turn. The beacon needs a mainspring, not a match.",
+  "one_sentence_theme": "What you are made of is what you are for.",
+  "genre": "Wordless cinematic 3D animated fable / emotional adventure",
+  "subgenre_tags": [
+    "wordless",
+    "non-human protagonist",
+    "countdown thriller structure",
+    "found-hope ending",
+    "all-ages with adult emotional register"
+  ],
+  "tone": [
+    "tender",
+    "determined",
+    "austere",
+    "wondrous",
+    "bittersweet"
+  ],
+  "comparable_register_not_copy": "Tone reference only: the emotional directness of classic wordless animated shorts. No characters, designs, dialogue, scenes or story elements are taken from any existing work.",
+  "runtime": {
+    "target_seconds": 302,
+    "min_seconds": 180,
+    "max_seconds": 420,
+    "formatted": "5:02",
+    "fps": 24,
+    "total_frames": 7248,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080",
+    "dialogue": "none",
+    "narration": "none",
+    "on_screen_text": "none - the turn counter is diegetic, rendered inside the character's chest gauge"
+  },
+  "characters": [
+    {
+      "id": "CHAR_WICK",
+      "name": "WICK",
+      "role": "protagonist",
+      "type": "wind-up brass lamplighter automaton, approx. 40cm tall",
+      "want": "To light the Tidelight beacon before dawn so the returning ship survives the reef.",
+      "need": "To discover that her value was never the turns she had left, but what she chose to spend them on.",
+      "flaw": "Methodical to a fault; she tries to solve a problem of sacrifice with arithmetic.",
+      "change": "Moves from conserving herself to spending herself completely - and is met, at the end, by someone who spends on her.",
+      "design": {
+        "silhouette": "compact rounded body on four jointed limbs, one long lamp-pole; readable at 20 pixels",
+        "key_feature": "glass drum chest containing a visible coiled mainspring and a needle gauge that reads turns remaining",
+        "face": "two shutter-lens eyes only. No mouth, no facial rig, no expressions to blend - emotion is carried entirely by shutter aperture, head tilt, limb posture and gait rhythm",
+        "materials": "aged brass, verdigris, barnacle crust, one polished glass drum",
+        "palette": [
+          "brass gold",
+          "verdigris green",
+          "warm amber emission"
+        ],
+        "vocalisation": "none. Clicks, ratchet whirs, spring tension creaks, and a three-note clock motif that becomes her theme."
+      },
+      "production_notes": "Hard-surface only. No hair, no cloth, no subsurface, no facial blendshapes. Single rig, four limbs plus pole armature. Cheapest possible expressive protagonist.",
+      "provenance": "original design, authored in-house"
+    },
+    {
+      "id": "CHAR_SHIP",
+      "name": "THE RETURNING SHIP",
+      "role": "the stake - never a character we meet closely",
+      "type": "weathered hull, seen only as silhouette and distant lights",
+      "screen_time_seconds": 14,
+      "design": {
+        "silhouette": "low, broad, one raked mast",
+        "palette": [
+          "slate",
+          "a single amber running light"
+        ]
+      },
+      "production_notes": "Rendered as a low-poly silhouette asset, often behind rain and fog. Never close enough to need detail.",
+      "provenance": "original design, authored in-house"
+    },
+    {
+      "id": "CHAR_CHILD",
+      "name": "THE CHILD",
+      "role": "the closing gesture",
+      "type": "small human figure, appears in the final 20 seconds only",
+      "screen_time_seconds": 17,
+      "design": {
+        "silhouette": "small, oversized coat, bare feet",
+        "treatment": "backlit, rim-lit, frequently in silhouette against dawn. Face is never resolved into readable features."
+      },
+      "production_notes": "The only human in the film, deliberately low-detail and never in close-up. No lip sync - the film has no dialogue. Keeps human modelling cost near zero.",
+      "provenance": "original design, authored in-house"
+    }
+  ],
+  "locations": [
+    {
+      "id": "LOC_PLAZA",
+      "name": "The Winding Plaza",
+      "scenes": [
+        "SC01",
+        "SC02",
+        "SC03"
+      ],
+      "description": "A barnacled stone quay at the bottom of a drowned harbour town. At its centre stands the winding pillar - a brass column with a key socket, now stripped and dead. Behind it, the beacon tower rises out of the water.",
+      "mood": "quiet, patient, going dark",
+      "palette": [
+        "teal",
+        "wet stone grey",
+        "brass"
+      ],
+      "build_cost": "moderate - modular quay kit, one hero prop (the pillar), one background tower",
+      "reuse": "no - the plaza is left behind at 01:32. Lit at dusk only; SC10's dawn relight happens in LOC_TOWER."
+    },
+    {
+      "id": "LOC_STREETS",
+      "name": "The Flooded Streets",
+      "scenes": [
+        "SC04",
+        "SC05"
+      ],
+      "description": "Half-submerged lanes of the old town, connected by a rusted gantry walkway. Water is still; the storm arrives here.",
+      "mood": "treacherous, closing in",
+      "palette": [
+        "storm slate",
+        "deep teal",
+        "cold steel"
+      ],
+      "build_cost": "moderate - repeating facade modules instanced along a curve, one hero gantry",
+      "reuse": "no"
+    },
+    {
+      "id": "LOC_TOWER",
+      "name": "The Tidelight Tower",
+      "scenes": [
+        "SC06",
+        "SC07",
+        "SC08",
+        "SC09",
+        "SC10"
+      ],
+      "description": "A tapering iron lighthouse. Interior: a collapsed spiral stair. Exterior: riveted plates and handholds in gale-force wind. Top: the burner chamber, a cold brass socket the exact diameter of a mainspring.",
+      "mood": "vast, vertical, unforgiving, then transcendent",
+      "palette": [
+        "black iron",
+        "storm white",
+        "amber ignition",
+        "dawn rose"
+      ],
+      "build_cost": "high but contained - one vertical set, reused across five scenes with relighting",
+      "reuse": "highest reuse in the film: SC06-SC09 are the same geometry under storm light, and SC10 is the same burner chamber relit at dawn. The climb and the ignition share geometry."
+    }
+  ],
+  "turn_budget": {
+    "explanation": "The gauge is a hard narrative constraint, not decoration. The arithmetic is designed to land on exactly 1 with nothing to spare, then hand back exactly 1.",
+    "start": 92,
+    "costs": [
+      {
+        "beat": "B03 Setting out across the plaza",
+        "cost": 8,
+        "gauge_after": 84
+      },
+      {
+        "beat": "B04 Climbing the flooded street",
+        "cost": 13,
+        "gauge_after": 71
+      },
+      {
+        "beat": "B05 Sheltering the spark through the gantry collapse",
+        "cost": 13,
+        "gauge_after": 58
+      },
+      {
+        "beat": "B06 Storm crossing, the pole is lost",
+        "cost": 18,
+        "gauge_after": 40
+      },
+      {
+        "beat": "B07 Forcing the sealed tower door",
+        "cost": 9,
+        "gauge_after": 31
+      },
+      {
+        "beat": "B08 The stair gives way",
+        "cost": 9,
+        "gauge_after": 22
+      },
+      {
+        "beat": "B09 The outside climb in the gale",
+        "cost": 16,
+        "gauge_after": 6
+      },
+      {
+        "beat": "B10 The last pull to the burner",
+        "cost": 5,
+        "gauge_after": 1
+      }
+    ],
+    "cost_total": 91,
+    "remaining_at_burner": 1,
+    "ignition_cost": 1,
+    "gauge_at_zero": 0,
+    "turns_given_back_in_ending": 1,
+    "symmetry": "The film opens on four turns of a key that fail. It closes on one turn of a key that holds."
+  },
+  "story_beats": [
+    {
+      "beat_id": "B01",
+      "scene": "SC01",
+      "timecode": "00:00-00:32",
+      "seconds": 32,
+      "beat_type": "HOOK",
+      "gauge": "climbing, then 92",
+      "action": "Macro: a key turns in a brass back. Click, click, click. On the fourth turn the ratchet slips - a spring tooth shears and pings away into the dark. The gauge needle sags and settles at 92. Pull back to reveal WICK, alone on a drowned quay, in a harbour with one lamp still burning.",
+      "stakes_established": "She is finite and she has just lost her refill.",
+      "visual_idea": "The entire hook plays as extreme close-ups of mechanism; the world is withheld until second 20.",
+      "retention_note": "Cold open on mid-action mechanism, no establishing shot, no title, readable with the sound off."
+    },
+    {
+      "beat_id": "B02",
+      "scene": "SC02",
+      "timecode": "00:32-01:05",
+      "seconds": 33,
+      "beat_type": "STAKE",
+      "gauge": 92,
+      "action": "WICK tries the winding pillar. The socket is stripped; the key spins free. She looks to the horizon: a single running light, far out, moving toward the reef. She looks up at the dark tower. She looks at her own chest. She sets the lamp-pole down on the stone and takes a step.",
+      "stakes_established": "There is a ship, there is a deadline, and she is the only source of energy left.",
+      "visual_idea": "Three-point eyeline cut: ship / tower / own chest. The whole premise in nine seconds, no exposition.",
+      "retention_note": "Answers 'why should I care' inside the first minute while the counter is still fresh in memory."
+    },
+    {
+      "beat_id": "B03",
+      "scene": "SC03",
+      "timecode": "01:05-01:32",
+      "seconds": 27,
+      "beat_type": "DEPARTURE",
+      "gauge": "92 to 84",
+      "action": "WICK crosses the plaza. The gauge ticks down, visibly, with each stride. The harbour is beautiful - barnacled arches, kelp swaying in the shallows - and completely empty.",
+      "stakes_established": "Movement has a price, and the audience learns to read the price.",
+      "visual_idea": "Beauty pass. The only moment the film is genuinely calm; it earns the storm that follows.",
+      "retention_note": "Teaches the audience the film's grammar so later decrements land without explanation."
+    },
+    {
+      "beat_id": "B04",
+      "scene": "SC04",
+      "timecode": "01:32-02:02",
+      "seconds": 30,
+      "beat_type": "OBSTACLE_1",
+      "gauge": "84 to 71",
+      "action": "The street is flooded chest-deep for a machine her size. She climbs a submerged market stall, a railing, a wall - each grab costing turns. She drops into the water once; the gauge flickers; she hauls herself out sparking.",
+      "stakes_established": "The world is hostile to her specifically.",
+      "visual_idea": "Water at her scale reads as a flood; the camera stays low to keep the scale threat legible.",
+      "retention_note": "First genuine near-failure at ~1:50, inside the average abandonment window."
+    },
+    {
+      "beat_id": "B05",
+      "scene": "SC05",
+      "timecode": "02:02-02:38",
+      "seconds": 36,
+      "beat_type": "OBSTACLE_2_AND_LOSS",
+      "gauge": "71 to 58",
+      "action": "The storm arrives. On the gantry walkway a gust takes the lamp-pole out of her hand and it goes into the water. Then rain. She has taken a live spark into her chest drum to keep it dry, and the spark is eating turns to stay alive. She has to choose between walking and shielding.",
+      "stakes_established": "She has lost her tool and is now paying rent on her own cargo.",
+      "visual_idea": "Amber spark glow inside the glass chest, rain streaking the glass - the emotional image of the second act.",
+      "retention_note": "The midpoint reversal: the thing she is protecting is the thing consuming her."
+    },
+    {
+      "beat_id": "B06",
+      "scene": "SC06",
+      "timecode": "02:38-03:06",
+      "seconds": 28,
+      "beat_type": "OBSTACLE_3",
+      "gauge": "58 to 40 to 31",
+      "action": "The tower base. The door is swollen shut. She spends eighteen turns levering it open. Inside: the spiral stair, and a section of it simply gone.",
+      "stakes_established": "Below 40 the needle enters the red arc on the gauge. The audience can see the end coming.",
+      "visual_idea": "The gauge's red arc is introduced here, not at the climax, so the colour does the worrying for us.",
+      "retention_note": "A visible threshold crossed - a cheap, powerful mid-film turn."
+    },
+    {
+      "beat_id": "B07",
+      "scene": "SC07",
+      "timecode": "03:06-03:48",
+      "seconds": 42,
+      "beat_type": "ESCALATION_PEAK",
+      "gauge": "31 to 22 to 14 to 6",
+      "action": "The remaining stair gives way entirely. She goes outside, onto the rivets, in a gale. The longest sequence in the film. Twice she loses her grip; once she catches herself on the lamp-pole she thought she had lost, wedged in the ironwork. She climbs the last stretch on a nearly dead spring, limbs stuttering, gait breaking down.",
+      "stakes_established": "She is visibly running out; her animation degrades as the gauge falls.",
+      "visual_idea": "Animation style is the storytelling here - the rig itself loses fluidity as the energy drops.",
+      "retention_note": "Longest scene in the film, so it carries two intra-scene turns to stay inside the 40-second rule: the stair collapse at 03:25 (gauge 31 to 22) and the grip loss at 03:41 (gauge 22 to 14). Payoff arrives 20 seconds after the second."
+    },
+    {
+      "beat_id": "B08",
+      "scene": "SC08",
+      "timecode": "03:48-04:22",
+      "seconds": 34,
+      "beat_type": "CLIMAX_AND_TWIST",
+      "gauge": "6 to 1 to 0",
+      "action": "The burner chamber. She lifts the spark to the burner - and it will not catch. The burner has no wick, no oil, no flint. It has a socket. A cold brass socket the exact diameter of a mainspring. She looks at it for a long moment. Then she opens her own chest, unspools her spring, and threads it into the socket. The gauge reads zero. Her eyes go dark. The beacon ignites - enormous, warm, blinding.",
+      "stakes_established": "The cost is total and the mechanism is honest: she is not magic, she is a part that fits.",
+      "visual_idea": "The reveal is a single static shot of the socket. No music. Then the ignition floods the frame.",
+      "retention_note": "The twist is earned by the arithmetic the audience has been doing since second four."
+    },
+    {
+      "beat_id": "B09",
+      "scene": "SC09",
+      "timecode": "04:22-04:42",
+      "seconds": 20,
+      "beat_type": "PAYOFF",
+      "gauge": 0,
+      "action": "The beam sweeps the water. Far out, the running light pauses - then turns toward harbour. The reef slides past behind it. Dawn comes up grey-gold. The light goes out with the dark; the beacon is spent.",
+      "stakes_established": "It worked, and she is not there to see it.",
+      "visual_idea": "Held wide, no cutting, letting the relief land physically.",
+      "retention_note": "Deliberate decompression before the final beat; contrast makes the ending hit."
+    },
+    {
+      "beat_id": "B10",
+      "scene": "SC10",
+      "timecode": "04:42-05:02",
+      "seconds": 20,
+      "beat_type": "RESOLUTION_AND_LOOP",
+      "gauge": "0 to 1",
+      "action": "Morning. The ship is docked. A child climbs the tower and finds WICK's shell at the foot of the burner, still holding the pole. The child takes the key from her back, hesitates, and gives it one single turn. Inside the shell the coil catches. The shutter eyes flicker open. The needle lifts off zero. Cut to black on one clean click.",
+      "stakes_established": "Not restored - restarted. One turn is a beginning, not a life.",
+      "visual_idea": "The final frames mirror the opening macro of the key turning, so the film loops seamlessly.",
+      "retention_note": "Loopable ending by design: the closing click rhymes with the opening click and rewards a rewatch."
+    }
+  ],
+  "emotional_beats": [
+    {
+      "at": "00:00",
+      "beat": "curiosity",
+      "device": "unexplained mechanism in macro; we do not yet know what we are looking at"
+    },
+    {
+      "at": "00:08",
+      "beat": "dread",
+      "device": "the ratchet slips and the needle sags - the first irreversible thing happens"
+    },
+    {
+      "at": "00:40",
+      "beat": "resolve",
+      "device": "the three-point eyeline; she chooses the tower"
+    },
+    {
+      "at": "01:20",
+      "beat": "wonder",
+      "device": "the drowned harbour in full, quiet and beautiful"
+    },
+    {
+      "at": "01:50",
+      "beat": "alarm",
+      "device": "she goes under and the gauge flickers"
+    },
+    {
+      "at": "02:20",
+      "beat": "grief_small",
+      "device": "the pole is lost to the water"
+    },
+    {
+      "at": "02:30",
+      "beat": "tenderness",
+      "device": "the spark sheltered inside her own chest, rain on the glass"
+    },
+    {
+      "at": "02:55",
+      "beat": "foreboding",
+      "device": "the needle crosses into the red arc"
+    },
+    {
+      "at": "03:30",
+      "beat": "desperation",
+      "device": "the gait breaks down as the spring weakens"
+    },
+    {
+      "at": "03:45",
+      "beat": "recognition",
+      "device": "a moment of stillness at the foot of the tower, deciding"
+    },
+    {
+      "at": "04:05",
+      "beat": "sacrifice",
+      "device": "the spring is unspooled; the eyes go dark"
+    },
+    {
+      "at": "04:15",
+      "beat": "awe",
+      "device": "the ignition floods the frame"
+    },
+    {
+      "at": "04:30",
+      "beat": "relief",
+      "device": "the ship turns; the reef slides past"
+    },
+    {
+      "at": "04:40",
+      "beat": "mourning",
+      "device": "the dark shell in the dawn"
+    },
+    {
+      "at": "04:56",
+      "beat": "hope",
+      "device": "one turn; the needle lifts off zero"
+    },
+    {
+      "at": "05:02",
+      "beat": "lingering",
+      "device": "a single click over black"
+    }
+  ],
+  "visual_style": {
+    "overall": "Cinematic 3D with a stylised-realistic 'brass and barnacle' material language. Real light behaviour, exaggerated silhouette and colour. Not photoreal; not toon-shaded.",
+    "colour_script": [
+      {
+        "scene": "SC01-SC03",
+        "key": "cold teal with a single warm practical",
+        "purpose": "isolation, dusk"
+      },
+      {
+        "scene": "SC04-SC05",
+        "key": "storm slate and deep teal, amber spark in the chest",
+        "purpose": "threat plus the thing worth protecting"
+      },
+      {
+        "scene": "SC06-SC07",
+        "key": "near-monochrome, high contrast, storm white rim light",
+        "purpose": "the world reduced to effort"
+      },
+      {
+        "scene": "SC08",
+        "key": "black to full amber",
+        "purpose": "the single largest contrast event in the film"
+      },
+      {
+        "scene": "SC09-SC10",
+        "key": "dawn rose-gold over wet stone",
+        "purpose": "release, warmth returned"
+      }
+    ],
+    "lighting": "Almost entirely practical and motivated: one lamp, one spark, one beacon, one dawn. Volumetric shafts through rain. Heavy silhouette work so shapes read even at low resolution.",
+    "camera": "Anamorphic-flavoured widescreen framing, shallow depth of field on the hero, long lenses for the tower's height, wide for the harbour. Camera stays low for the first two thirds to hold her scale; it rises above her only after the ignition.",
+    "shot_grammar": "Average shot length around 5.4 seconds. Long static holds for emotional beats, short cuts only in SC05 and SC07. One deliberate 20-second hold in SC09.",
+    "vfx": "Rain, wind-blown spray, spark particles, lamp and beacon emission, volumetric fog, a distant ocean plane. No fluid simulation, no cloth simulation, no hair, no fur, no crowds.",
+    "art_direction_rules": [
+      "Every silhouette must read at 20 pixels tall.",
+      "One warm light source per scene maximum, except the ignition.",
+      "The gauge is always legible when it changes; it is never cut away from during a decrement.",
+      "Nothing in frame is decorative - the set is drowned, so everything is repurposed."
+    ]
+  },
+  "audio_plan": {
+    "dialogue": "none",
+    "music": "Original score. A three-note clock motif introduced as WICK's first movement, developed through the climb, and stated in full only once - at the ignition. Sparse solo instrument until SC07, then strings.",
+    "sound_design": "The score is deliberately thin so the mechanism carries the film: ratchet clicks, spring creaks under load, brass ticking that slows as the gauge falls, rain on glass, iron groaning in wind, and absolute silence in the burner chamber.",
+    "signature": "WICK's gait is a rhythm. As the spring weakens the rhythm stutters, and the audience hears her dying before they see it.",
+    "final_sound": "One clean ratchet click over black.",
+    "loudness_target": "-16 LUFS integrated, true peak -1.5 dBTP, 48 kHz stereo"
+  },
+  "production_complexity": {
+    "overall_rating": "MODERATE - deliberately engineered to be CPU-renderable",
+    "characters_to_rig": 1,
+    "characters_total": 3,
+    "facial_rigs": 0,
+    "locations_to_build": 3,
+    "scenes": 10,
+    "planned_shot_range": [
+      52,
+      60
+    ],
+    "average_shot_seconds": 5.4,
+    "total_frames": 7248,
+    "why_it_is_achievable": [
+      "One hero character, hard-surface, with a two-shutter face - no blendshapes, no lip sync, no hair, no cloth.",
+      "Zero dialogue removes voice recording, lip sync and phoneme work entirely.",
+      "The human appears for 17 seconds, backlit, never in readable close-up - near-zero human modelling cost.",
+      "Three locations, one of which (the tower) carries five of ten scenes through relighting alone.",
+      "The ship is a silhouette asset behind rain and fog, never detailed.",
+      "All VFX are particle or emission based - no fluid, cloth, hair or fur simulation.",
+      "Modular, instanced architecture rather than unique geometry per building.",
+      "A stylised-realistic look tolerates low sample counts plus denoising, which is the single biggest CPU render-time lever."
+    ],
+    "deliberately_avoided": [
+      "Crowds of any kind",
+      "Dialogue and lip sync",
+      "Fur, hair and cloth simulation",
+      "Fluid simulation - water is a shaded plane with an animated normal map, largely hidden by rain and fog",
+      "Human faces in close-up",
+      "Daytime exteriors with full global illumination",
+      "Unique background geometry"
+    ],
+    "highest_risk_elements": [
+      {
+        "element": "SC07 outside climb, 42 seconds",
+        "risk": "longest sequence, most animation on the hero rig",
+        "mitigation": "repeated grab-and-swing cycle with variation, not bespoke motion per shot"
+      },
+      {
+        "element": "Rain across SC05-SC08",
+        "risk": "particle volume and shading cost",
+        "mitigation": "camera-space rain plane plus fog, not world-space particles everywhere"
+      },
+      {
+        "element": "The ignition in SC08",
+        "risk": "high dynamic range bloom on a CPU renderer",
+        "mitigation": "render the glow as a composited emission pass rather than a volumetric solve"
+      },
+      {
+        "element": "The gauge must stay legible",
+        "risk": "small detail lost at 1080p",
+        "mitigation": "high-contrast dial with a thick needle, and framing rules that give it screen area whenever it changes"
+      }
+    ],
+    "render_strategy": "Scene-level renders only (see 13_RENDER/RENDER_MANIFEST.json). Never a single 7248-frame job. Frames written individually so any shot can be re-rendered alone."
+  },
+  "retention_strategy": {
+    "hook_deadline_seconds": 8,
+    "hook_actual_seconds": 4,
+    "hook": "Four turns of a key, and on the fourth the mechanism fails. No title, no establishing shot, no character reveal. A visible needle settles on 92.",
+    "why_it_holds": [
+      "It opens mid-action on an unexplained mechanism, so the first question is 'what is this', not 'where are we'.",
+      "Something irreversible happens at second four, before the average viewer would otherwise leave.",
+      "The number 92 is on screen in the first eight seconds and becomes a promise the film then keeps."
+    ],
+    "countdown_device": {
+      "what": "The chest gauge, diegetic, always readable when it changes.",
+      "why": "A visible, arithmetically honest countdown converts every action into stakes without a line of dialogue. The audience does the maths with the film, which is the cheapest possible form of engagement.",
+      "rule": "The gauge is never cut away from during a decrement."
+    },
+    "turn_cadence_seconds": [
+      4,
+      32,
+      65,
+      92,
+      122,
+      158,
+      186,
+      205,
+      228,
+      262,
+      282
+    ],
+    "max_gap_between_turns_seconds": 36,
+    "silent_viewing": "Fully comprehensible with the sound off. Colour, silhouette, framing and the gauge carry 100% of the plot; music and mechanism sound deepen it but are never load-bearing.",
+    "no_dead_air": "No shot holds without a change in frame for more than 6 seconds, except the deliberate 20-second hold in SC09, which is motivated by emotional decompression and carries moving water and light.",
+    "loop_design": "The closing macro of the key turning mirrors the opening macro frame for frame, so the film loops cleanly and a rewatch starts in the right place.",
+    "rewatch_reward": "On a second viewing the audience knows the socket reveal is coming, and can watch SC01-SC07 as a machine being led to its purpose.",
+    "thumbnail_frame": "SC08, the moment the amber ignition floods the frame over a black silhouette - maximum contrast, immediate question.",
+    "measured_goals": {
+      "three_second_hold": "the failed fourth turn lands here",
+      "first_minute_hold": "the premise, the ship and the deadline are all established by 01:05",
+      "target_completion": ">= 70% average percentage viewed",
+      "mid_film_guard": "the red-arc threshold at 02:55 and the gait breakdown at 03:30 are placed to catch the second drop-off window"
+    }
+  },
+  "originality": {
+    "attestation": "All characters, designs, locations, story structure, beats and sound design in this brief are original and were created for this project. No character, story, dialogue, scene, distinctive design or trademarked element has been taken from, or deliberately imitated from, any existing film, series, game, book or studio.",
+    "not_derived_from": [
+      "Any specific existing animated feature or short",
+      "Any existing character design or franchise",
+      "Any trademarked or copyrighted property"
+    ],
+    "generic_elements_acknowledged": "Lighthouses, wind-up mechanisms, storms and sacrifices are public-domain storytelling furniture, used here in an original combination with an original protagonist, an original world and an original central mechanic (a hard arithmetic countdown of turns spent).",
+    "music_and_audio": "Score to be composed original for this project. No library cues without recorded licence and provenance.",
+    "asset_provenance_rule": "Every asset carries a provenance field in 06_ASSETS/ASSET_INVENTORY.json: generated, authored, or licence + source."
+  },
+  "downstream_handoff": {
+    "next_task": "T02_SCREENPLAY",
+    "what_screenplay_must_preserve": [
+      "The 92-turn budget and its exact per-beat costs",
+      "The hook landing inside 8 seconds",
+      "Ten scenes totalling 302 seconds",
+      "Zero dialogue",
+      "The socket reveal as the climax mechanism",
+      "The one-turn ending that loops to the opening image"
+    ],
+    "what_is_still_open": [
+      "Exact shot count and per-shot frame ranges (T04_STORYBOARD)",
+      "Final colour script values (T08_LIGHTING_VFX)",
+      "Score composition (T09_AUDIO)"
+    ]
+  }
+}

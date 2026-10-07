@@ -3,6 +3,79 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-07 — Stage 01 DEVELOPMENT complete (T01_DEVELOPMENT → VERIFIED)
+
+**Film locked:** ***NINETY-TWO TURNS*** — a wordless cinematic 3D animated fable, 302 s
+(5:02), 16:9, 1920×1080, 24 fps, 7 248 frames. `PROJECT_STATE.film_title` and
+`MASTER_CONFIG.film_title` updated from the `UNNAMED_PLACEHOLDER_DO_NOT_SHIP` placeholder.
+
+### Added
+
+- **`01_DEVELOPMENT/MASTER_FILM_BRIEF.md`** (303 lines) — logline, hook, protagonist, goal /
+  obstacle / escalation, ten-scene story spine, emotional progression, visual style,
+  production complexity, retention strategy, originality attestation, handoff to T02.
+- **`01_DEVELOPMENT/MASTER_FILM_BRIEF.json`** (403 lines) — structured twin with all 11
+  required keys: `title`, `logline`, `genre`, `runtime`, `characters`, `locations`,
+  `story_beats`, `emotional_beats`, `visual_style`, `production_complexity`,
+  `retention_strategy`, plus `turn_budget`, `audio_plan`, `originality` and
+  `downstream_handoff`.
+- **`01_DEVELOPMENT/RESEARCH.md`** (248 lines) — live research, 3 queries, 12 sources, each
+  finding mapped to a concrete design decision, with an explicit applicability caveat
+  (short-form data is directional, not a KPI for a 5-minute film).
+
+### The concept
+
+WICK, a wind-up brass lamplighter automaton, loses her charging pillar and has **92 turns**
+of stored energy left — and one night to light the harbour beacon before the last ship home
+is wrecked on the reef. The gauge in her chest is diegetic, always readable, and the film's
+spine: costs total **91**, so she reaches the burner with exactly **1**. The beacon has no
+wick, no oil, no flint — only a socket the exact diameter of a mainspring. The ending hands
+back exactly one turn, looping to the opening image.
+
+### Verified before marking VERIFIED
+
+- `jq -e .` clean on `MASTER_FILM_BRIEF.json`.
+- All 11 required structured keys present.
+- Turn arithmetic: costs sum to 91; running gauge consistent at every beat; 92 − 91 = 1.
+- Runtime arithmetic: scene seconds sum to 302; 302 × 24 = 7 248 frames; timecodes contiguous
+  00:00 → 05:02.
+- Config bounds: 10 scenes inside the 6–12 target; every scene inside 20–45 s; planned shot
+  length 5.4 s inside 1.5–8 s.
+- Retention cadence: 11 turns, **maximum gap 36 s**, inside the 40 s rule; hook at 00:04,
+  inside the 8 s deadline.
+- **68/68 MD ↔ JSON coherence checks pass** (every scene, duration, emotional beat, turn
+  cost, character and location present in both files).
+- Scene ↔ location mapping unambiguous across both files.
+- `python3 tools/studio.py validate` → **PASS**.
+
+### Changed
+
+- **`TASK_QUEUE.json`** — `T01_DEVELOPMENT.output_files` replaced. The originally drafted
+  `01_DEVELOPMENT/concept/*.md` list was superseded by the director-issued deliverable set.
+  Acceptance criteria extended to cover the structured JSON, the complexity assessment and
+  the research mapping. `T02_SCREENPLAY.input_files` re-pointed at the brief, and its
+  acceptance updated: the film is **wordless**, so "all dialogue original" was replaced with
+  "zero dialogue; any spoken line requires an explicit logged deviation".
+- **`MASTER_CONFIG.json`** — `logline` populated; `target_spec` gained
+  `locked_runtime_seconds: 302`, `locked_scene_count: 10`, `dialogue: none`.
+- **`AGENT_PROTOCOL.md`** §9 — originality attestation now points at
+  `MASTER_FILM_BRIEF.md` §10 instead of the never-created standalone file.
+
+### Failure recorded
+
+- **`ERR-0001`** (`DATA_CORRUPTION`, resolution `MITIGATED`) — a fuzzy `edit_file` whose
+  `old_text` spanned a JSON field boundary corrupted `MASTER_FILM_BRIEF.json`; `jq` caught
+  it before any checkpoint. Logged first, then repaired byte-exactly with Python. Rule added:
+  **edits to JSON state or brief files use Python or full-file rewrites, never cross-field
+  fuzzy matching.** `T01_DEVELOPMENT.retry_count` is 1 as a result.
+
+### Deliberately not done
+
+Screenplay production was **not** started. `T02_SCREENPLAY` remains `NOT_STARTED` per
+instruction.
+
+---
+
 ## 2026-10-07 — Workspace initialization (T00_INITIALIZATION)
 
 **Status:** workspace ready, **no creative work started** (by design).

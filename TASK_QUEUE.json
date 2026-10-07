@@ -1,8 +1,17 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:26:37Z",
-  "status_enum": ["NOT_STARTED", "IN_PROGRESS", "PARTIAL", "READY", "VERIFIED", "FAILED", "BLOCKED", "COMPLETE"],
+  "last_updated": "2026-10-07T17:55:50Z",
+  "status_enum": [
+    "NOT_STARTED",
+    "IN_PROGRESS",
+    "PARTIAL",
+    "READY",
+    "VERIFIED",
+    "FAILED",
+    "BLOCKED",
+    "COMPLETE"
+  ],
   "field_spec": {
     "task_id": "stable unique id, never reused",
     "stage": "stage folder / stage_id from MASTER_CONFIG.stage_definitions",
@@ -14,62 +23,79 @@
     "last_error": "exact error text of the most recent failure, or null",
     "checkpoint": "checkpoint_id recorded when this task last successfully checkpointed, or null"
   },
-
   "tasks": [
     {
       "task_id": "T01_DEVELOPMENT",
       "stage": "01_DEVELOPMENT",
-      "title": "Concept, premise, genre, tone, theme and story spine",
-      "status": "NOT_STARTED",
+      "title": "Concept: title, logline, premise, story spine, retention and production plan",
+      "status": "VERIFIED",
       "dependencies": [],
-      "input_files": ["MASTER_CONFIG.json", "AGENT_PROTOCOL.md"],
+      "input_files": [
+        "MASTER_CONFIG.json",
+        "AGENT_PROTOCOL.md"
+      ],
       "output_files": [
-        "01_DEVELOPMENT/concept/PREMISE.md",
-        "01_DEVELOPMENT/concept/STORY_SPINE.md",
-        "01_DEVELOPMENT/concept/TONE_AND_STYLE.md",
-        "01_DEVELOPMENT/concept/ORIGINALITY_ATTESTATION.md"
+        "01_DEVELOPMENT/MASTER_FILM_BRIEF.md",
+        "01_DEVELOPMENT/MASTER_FILM_BRIEF.json",
+        "01_DEVELOPMENT/RESEARCH.md"
       ],
       "acceptance": [
         "One original premise with a clear protagonist, want, obstacle and change.",
         "Story spine with beginning, escalation, climax and resolution mapped to a ~5 minute runtime.",
         "Retention plan: hook inside 8s, a turn every 20-40s.",
-        "Originality attestation naming zero borrowed characters, stories, dialogue or designs."
+        "Originality attestation naming zero borrowed characters, stories, dialogue or designs.",
+        "Structured JSON brief with title, logline, genre, runtime, characters, locations, story_beats, emotional_beats, visual_style, production_complexity, retention_strategy.",
+        "Production complexity assessed against the no-GPU / no-Kaggle constraint.",
+        "Research recorded with sources, and each finding mapped to a concrete design decision."
       ],
-      "retry_count": 0,
-      "last_error": null,
+      "retry_count": 1,
+      "last_error": "jq -e . -> JSON CORRUPT. Line 215 became: \"gauge\": \"31 to 22 to 14 to 6\", She goes outside, ... The old_text pattern spanned into the adjacent \"action\" field and the new_text dropped the '\"action\": \"The remaining stair gives way entirely.' prefix, leaving a dangling string literal.",
       "checkpoint": null,
-      "notes": null
+      "notes": "Director-issued deliverable set (MASTER_FILM_BRIEF.md/.json + RESEARCH.md) supersedes the originally drafted concept/*.md file list. The originality attestation now lives as section 10 of MASTER_FILM_BRIEF.md rather than as a standalone file. AGENT_PROTOCOL.md section 9 updated to match."
     },
     {
       "task_id": "T02_SCREENPLAY",
       "stage": "02_SCREENPLAY",
       "title": "Locked screenplay with scene breakdown and timing",
       "status": "NOT_STARTED",
-      "dependencies": ["T01_DEVELOPMENT"],
-      "input_files": ["01_DEVELOPMENT/concept/STORY_SPINE.md", "MASTER_CONFIG.json"],
+      "dependencies": [
+        "T01_DEVELOPMENT"
+      ],
+      "input_files": [
+        "01_DEVELOPMENT/MASTER_FILM_BRIEF.json",
+        "01_DEVELOPMENT/MASTER_FILM_BRIEF.md",
+        "MASTER_CONFIG.json"
+      ],
       "output_files": [
         "02_SCREENPLAY/drafts/SCREENPLAY_v01.md",
         "02_SCREENPLAY/locked/SCREENPLAY_LOCKED.md",
         "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json"
       ],
       "acceptance": [
-        "Screenplay total runtime lands inside 180-420s, target 300s.",
-        "SCENE_BREAKDOWN.json defines every scene id (SCnn), slug, intent, duration and characters.",
+        "Screenplay total runtime equals the locked 302s (window 180-420s).",
+        "SCENE_BREAKDOWN.json defines every scene id (SCnn), slug, intent, duration and characters, and matches the 10 scenes in the brief exactly.",
         "Scene count inside MASTER_CONFIG.scene_plan bounds.",
-        "All dialogue original."
+        "Zero dialogue - the film is wordless. Any spoken line requires an explicit, logged deviation.",
+        "The 92-turn budget and its per-beat costs are preserved exactly.",
+        "The socket reveal remains the climax mechanism and the one-turn ending loops to the opening image."
       ],
       "retry_count": 0,
       "last_error": null,
       "checkpoint": null,
-      "notes": null
+      "notes": "Film is wordless: 'screenplay' here means a shot-level action/timing script, not a dialogue script."
     },
     {
       "task_id": "T03_CHARACTER_WORLD",
       "stage": "03_CHARACTER_WORLD",
       "title": "Original character designs, bios and world/locations",
       "status": "NOT_STARTED",
-      "dependencies": ["T02_SCREENPLAY"],
-      "input_files": ["02_SCREENPLAY/locked/SCREENPLAY_LOCKED.md", "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json"],
+      "dependencies": [
+        "T02_SCREENPLAY"
+      ],
+      "input_files": [
+        "02_SCREENPLAY/locked/SCREENPLAY_LOCKED.md",
+        "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json"
+      ],
       "output_files": [
         "03_CHARACTERS/CHARACTER_BIBLE.json",
         "04_WORLD/WORLD_BIBLE.json",
@@ -93,8 +119,14 @@
       "stage": "04_STORYBOARD",
       "title": "Beat board, shot list, shot registry and animatic plan",
       "status": "NOT_STARTED",
-      "dependencies": ["T03_CHARACTER_WORLD"],
-      "input_files": ["02_SCREENPLAY/locked/SCENE_BREAKDOWN.json", "03_CHARACTERS/CHARACTER_BIBLE.json", "04_WORLD/WORLD_BIBLE.json"],
+      "dependencies": [
+        "T03_CHARACTER_WORLD"
+      ],
+      "input_files": [
+        "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json",
+        "03_CHARACTERS/CHARACTER_BIBLE.json",
+        "04_WORLD/WORLD_BIBLE.json"
+      ],
       "output_files": [
         "05_STORYBOARD/beat_board/BEAT_BOARD.md",
         "05_STORYBOARD/SHOT_LIST.json",
@@ -118,8 +150,15 @@
       "stage": "05_3D_ASSETS",
       "title": "Render engine decision + buildable 3D models, rigs, materials",
       "status": "NOT_STARTED",
-      "dependencies": ["T04_STORYBOARD"],
-      "input_files": ["06_ASSETS/ASSET_INVENTORY.json", "03_CHARACTERS/CHARACTER_BIBLE.json", "04_WORLD/WORLD_BIBLE.json", "MASTER_CONFIG.json"],
+      "dependencies": [
+        "T04_STORYBOARD"
+      ],
+      "input_files": [
+        "06_ASSETS/ASSET_INVENTORY.json",
+        "03_CHARACTERS/CHARACTER_BIBLE.json",
+        "04_WORLD/WORLD_BIBLE.json",
+        "MASTER_CONFIG.json"
+      ],
       "output_files": [
         "06_ASSETS/ENGINE_DECISION.json",
         "06_ASSETS/models/ASSET_INDEX.json",
@@ -141,8 +180,15 @@
       "stage": "06_ANIMATION",
       "title": "Per-shot layout, blocking and polish animation",
       "status": "NOT_STARTED",
-      "dependencies": ["T05_3D_ASSETS"],
-      "input_files": ["SHOT_REGISTRY.json", "05_STORYBOARD/SHOT_LIST.json", "06_ASSETS/models/ASSET_INDEX.json", "06_ASSETS/rigs/RIG_INDEX.json"],
+      "dependencies": [
+        "T05_3D_ASSETS"
+      ],
+      "input_files": [
+        "SHOT_REGISTRY.json",
+        "05_STORYBOARD/SHOT_LIST.json",
+        "06_ASSETS/models/ASSET_INDEX.json",
+        "06_ASSETS/rigs/RIG_INDEX.json"
+      ],
       "output_files": [
         "07_ANIMATION/ANIMATION_INDEX.json",
         "SHOT_REGISTRY.json"
@@ -162,8 +208,14 @@
       "stage": "07_CAMERA",
       "title": "Camera rigs, lens choices and per-shot moves",
       "status": "NOT_STARTED",
-      "dependencies": ["T06_ANIMATION"],
-      "input_files": ["SHOT_REGISTRY.json", "05_STORYBOARD/SHOT_LIST.json", "07_ANIMATION/ANIMATION_INDEX.json"],
+      "dependencies": [
+        "T06_ANIMATION"
+      ],
+      "input_files": [
+        "SHOT_REGISTRY.json",
+        "05_STORYBOARD/SHOT_LIST.json",
+        "07_ANIMATION/ANIMATION_INDEX.json"
+      ],
       "output_files": [
         "08_CAMERA/CAMERA_INDEX.json",
         "SHOT_REGISTRY.json"
@@ -183,8 +235,14 @@
       "stage": "08_LIGHTING_VFX",
       "title": "Per-scene lighting setups, VFX and compositing grades",
       "status": "NOT_STARTED",
-      "dependencies": ["T07_CAMERA"],
-      "input_files": ["SHOT_REGISTRY.json", "04_WORLD/WORLD_BIBLE.json", "08_CAMERA/CAMERA_INDEX.json"],
+      "dependencies": [
+        "T07_CAMERA"
+      ],
+      "input_files": [
+        "SHOT_REGISTRY.json",
+        "04_WORLD/WORLD_BIBLE.json",
+        "08_CAMERA/CAMERA_INDEX.json"
+      ],
       "output_files": [
         "09_LIGHTING_VFX/LIGHTING_INDEX.json",
         "09_LIGHTING_VFX/vfx/VFX_INDEX.json",
@@ -205,8 +263,13 @@
       "stage": "09_AUDIO",
       "title": "Music, SFX, voice and mix stems",
       "status": "NOT_STARTED",
-      "dependencies": ["T02_SCREENPLAY"],
-      "input_files": ["02_SCREENPLAY/locked/SCENE_BREAKDOWN.json", "05_STORYBOARD/SHOT_LIST.json"],
+      "dependencies": [
+        "T02_SCREENPLAY"
+      ],
+      "input_files": [
+        "02_SCREENPLAY/locked/SCENE_BREAKDOWN.json",
+        "05_STORYBOARD/SHOT_LIST.json"
+      ],
       "output_files": [
         "10_AUDIO/AUDIO_INDEX.json",
         "10_AUDIO/music/MUSIC_CUE_SHEET.json",
@@ -228,8 +291,16 @@
       "stage": "10_EDIT",
       "title": "Timeline assembly, conform and cut",
       "status": "NOT_STARTED",
-      "dependencies": ["T08_LIGHTING_VFX", "T09_AUDIO"],
-      "input_files": ["SHOT_REGISTRY.json", "13_RENDER/RENDER_MANIFEST.json", "10_AUDIO/AUDIO_INDEX.json", "05_STORYBOARD/SHOT_LIST.json"],
+      "dependencies": [
+        "T08_LIGHTING_VFX",
+        "T09_AUDIO"
+      ],
+      "input_files": [
+        "SHOT_REGISTRY.json",
+        "13_RENDER/RENDER_MANIFEST.json",
+        "10_AUDIO/AUDIO_INDEX.json",
+        "05_STORYBOARD/SHOT_LIST.json"
+      ],
       "output_files": [
         "11_EDIT/timeline/EDIT_DECISION_LIST.json",
         "11_EDIT/conform/CONFORM_NOTES.md"
@@ -249,8 +320,14 @@
       "stage": "11_QC",
       "title": "Technical + continuity QC of scenes and cut",
       "status": "NOT_STARTED",
-      "dependencies": ["T10_EDIT"],
-      "input_files": ["11_EDIT/timeline/EDIT_DECISION_LIST.json", "13_RENDER/RENDER_MANIFEST.json", "MASTER_CONFIG.json"],
+      "dependencies": [
+        "T10_EDIT"
+      ],
+      "input_files": [
+        "11_EDIT/timeline/EDIT_DECISION_LIST.json",
+        "13_RENDER/RENDER_MANIFEST.json",
+        "MASTER_CONFIG.json"
+      ],
       "output_files": [
         "12_QC/reports/QC_REPORT.json",
         "12_QC/technical/TECHNICAL_CHECKS.json",
@@ -271,8 +348,14 @@
       "stage": "12_FINAL_RENDER",
       "title": "Scene-by-scene final render and assembly",
       "status": "NOT_STARTED",
-      "dependencies": ["T11_QC"],
-      "input_files": ["13_RENDER/RENDER_MANIFEST.json", "11_EDIT/timeline/EDIT_DECISION_LIST.json", "MASTER_CONFIG.json"],
+      "dependencies": [
+        "T11_QC"
+      ],
+      "input_files": [
+        "13_RENDER/RENDER_MANIFEST.json",
+        "11_EDIT/timeline/EDIT_DECISION_LIST.json",
+        "MASTER_CONFIG.json"
+      ],
       "output_files": [
         "13_RENDER/final/SCENE_RENDERS_MANIFEST.json",
         "13_RENDER/RENDER_MANIFEST.json"
@@ -293,8 +376,13 @@
       "stage": "13_FINAL_VERIFICATION",
       "title": "Verify FINAL/FINAL_FILM.mp4 technically - the only completion gate",
       "status": "NOT_STARTED",
-      "dependencies": ["T12_FINAL_RENDER"],
-      "input_files": ["13_RENDER/final/SCENE_RENDERS_MANIFEST.json", "MASTER_CONFIG.json"],
+      "dependencies": [
+        "T12_FINAL_RENDER"
+      ],
+      "input_files": [
+        "13_RENDER/final/SCENE_RENDERS_MANIFEST.json",
+        "MASTER_CONFIG.json"
+      ],
       "output_files": [
         "FINAL/FINAL_FILM.mp4",
         "12_QC/reports/FINAL_VERIFICATION.json",

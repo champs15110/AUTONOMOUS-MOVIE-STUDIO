@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T17:26:37Z",
+  "last_updated": "2026-10-07T17:49:53Z",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -49,5 +49,22 @@
       "severity": "INFO"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "error_id": "ERR-0001",
+      "utc": "2026-10-07T17:49:53Z",
+      "task_id": "T01_DEVELOPMENT",
+      "shot_id": null,
+      "scene_id": null,
+      "command_or_step": "edit_file 01_DEVELOPMENT/MASTER_FILM_BRIEF.json (gauge field, beat B07)",
+      "error_text": "jq -e . -> JSON CORRUPT. Line 215 became: \"gauge\": \"31 to 22 to 14 to 6\", She goes outside, ... The old_text pattern spanned into the adjacent \"action\" field and the new_text dropped the '\"action\": \"The remaining stair gives way entirely.' prefix, leaving a dangling string literal.",
+      "classification": "DATA_CORRUPTION",
+      "probable_cause": "Fuzzy-match edit whose old_text crossed a JSON field boundary; replacement text did not re-emit the truncated field opener.",
+      "impact": "01_DEVELOPMENT/MASTER_FILM_BRIEF.json unparseable. No checkpoint had been taken, so no committed artefact was affected.",
+      "preserved_outputs": "All other files untouched. The 11 required JSON keys and all arithmetic checks had already passed against the pre-corruption content.",
+      "recovery_attempted": "Rewrote line 215 in place with python (byte-exact, no fuzzy matching), then re-ran jq and the full arithmetic check. Future edits to this file use python or full-file rewrites, never cross-field fuzzy matches.",
+      "resolution": "MITIGATED",
+      "retry_count_after": 1
+    }
+  ]
 }

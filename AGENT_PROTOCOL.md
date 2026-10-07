@@ -204,7 +204,8 @@ An agent must **not** claim `VERIFIED` for anything it did not actually open and
 * No copyrighted characters, stories, dialogue, scenes or distinctive designs. No near-
   copies, no "in the style of <named franchise>" as a build instruction.
 * Every asset carries provenance in its index (`generated` / `authored` / `license + source`).
-* `01_DEVELOPMENT/concept/ORIGINALITY_ATTESTATION.md` is a required deliverable.
+* `01_DEVELOPMENT/MASTER_FILM_BRIEF.md` §10 (mirrored in `MASTER_FILM_BRIEF.json → originality`)
+  carries the signed-off originality attestation. It is a required T01 deliverable.
 
 ---
 
