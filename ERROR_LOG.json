@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T16:37:36+00:00",
+  "last_updated": "2026-10-08 20:15 UTC",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -129,6 +129,32 @@
       "preserved_outputs": "all Stage 11 artefacts verified intact post-recovery",
       "recovery_attempted": "retried after interval; sandbox recovered; local git history had reset to initial commit -> will re-sync branch from remote before pushing",
       "resolution": "RECOVERED",
+      "retry_count_after": 1
+    },
+    {
+      "id": "ERR-0006",
+      "utc": "2026-10-08 20:15 UTC",
+      "command_or_step": "T12 chunk render verification probe (render_chunks.py probe_mp4)",
+      "error_text": "d.find(b'tkhd') returns the TYPE STRING offset (box start+4), so width was read from the height field (180) and height from trailing zero; bare assert raised AssertionError('') and every completed chunk was recorded verified:false error:'' although all chunk mp4s were structurally perfect (duration/dims/avc1 verified manually)",
+      "classification": "CODE_BUG",
+      "probable_cause": "mp4 box walk used raw byte search without compensating the 4-byte size field; assert had no message",
+      "impact": "34 valid chunk renders flagged unverified; driver would have re-rendered everything on naive re-run",
+      "preserved_outputs": "all 34 chunk mp4s intact (never re-rendered)",
+      "recovery_attempted": "probe rewritten to parse from moov with box offsets (tkhd width at +80 rel to type string) and assert given a message; skip-path writes verified json; re-run marked 34/34 VERIFIED-EXISTS in <1s with zero re-renders",
+      "resolution": "RESOLVED",
+      "retry_count_after": 1
+    },
+    {
+      "id": "ERR-0007",
+      "utc": "2026-10-08 20:15 UTC",
+      "command_or_step": "T12 final assembly FFMPEG H.264+AAC render (headless bpy module)",
+      "error_text": "bpy FFMPEG animation render writes a SILENT AAC track from VSE sound strips in this headless build, although sequencer audio evaluates fine (sound-strip mixdown peak 0.55 vs rendered track peak 0.0); first FINAL_FILM.mp4 passed structural checks but decoded to digital silence",
+      "classification": "ENVIRONMENT",
+      "probable_cause": "pypi bpy 4.3.0 headless render pipeline does not feed sequencer audio into the ffmpeg muxer",
+      "impact": "final audio had to be authored outside the VSE render",
+      "preserved_outputs": "rendered H.264 video stream and all chunks intact",
+      "recovery_attempted": "rebuilt the measured mix to 10_AUDIO/mix/FINAL_MIX.wav (identical numpy pipeline to measure_mix.py; re-verified -16.34 LUFS/-1.50 dBTP), then 13_RENDER/scripts/mux_audio.py transcodes the video once (libx264 CRF18) and AAC-encodes FINAL_MIX.wav with PyAV 18, timestamp-merged; delivered AAC decodes to 302.02 s, -15.97 LUFS / -1.43 dBTP",
+      "resolution": "RESOLVED",
       "retry_count_after": 1
     }
   ]

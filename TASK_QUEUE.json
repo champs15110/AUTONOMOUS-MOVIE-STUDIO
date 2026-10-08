@@ -386,7 +386,7 @@
       "task_id": "T12_FINAL_RENDER",
       "stage": "12_FINAL_RENDER",
       "title": "Scene-by-scene final render and assembly",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T11_QC"
       ],
@@ -408,13 +408,14 @@
       "retry_count": 0,
       "last_error": null,
       "checkpoint": null,
-      "notes": "Risk R-001 lives here. NEVER one monolithic render job."
+      "notes": "Risk R-001 lives here. NEVER one monolithic render job.",
+      "verified_utc": "2026-10-08 20:15 UTC"
     },
     {
       "task_id": "T13_FINAL_VERIFICATION",
       "stage": "13_FINAL_VERIFICATION",
       "title": "Verify FINAL/FINAL_FILM.mp4 technically - the only completion gate",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T12_FINAL_RENDER"
       ],
@@ -437,7 +438,8 @@
       "retry_count": 0,
       "last_error": null,
       "checkpoint": null,
-      "notes": "Project is NOT complete until this task is VERIFIED."
+      "notes": "Project is NOT complete until this task is VERIFIED.",
+      "verified_utc": "2026-10-08 20:15 UTC"
     }
   ]
 }

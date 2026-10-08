@@ -1,0 +1,21 @@
+{
+  "film_title": "NINETY-TWO TURNS",
+  "runtime": 302.0,
+  "resolution": "320x180 (16:9)",
+  "fps": 24,
+  "aspect_ratio": "16:9",
+  "audio": {
+    "tracks": "ambience+music+sfx, AAC 128k",
+    "loudness_trim_db": 2.93
+  },
+  "chunks_rendered": 34,
+  "chunks_verified": 34,
+  "qc_status": "PASS",
+  "final_file": "FINAL/FINAL_FILM.mp4",
+  "known_limitations": [
+    "Local CPU final at 320x180/6spp: JANCTION cloud renderer not configured (ERR-0003); 1080p/128spp measures ~49 days on this 2-core box (RENDER_ESTIMATES.json)",
+    "Source mix FINAL_MIX.wav measures -16.34 LUFS / -1.50 dBTP (true-peak ceiling binds); after AAC encode the delivered track measures -15.97 LUFS / -1.43 dBTP (within +/-0.5 LU of the -16 target)",
+    "Headless bpy FFMPEG animation render writes a silent AAC track (ERR-0007): final audio is AAC-encoded from FINAL_MIX.wav with PyAV and muxed with the rendered video",
+    "Stage-12 animatic superseded by this final film (ERR-0005)"
+  ]
+}

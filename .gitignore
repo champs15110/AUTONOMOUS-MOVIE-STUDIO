@@ -24,3 +24,7 @@ node_modules/
 
 # --- the deliverable IS tracked ---
 !FINAL/FINAL_FILM.mp4
+
+# --- Stage 14: chunk renders and source mix are re-generable intermediates ---
+13_RENDER/FINAL_CHUNKS/*.mp4
+10_AUDIO/mix/FINAL_MIX.wav

@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T20:12:19+00:00",
+  "final_file": "FINAL/FINAL_FILM.mp4",
+  "backend": "pypi bpy 4.3.0 / Cycles CPU (JANCTION absent ERR-0003)",
+  "final_spec": {
+    "resolution": "320x180",
+    "fps": 24,
+    "codec": "H.264",
+    "audio": "AAC 128k",
+    "samples": 6,
+    "denoise": "OpenImageDenoise"
+  },
+  "chunks": [
+    {
+      "chunk": 0,
+      "scene": "SC01",
+      "frames": [
+        1,
+        240
+      ],
+      "seconds": 10.0,
+      "size": 32619
+    },
+    {
+      "chunk": 1,
+      "scene": "SC01",
+      "frames": [
+        241,
+        480
+      ],
+      "seconds": 10.0,
+      "size": 48583
+    },
+    {
+      "chunk": 2,
+      "scene": "SC01",
+      "frames": [
+        481,
+        720
+      ],
+      "seconds": 10.0,
+      "size": 27586
+    },
+    {
+      "chunk": 3,
+      "scene": "SC01",
+      "frames": [
+        721,
+        768
+      ],
+      "seconds": 2.0,
+      "size": 5991
+    },
+    {
+      "chunk": 4,
+      "scene": "SC02",
+      "frames": [
+        769,
+        1008
+      ],
+      "seconds": 10.0,
+      "size": 26519
+    },
+    {
+      "chunk": 5,
+      "scene": "SC02",
+      "frames": [
+        1009,
+        1248
+      ],
+      "seconds": 10.0,
+      "size": 29447
+    },
+    {
+      "chunk": 6,
+      "scene": "SC02",
+      "frames": [
+        1249,
+        1488
+      ],
+      "seconds": 10.0,
+      "size": 26034
+    },
+    {
+      "chunk": 7,
+      "scene": "SC02",
+      "frames": [
+        1489,
+        1560
+      ],
+      "seconds": 3.0,
+      "size": 8534
+    },
+    {
+      "chunk": 8,
+      "scene": "SC03",
+      "frames": [
+        1561,
+        1800
+      ],
+      "seconds": 10.0,
+      "size": 28493
+    },
+    {
+      "chunk": 9,
+      "scene": "SC03",
+      "frames": [
+        1801,
+        2040
+      ],
+      "seconds": 10.0,
+      "size": 34037
+    },
+    {
+      "chunk": 10,
+      "scene": "SC03",
+      "frames": [
+        2041,
+        2208
+      ],
+      "seconds": 7.0,
+      "size": 24185
+    },
+    {
+      "chunk": 11,
+      "scene": "SC04",
+      "frames": [
+        2209,
+        2448
+      ],
+      "seconds": 10.0,
+      "size": 75668
+    },
+    {
+      "chunk": 12,
+      "scene": "SC04",
+      "frames": [
+        2449,
+        2688
+      ],
+      "seconds": 10.0,
+      "size": 80692
+    },
+    {
+      "chunk": 13,
+      "scene": "SC04",
+      "frames": [
+        2689,
+        2928
+      ],
+      "seconds": 10.0,
+      "size": 65675
+    },
+    {
+      "chunk": 14,
+      "scene": "SC05",
+      "frames": [
+        2929,
+        3168
+      ],
+      "seconds": 10.0,
+      "size": 21279
+    },
+    {
+      "chunk": 15,
+      "scene": "SC05",
+      "frames": [
+        3169,
+        3408
+      ],
+      "seconds": 10.0,
+      "size": 24814
+    },
+    {
+      "chunk": 16,
+      "scene": "SC05",
+      "frames": [
+        3409,
+        3648
+      ],
+      "seconds": 10.0,
+      "size": 23360
+    },
+    {
+      "chunk": 17,
+      "scene": "SC05",
+      "frames": [
+        3649,
+        3792
+      ],
+      "seconds": 6.0,
+      "size": 13802
+    },
+    {
+      "chunk": 18,
+      "scene": "SC06",
+      "frames": [
+        3793,
+        4032
+      ],
+      "seconds": 10.0,
+      "size": 128165
+    },
+    {
+      "chunk": 19,
+      "scene": "SC06",
+      "frames": [
+        4033,
+        4272
+      ],
+      "seconds": 10.0,
+      "size": 84936
+    },
+    {
+      "chunk": 20,
+      "scene": "SC06",
+      "frames": [
+        4273,
+        4464
+      ],
+      "seconds": 8.0,
+      "size": 64622
+    },
+    {
+      "chunk": 21,
+      "scene": "SC07",
+      "frames": [
+        4465,
+        4704
+      ],
+      "seconds": 10.0,
+      "size": 78984
+    },
+    {
+      "chunk": 22,
+      "scene": "SC07",
+      "frames": [
+        4705,
+        4944
+      ],
+      "seconds": 10.0,
+      "size": 156461
+    },
+    {
+      "chunk": 23,
+      "scene": "SC07",
+      "frames": [
+        4945,
+        5184
+      ],
+      "seconds": 10.0,
+      "size": 49779
+    },
+    {
+      "chunk": 24,
+      "scene": "SC07",
+      "frames": [
+        5185,
+        5424
+      ],
+      "seconds": 10.0,
+      "size": 50241
+    },
+    {
+      "chunk": 25,
+      "scene": "SC07",
+      "frames": [
+        5425,
+        5472
+      ],
+      "seconds": 2.0,
+      "size": 10914
+    },
+    {
+      "chunk": 26,
+      "scene": "SC08",
+      "frames": [
+        5473,
+        5712
+      ],
+      "seconds": 10.0,
+      "size": 62116
+    },
+    {
+      "chunk": 27,
+      "scene": "SC08",
+      "frames": [
+        5713,
+        5952
+      ],
+      "seconds": 10.0,
+      "size": 61627
+    },
+    {
+      "chunk": 28,
+      "scene": "SC08",
+      "frames": [
+        5953,
+        6192
+      ],
+      "seconds": 10.0,
+      "size": 101103
+    },
+    {
+      "chunk": 29,
+      "scene": "SC08",
+      "frames": [
+        6193,
+        6288
+      ],
+      "seconds": 4.0,
+      "size": 30942
+    },
+    {
+      "chunk": 30,
+      "scene": "SC09",
+      "frames": [
+        6289,
+        6528
+      ],
+      "seconds": 10.0,
+      "size": 23407
+    },
+    {
+      "chunk": 31,
+      "scene": "SC09",
+      "frames": [
+        6529,
+        6768
+      ],
+      "seconds": 10.0,
+      "size": 21516
+    },
+    {
+      "chunk": 32,
+      "scene": "SC10",
+      "frames": [
+        6769,
+        7008
+      ],
+      "seconds": 10.0,
+      "size": 19822
+    },
+    {
+      "chunk": 33,
+      "scene": "SC10",
+      "frames": [
+        7009,
+        7248
+      ],
+      "seconds": 10.0,
+      "size": 23616
+    }
+  ],
+  "chunks_rendered": 34,
+  "chunks_verified": 34,
+  "verification": {
+    "size": 7354432,
+    "ftyp": true,
+    "seconds": 302.016,
+    "tracks": [
+      {
+        "kind": "vide",
+        "seconds": 302.0,
+        "timescale": 12288,
+        "codec": "avc1",
+        "width": 320,
+        "height": 180,
+        "fps": 24.0
+      },
+      {
+        "kind": "soun",
+        "seconds": 302.037,
+        "timescale": 48000,
+        "codec": "mp4a"
+      }
+    ]
+  }
+}

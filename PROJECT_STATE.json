@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "12_FINAL_RENDER",
-  "current_task": "T12_FINAL_RENDER",
+  "current_stage": "14_FINAL_DELIVERY_COMPLETE",
+  "current_task": "COMPLETE",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -152,7 +152,7 @@
   },
   "last_updated": "2026-10-08T17:21:43+00:00 UTC",
   "updated_by": "master_controller",
-  "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED.",
+  "notes": "FINAL FILM VERIFIED. See FINAL/FINAL_REPORT.json + known_limitations (local CPU spec per ERR-0003; AAC track -15.97 LUFS; ERR-0007 mux workaround; ERR-0005 animatic superseded).",
   "stage_11_preview_render": {
     "status": "COMPLETE",
     "utc": "2026-10-08 04:13:26 UTC",
@@ -181,5 +181,32 @@
     "final_qc_status": "12_QC/FINAL_QC_STATUS.json (all ten *_pass true, overall_pass true)",
     "fixes": "11 camera nudges (ERR-0004 RESOLVED), 3 silence-bed conforms, loudness measured (-16.34 LUFS / -1.50 dBTP, peak ceiling binds)",
     "open_issues": 0
+  },
+  "stage_14_final_render": {
+    "status": "COMPLETE",
+    "utc": "2026-10-08 20:15 UTC",
+    "final_file": "FINAL/FINAL_FILM.mp4",
+    "chunks": {
+      "rendered": 34,
+      "verified": 34,
+      "max_frames": 240,
+      "contiguous": "1..7248"
+    },
+    "spec": {
+      "resolution": "320x180",
+      "fps": 24,
+      "codec": "H.264",
+      "audio": "AAC 128k",
+      "samples": 6,
+      "denoise": "OIDN"
+    },
+    "verification": "13/13 checks pass (FINAL/FINAL_QC.md); decoded audio -15.97 LUFS/-1.43 dBTP, 302.02 s; 4 representative frames inspected (opening/middle/climax/ending all as authored)",
+    "artifacts": [
+      "FINAL/FINAL_FILM.mp4",
+      "FINAL/FINAL_REPORT.json",
+      "FINAL/FINAL_QC.md",
+      "FINAL/FINAL_MANIFEST.json",
+      "FINAL/VERIFY_FRAMES/"
+    ]
   }
 }
