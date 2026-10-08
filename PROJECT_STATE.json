@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "10_EDIT",
-  "current_task": "T10_EDIT",
+  "current_stage": "11_QC",
+  "current_task": "T11_QC",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -14,7 +14,8 @@
     "06_ANIMATION",
     "07_CAMERA",
     "08_LIGHTING_VFX",
-    "09_AUDIO"
+    "09_AUDIO",
+    "10_EDIT"
   ],
   "failed_tasks": [],
   "blocked_tasks": [],
@@ -148,7 +149,7 @@
     "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9",
     "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg)."
   },
-  "last_updated": "2026-10-08 04:13:26 UTC",
+  "last_updated": "2026-10-08T16:56:04+00:00 UTC",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED.",
   "stage_11_preview_render": {
@@ -164,5 +165,13 @@
       "11_RENDER/RENDER_ERRORS.json",
       "11_RENDER/CAMERA_OCCLUSION_AUDIT.json"
     ]
+  },
+  "stage_12_editing": {
+    "status": "COMPLETE",
+    "utc": "2026-10-08T16:56:04+00:00 UTC",
+    "edit_timeline": "11_EDIT/EDIT_TIMELINE.json (58 shots straight-cut, 302.0 s)",
+    "editorial_qc": "ALL PASS (12 checks + hook/pacing/climax/ending/audio/transitions/continuity/screen-direction)",
+    "preview": "11_EDIT/ASSEMBLY_PREVIEW_LOWRES.mp4 - 480x270 H.264/AAC VSE animatic, 302.0 s, NOT FINAL",
+    "editorial_conform_fixes": "3 ambience beds trimmed/split around declared silences in 10_AUDIO/scripts/audio_plan.py; AUDIO_TIMELINE regenerated 141->143 events, audio harness 10/10"
   }
 }

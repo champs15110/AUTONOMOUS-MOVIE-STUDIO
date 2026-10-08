@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T01:58:05Z",
+  "last_updated": "2026-10-08T16:56:04+00:00",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -324,7 +324,7 @@
       "task_id": "T10_EDIT",
       "stage": "10_EDIT",
       "title": "Timeline assembly, conform and cut",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T08_LIGHTING_VFX",
         "T09_AUDIO"
@@ -336,6 +336,10 @@
         "02_SCREENPLAY/SHOT_LIST.json"
       ],
       "output_files": [
+        "11_EDIT/EDIT_TIMELINE.json",
+        "11_EDIT/ASSEMBLY_PLAN.md",
+        "11_EDIT/EDITORIAL_QC.md",
+        "11_EDIT/ASSEMBLY_PREVIEW_LOWRES.mp4 (non-final animatic)",
         "11_EDIT/timeline/EDIT_DECISION_LIST.json",
         "11_EDIT/conform/CONFORM_NOTES.md"
       ],

@@ -1,0 +1,6 @@
+{
+  "note": "Pointer EDL for the T10_EDIT queue slot - the canonical Stage-12 edit decision list is 11_EDIT/EDIT_TIMELINE.json (58 shots, straight-cut, exact story order).",
+  "edit_timeline": "11_EDIT/EDIT_TIMELINE.json",
+  "shots": 58,
+  "runtime_seconds": 302.0
+}

@@ -5,7 +5,7 @@
   "film_title": "NINETY-TWO TURNS",
   "fps": 24,
   "total_frames": 7248,
-  "generated": "2026-10-08T01:58:11+00:00",
+  "generated": "2026-10-08T16:47:22+00:00",
   "wordless": true,
   "tracks": {
     "dialogue": [],
@@ -38,13 +38,25 @@
         "track": "ambience",
         "asset": "AMB_HARBOUR_WIND",
         "frame_in": 300,
-        "frame_out": 1176,
+        "frame_out": 984,
         "gain": 0.8,
         "fade_in": 96,
-        "fade_out": 0,
+        "fade_out": 24,
         "loop": false,
         "shot": "SC01_SH004",
         "note": "SC01_SH004 harbour ambience swells in as we widen - water, wind through iron, no birds"
+      },
+      {
+        "track": "ambience",
+        "asset": "AMB_HARBOUR_WIND",
+        "frame_in": 1033,
+        "frame_out": 1176,
+        "gain": 0.8,
+        "fade_in": 24,
+        "fade_out": 24,
+        "loop": false,
+        "shot": "SC02_SH003",
+        "note": "SC02_SH003 harbour ambience resumes after the SC02_SH002 absolute silence (Stage-12 editorial conform)"
       },
       {
         "track": "ambience",
@@ -98,13 +110,13 @@
         "track": "ambience",
         "asset": "AMB_GALE",
         "frame_in": 2929,
-        "frame_out": 3289,
+        "frame_out": 3239,
         "gain": 1.0,
         "fade_in": 24,
-        "fade_out": 0,
+        "fade_out": 24,
         "loop": false,
         "shot": "SC05_SH001",
-        "note": "SC05_SH001 wind up sharply"
+        "note": "SC05_SH001 wind up sharply; dies at the hole in the sound (Stage-12 editorial conform: was 3289, played through the SC05_SH003 silence)"
       },
       {
         "track": "ambience",
@@ -206,13 +218,25 @@
         "track": "ambience",
         "asset": "AMB_TOWER_INT",
         "frame_in": 5953,
-        "frame_out": 6288,
+        "frame_out": 6216,
         "gain": 0.5,
         "fade_in": 48,
-        "fade_out": 96,
+        "fade_out": 24,
         "loop": false,
         "shot": "SC08_SH005",
         "note": "SC08_SH005 bed returns under the complete motif - SH003/SH004 are true silence ('No catch. Nothing.' / 'Absolute silence.')"
+      },
+      {
+        "track": "ambience",
+        "asset": "AMB_TOWER_INT",
+        "frame_in": 6242,
+        "frame_out": 6288,
+        "gain": 0.5,
+        "fade_in": 12,
+        "fade_out": 96,
+        "loop": false,
+        "shot": "SC08_SH007",
+        "note": "SC08_SH007 bed returns after the one-beat silence before ignition (Stage-12 editorial conform)"
       },
       {
         "track": "ambience",

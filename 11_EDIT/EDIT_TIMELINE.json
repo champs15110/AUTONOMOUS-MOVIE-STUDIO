@@ -1,0 +1,3494 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T16:54:40+00:00",
+  "film_title": "NINETY-TWO TURNS",
+  "fps": 24,
+  "total_frames": 7248,
+  "runtime_seconds": 302.0,
+  "wordless": true,
+  "assembly_mode": "straight-cut EDL in exact SHOT_LIST story order; no shot substitutions or reorders",
+  "source_inputs": [
+    "02_SCREENPLAY/SHOT_LIST.json",
+    "02_SCREENPLAY/FINAL_SCREENPLAY.md",
+    "05_STORYBOARD/MASTER_SHOT_PLAN.json",
+    "11_RENDER/RENDER_STATUS.json",
+    "10_AUDIO/AUDIO_TIMELINE.json"
+  ],
+  "master_axis": "Master line of action: the sea and the returning ship sit FRAME RIGHT; the tower sits FRAME LEFT. WICK's journey runs frame RIGHT to LEFT. The climb runs vertically with the tower wall to the left. After the ignition the payoff looks back FRAME RIGHT to the sea. No shot crosses this axis without a neutral macro or POV buffer.",
+  "intentional_silences": [
+    {
+      "frames": [
+        985,
+        1032
+      ],
+      "reason": "SC02_SH002: 'On the third, absolute silence.'"
+    },
+    {
+      "frames": [
+        3240,
+        3289
+      ],
+      "reason": "SC05_SH003: 'then nothing. A hole opens in the sound.'"
+    },
+    {
+      "frames": [
+        5760,
+        5833
+      ],
+      "reason": "SC08_SH003: 'The hum, then silence. No catch. No click. Nothing.'"
+    },
+    {
+      "frames": [
+        5833,
+        5952
+      ],
+      "reason": "SC08_SH004: 'Absolute silence. One water drop.'"
+    },
+    {
+      "frames": [
+        6217,
+        6241
+      ],
+      "reason": "SC08_SH007: 'One beat of absolute silence' before the ignition"
+    }
+  ],
+  "scene_transitions": [
+    {
+      "scene_id": "SC01",
+      "slug": "THE WINDING",
+      "transition": "Hard cut on the shutter eyes opening.",
+      "frames": [
+        1,
+        768
+      ]
+    },
+    {
+      "scene_id": "SC02",
+      "slug": "THE DEAD PILLAR",
+      "transition": "Cut on her first footfall out of frame left.",
+      "frames": [
+        769,
+        1560
+      ]
+    },
+    {
+      "scene_id": "SC03",
+      "slug": "SETTING OUT",
+      "transition": "Music cuts out on the water's edge; hard cut to the flooded street.",
+      "frames": [
+        1561,
+        2208
+      ]
+    },
+    {
+      "scene_id": "SC04",
+      "slug": "THE FLOODED STREET",
+      "transition": "Cut on the surface break and the first hard rain.",
+      "frames": [
+        2209,
+        2928
+      ]
+    },
+    {
+      "scene_id": "SC05",
+      "slug": "THE GANTRY",
+      "transition": "Cut on a rack focus from the gauge to the tower door.",
+      "frames": [
+        2929,
+        3792
+      ]
+    },
+    {
+      "scene_id": "SC06",
+      "slug": "THE TOWER BASE",
+      "transition": "Cut from the broken stair to the exterior breach.",
+      "frames": [
+        3793,
+        4464
+      ]
+    },
+    {
+      "scene_id": "SC07",
+      "slug": "THE CLIMB",
+      "transition": "Cut as she collapses through the gallery doorway.",
+      "frames": [
+        4465,
+        5472
+      ]
+    },
+    {
+      "scene_id": "SC08",
+      "slug": "THE BURNER",
+      "transition": "Ignition floods the frame to white-gold; cut to the exterior beam.",
+      "frames": [
+        5473,
+        6288
+      ]
+    },
+    {
+      "scene_id": "SC09",
+      "slug": "THE LIGHT",
+      "transition": "Slow push toward her silhouette as the beacon dies; cut to dawn interior.",
+      "frames": [
+        6289,
+        6768
+      ]
+    },
+    {
+      "scene_id": "SC10",
+      "slug": "ONE TURN",
+      "transition": "Hard cut to black on the final click.",
+      "frames": [
+        6769,
+        7248
+      ]
+    }
+  ],
+  "pacing": {
+    "SC01": {
+      "shots": 6,
+      "seconds": 32.0,
+      "avg_shot_s": 5.33,
+      "cuts_per_min": 11.2,
+      "emotion": "curiosity, then dread",
+      "beat": "HOOK"
+    },
+    "SC02": {
+      "shots": 6,
+      "seconds": 33.0,
+      "avg_shot_s": 5.5,
+      "cuts_per_min": 10.9,
+      "emotion": "dread hardening into resolve",
+      "beat": "STAKE"
+    },
+    "SC03": {
+      "shots": 5,
+      "seconds": 27.0,
+      "avg_shot_s": 5.4,
+      "cuts_per_min": 11.1,
+      "emotion": "wonder, underpinned by a counting dread",
+      "beat": "DEPARTURE"
+    },
+    "SC04": {
+      "shots": 6,
+      "seconds": 30.0,
+      "avg_shot_s": 5.0,
+      "cuts_per_min": 12.0,
+      "emotion": "alarm",
+      "beat": "OBSTACLE_1"
+    },
+    "SC05": {
+      "shots": 7,
+      "seconds": 36.0,
+      "avg_shot_s": 5.14,
+      "cuts_per_min": 11.7,
+      "emotion": "loss, then tenderness, then a colder determination",
+      "beat": "OBSTACLE_2_AND_LOSS"
+    },
+    "SC06": {
+      "shots": 5,
+      "seconds": 28.0,
+      "avg_shot_s": 5.6,
+      "cuts_per_min": 10.7,
+      "emotion": "foreboding",
+      "beat": "OBSTACLE_3"
+    },
+    "SC07": {
+      "shots": 8,
+      "seconds": 42.0,
+      "avg_shot_s": 5.25,
+      "cuts_per_min": 11.4,
+      "emotion": "desperation, then a single moment of recognition",
+      "beat": "ESCALATION_PEAK"
+    },
+    "SC08": {
+      "shots": 7,
+      "seconds": 34.0,
+      "avg_shot_s": 4.86,
+      "cuts_per_min": 12.4,
+      "emotion": "recognition, sacrifice, awe",
+      "beat": "CLIMAX_AND_TWIST"
+    },
+    "SC09": {
+      "shots": 3,
+      "seconds": 20.0,
+      "avg_shot_s": 6.67,
+      "cuts_per_min": 9.0,
+      "emotion": "relief, then mourning",
+      "beat": "PAYOFF"
+    },
+    "SC10": {
+      "shots": 5,
+      "seconds": 20.0,
+      "avg_shot_s": 4.0,
+      "cuts_per_min": 15.0,
+      "emotion": "mourning resolving into hope",
+      "beat": "RESOLUTION_AND_LOOP"
+    }
+  },
+  "shots": [
+    {
+      "index": 1,
+      "shot_id": "SC01_SH001",
+      "scene_id": "SC01",
+      "source_frame_in": 1,
+      "source_frame_out": 132,
+      "record_frame_in": 1,
+      "record_frame_out": 132,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "extreme macro",
+      "lens": "100mm macro",
+      "screen_direction": "static; no travel",
+      "transition_out": "Cut to the chest drum.",
+      "scene_transition": null,
+      "gauge": [
+        null,
+        null
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "First appearance of the key and back plate. The fourth-turn slip is the film's inciting incident and must read clearly at any size.",
+        "First appearance of the key and back plate. The fourth-turn slip is the film's inciting incident and must read clearly at any size."
+      ],
+      "action": "Extreme macro. A brass winding key seated in a back plate. It turns - once, twice, three times. On the fourth turn the ratchet slips and the key overshoots with no bite.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_QUAY_DUSK",
+          "frame_in": 1,
+          "frame_out": 132,
+          "gain": 0.7,
+          "fade_in": 48,
+          "fade_out": 24,
+          "note": "SC01_SH001 distant wind under; SH003 wind + distant water, 'nothing else - the silence is the point'"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RATCHET_CLICK_A",
+          "frame_in": 41,
+          "frame_out": 42,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "three dry ratchet clicks, close and intimate (1/3)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RATCHET_CLICK_B",
+          "frame_in": 73,
+          "frame_out": 74,
+          "gain": 0.95,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/3)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RATCHET_CLICK_C",
+          "frame_in": 105,
+          "frame_out": 106,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(3/3)"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "shot_id": "SC01_SH002",
+      "scene_id": "SC01",
+      "source_frame_in": 133,
+      "source_frame_out": 216,
+      "record_frame_in": 133,
+      "record_frame_out": 216,
+      "frames": 84,
+      "duration_s": 3.5,
+      "shot_type": "macro",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut to a held static on the gauge.",
+      "scene_transition": null,
+      "gauge": [
+        null,
+        92
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "92 is established here at 00:08, inside the eight-second hook deadline. This exact needle position is the reference for every later gauge shot.",
+        "92 is established here at 00:08, inside the eight-second hook deadline. This exact needle position is the reference for every later gauge shot."
+      ],
+      "action": "Macro on the glass chest drum. Inside, the coil tightens - then a single spring tooth shears off, pings against the glass and falls out of frame. The needle swings upward, hesitates, sags, and settles on 92.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SHEAR_PING",
+          "frame_in": 150,
+          "frame_out": 184,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "a bright metallic ping on the shear"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_SUB_THUD",
+          "frame_in": 195,
+          "frame_out": 217,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "a low sub thud as the needle settles"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "shot_id": "SC01_SH003",
+      "scene_id": "SC01",
+      "source_frame_in": 217,
+      "source_frame_out": 336,
+      "record_frame_in": 217,
+      "record_frame_out": 336,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "macro",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Pull back.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "The amber defocus is the harbour lamp, established before we see it. Do not identify the source yet.",
+        "The amber defocus is the harbour lamp, established before we see it. Do not identify the source yet."
+      ],
+      "action": "Hold on the gauge. 92. The needle trembles once and is still. Out of focus, warm amber lamp light drifts across the glass.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_QUAY_DUSK",
+          "frame_in": 217,
+          "frame_out": 336,
+          "gain": 0.8,
+          "fade_in": 24,
+          "fade_out": 72,
+          "note": "SC01_SH003 wind, distant water"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "shot_id": "SC01_SH004",
+      "scene_id": "SC01",
+      "source_frame_in": 337,
+      "source_frame_out": 528,
+      "record_frame_in": 337,
+      "record_frame_out": 528,
+      "frames": 192,
+      "duration_s": 8.0,
+      "shot_type": "extreme wide",
+      "lens": "24mm",
+      "screen_direction": "static frame; she is still",
+      "transition_out": "Cut to her eye height.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "First full view of WICK and of the world. The single burning lamp must be in frame and clearly the only light source.",
+        "First full view of WICK and of the world. The single burning lamp must be in frame and clearly the only light source."
+      ],
+      "action": "Slow pull back and up. The frame opens out to reveal WICK - forty centimetres of aged brass - alone on a barnacled stone quay. Behind her, a drowned harbour town. One lamp still burns on a post. Dusk.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_HARBOUR_WIND",
+          "frame_in": 300,
+          "frame_out": 984,
+          "gain": 0.8,
+          "fade_in": 96,
+          "fade_out": 24,
+          "note": "SC01_SH004 harbour ambience swells in as we widen - water, wind through iron, no birds"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "shot_id": "SC01_SH005",
+      "scene_id": "SC01",
+      "source_frame_in": 529,
+      "source_frame_out": 648,
+      "record_frame_in": 529,
+      "record_frame_out": 648,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "close-up",
+      "lens": "50mm",
+      "screen_direction": "eyeline: gauge down, tower up/left",
+      "transition_out": "Cut to her point of view.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The shutter-eye open is her first expression and sets the vocabulary for the whole film. Aperture range established here is reused for every later emotional beat.",
+        "The shutter-eye open is her first expression and sets the vocabulary for the whole film. Aperture range established here is reused for every later emotional beat."
+      ],
+      "action": "WICK's shutter eyes open - the apertures irising up from black. She looks down at her own chest gauge, and holds on what it says.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_A",
+          "frame_in": 529,
+          "frame_out": 635,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC01_SH005 her clock motif, first statement - three thin notes on a single instrument"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "shot_id": "SC01_SH006",
+      "scene_id": "SC01",
+      "source_frame_in": 649,
+      "source_frame_out": 768,
+      "record_frame_in": 649,
+      "record_frame_out": 768,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "POV wide",
+      "lens": "35mm",
+      "screen_direction": "looks frame L",
+      "transition_out": "Hard cut to the pillar.",
+      "scene_transition": "Hard cut on the shutter eyes opening.",
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [],
+      "continuity": [
+        "First view of the tower from her perspective. Bearing and water line must match SC02_SH004, which shoots it from the opposite side.",
+        "First view of the tower from her perspective. Bearing and water line must match SC02_SH004, which shoots it from the opposite side."
+      ],
+      "action": "Her point of view: the dark, unlit beacon tower on the horizon across black water. Hold. She does not move.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_UNRESOLVED",
+          "frame_in": 649,
+          "frame_out": 692,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC01_SH006 the motif does not resolve; it simply stops"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "shot_id": "SC02_SH001",
+      "scene_id": "SC02",
+      "source_frame_in": 769,
+      "source_frame_out": 924,
+      "record_frame_in": 769,
+      "record_frame_out": 924,
+      "frames": 156,
+      "duration_s": 6.5,
+      "shot_type": "medium low",
+      "lens": "35mm",
+      "screen_direction": "static",
+      "transition_out": "Cut to macro on the socket.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The pillar is the same asset seen in the SC01 wide. Her approach must read as habitual, not exploratory.",
+        "The pillar is the same asset seen in the SC01 wide. Her approach must read as habitual, not exploratory."
+      ],
+      "action": "WICK at the winding pillar, a brass column at the centre of the plaza. She backs up to it and raises herself onto the socket - a practised, habitual, daily motion.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_JOINT_ALIGN",
+          "frame_in": 790,
+          "frame_out": 792,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the small click of alignment as she seats herself"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "shot_id": "SC02_SH002",
+      "scene_id": "SC02",
+      "source_frame_in": 925,
+      "source_frame_out": 1032,
+      "record_frame_in": 925,
+      "record_frame_out": 1032,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "macro / insert",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut wide to the horizon.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "The stripped socket is permanent. No later scene may imply the pillar can be repaired.",
+        "The stripped socket is permanent. No later scene may imply the pillar can be repaired."
+      ],
+      "action": "Macro on the socket: stripped, the teeth worn away. The key enters and spins free with no bite. She withdraws and tries again. And again.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_HOLLOW_SPIN",
+          "frame_in": 935,
+          "frame_out": 957,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "three hollow spins with no ratchet underneath (1/3)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_HOLLOW_SPIN",
+          "frame_in": 962,
+          "frame_out": 984,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/3)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_HOLLOW_SPIN",
+          "frame_in": 989,
+          "frame_out": 1011,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(3/3) - then absolute silence"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "shot_id": "SC02_SH003",
+      "scene_id": "SC02",
+      "source_frame_in": 1033,
+      "source_frame_out": 1176,
+      "record_frame_in": 1033,
+      "record_frame_out": 1176,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "extreme wide",
+      "lens": "200mm",
+      "screen_direction": "looks frame R",
+      "transition_out": "Cut to reverse.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "THE RETURNING SHIP"
+      ],
+      "continuity": [
+        "The ship is never seen closer than this until SC09. Reef line position must match SC09_SH002 exactly.",
+        "The ship is never seen closer than this until SC09. Reef line position must match SC09_SH002 exactly."
+      ],
+      "action": "Wide over the harbour to the horizon. A single amber running light, low on the water, moving toward the reef line.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_HARBOUR_WIND",
+          "frame_in": 1033,
+          "frame_out": 1176,
+          "gain": 0.8,
+          "fade_in": 24,
+          "fade_out": 24,
+          "note": "SC02_SH003 harbour ambience resumes after the SC02_SH002 absolute silence (Stage-12 editorial conform)"
+        },
+        {
+          "track": "music",
+          "asset": "MUS_SHIP_MOTIF",
+          "frame_in": 1045,
+          "frame_out": 1115,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC02_SH003 the ship's motif - two descending notes, first statement"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BELL_BUOY",
+          "frame_in": 1060,
+          "frame_out": 1161,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "a distant bell buoy, slow and irregular (1/2)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BELL_BUOY",
+          "frame_in": 1141,
+          "frame_out": 1242,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/2)"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "shot_id": "SC02_SH004",
+      "scene_id": "SC02",
+      "source_frame_in": 1177,
+      "source_frame_out": 1320,
+      "record_frame_in": 1177,
+      "record_frame_out": 1320,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "wide",
+      "lens": "18mm",
+      "screen_direction": "the destination frame L",
+      "transition_out": "Cut back to her.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [],
+      "continuity": [
+        "This is the first view of the tower's full height. The plating and handholds seen here are the same ones climbed in SC07.",
+        "This is the first view of the tower's full height. The plating and handholds seen here are the same ones climbed in SC07."
+      ],
+      "action": "Reverse, from the waterline: the beacon tower, black against a bruised sky, unlit.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_HARBOUR_WIND",
+          "frame_in": 1177,
+          "frame_out": 1560,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 48,
+          "note": "SC02_SH004 wind rising"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_IRON_GROAN",
+          "frame_in": 1195,
+          "frame_out": 1267,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "iron groaning under load (1/2)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_IRON_GROAN",
+          "frame_in": 1270,
+          "frame_out": 1342,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/2)"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "shot_id": "SC02_SH005",
+      "scene_id": "SC02",
+      "source_frame_in": 1321,
+      "source_frame_out": 1440,
+      "record_frame_in": 1321,
+      "record_frame_out": 1440,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "close-up",
+      "lens": "85mm",
+      "screen_direction": "reflection frame L",
+      "transition_out": "Cut to the pole.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The three-point eyeline is ship / tower / own chest. This shot is the third point and must contain the tower reflection to complete it.",
+        "The three-point eyeline is ship / tower / own chest. This shot is the third point and must contain the tower reflection to complete it."
+      ],
+      "action": "Close on WICK's chest. The gauge reads 92. The dark tower is reflected in her shutter lenses.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_B",
+          "frame_in": 1321,
+          "frame_out": 1410,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC02_SH005 second statement - noticeably faster"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "shot_id": "SC02_SH006",
+      "scene_id": "SC02",
+      "source_frame_in": 1441,
+      "source_frame_out": 1560,
+      "record_frame_in": 1441,
+      "record_frame_out": 1560,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "medium",
+      "lens": "40mm",
+      "screen_direction": "travels frame L (journey axis)",
+      "transition_out": "Cut on the footfall.",
+      "scene_transition": "Cut on her first footfall out of frame left.",
+      "gauge": [
+        92,
+        92
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The pole leaves with her here and is not lost until SC05_SH003. Its length relative to her body must stay consistent.",
+        "The pole leaves with her here and is not lost until SC05_SH003. Its length relative to her body must stay consistent."
+      ],
+      "action": "She reaches down and lifts the lamp-pole from the stone. It is taller than she is. She sets it against her shoulder, takes one step toward the tower.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_FORWARD",
+          "frame_in": 1441,
+          "frame_out": 1677,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC02_SH006 the score's first forward motion underneath"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_POLE_SCRAPE",
+          "frame_in": 1455,
+          "frame_out": 1470,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the pole scraping stone"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1500,
+          "frame_out": 1502,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "one footfall"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "shot_id": "SC03_SH001",
+      "scene_id": "SC03",
+      "source_frame_in": 1561,
+      "source_frame_out": 1704,
+      "record_frame_in": 1561,
+      "record_frame_out": 1704,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "tracking medium",
+      "lens": "40mm",
+      "screen_direction": "travels frame L",
+      "transition_out": "Cut to gauge insert.",
+      "scene_transition": null,
+      "gauge": [
+        92,
+        88
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The tick-to-footfall sync must be exact - it is the grammar the rest of the film relies on. Gauge decrements in even steps.",
+        "The tick-to-footfall sync must be exact - it is the grammar the rest of the film relies on. Gauge decrements in even steps."
+      ],
+      "action": "Lateral tracking. WICK crosses the plaza. With every stride the gauge ticks down: 92, 90, 88.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_FOG_SWELL",
+          "frame_in": 1561,
+          "frame_out": 2208,
+          "gain": 0.9,
+          "fade_in": 48,
+          "fade_out": 48,
+          "note": "SC03 slow swell beyond the fog"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1573,
+          "frame_out": 1575,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1585,
+          "frame_out": 1587,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1597,
+          "frame_out": 1599,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1609,
+          "frame_out": 1611,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1621,
+          "frame_out": 1623,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1633,
+          "frame_out": 1635,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1645,
+          "frame_out": 1647,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1657,
+          "frame_out": 1659,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1669,
+          "frame_out": 1671,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1681,
+          "frame_out": 1683,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1693,
+          "frame_out": 1695,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "four-beat ratchet gait - the film's central sound idea starts here"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "shot_id": "SC03_SH002",
+      "scene_id": "SC03",
+      "source_frame_in": 1705,
+      "source_frame_out": 1824,
+      "record_frame_in": 1705,
+      "record_frame_out": 1824,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "insert",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut wide.",
+      "scene_transition": null,
+      "gauge": [
+        88,
+        86
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "Gauge insert framing is now locked: same lens, same angle, same lighting key for every insert in the film.",
+        "Gauge insert framing is now locked: same lens, same angle, same lighting key for every insert in the film."
+      ],
+      "action": "Insert on the gauge. 88 to 86. The needle moves in discrete, audible steps rather than smoothly.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1725,
+          "frame_out": 1727,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "two ticks, loud and dry, nothing under them (1/2)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 1765,
+          "frame_out": 1767,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/2)"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "shot_id": "SC03_SH003",
+      "scene_id": "SC03",
+      "source_frame_in": 1825,
+      "source_frame_out": 1992,
+      "record_frame_in": 1825,
+      "record_frame_out": 1992,
+      "frames": 168,
+      "duration_s": 7.0,
+      "shot_type": "extreme wide",
+      "lens": "24mm",
+      "screen_direction": "away / frame L",
+      "transition_out": "Cut to the lamp posts.",
+      "scene_transition": null,
+      "gauge": [
+        86,
+        85
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "This is the beauty pass. It exists so the audience has something to lose. Kelp and water motion must be gentle here and violent from SC05.",
+        "This is the beauty pass. It exists so the audience has something to lose. Kelp and water motion must be gentle here and violent from SC05."
+      ],
+      "action": "Wide. The drowned harbour in full: barnacled arches, kelp swaying in the shallows, rooftops under black water. Beautiful, and completely empty.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_STRINGS_MAJOR",
+          "frame_in": 1825,
+          "frame_out": 2112,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 24,
+          "note": "SC03_SH003 the music opens out - the only major-key passage in the film"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "shot_id": "SC03_SH004",
+      "scene_id": "SC03",
+      "source_frame_in": 1993,
+      "source_frame_out": 2112,
+      "record_frame_in": 1993,
+      "record_frame_out": 2112,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "tracking medium",
+      "lens": "40mm",
+      "screen_direction": "travels frame L",
+      "transition_out": "Cut to the water's edge.",
+      "scene_transition": null,
+      "gauge": [
+        85,
+        84
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The dead lamps foreshadow what the beacon will fix. The one burning lamp is the source of the spark she takes in SC05.",
+        "The dead lamps foreshadow what the beacon will fix. The one burning lamp is the source of the spark she takes in SC05."
+      ],
+      "action": "She passes a row of harbour lamp posts, all dead. She does not stop. Behind her, the one lamp that still burns.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_B",
+          "frame_in": 1993,
+          "frame_out": 2082,
+          "gain": 0.4,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC03_SH004 the clock motif continues under the strings"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "shot_id": "SC03_SH005",
+      "scene_id": "SC03",
+      "source_frame_in": 2113,
+      "source_frame_out": 2208,
+      "record_frame_in": 2113,
+      "record_frame_out": 2208,
+      "frames": 96,
+      "duration_s": 4.0,
+      "shot_type": "over-shoulder",
+      "lens": "35mm",
+      "screen_direction": "faces frame L",
+      "transition_out": "Hard cut.",
+      "scene_transition": "Music cuts out on the water's edge; hard cut to the flooded street.",
+      "gauge": [
+        84,
+        84
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "84 is the handoff value into SC04. The street water level established here must match SC04_SH001.",
+        "84 is the handoff value into SC04. The street water level established here must match SC04_SH001."
+      ],
+      "action": "Gauge reads 84. She reaches the edge of the plaza. Beyond it, the street is black water.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_LAP",
+          "frame_in": 2120,
+          "frame_out": 2183,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "water lapping at stone (music cut out entirely)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_LAP",
+          "frame_in": 2172,
+          "frame_out": 2235,
+          "gain": 0.65,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "lapping continues"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "shot_id": "SC04_SH001",
+      "scene_id": "SC04",
+      "source_frame_in": 2209,
+      "source_frame_out": 2328,
+      "record_frame_in": 2209,
+      "record_frame_out": 2328,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "wide low",
+      "lens": "24mm",
+      "screen_direction": "faces frame L",
+      "transition_out": "Cut to the stall.",
+      "scene_transition": null,
+      "gauge": [
+        84,
+        84
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Water level must match SC03_SH005. This is the same lane, seen from the other side.",
+        "Water level must match SC03_SH005. This is the same lane, seen from the other side."
+      ],
+      "action": "Wide, low. The flooded lane. For a forty-centimetre machine this is a flood. She stops at the edge.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_FLOODED_STREET",
+          "frame_in": 2209,
+          "frame_out": 2560,
+          "gain": 0.9,
+          "fade_in": 24,
+          "fade_out": 96,
+          "note": "SC04_SH001 water; wind funnelling between buildings"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "shot_id": "SC04_SH002",
+      "scene_id": "SC04",
+      "source_frame_in": 2329,
+      "source_frame_out": 2460,
+      "record_frame_in": 2329,
+      "record_frame_out": 2460,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "medium",
+      "lens": "50mm",
+      "screen_direction": "climbs frame L/up",
+      "transition_out": "Cut to the railing.",
+      "scene_transition": null,
+      "gauge": [
+        84,
+        80
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "First irregular tick. From here the rhythm degrades progressively and never fully recovers.",
+        "First irregular tick. From here the rhythm degrades progressively and never fully recovers."
+      ],
+      "action": "She climbs a submerged market stall. Grip, haul, grip. Water sheets off her. Gauge 84 to 80.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2345,
+          "frame_out": 2347,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_METAL_STRAIN",
+          "frame_in": 2350,
+          "frame_out": 2410,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "metal straining"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2361,
+          "frame_out": 2363,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2372,
+          "frame_out": 2374,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2394,
+          "frame_out": 2396,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2405,
+          "frame_out": 2407,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2429,
+          "frame_out": 2431,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 2437,
+          "frame_out": 2439,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "footfall ticks continue but are now irregular (gait degradation begins)"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "shot_id": "SC04_SH003",
+      "scene_id": "SC04",
+      "source_frame_in": 2461,
+      "source_frame_out": 2568,
+      "record_frame_in": 2461,
+      "record_frame_out": 2568,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "profile medium",
+      "lens": "50mm",
+      "screen_direction": "travels frame L",
+      "transition_out": "Cut to the fall.",
+      "scene_transition": null,
+      "gauge": [
+        80,
+        77
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Rain starts here and never stops until SC09. First drops must be individually audible.",
+        "Rain starts here and never stops until SC09. First drops must be individually audible."
+      ],
+      "action": "Railing traverse, hand over hand. Rain begins - sparse first drops on the water. Gauge 80 to 77.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_RAIN_STEADY",
+          "frame_in": 2461,
+          "frame_out": 2928,
+          "gain": 0.9,
+          "fade_in": 372,
+          "fade_out": 24,
+          "note": "rain begins exactly at SC04_SH003; 'rain now steady and continuous' by SC04_SH006"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RAINDROP_FIRST",
+          "frame_in": 2461,
+          "frame_out": 2465,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first raindrops - distinct, countable"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RAINDROP_FIRST",
+          "frame_in": 2483,
+          "frame_out": 2487,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first raindrops - distinct, countable"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RAINDROP_FIRST",
+          "frame_in": 2499,
+          "frame_out": 2503,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first raindrops - distinct, countable"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RAINDROP_FIRST",
+          "frame_in": 2521,
+          "frame_out": 2525,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first raindrops - distinct, countable"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RAINDROP_FIRST",
+          "frame_in": 2547,
+          "frame_out": 2551,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first raindrops - distinct, countable"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "shot_id": "SC04_SH004",
+      "scene_id": "SC04",
+      "source_frame_in": 2569,
+      "source_frame_out": 2712,
+      "record_frame_in": 2569,
+      "record_frame_out": 2712,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "underwater",
+      "lens": "35mm",
+      "screen_direction": "down",
+      "transition_out": "Cut to low angle.",
+      "scene_transition": null,
+      "gauge": [
+        77,
+        75
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The muffled sound world is used only here and in SH005. The needle flicker is the first sign the water has done real damage.",
+        "The muffled sound world is used only here and in SH005. The needle flicker is the first sign the water has done real damage."
+      ],
+      "action": "THE DROP. Her grip fails and she goes under. Bubbles. The gauge flickers, the needle stuttering. The surface becomes a bright ceiling above her.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_DIST",
+          "frame_in": 2569,
+          "frame_out": 2678,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC04_SH004 her clock motif distorted and slowing"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_MUFFLED_SUB",
+          "frame_in": 2585,
+          "frame_out": 2609,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "everything muffles - a dull sub"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "shot_id": "SC04_SH005",
+      "scene_id": "SC04",
+      "source_frame_in": 2713,
+      "source_frame_out": 2832,
+      "record_frame_in": 2713,
+      "record_frame_out": 2832,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "low underwater",
+      "lens": "35mm",
+      "screen_direction": "up",
+      "transition_out": "Cut to the surface break.",
+      "scene_transition": null,
+      "gauge": [
+        75,
+        75
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The amber eye glow underwater is a signature image; keep the aperture half-closed so it reads as effort, not calm.",
+        "The amber eye glow underwater is a signature image; keep the aperture half-closed so it reads as effort, not calm."
+      ],
+      "action": "Underwater, looking up. Her shutter eyes glow amber in the murk. She plants her feet on the lane floor and pushes.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SPRING_CATCH",
+          "frame_in": 2760,
+          "frame_out": 2799,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the first audible catch of her spring - a small bright note under the murk"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "shot_id": "SC04_SH006",
+      "scene_id": "SC04",
+      "source_frame_in": 2833,
+      "source_frame_out": 2928,
+      "record_frame_in": 2833,
+      "record_frame_out": 2928,
+      "frames": 96,
+      "duration_s": 4.0,
+      "shot_type": "tight medium",
+      "lens": "50mm",
+      "screen_direction": "up / frame L",
+      "transition_out": "Hard cut to the gantry.",
+      "scene_transition": "Cut on the surface break and the first hard rain.",
+      "gauge": [
+        75,
+        71
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The shoulder joint sparks here and again in SC07_SH004. Same joint, so the damage is continuous, not incidental.",
+        "The shoulder joint sparks here and again in SC07_SH004. Same joint, so the damage is continuous, not incidental."
+      ],
+      "action": "She breaks the surface and hauls herself onto a wall coping, sparking. Steam comes off her brass. Gauge 75 to 71.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SURFACE_BREAK",
+          "frame_in": 2845,
+          "frame_out": 2888,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the surface break, loud"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "shot_id": "SC05_SH001",
+      "scene_id": "SC05",
+      "source_frame_in": 2929,
+      "source_frame_out": 3048,
+      "record_frame_in": 2929,
+      "record_frame_out": 3048,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "wide",
+      "lens": "28mm",
+      "screen_direction": "crosses frame L",
+      "transition_out": "Cut to midway.",
+      "scene_transition": null,
+      "gauge": [
+        71,
+        71
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The tower must be visible at the gantry's far end so the destination stays present during the obstacle.",
+        "The tower must be visible at the gantry's far end so the destination stays present during the obstacle."
+      ],
+      "action": "Wide. The gantry walkway spans the lane, rusted and swaying in the rising wind. She steps onto it.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_GALE",
+          "frame_in": 2929,
+          "frame_out": 3239,
+          "gain": 1.0,
+          "fade_in": 24,
+          "fade_out": 24,
+          "note": "SC05_SH001 wind up sharply; dies at the hole in the sound (Stage-12 editorial conform: was 3289, played through the SC05_SH003 silence)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_IRON_GROAN",
+          "frame_in": 2950,
+          "frame_out": 3022,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "iron creaking under load"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "shot_id": "SC05_SH002",
+      "scene_id": "SC05",
+      "source_frame_in": 3049,
+      "source_frame_out": 3180,
+      "record_frame_in": 3049,
+      "record_frame_out": 3180,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "medium low",
+      "lens": "35mm",
+      "screen_direction": "holds frame L against wind R",
+      "transition_out": "Cut to the pole.",
+      "scene_transition": null,
+      "gauge": [
+        71,
+        68
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Wind direction is camera-right for the whole scene. The pole is horizontal here and leaves her hand in the next shot.",
+        "Wind direction is camera-right for the whole scene. The pole is horizontal here and leaves her hand in the next shot."
+      ],
+      "action": "Midway. A gust hits. She braces with the pole held horizontal. Gauge 71 to 68.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_GUST_WALL",
+          "frame_in": 3049,
+          "frame_out": 3145,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gust as a solid wall of sound, not a whoosh"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "shot_id": "SC05_SH003",
+      "scene_id": "SC05",
+      "source_frame_in": 3181,
+      "source_frame_out": 3288,
+      "record_frame_in": 3181,
+      "record_frame_out": 3288,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "medium, then hold on water",
+      "lens": "50mm",
+      "screen_direction": "pole exits; she is left frame R of centre",
+      "transition_out": "Cut back to her.",
+      "scene_transition": null,
+      "gauge": [
+        68,
+        66
+      ],
+      "characters": [
+        "WICK",
+        "lamp-pole"
+      ],
+      "continuity": [
+        "CRITICAL CONTINUITY: the pole is gone from here until SC07_SH005, where it is found wedged in the tower ironwork. It must not appear in SC05_SH004 through SC07_SH004.",
+        "CRITICAL CONTINUITY: the pole is gone from here until SC07_SH005, where it is found wedged in the tower ironwork. It must not appear in SC05_SH004 through SC07_SH004."
+      ],
+      "action": "THE POLE GOES. A second gust takes the lamp-pole out of her grip. It spins away, strikes the water and is gone.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_POLE_CLATTER_SPLASH",
+          "frame_in": 3200,
+          "frame_out": 3243,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the pole clattering on iron, one splash, then nothing - a hole opens in the sound"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "shot_id": "SC05_SH004",
+      "scene_id": "SC05",
+      "source_frame_in": 3289,
+      "source_frame_out": 3432,
+      "record_frame_in": 3289,
+      "record_frame_out": 3432,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "close-up",
+      "lens": "85mm",
+      "screen_direction": "hand, then frame L",
+      "transition_out": "Cut to the chest.",
+      "scene_transition": null,
+      "gauge": [
+        66,
+        66
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "No gauge cost here. The stillness is the point; the audience must be allowed to register the loss.",
+        "No gauge cost here. The stillness is the point; the audience must be allowed to register the loss."
+      ],
+      "action": "She stands without it. Looks at her empty hand. Looks at the tower. Decides. The wind drops for one beat.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_GALE",
+          "frame_in": 3289,
+          "frame_out": 3432,
+          "gain": 0.25,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC05_SH004 the wind drops for exactly one beat - the only quiet in the storm"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "shot_id": "SC05_SH005",
+      "scene_id": "SC05",
+      "source_frame_in": 3433,
+      "source_frame_out": 3576,
+      "record_frame_in": 3433,
+      "record_frame_out": 3576,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "macro",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut to movement.",
+      "scene_transition": null,
+      "gauge": [
+        66,
+        64
+      ],
+      "characters": [
+        "WICK (part)",
+        "the spark"
+      ],
+      "continuity": [
+        "The spark is now a permanent element of every shot until SC08. Its hum is the film's second leitmotif.",
+        "The spark is now a permanent element of every shot until SC08. Its hum is the film's second leitmotif."
+      ],
+      "action": "She opens her chest drum. Inside: a live spark, taken from the last burning harbour lamp. She closes the glass against the rain.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_GALE",
+          "frame_in": 3432,
+          "frame_out": 3792,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 24,
+          "note": "SC05_SH005-007 storm resumed"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_GLASS_SEAL",
+          "frame_in": 3450,
+          "frame_out": 3459,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the glass sealing"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_SPARK_HUM",
+          "frame_in": 3470,
+          "frame_out": 5760,
+          "gain": 0.5,
+          "fade_in": 24,
+          "fade_out": 48,
+          "note": "the spark's own warm tone begins - persists until SC08_SH003"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "shot_id": "SC05_SH006",
+      "scene_id": "SC05",
+      "source_frame_in": 3577,
+      "source_frame_out": 3696,
+      "record_frame_in": 3577,
+      "record_frame_out": 3696,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "tracking medium",
+      "lens": "40mm",
+      "screen_direction": "travels frame L",
+      "transition_out": "Cut to gauge insert.",
+      "scene_transition": null,
+      "gauge": [
+        64,
+        60
+      ],
+      "characters": [
+        "WICK",
+        "the spark"
+      ],
+      "continuity": [
+        "From here she carries the pole-less silhouette: one arm across the chest. This posture is held until SC08.",
+        "From here she carries the pole-less silhouette: one arm across the chest. This posture is held until SC08."
+      ],
+      "action": "She moves on, one arm now curled across her chest to shield the glass. The spark is drawing power as she walks. Gauge 64 to 60.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_DRAIN_TICK",
+          "frame_in": 3577,
+          "frame_out": 3792,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 24,
+          "note": "a new, slower tick layered over the footfall ticks - the drain is audible"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "shot_id": "SC05_SH007",
+      "scene_id": "SC05",
+      "source_frame_in": 3697,
+      "source_frame_out": 3792,
+      "record_frame_in": 3697,
+      "record_frame_out": 3792,
+      "frames": 96,
+      "duration_s": 4.0,
+      "shot_type": "insert with rack focus",
+      "lens": "100mm macro",
+      "screen_direction": "faces frame L",
+      "transition_out": "Cut on the rack.",
+      "scene_transition": "Cut on a rack focus from the gauge to the tower door.",
+      "gauge": [
+        60,
+        58
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "The rack focus hands SC06 its first image. Door position and water level must match SC06_SH001.",
+        "The rack focus hands SC06 its first image. Door position and water level must match SC06_SH001."
+      ],
+      "action": "Gauge insert: 60 to 58. Rack focus past the needle to the tower door ahead through the rain.",
+      "audio_events": []
+    },
+    {
+      "index": 31,
+      "shot_id": "SC06_SH001",
+      "scene_id": "SC06",
+      "source_frame_in": 3793,
+      "source_frame_out": 3912,
+      "record_frame_in": 3793,
+      "record_frame_out": 3912,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "wide low",
+      "lens": "24mm",
+      "screen_direction": "faces frame L (the door)",
+      "transition_out": "Cut to the effort.",
+      "scene_transition": null,
+      "gauge": [
+        58,
+        58
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Same door seen in the SC05_SH007 rack focus. Barnacle pattern and water line must match.",
+        "Same door seen in the SC05_SH007 rack focus. Barnacle pattern and water line must match."
+      ],
+      "action": "The tower door: iron, swollen, barnacled. She stands at its foot. She is very small against it.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_RAIN_STEADY",
+          "frame_in": 3793,
+          "frame_out": 4080,
+          "gain": 0.9,
+          "fade_in": 24,
+          "fade_out": 24,
+          "note": "SC06_SH001 rain on iron; the tower humming in the wind"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "shot_id": "SC06_SH002",
+      "scene_id": "SC06",
+      "source_frame_in": 3913,
+      "source_frame_out": 4080,
+      "record_frame_in": 3913,
+      "record_frame_out": 4080,
+      "frames": 168,
+      "duration_s": 7.0,
+      "shot_type": "tight medium to insert",
+      "lens": "50mm",
+      "screen_direction": "pushes frame L",
+      "transition_out": "Cut to the gauge.",
+      "scene_transition": null,
+      "gauge": [
+        58,
+        40
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Eighteen turns, the largest single cost. The needle must be seen crossing 49 on the way down so the arithmetic is legible.",
+        "Eighteen turns, the largest single cost. The needle must be seen crossing 49 on the way down so the arithmetic is legible."
+      ],
+      "action": "She levers it. Shoulder against the plate. It gives an inch. She resets and pushes again. It swings. Gauge falls fast: 58 to 49 to 40.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_IRON_SHRIEK",
+          "frame_in": 3950,
+          "frame_out": 3986,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "iron shrieking"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_SPRING_STRAIN",
+          "frame_in": 4000,
+          "frame_out": 4048,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "her spring straining - a sound not used anywhere else"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "shot_id": "SC06_SH003",
+      "scene_id": "SC06",
+      "source_frame_in": 4081,
+      "source_frame_out": 4200,
+      "record_frame_in": 4081,
+      "record_frame_out": 4200,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "insert",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut to the interior.",
+      "scene_transition": null,
+      "gauge": [
+        40,
+        40
+      ],
+      "characters": [
+        "WICK (part)"
+      ],
+      "continuity": [
+        "The red arc is introduced HERE and not at the climax, so the colour can do the worrying for us afterwards.",
+        "The red arc is introduced HERE and not at the climax, so the colour can do the worrying for us afterwards."
+      ],
+      "action": "Gauge insert. The needle crosses into the RED ARC of the dial. Hold.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_RAIN_STEADY",
+          "frame_in": 4081,
+          "frame_out": 4200,
+          "gain": 0.12,
+          "fade_in": 0,
+          "fade_out": 24,
+          "note": "SC06_SH003 'everything drops out except the tiny friction of the needle' - bed drops to a trace"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_NEEDLE_FRICTION",
+          "frame_in": 4081,
+          "frame_out": 4200,
+          "gain": 0.5,
+          "fade_in": 12,
+          "fade_out": 24,
+          "note": "everything drops out except the tiny friction of the needle - the quietest moment in the film"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "shot_id": "SC06_SH004",
+      "scene_id": "SC06",
+      "source_frame_in": 4201,
+      "source_frame_out": 4344,
+      "record_frame_in": 4201,
+      "record_frame_out": 4344,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "interior tilt-up",
+      "lens": "18mm",
+      "screen_direction": "up",
+      "transition_out": "Cut to the top of the stair.",
+      "scene_transition": null,
+      "gauge": [
+        40,
+        35
+      ],
+      "characters": [
+        "WICK",
+        "the spark"
+      ],
+      "continuity": [
+        "Her chest glow is the only light in the tower interior from here to SC08. The reverb change marks the interior/exterior boundary.",
+        "Her chest glow is the only light in the tower interior from here to SC08. The reverb change marks the interior/exterior boundary."
+      ],
+      "action": "Interior. She steps in. A spiral stair rises into darkness, lit only by her own amber glow. Water runs down the inside of the wall.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_TOWER_INT",
+          "frame_in": 4201,
+          "frame_out": 4464,
+          "gain": 0.9,
+          "fade_in": 24,
+          "fade_out": 24,
+          "note": "SC06_SH004 threshold crossed - storm reduced to murmur, reverb opens"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK_ECHO",
+          "frame_in": 4230,
+          "frame_out": 4238,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "her footsteps echo - reverb opens hard at the threshold"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK_ECHO",
+          "frame_in": 4280,
+          "frame_out": 4288,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "her footsteps echo - reverb opens hard at the threshold"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK_ECHO",
+          "frame_in": 4325,
+          "frame_out": 4333,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "her footsteps echo - reverb opens hard at the threshold"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "shot_id": "SC06_SH005",
+      "scene_id": "SC06",
+      "source_frame_in": 4345,
+      "source_frame_out": 4464,
+      "record_frame_in": 4345,
+      "record_frame_out": 4464,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "POV then reverse",
+      "lens": "35mm",
+      "screen_direction": "POV across, then to her",
+      "transition_out": "Cut to the exterior.",
+      "scene_transition": "Cut from the broken stair to the exterior breach.",
+      "gauge": [
+        35,
+        31
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The gap is why she must go outside. The breach framing here must match SC07_SH001 so the exit is legible.",
+        "The gap is why she must go outside. The breach framing here must match SC07_SH001 so the exit is legible."
+      ],
+      "action": "The stair ends. A gap. Broken iron hanging. Beyond it, the wall - and through a breach, the storm outside. Gauge 35 to 31.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_WIND_BREACH",
+          "frame_in": 4345,
+          "frame_out": 4464,
+          "gain": 0.6,
+          "fade_in": 12,
+          "fade_out": 24,
+          "note": "wind coming through the breach; the reverb narrows"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "shot_id": "SC07_SH001",
+      "scene_id": "SC07",
+      "source_frame_in": 4465,
+      "source_frame_out": 4596,
+      "record_frame_in": 4465,
+      "record_frame_out": 4596,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "extreme wide",
+      "lens": "24mm",
+      "screen_direction": "on the wall; climb begins up/left",
+      "transition_out": "Cut to the collapse.",
+      "scene_transition": null,
+      "gauge": [
+        31,
+        28
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "First exterior since SC02_SH004. Plating and rivet pattern must match that establishing shot exactly.",
+        "First exterior since SC02_SH004. Plating and rivet pattern must match that establishing shot exactly."
+      ],
+      "action": "She goes out through the breach onto the riveted plating. The gale hits her flat. She presses herself against the iron. Gauge 31 to 28.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_GALE",
+          "frame_in": 4465,
+          "frame_out": 5400,
+          "gain": 1.0,
+          "fade_in": 24,
+          "fade_out": 0,
+          "note": "SC07_SH001 the gale at full volume, rain horizontal"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "shot_id": "SC07_SH002",
+      "scene_id": "SC07",
+      "source_frame_in": 4597,
+      "source_frame_out": 4728,
+      "record_frame_in": 4597,
+      "record_frame_out": 4728,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "follow then hold",
+      "lens": "50mm",
+      "screen_direction": "down",
+      "transition_out": "Cut to the climb.",
+      "scene_transition": null,
+      "gauge": [
+        28,
+        25
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The stair is destroyed. No later shot may show intact stair. This is the point of no return.",
+        "The stair is destroyed. No later shot may show intact stair. This is the point of no return."
+      ],
+      "action": "The remaining section of stair tears away from the tower and falls. She watches it go. Gauge 28 to 25.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SURFACE_BREAK",
+          "frame_in": 4650,
+          "frame_out": 4693,
+          "gain": 0.35,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the crash, delayed and far below"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "shot_id": "SC07_SH003",
+      "scene_id": "SC07",
+      "source_frame_in": 4729,
+      "source_frame_out": 4920,
+      "record_frame_in": 4729,
+      "record_frame_out": 4920,
+      "frames": 192,
+      "duration_s": 8.0,
+      "shot_type": "rising track",
+      "lens": "35mm",
+      "screen_direction": "up",
+      "transition_out": "Cut to the grip loss.",
+      "scene_transition": null,
+      "gauge": [
+        25,
+        22
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Longest single shot in the film at 8 seconds, placed at the point of maximum investment. The tilted horizon must be consistent through SH008.",
+        "Longest single shot in the film at 8 seconds, placed at the point of maximum investment. The tilted horizon must be consistent through SH008."
+      ],
+      "action": "The climb. Hand over hand on rivets. Rain. The horizon tilts as she gains height. Gauge 25 to 22.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4745,
+          "frame_out": 4747,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4757,
+          "frame_out": 4759,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4780,
+          "frame_out": 4782,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4791,
+          "frame_out": 4793,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4819,
+          "frame_out": 4821,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4826,
+          "frame_out": 4828,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4854,
+          "frame_out": 4856,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4862,
+          "frame_out": 4864,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 4889,
+          "frame_out": 4891,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "grab, strain, grab - gait audibly irregular (degradation continues)"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "shot_id": "SC07_SH004",
+      "scene_id": "SC07",
+      "source_frame_in": 4921,
+      "source_frame_out": 5064,
+      "record_frame_in": 4921,
+      "record_frame_out": 5064,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "long lens down",
+      "lens": "135mm",
+      "screen_direction": "down",
+      "transition_out": "Cut to her free hand.",
+      "scene_transition": null,
+      "gauge": [
+        22,
+        20
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "Same shoulder joint as SC04_SH006. The damage is cumulative and must be animated as a weakness, not a new injury.",
+        "Same shoulder joint as SC04_SH006. The damage is cumulative and must be animated as a weakness, not a new injury."
+      ],
+      "action": "GRIP LOSS. A gust peels her off the iron. She swings on one arm over the drop. Gauge 22 to 20.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SHOULDER_SCREAM",
+          "frame_in": 4960,
+          "frame_out": 5024,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "one long metallic scream from the shoulder joint - music out entirely"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "shot_id": "SC07_SH005",
+      "scene_id": "SC07",
+      "source_frame_in": 5065,
+      "source_frame_out": 5184,
+      "record_frame_in": 5065,
+      "record_frame_out": 5184,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "insert",
+      "lens": "85mm",
+      "screen_direction": "reach",
+      "transition_out": "Cut to the haul.",
+      "scene_transition": null,
+      "gauge": [
+        20,
+        20
+      ],
+      "characters": [
+        "WICK",
+        "lamp-pole"
+      ],
+      "continuity": [
+        "CRITICAL CONTINUITY: this is the pole lost in SC05_SH003. Its position wedged in the ironwork must be plausible - it was blown against the tower, not placed.",
+        "CRITICAL CONTINUITY: this is the pole lost in SC05_SH003. Its position wedged in the ironwork must be plausible - it was blown against the tower, not placed."
+      ],
+      "action": "Her free hand closes on something: the lamp-pole, wedged in the ironwork. It came up the tower with the storm.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_SINGLE_NOTE",
+          "frame_in": 5065,
+          "frame_out": 5185,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC07_SH005 a single bright note - the score returns, one instrument only"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "shot_id": "SC07_SH006",
+      "scene_id": "SC07",
+      "source_frame_in": 5185,
+      "source_frame_out": 5304,
+      "record_frame_in": 5185,
+      "record_frame_out": 5304,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "tight medium",
+      "lens": "50mm",
+      "screen_direction": "up",
+      "transition_out": "Cut to the last stretch.",
+      "scene_transition": null,
+      "gauge": [
+        20,
+        14
+      ],
+      "characters": [
+        "WICK",
+        "lamp-pole"
+      ],
+      "continuity": [
+        "The skipped note in the motif is the audio signature of a weakening spring and worsens through SH008.",
+        "The skipped note in the motif is the audio signature of a weakening spring and worsens through SH008."
+      ],
+      "action": "She uses the pole as a brace and hauls herself back onto the iron. Gauge 20 to 14.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_SKIP",
+          "frame_in": 5185,
+          "frame_out": 5243,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC07_SH006 the motif stuttering - audibly skipping a note"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5200,
+          "frame_out": 5202,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5212,
+          "frame_out": 5214,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5236,
+          "frame_out": 5238,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5260,
+          "frame_out": 5262,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5272,
+          "frame_out": 5274,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5296,
+          "frame_out": 5298,
+          "gain": 0.75,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the gait now skipping beats"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "shot_id": "SC07_SH007",
+      "scene_id": "SC07",
+      "source_frame_in": 5305,
+      "source_frame_out": 5400,
+      "record_frame_in": 5305,
+      "record_frame_out": 5400,
+      "frames": 96,
+      "duration_s": 4.0,
+      "shot_type": "abstract tight",
+      "lens": "85mm",
+      "screen_direction": "up",
+      "transition_out": "Cut to the rail.",
+      "scene_transition": null,
+      "gauge": [
+        14,
+        9
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The animation degradation is the storytelling here. Do not cover it with cutting - hold on the broken motion.",
+        "The animation degradation is the storytelling here. Do not cover it with cutting - hold on the broken motion."
+      ],
+      "action": "The last stretch. Her limbs stutter. The gait breaks down entirely - she is dragging herself upward. Gauge 14 to 9.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_DIST",
+          "frame_in": 5305,
+          "frame_out": 5414,
+          "gain": 0.55,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC07_SH007 the clock motif has stopped being a melody"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_MECHANISM_FAIL",
+          "frame_in": 5320,
+          "frame_out": 5363,
+          "gain": 0.85,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the mechanism audibly failing - metal fatigue"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5350,
+          "frame_out": 5352,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "broken dragging gait"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5368,
+          "frame_out": 5370,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "broken dragging gait"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FOOTSTEP_TICK",
+          "frame_in": 5390,
+          "frame_out": 5392,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "broken dragging gait"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "shot_id": "SC07_SH008",
+      "scene_id": "SC07",
+      "source_frame_in": 5401,
+      "source_frame_out": 5472,
+      "record_frame_in": 5401,
+      "record_frame_out": 5472,
+      "frames": 72,
+      "duration_s": 3.0,
+      "shot_type": "medium, held",
+      "lens": "35mm",
+      "screen_direction": "into the lee",
+      "transition_out": "Cut to the chamber.",
+      "scene_transition": "Cut as she collapses through the gallery doorway.",
+      "gauge": [
+        9,
+        6
+      ],
+      "characters": [
+        "WICK",
+        "lamp-pole"
+      ],
+      "continuity": [
+        "Six turns remain entering SC08. The red arc is fully engaged; it must read clearly even in this low, wet framing.",
+        "Six turns remain entering SC08. The red arc is fully engaged; it must read clearly even in this low, wet framing."
+      ],
+      "action": "She reaches the gallery rail and pulls herself over, collapsing into the lee. Gauge 9 to 6. The burner chamber door is ahead.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_GALE",
+          "frame_in": 5401,
+          "frame_out": 5472,
+          "gain": 0.22,
+          "fade_in": 0,
+          "fade_out": 24,
+          "note": "SC07_SH008 the gale drops sharply in the lee of the gallery"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "shot_id": "SC08_SH001",
+      "scene_id": "SC08",
+      "source_frame_in": 5473,
+      "source_frame_out": 5592,
+      "record_frame_in": 5473,
+      "record_frame_out": 5592,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "wide",
+      "lens": "18mm",
+      "screen_direction": "faces the burner",
+      "transition_out": "Cut to the ascent.",
+      "scene_transition": null,
+      "gauge": [
+        6,
+        6
+      ],
+      "characters": [
+        "WICK",
+        "the spark"
+      ],
+      "continuity": [
+        "Scale contrast is the whole point of this shot. Her glow must be the only light source in frame.",
+        "Scale contrast is the whole point of this shot. Her glow must be the only light source in frame."
+      ],
+      "action": "Interior, the burner chamber. Cold, enormous brass. Her glow is the only light in it. She is tiny.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_TOWER_INT",
+          "frame_in": 5473,
+          "frame_out": 5759,
+          "gain": 0.8,
+          "fade_in": 24,
+          "fade_out": 48,
+          "note": "SC08_SH001 the storm reduced to a murmur outside; water dripping"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 5510,
+          "frame_out": 5523,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "water dripping (1/2)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 5570,
+          "frame_out": 5583,
+          "gain": 0.6,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "(2/2)"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "shot_id": "SC08_SH002",
+      "scene_id": "SC08",
+      "source_frame_in": 5593,
+      "source_frame_out": 5724,
+      "record_frame_in": 5593,
+      "record_frame_out": 5724,
+      "frames": 132,
+      "duration_s": 5.5,
+      "shot_type": "close",
+      "lens": "85mm",
+      "screen_direction": "up to the burner",
+      "transition_out": "Cut to the attempt.",
+      "scene_transition": null,
+      "gauge": [
+        6,
+        3
+      ],
+      "characters": [
+        "WICK",
+        "the spark"
+      ],
+      "continuity": [
+        "The chest goes dark here. Every shot from SC05_SH005 has had the glow; its absence is a deliberate visual loss.",
+        "The chest goes dark here. Every shot from SC05_SH005 has had the glow; its absence is a deliberate visual loss."
+      ],
+      "action": "She climbs the last few rungs to the burner, opens her chest and lifts the spark out. Gauge 6 to 3.",
+      "audio_events": []
+    },
+    {
+      "index": 46,
+      "shot_id": "SC08_SH003",
+      "scene_id": "SC08",
+      "source_frame_in": 5725,
+      "source_frame_out": 5832,
+      "record_frame_in": 5725,
+      "record_frame_out": 5832,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "tight",
+      "lens": "100mm macro",
+      "screen_direction": "reaches",
+      "transition_out": "Cut to the reveal.",
+      "scene_transition": null,
+      "gauge": [
+        3,
+        3
+      ],
+      "characters": [
+        "WICK",
+        "the spark"
+      ],
+      "continuity": [
+        "Two failed attempts, not one - the second is what tells the audience this is not a technique problem.",
+        "Two failed attempts, not one - the second is what tells the audience this is not a technique problem."
+      ],
+      "action": "She offers the spark to the burner. Nothing catches. She repositions and tries again. Nothing.",
+      "audio_events": []
+    },
+    {
+      "index": 47,
+      "shot_id": "SC08_SH004",
+      "scene_id": "SC08",
+      "source_frame_in": 5833,
+      "source_frame_out": 5952,
+      "record_frame_in": 5833,
+      "record_frame_out": 5952,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "static insert",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut to her.",
+      "scene_transition": null,
+      "gauge": [
+        3,
+        3
+      ],
+      "characters": [],
+      "continuity": [
+        "The single most important shot in the film. The socket diameter must visibly match the coil in her chest - match it in design at T03.",
+        "The single most important shot in the film. The socket diameter must visibly match the coil in her chest - match it in design at T03."
+      ],
+      "action": "THE REVEAL. A static shot of the burner's heart: no wick, no oil, no flint. A socket. Cold brass. The exact diameter of a mainspring.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 5900,
+          "frame_out": 5913,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "absolute silence. one water drop."
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "shot_id": "SC08_SH005",
+      "scene_id": "SC08",
+      "source_frame_in": 5953,
+      "source_frame_out": 6072,
+      "record_frame_in": 5953,
+      "record_frame_out": 6072,
+      "frames": 120,
+      "duration_s": 5.0,
+      "shot_type": "close-up",
+      "lens": "100mm",
+      "screen_direction": "socket, then chest",
+      "transition_out": "Cut to the act.",
+      "scene_transition": null,
+      "gauge": [
+        3,
+        3
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The complete motif here is the payoff for the fragmented statements since SC01. Do not add strings under it.",
+        "The complete motif here is the payoff for the fragmented statements since SC01. Do not add strings under it."
+      ],
+      "action": "On WICK. She looks at the socket. She looks at her own empty chest. A long beat - the whole decision, played without a cut.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_TOWER_INT",
+          "frame_in": 5953,
+          "frame_out": 6216,
+          "gain": 0.5,
+          "fade_in": 48,
+          "fade_out": 24,
+          "note": "SC08_SH005 bed returns under the complete motif - SH003/SH004 are true silence ('No catch. Nothing.' / 'Absolute silence.')"
+        },
+        {
+          "track": "music",
+          "asset": "MUS_CLOCK_COMPLETE",
+          "frame_in": 5953,
+          "frame_out": 6066,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC08_SH005 stated once, complete - the only complete statement in the film"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "shot_id": "SC08_SH006",
+      "scene_id": "SC08",
+      "source_frame_in": 6073,
+      "source_frame_out": 6216,
+      "record_frame_in": 6073,
+      "record_frame_out": 6216,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "macro",
+      "lens": "100mm macro",
+      "screen_direction": "into the socket",
+      "transition_out": "Cut to ignition.",
+      "scene_transition": null,
+      "gauge": [
+        3,
+        0
+      ],
+      "characters": [
+        "WICK",
+        "mainspring",
+        "the socket"
+      ],
+      "continuity": [
+        "The spring is now part of the tower. She cannot be rewound by re-installing it; the ending's single turn is a new beginning, not a restoration.",
+        "The spring is now part of the tower. She cannot be rewound by re-installing it; the ending's single turn is a new beginning, not a restoration."
+      ],
+      "action": "She unspools her own mainspring and threads it into the socket. The gauge falls: 3, 2, 1. Then the ratchet engages.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_SPRING_UNSPOOL",
+          "frame_in": 6080,
+          "frame_out": 6188,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the spring unspooling - a long, thin, singing sound"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_RATCHET_ENGAGE",
+          "frame_in": 6150,
+          "frame_out": 6158,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "then the ratchet engaging"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_MECH_WINDDOWN",
+          "frame_in": 6160,
+          "frame_out": 6231,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "then her mechanism winding down to nothing"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "shot_id": "SC08_SH007",
+      "scene_id": "SC08",
+      "source_frame_in": 6217,
+      "source_frame_out": 6288,
+      "record_frame_in": 6217,
+      "record_frame_out": 6288,
+      "frames": 72,
+      "duration_s": 3.0,
+      "shot_type": "silhouette to bloom",
+      "lens": "50mm",
+      "screen_direction": "static",
+      "transition_out": "Cut to the exterior beam.",
+      "scene_transition": "Ignition floods the frame to white-gold; cut to the exterior beam.",
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK",
+        "the beacon"
+      ],
+      "continuity": [
+        "The only full-orchestration moment in the film. Her silhouette must stay readable inside the bloom.",
+        "The only full-orchestration moment in the film. Her silhouette must stay readable inside the bloom."
+      ],
+      "action": "Her shutter eyes go dark. A beat of black. Then - IGNITION. The beacon floods the frame until it is white-gold.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_IGNITION_FULL",
+          "frame_in": 6241,
+          "frame_out": 6481,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC08_SH007 the ignition - the score in full, for the first and only time (one beat of silence first)"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_IGNITION_BLOOM",
+          "frame_in": 6241,
+          "frame_out": 6385,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "one beat of absolute silence, then the ignition - a huge, warm, low bloom"
+        },
+        {
+          "track": "ambience",
+          "asset": "AMB_TOWER_INT",
+          "frame_in": 6242,
+          "frame_out": 6288,
+          "gain": 0.5,
+          "fade_in": 12,
+          "fade_out": 96,
+          "note": "SC08_SH007 bed returns after the one-beat silence before ignition (Stage-12 editorial conform)"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "shot_id": "SC09_SH001",
+      "scene_id": "SC09",
+      "source_frame_in": 6289,
+      "source_frame_out": 6480,
+      "record_frame_in": 6289,
+      "record_frame_out": 6480,
+      "frames": 192,
+      "duration_s": 8.0,
+      "shot_type": "extreme wide, held",
+      "lens": "35mm",
+      "screen_direction": "looks frame R to the sea",
+      "transition_out": "Cut to the ship.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [],
+      "continuity": [
+        "The eight-second hold is protected. Do not cut into it for coverage. Beam rotation rate must match SH003.",
+        "The eight-second hold is protected. Do not cut into it for coverage. Beam rotation rate must match SH003."
+      ],
+      "action": "Exterior. The beam sweeps out across black water. Rain turns to light inside the shaft.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_DRIZZLE",
+          "frame_in": 6289,
+          "frame_out": 6648,
+          "gain": 0.8,
+          "fade_in": 48,
+          "fade_out": 72,
+          "note": "SC09 clearing - rain thinning to drizzle"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BEACON_ROTATE",
+          "frame_in": 6289,
+          "frame_out": 6768,
+          "gain": 0.6,
+          "fade_in": 24,
+          "fade_out": 72,
+          "note": "the beacon's slow rotation"
+        },
+        {
+          "track": "music",
+          "asset": "MUS_BEACON_SUSTAIN",
+          "frame_in": 6380,
+          "frame_out": 6624,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 48,
+          "note": "SC09_SH001-002 score sustained, no melody"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "shot_id": "SC09_SH002",
+      "scene_id": "SC09",
+      "source_frame_in": 6481,
+      "source_frame_out": 6624,
+      "record_frame_in": 6481,
+      "record_frame_out": 6624,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "extreme long lens",
+      "lens": "300mm",
+      "screen_direction": "the ship turns frame L (to harbour)",
+      "transition_out": "Cut to dawn.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "THE RETURNING SHIP"
+      ],
+      "continuity": [
+        "Reef line and ship bearing must match SC02_SH003 so the audience can read that she turned away from danger.",
+        "Reef line and ship bearing must match SC02_SH003 so the audience can read that she turned away from danger."
+      ],
+      "action": "Far out: the running light. It pauses. Then it turns - toward harbour. The reef line slides past behind it.",
+      "audio_events": [
+        {
+          "track": "music",
+          "asset": "MUS_SHIP_RESOLVE",
+          "frame_in": 6490,
+          "frame_out": 6560,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC09_SH002 the ship's two-note motif, resolved upward for the first time"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BELL_BUOY",
+          "frame_in": 6500,
+          "frame_out": 6601,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the bell buoy, now in rhythm with the beacon"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BELL_BUOY",
+          "frame_in": 6560,
+          "frame_out": 6661,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the bell buoy, now in rhythm with the beacon"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BELL_BUOY",
+          "frame_in": 6620,
+          "frame_out": 6721,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the bell buoy, now in rhythm with the beacon"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "shot_id": "SC09_SH003",
+      "scene_id": "SC09",
+      "source_frame_in": 6625,
+      "source_frame_out": 6768,
+      "record_frame_in": 6625,
+      "record_frame_out": 6768,
+      "frames": 144,
+      "duration_s": 6.0,
+      "shot_type": "wide to slow push",
+      "lens": "35mm",
+      "screen_direction": "to her",
+      "transition_out": "Cut to dawn interior.",
+      "scene_transition": "Slow push toward her silhouette as the beacon dies; cut to dawn interior.",
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK"
+      ],
+      "continuity": [
+        "The beacon dims because the dark is gone, not because it failed. Birds are the only organic sound in the film and start here.",
+        "The beacon dims because the dark is gone, not because it failed. Birds are the only organic sound in the film and start here."
+      ],
+      "action": "Dawn comes up grey-gold over the water. The beacon dims as the dark goes. Then: the chamber, dark again, and WICK's silhouette at the foot of the burner.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_DAWN_CALM",
+          "frame_in": 6577,
+          "frame_out": 6876,
+          "gain": 0.9,
+          "fade_in": 96,
+          "fade_out": 0,
+          "note": "SC09_SH003 dawn - first living sound (birds)"
+        },
+        {
+          "track": "music",
+          "asset": "MUS_THINNING",
+          "frame_in": 6625,
+          "frame_out": 6768,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 72,
+          "note": "SC09_SH003 the score thinning to nothing - gone by the scene turn; SC10 is diegetic only ('water dripping. nothing else.')"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BEACON_WINDDOWN",
+          "frame_in": 6640,
+          "frame_out": 6760,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the beacon winding down"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "shot_id": "SC10_SH001",
+      "scene_id": "SC10",
+      "source_frame_in": 6769,
+      "source_frame_out": 6876,
+      "record_frame_in": 6769,
+      "record_frame_out": 6876,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "medium, held",
+      "lens": "50mm",
+      "screen_direction": "static",
+      "transition_out": "Cut to the doorway.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK",
+        "lamp-pole"
+      ],
+      "continuity": [
+        "Her pose must match the end of SC09_SH003 exactly - this is the same moment, closer.",
+        "Her pose must match the end of SC09_SH003 exactly - this is the same moment, closer."
+      ],
+      "action": "Dawn light in the chamber. WICK's shell, slumped at the foot of the burner, still holding the pole. Gauge: 0.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 6795,
+          "frame_out": 6808,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "water dripping. nothing else."
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 6830,
+          "frame_out": 6843,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "water dripping. nothing else."
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_WATER_DROP",
+          "frame_in": 6862,
+          "frame_out": 6875,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "water dripping. nothing else."
+        },
+        {
+          "track": "ambience",
+          "asset": "AMB_DAWN_CALM",
+          "frame_in": 6877,
+          "frame_out": 7092,
+          "gain": 0.45,
+          "fade_in": 48,
+          "fade_out": 48,
+          "note": "SC10 dawn calm under the child's scene - bed low, drips and feet carry it"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "shot_id": "SC10_SH002",
+      "scene_id": "SC10",
+      "source_frame_in": 6877,
+      "source_frame_out": 6984,
+      "record_frame_in": 6877,
+      "record_frame_out": 6984,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "wide interior",
+      "lens": "35mm",
+      "screen_direction": "child enters from the doorway",
+      "transition_out": "Cut to the hands.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK",
+        "THE CHILD"
+      ],
+      "continuity": [
+        "The child is the only human in the film and is never in readable close-up. Backlight and rim light only.",
+        "The child is the only human in the film and is never in readable close-up. Backlight and rim light only."
+      ],
+      "action": "Footsteps. A child enters, backlit in the doorway - oversized coat, bare feet, small. Sees her.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_BARE_FOOT_A",
+          "frame_in": 6895,
+          "frame_out": 6899,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "bare feet on wet iron - near-silent, organic, the opposite of her ticking"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BARE_FOOT_B",
+          "frame_in": 6925,
+          "frame_out": 6929,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "bare feet on wet iron - near-silent, organic, the opposite of her ticking"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BARE_FOOT_A",
+          "frame_in": 6955,
+          "frame_out": 6959,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "bare feet on wet iron - near-silent, organic, the opposite of her ticking"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_BARE_FOOT_B",
+          "frame_in": 6975,
+          "frame_out": 6979,
+          "gain": 0.7,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "bare feet on wet iron - near-silent, organic, the opposite of her ticking"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "shot_id": "SC10_SH003",
+      "scene_id": "SC10",
+      "source_frame_in": 6985,
+      "source_frame_out": 7092,
+      "record_frame_in": 6985,
+      "record_frame_out": 7092,
+      "frames": 108,
+      "duration_s": 4.5,
+      "shot_type": "close",
+      "lens": "85mm",
+      "screen_direction": "to her back",
+      "transition_out": "Cut to macro.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK",
+        "THE CHILD",
+        "the key"
+      ],
+      "continuity": [
+        "Same key asset as SC01_SH001. The hesitation is the emotional beat; give it room.",
+        "Same key asset as SC01_SH001. The hesitation is the emotional beat; give it room."
+      ],
+      "action": "The child kneels. Takes the key from WICK's back. Hesitates.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_KEY_LIFT",
+          "frame_in": 7005,
+          "frame_out": 7014,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the key lifting out of the back plate - the same small metal sound as the opening"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "shot_id": "SC10_SH004",
+      "scene_id": "SC10",
+      "source_frame_in": 7093,
+      "source_frame_out": 7176,
+      "record_frame_in": 7093,
+      "record_frame_out": 7176,
+      "frames": 84,
+      "duration_s": 3.5,
+      "shot_type": "extreme macro",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Cut to the chest.",
+      "scene_transition": null,
+      "gauge": [
+        0,
+        0
+      ],
+      "characters": [
+        "WICK (part)",
+        "the key"
+      ],
+      "continuity": [
+        "LOOP SHOT: must match SC01_SH001 frame for frame in composition, differing only in colour temperature. One turn, not four.",
+        "LOOP SHOT: must match SC01_SH001 frame for frame in composition, differing only in colour temperature. One turn, not four."
+      ],
+      "action": "MACRO - mirroring SC01_SH001 exactly. The key turns. One turn. The ratchet catches.",
+      "audio_events": [
+        {
+          "track": "ambience",
+          "asset": "AMB_DAWN_CALM",
+          "frame_in": 7093,
+          "frame_out": 7248,
+          "gain": 0.12,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "SC10_SH004-005 'ONE click... loud in the silence' / 'one final click over black' - bed to a trace"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FINAL_CLICK",
+          "frame_in": 7130,
+          "frame_out": 7131,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "ONE click. clean, loud in the silence."
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "shot_id": "SC10_SH005",
+      "scene_id": "SC10",
+      "source_frame_in": 7177,
+      "source_frame_out": 7248,
+      "record_frame_in": 7177,
+      "record_frame_out": 7248,
+      "frames": 72,
+      "duration_s": 3.0,
+      "shot_type": "macro to black",
+      "lens": "100mm macro",
+      "screen_direction": "static",
+      "transition_out": "Hard cut to black.",
+      "scene_transition": "Hard cut to black on the final click.",
+      "gauge": [
+        0,
+        1
+      ],
+      "characters": [
+        "WICK (part)",
+        "chest gauge"
+      ],
+      "continuity": [
+        "FINAL SHOT. Ends on the same click the film opened on, so the film loops. The needle lifts off zero and no further.",
+        "FINAL SHOT. Ends on the same click the film opened on, so the film loops. The needle lifts off zero and no further."
+      ],
+      "action": "Macro on the chest drum. Inside, the coil catches. The shutter eyes flicker open. The needle lifts off zero. Cut to black on the second click.",
+      "audio_events": [
+        {
+          "track": "sfx",
+          "asset": "SFX_COIL_CATCH",
+          "frame_in": 7195,
+          "frame_out": 7203,
+          "gain": 0.9,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the coil catching"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_SHUTTER_OPEN",
+          "frame_in": 7215,
+          "frame_out": 7232,
+          "gain": 0.8,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "the shutter aperture opening"
+        },
+        {
+          "track": "sfx",
+          "asset": "SFX_FINAL_CLICK",
+          "frame_in": 7240,
+          "frame_out": 7241,
+          "gain": 1.0,
+          "fade_in": 0,
+          "fade_out": 0,
+          "note": "one final click over black"
+        }
+      ]
+    }
+  ],
+  "qc": {
+    "all_passed": true,
+    "checks": [
+      {
+        "check": "assembly order == SHOT_LIST story order, no substitutions",
+        "passed": true,
+        "detail": "58 shots; plan coverage identical: True"
+      },
+      {
+        "check": "source ranges contiguous 1..7248 (no gaps/overlaps)",
+        "passed": true,
+        "detail": "first=1 last=7248; contiguous=True"
+      },
+      {
+        "check": "runtime inside 180-420 s target",
+        "passed": true,
+        "detail": "302.0 s at 24 fps"
+      },
+      {
+        "check": "record timeline contiguous, straight-cut (record==source spans)",
+        "passed": true,
+        "detail": "hard-cut assembly; no overlap/dissolve offsets"
+      },
+      {
+        "check": "per-shot timing matches screenplay durations",
+        "passed": true,
+        "detail": "mismatches: none"
+      },
+      {
+        "check": "screen direction honours master axis (camera harness re-run at edit)",
+        "passed": true,
+        "detail": "run_camera_tests.py re-run: 58/58 VERIFIED (axis check included); authored reverses/buffers: ['POV across, then to her', 'the ship turns frame L (to harbour)']; axis: Master line of action: the sea and the returning ship sit FRAME RIGHT;..."
+      },
+      {
+        "check": "dialogue sync: film is wordless, dialogue track empty",
+        "passed": true,
+        "detail": "dialogue events: 0; wordless=True"
+      },
+      {
+        "check": "audio events in range; shot tags on-shot or one-shot L-cut",
+        "passed": true,
+        "detail": "143 events; L-cuts (authored pre/post laps): 4; problems: none"
+      },
+      {
+        "check": "intentional silences hold: no beds, only authored punctuations",
+        "passed": true,
+        "detail": "5 windows; bed/unauthored intrusions: none"
+      },
+      {
+        "check": "every cut is motivated (no empty/foreign transition grammar)",
+        "passed": true,
+        "detail": "58 shot outs + 10 scene transitions, all cut-based; problems: none"
+      },
+      {
+        "check": "opening hook: winding-key macro winds the 92-turn contract",
+        "passed": true,
+        "detail": "SC01_SH001 extreme macro; SC01 gauge -> 92; countdown 92->0 then 0->1 resolution"
+      },
+      {
+        "check": "climax: SC08 carries the ignition beat",
+        "passed": true,
+        "detail": "1 ignition shots in SC08 (['SC08_SH007'])"
+      },
+      {
+        "check": "ending: final click + hard cut to black, gauge resolved 0->1",
+        "passed": true,
+        "detail": "SC10_SH005 gauge 0->1, out='Hard cut to black.'"
+      },
+      {
+        "check": "pacing curve measured (climax density vs bookends)",
+        "passed": true,
+        "detail": "SC08 avg shot 4.86s vs film range 4.00-6.67s; emotional ladder curiosity, then dread -> dread hardening into resolve -> wonder, underpinned by a counting dread -> alarm -> loss, then tenderness, then a colder determination -> foreboding -> desperation, then a single moment of recognition -> recognition, sacrifice, awe -> relief, then mourning -> mourning resolving into hope"
+      },
+      {
+        "check": "all 10 scenes cleared preview QC before edit",
+        "passed": true,
+        "detail": "statuses: ['PREVIEW_QC_PASS']"
+      },
+      {
+        "check": "occlusion-defective shots noted for pre-final camera fix (edit order kept)",
+        "passed": true,
+        "detail": "11 shots queued (ERR-0004); edit keeps scripted order - fixes land in T12 final render, not by substitution"
+      }
+    ]
+  }
+}

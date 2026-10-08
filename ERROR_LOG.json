@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T04:03:31+00:00",
+  "last_updated": "2026-10-08T16:37:36+00:00",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -113,6 +113,22 @@
       "recovery_attempted": "representative shots for SC04/SC09 switched to probe-clear shots (SC04_SH004, SC09_SH001); blocked shots queued for camera nudge + re-verification before T12 final render",
       "resolution": "MITIGATED",
       "retry_count_after": 0
+    },
+    {
+      "error_id": "ERR-0005",
+      "utc": "2026-10-08T16:37:36+00:00",
+      "task_id": "T10_EDIT",
+      "shot_id": null,
+      "scene_id": "ALL",
+      "command_or_step": "Stage 12 kickoff: workspace tool calls",
+      "error_text": "all sandbox workspace operations (bash/read/write/start_process) returned 'GitHub API request failed with status 503' for ~1 turn; githubstatus.com showed All Systems Operational, so the platform workspace<->GitHub sync layer failed, likely snapshot congestion after the 65 MB CP-0011 push",
+      "classification": "INFRASTRUCTURE",
+      "probable_cause": "transient platform GitHub-integration outage",
+      "impact": "Stage 12 start delayed one user round-trip; no data loss (Stage 11 committed+pushed 65f6e17, tree intact on recovery)",
+      "preserved_outputs": "all Stage 11 artefacts verified intact post-recovery",
+      "recovery_attempted": "retried after interval; sandbox recovered; local git history had reset to initial commit -> will re-sync branch from remote before pushing",
+      "resolution": "RECOVERED",
+      "retry_count_after": 1
     }
   ]
 }

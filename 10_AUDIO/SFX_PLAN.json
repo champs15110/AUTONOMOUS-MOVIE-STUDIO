@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "task_id": "T09_AUDIO",
-  "generated": "2026-10-08T01:58:11+00:00",
+  "generated": "2026-10-08T16:47:22+00:00",
   "policy": "every sound traces to an approved sound_intention line in MASTER_SHOT_PLAN.json; no decorative sound",
   "foley": [
     {
@@ -551,6 +551,7 @@
       "purpose": "SC01_SH004-SC02 harbour: wind through iron over water",
       "shots_used": [
         "SC01_SH004",
+        "SC02_SH003",
         "SC02_SH004"
       ],
       "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
@@ -589,7 +590,8 @@
       "shots_used": [
         "SC06_SH004",
         "SC08_SH001",
-        "SC08_SH005"
+        "SC08_SH005",
+        "SC08_SH007"
       ],
       "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
     }
