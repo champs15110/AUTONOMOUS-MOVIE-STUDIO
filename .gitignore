@@ -28,3 +28,4 @@ node_modules/
 # --- Stage 14: chunk renders and source mix are re-generable intermediates ---
 13_RENDER/FINAL_CHUNKS/*.mp4
 10_AUDIO/mix/FINAL_MIX.wav
+!FINAL/FINAL_FILM_REPAIRED_CANDIDATE.mp4
