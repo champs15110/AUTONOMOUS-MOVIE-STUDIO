@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "task": "STEP 16 - INDEPENDENT FINAL MP4 VERIFICATION",
+  "generated_utc": "2026-10-08 21:36 UTC",
+  "agent_role": "Independent Final MP4 Verification Agent (separate from rendering agent, per AGENT_PROTOCOL 12)",
+  "target": "FINAL/FINAL_FILM.mp4",
+  "tools_used": [
+    "PyAV 18.1.0 (container/stream inspection, full decode of video+audio, frame extraction)",
+    "tools/lufs.py (ITU-R BS.1770 K-weighting integrated loudness + 4x oversampled true peak)",
+    "pyloudnorm 0.2.0 (cross-check meter)",
+    "pure-python PNG writer for extracted frames (no PIL/ffmpeg available)",
+    "repo sources: MASTER_CONFIG.json, 11_EDIT/EDIT_TIMELINE.json, 09_LIGHTING_VFX/scripts/light_design.py"
+  ],
+  "tools_not_available": [
+    "ffprobe/ffmpeg CLI (not installed in sandbox) - equivalent inspection performed via PyAV",
+    "PIL - frames written via struct/zlib PNG encoder",
+    "chunk-level cross-check: 13_RENDER/FINAL_CHUNKS/*.mp4 are gitignored and were lost in a sandbox reset; not re-rendered per Step 16 rules"
+  ],
+  "file_checks": {
+    "exists": {"status": "PASS", "value": true},
+    "readable": {"status": "PASS", "value": true},
+    "size_nonzero": {"status": "PASS", "value": 7354432}
+  },
+  "container_and_streams": {
+    "container": {"status": "PASS", "value": "mov,mp4,m4a,3gp,3g2,mj2"},
+    "container_duration_s": {"status": "PASS", "value": 302.016},
+    "video_codec": {"status": "PASS", "value": "h264 (High profile), yuv420p"},
+    "video_resolution": {"status": "PASS_WITH_DEVIATION", "value": "320x180",
+      "note": "matches declared final spec and 16:9; deviates from MASTER_CONFIG target_spec.resolution 1920x1080 (documented environment constraint ERR-0003: no cloud renderer, 1080p/128spp measures ~49 days on this 2-core box)"},
+    "aspect_ratio": {"status": "PASS", "value": "16:9 (320/180 = 1.777...)"},
+    "frame_rate": {"status": "PASS", "value": 24.0, "note": "matches MASTER_CONFIG target_spec.fps 24"},
+    "video_duration_s": {"status": "PASS", "value": 302.0},
+    "audio_codec": {"status": "PASS", "value": "aac, 48000 Hz, 2 ch"},
+    "audio_duration_s": {"status": "PASS", "value": 302.016},
+    "duration_in_target_window": {"status": "PASS", "value": "302.0 s within MASTER_CONFIG 180-420 s; ~5 min preferred target met"}
+  },
+  "decode_integrity": {
+    "video_frames_decoded": {"status": "PASS", "value": 7248, "expected": 7248, "decode_errors": 0},
+    "audio_fully_decodes": {"status": "PASS", "value": "14496768 samples/ch = 302.02 s"},
+    "black_frame_segments_mean<4/255": {"status": "FAIL", "value": [[6768, 7247]],
+      "finding": "entire SC10 (frames 6768-7247, 20.0 s) renders at mean luma 0.58-1.82/255 (effectively black). Only frames >=7177 are authored black (SC10_SH005 'hard cut to black'); frames 6768-7176 (SC10_SH001-SH004: dawn chamber, child entrance, macro key turn) are authored VISIBLE but decode black."},
+    "frozen_frame_runs": {"status": "PASS_WITH_NOTE", "value": [[54, 90]],
+      "finding": "1.5 s pixel-identical hold inside SC01_SH001; authored beat is a macro of the winding key that turns in discrete motions with pauses ('turns - once, twice, three times'); motion resumes at f91 (changed-pixel count 714, max 8501 later in shot). Consistent with authored between-turn pauses, not a render stall."},
+    "per_scene_luma_min_max": {
+      "SC01": [3.84, 24.95], "SC02": [42.74, 43.04], "SC03": [40.43, 42.93],
+      "SC04": [33.76, 34.66], "SC05": [6.33, 6.66], "SC06": [23.06, 46.2],
+      "SC07": [46.74, 72.6], "SC08": [118.08, 142.73], "SC09": [26.07, 27.44],
+      "SC10": [0.58, 1.82]
+    }
+  },
+  "frame_inspection": [
+    {"frame": 60, "label": "opening (SC01_SH001 macro)", "status": "PASS", "finding": "brass gauge with cross-needle visible in authored pre-dawn darkness; framing correct"},
+    {"frame": 1100, "label": "early story (SC02)", "status": "PASS", "finding": "dusk plaza environment present: WICK at pedestal with gauge, buoy/pillar left, sky gradient; no broken rendering"},
+    {"frame": 3624, "label": "middle (SC05 night crossing)", "status": "PASS_WITH_NOTE", "finding": "very dark night scene; silhouette and dim red spark core discernible; matches authored night intent but at the dark end of acceptable"},
+    {"frame": 6241, "label": "climax (SC08 ignition)", "status": "PASS", "finding": "bright amber ignition bloom inside glass chamber; well exposed; no artifacts"},
+    {"frame": 6820, "label": "SC10_SH002 (child enters, backlit doorway)", "status": "FAIL", "finding": "visually black; authored content not visible"},
+    {"frame": 7120, "label": "SC10_SH004 (macro key turn mirroring SC01_SH001)", "status": "FAIL", "finding": "visually black; authored gauge macro not visible (compare SC01_SH001 where the gauge reads clearly)"},
+    {"frame": 7240, "label": "ending (SC10_SH005)", "status": "PASS", "finding": "black, matching authored 'hard cut to black on the second click'"}
+  ],
+  "audio_checks": {
+    "presence": {"status": "PASS", "peak_linear": 0.8348, "note": "non-silent"},
+    "duration_s": {"status": "PASS", "value": 302.02},
+    "integrated_lufs_bs1770_internal": {"status": "PASS", "value": -15.97, "target": -16.0, "tolerance": 0.5},
+    "integrated_lufs_pyloudnorm": {"status": "PASS_WITH_NOTE", "value": -16.8, "note": "cross-check meter reads 0.8 LU lower than the internal meter; source mix FINAL_MIX.wav measured -16.34 at Stage 13; AAC codec gain accounts for part of the spread; within +/-1 LU of target"},
+    "true_peak_dbtp": {"status": "PASS", "value": -1.43, "ceiling": -1.0}
+  },
+  "timeline_comparison": {
+    "edit_timeline": {"status": "PASS", "value": "58 shots, 7248 frames, 302.0 s @24 - film decodes to exactly 7248 frames / 302.0 s; shot structure straight-cut per EDIT_TIMELINE"},
+    "scenes_present_visually": {"status": "FAIL", "value": "9 of 10 scenes visually present with correct environments (SC01-SC09); SC10 content absent (black)"},
+    "story_spine": {"status": "PASS_WITH_NOTE", "value": "opening hook, countdown spine, climax ignition all present; the story's resolution beats (child re-winds WICK, needle lifts off zero) are not visible due to the SC10 defect"}
+  },
+  "root_cause_analysis_SC10": {
+    "finding": "SC10 is an interior dawn scene inside the sealed tower chamber. light_design.py SC10 entry provides only: key SC10_SUN_0 (sun, energy 4.0, use_shadow=True) which is fully occluded by the tower shell (no window openings), world ambient (0.16,0.14,0.13)x0.90 which cannot reach the sealed interior, and one SC10_FILL point light at 12 W. Compare SC09 (visible, luma 26): world 0.104 outdoors + 50 W fill; and SC08 interior (luma 118-143): 15 W point INSIDE the lamp room plus emissive glow. Result: SC10 chamber receives effectively no light -> mean luma ~1/255.",
+    "why_earlier_stages_missed_it": "Stage 11 preview representative frame for SC10 captured emissive/warm macro content (SC10_preview.png shows amber glow), masking the unlit wide shots; Stage 13 lighting harness coverage passed without catching the sealed-interior exposure failure; Stage 14 visual verification sampled SC10 only at the authored-black ending frame (f7240).",
+    "fix_path_for_future_step": "give SC10 an interior key (e.g. raise SC10_FILL to ~50 W or add a warm interior area light, or open the chamber to the dawn sun), re-render ONLY chunks 32-33 (frames 6769-7248) per chunk-recovery rules, re-mux, re-verify."
+  },
+  "could_not_perform": [
+    "ffprobe/ffmpeg CLI inspection (not installed) - PyAV used as equivalent",
+    "chunk-level artifact cross-check (chunk mp4s gitignored, lost in sandbox reset; re-render forbidden by Step 16)",
+    "objective perceptual quality metrics (VMAF/SSIM) - no reference encode available at higher quality"
+  ],
+  "verdict": "FAILED",
+  "delivery_status_per_protocol_14": "FINAL MP4 NOT VERIFIED",
+  "exact_blocker": "SC10 frames 6768-7176 (SC10_SH001-SH004, the film's 20 s resolution: dawn chamber, child entrance, macro key turn) decode visually black (mean luma 0.58-1.82/255) against authored visible content; cause: SC10 lighting rig (light_design.py) provides no effective interior light for the sealed tower chamber (sun occluded by shell, single 12 W fill). All other checks (file, container, codecs, duration 302.0 s in 3-7 min window, 16:9, 24 fps, full decode integrity, audio presence/loudness, scenes SC01-SC09, opening/middle/climax/ending frames) PASS.",
+  "no_repair_performed": true,
+  "reports": ["FINAL/FINAL_VERIFICATION.json", "FINAL/FINAL_VERIFICATION.md", "FINAL/INDEPENDENT_VERIFY/iv_f*.png"]
+}

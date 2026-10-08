@@ -4,7 +4,13 @@
 # Usage: bash tools/glstub_recipe.sh
 set -e
 SITE=$(python3 -c "import site; print(site.getusersitepackages())")
-BPY_SO=$(find "$SITE/bpy" -name "*.so" | head -1)
+BPY_SO=$(find "$SITE/bpy" -name "*.so" 2>/dev/null | head -1)
+if [ -z "$BPY_SO" ]; then
+  # fall back to wherever pip actually installed bpy (system or user site)
+  BPY_DIR=$(python3 -c "import importlib.util as u; s=u.find_spec('bpy'); print(s.submodule_search_locations[0] if s else '')")
+  SITE=$(dirname "$BPY_DIR")
+  BPY_SO=$(find "$SITE/bpy" -name "*.so" | head -1)
+fi
 echo "bpy so: $BPY_SO"
 mkdir -p /tmp/glstub
 
