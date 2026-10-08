@@ -53,7 +53,7 @@
     "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 6,
+    "checkpoints": 7,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -104,16 +104,24 @@
       "task_id": "T05_3D_ASSETS",
       "summary": "Stage 05 3D ASSET PIPELINE VERIFIED. Procedural bpy pipeline: 37 assets (3 chars/14 props/3 envs/15 mats/2 textures), 10 independent scene builders, hierarchy rigs; 49/49 stub-harness checks; inventory coverage 40/40 (0 BLOCKED); ENGINE_DECISION: BLENDER_BPY_PROCEDURAL cloud, Blender absent locally (no fabricated runs).",
       "git_commit": "2939c50be04e6d99a3aea4e2c565a61165a990c6"
+    },
+    {
+      "checkpoint_id": "CP-0007",
+      "utc": "2026-10-08T00:36:45Z",
+      "actor": "master_controller",
+      "task_id": "T06_ANIMATION",
+      "summary": "Stage 07 ANIMATION VERIFIED. 58/58 shots animated shot-by-shot: ams_anim_lib principles-as-code primitives, 58 standalone per-shot scripts keying only their own frame ranges (1747 keys), needle continuity 92->0->1, camera placeholders provably static; harness 58/58 VERIFIED (keys-in-range, gauge continuity, >=2 principles); registry animation slots all VERIFIED; ANIMATION_INDEX/STATUS/NOTES written; scene fixes (POLE SC02/SC05, SC03 lamp, WICK in SC09) re-verified 49/49.",
+      "git_commit": "d158b1efa77c4f3d2430748b3deba986fb0c0754"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0006",
-    "utc": "2026-10-07T23:28:38Z",
-    "task_id": "T05_3D_ASSETS",
-    "git_commit": "2939c50be04e6d99a3aea4e2c565a61165a990c6",
-    "summary": "Stage 05 3D ASSET PIPELINE VERIFIED. Procedural bpy pipeline: 37 assets (3 chars/14 props/3 envs/15 mats/2 textures), 10 independent scene builders, hierarchy rigs; 49/49 stub-harness checks; inventory coverage 40/40 (0 BLOCKED); ENGINE_DECISION: BLENDER_BPY_PROCEDURAL cloud, Blender absent locally (no fabricated runs)."
+    "checkpoint_id": "CP-0007",
+    "utc": "2026-10-08T00:36:45Z",
+    "task_id": "T06_ANIMATION",
+    "git_commit": "d158b1efa77c4f3d2430748b3deba986fb0c0754",
+    "summary": "Stage 07 ANIMATION VERIFIED. 58/58 shots animated shot-by-shot: ams_anim_lib principles-as-code primitives, 58 standalone per-shot scripts keying only their own frame ranges (1747 keys), needle continuity 92->0->1, camera placeholders provably static; harness 58/58 VERIFIED (keys-in-range, gauge continuity, >=2 principles); registry animation slots all VERIFIED; ANIMATION_INDEX/STATUS/NOTES written; scene fixes (POLE SC02/SC05, SC03 lamp, WICK in SC09) re-verified 49/49."
   },
-  "last_updated": "2026-10-08T00:36:35Z",
+  "last_updated": "2026-10-08T00:36:45Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
