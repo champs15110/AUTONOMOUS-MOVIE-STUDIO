@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "task_id": "T08_LIGHTING_VFX",
+  "generated": "2026-10-08T01:24:31+00:00",
+  "effects": [
+    {
+      "id": "FOG_SC03",
+      "scene": "SC03",
+      "kind": "fog",
+      "purpose": "the horizon withheld \u2014 she cannot see the ship",
+      "object": "FOG_SC03",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "RAIN_SC04",
+      "scene": "SC04",
+      "kind": "rain",
+      "purpose": "the storm front arrives \u2014 rain begins exactly here",
+      "object": "RAIN_SC04",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "SILT_SC04",
+      "scene": "SC04",
+      "kind": "motes",
+      "purpose": "silt she disturbs at the base \u2014 the work is physical",
+      "object": "SILT_SC04",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "RAIN_SC05",
+      "scene": "SC05",
+      "kind": "rain",
+      "purpose": "full storm \u2014 wind camera-right per continuity bible",
+      "object": "RAIN_SC05",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "SPRAY_SC05",
+      "scene": "SC05",
+      "kind": "spray",
+      "purpose": "sea attacking the gallery \u2014 she climbs through it",
+      "object": "SPRAY_SC05",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "RAIN_SC06",
+      "scene": "SC06",
+      "kind": "rain",
+      "purpose": "rain on the lamp-room glass \u2014 the world outside kept out",
+      "object": "RAIN_SC06",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "RAIN_SC07",
+      "scene": "SC07",
+      "kind": "rain",
+      "purpose": "gale sheets \u2014 then the lee is calm at SH008",
+      "object": "RAIN_SC07",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "SPRAY_SC07",
+      "scene": "SC07",
+      "kind": "spray",
+      "purpose": "breaking water on the lee rocks",
+      "object": "SPRAY_SC07",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "DUST_SC08",
+      "scene": "SC08",
+      "kind": "motes",
+      "purpose": "lamp-room air made tangible in her glow",
+      "object": "DUST_SC08",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "IGNITION_GLOW",
+      "scene": "SC08",
+      "kind": "glow",
+      "purpose": "the one miraculous moment the film earns",
+      "object": "IGNITION_GLOW",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "BEAM_FOG_SC09",
+      "scene": "SC09",
+      "kind": "fog",
+      "purpose": "the beacon beam becomes visible \u2014 dawn finds the fog",
+      "object": "BEAM_FOG_SC09",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "DRIZZLE_SC09",
+      "scene": "SC09",
+      "kind": "rain",
+      "purpose": "rain thinning to drizzle \u2014 the storm is leaving",
+      "object": "DRIZZLE_SC09",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "DUST_SC10",
+      "scene": "SC10",
+      "kind": "motes",
+      "purpose": "gold motes settle \u2014 dawn calm closes the loop",
+      "object": "DUST_SC10",
+      "status": "VERIFIED"
+    }
+  ]
+}

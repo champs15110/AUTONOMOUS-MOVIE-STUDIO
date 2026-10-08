@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-10-08T00:34:40Z",
+  "created_utc": "2026-10-08T01:24:24Z",
   "builders": "06_ASSETS/materials/ams_materials.py",
-  "material_count": 15,
+  "material_count": 18,
   "materials": [
     {
       "asset_id": "MAT_BRASS_AGED",
@@ -134,6 +134,30 @@
       "dependencies": [
         "TEX_GAUGE_DIAL"
       ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_RAIN_STREAK",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_rain_streak",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_FOG_BANK",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_fog_bank",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_DUST_MOTE",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_dust_mote",
+      "version": "1.0.0",
+      "dependencies": [],
       "status": "STUB_TESTED"
     }
   ]

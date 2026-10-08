@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "task_id": "T07_CAMERA",
   "project_id": "AMS-2026-001",
-  "created_utc": "2026-10-08T01:02:06Z",
+  "created_utc": "2026-10-08T01:24:30Z",
   "master_axis": "Master line of action: the sea and the returning ship sit FRAME RIGHT; the tower sits FRAME LEFT. WICK's journey runs frame RIGHT to LEFT. The climb runs vertically with the tower wall to the left. After the ignition the payoff looks back FRAME RIGHT to the sea. No shot crosses this axis without a neutral macro or POV buffer.",
   "counts": {
     "VERIFIED": 58

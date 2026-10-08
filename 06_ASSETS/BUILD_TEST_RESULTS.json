@@ -1,5 +1,5 @@
 {
-  "utc": "2026-10-08T01:01:30Z",
+  "utc": "2026-10-08T01:24:24Z",
   "harness": "tools/blender_stub (structural, no rendering)",
   "checks": [
     {
@@ -76,6 +76,21 @@
       "name": "material MAT_GAUGE_DIAL",
       "status": "PASS",
       "detail": "4 nodes"
+    },
+    {
+      "name": "material MAT_RAIN_STREAK",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_FOG_BANK",
+      "status": "PASS",
+      "detail": "2 nodes"
+    },
+    {
+      "name": "material MAT_DUST_MOTE",
+      "status": "PASS",
+      "detail": "2 nodes"
     },
     {
       "name": "texture gauge_dial.png",
@@ -248,8 +263,8 @@
       "detail": "frames 6769-7248, objects {'SC10_ENV': 30, 'SC10_CHARS': 31, 'SC10_PROPS': 4, 'SC10_LIGHTS': 1, 'SC10_CAM': 1}, lights ok, camera ok"
     }
   ],
-  "total": 49,
-  "passed": 49,
+  "total": 52,
+  "passed": 52,
   "failed": 0,
   "overall": "PASS"
 }

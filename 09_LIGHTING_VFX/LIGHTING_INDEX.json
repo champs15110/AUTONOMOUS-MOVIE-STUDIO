@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "task_id": "T08_LIGHTING_VFX",
+  "generated": "2026-10-08T01:24:31+00:00",
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "key": "SC01_SUN_0",
+      "world_strength": 0.55,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC02",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "key": "SC02_SUN_0",
+      "world_strength": 0.6,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC03",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "key": "SC03_SUN_0",
+      "world_strength": 0.7,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC04",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "key": "SC04_SUN_0",
+      "world_strength": 0.65,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC05",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "key": "SC05_SUN_0",
+      "world_strength": 0.55,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC06",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "key": "SC06_SUN_0",
+      "world_strength": 0.5,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC07",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "key": "SC07_SUN_0",
+      "world_strength": 0.7,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC08",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "key": "SC08_POINT_0",
+      "world_strength": 0.25,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC09",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+      "key": "SC09_SUN_1",
+      "world_strength": 0.8,
+      "status": "VERIFIED"
+    },
+    {
+      "scene_id": "SC10",
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "key": "SC10_SUN_0",
+      "world_strength": 0.9,
+      "status": "VERIFIED"
+    }
+  ]
+}

@@ -3,6 +3,57 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-08 — Stage 09 LIGHTING/VFX complete (T08_LIGHTING_VFX → VERIFIED)
+
+The lighting pass. Every scene now carries an executable lighting design -
+time of day, mood, one coherent shadow-casting key, readable warm fill, tuned
+world gradient - plus only the effects the story earns: the storm's rain, the
+withholding fog, the tangible lamp-room air, and the single ignition bloom.
+
+### Built
+
+- **`09_LIGHTING_VFX/scripts/light_design.py`** — the design itself: per-scene
+  `LIGHTING` (world gradient, key light, tuned built lights, added fill/rim,
+  exposure bounds) and `VFX` tables where every effect row carries its story
+  purpose. `apply_lighting` enforces ONE shadow caster per scene and fills
+  every close character within 6 m; `apply_vfx` builds rain rigs (slanted
+  camera-right +X per CONTINUITY_BIBLE §4), fog banks, dust motes, spray and
+  the ignition glow - keyed to approved frames: rain begins SC04_SH003, lee
+  calm at SC07_SH008, glow swells with SC08_SH007 (fill light 12→60 with it).
+- **`09_LIGHTING_VFX/scripts/light_runner.py`** — build scene → apply lighting
+  → apply VFX, shot frames from MASTER_SHOT_PLAN.
+- **`09_LIGHTING_VFX/scripts/write_lighting_scripts.py`** →
+  **`09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01..SC10.py`** — ten standalone,
+  independently recoverable scene lighting scripts (spot-checked: exit 0).
+- **`09_LIGHTING_VFX/scripts/run_lighting_tests.py`** — eleven-check harness:
+  shadow-coherence, character-lit, face-readability (fill ratio ≥ 0.08),
+  materials-from-registry, background-not-empty, design-adherence,
+  vfx-objects, wind-direction, exposure-proxy, shot-timing, 58/58 coverage.
+  Result: **10/10 scenes VERIFIED**, 58/58 shots with setup ref + grade note,
+  0 purposeless effects.
+- **New atmosphere materials** — `MAT_RAIN_STREAK`, `MAT_FOG_BANK`,
+  `MAT_DUST_MOTE` in `ams_materials` (+`ASSET_ROWS`): library now 18
+  materials; build harness re-run **52/52** (was 49/49).
+- Stub `bpy.Light` gained `use_shadow` (shadow-caster control).
+
+### Written
+
+- `LIGHTING_PLAN.json` (design rules + per-scene design + per-shot setup/grade),
+  `VFX_PLAN.json` (policy: no effect without story purpose; rain timeline;
+  wind rule), `LIGHTING_INDEX.json`, `vfx/VFX_INDEX.json`, `LIGHTING_QC.md`.
+- `SHOT_REGISTRY.json` — lighting slot VERIFIED ×58 with `setup`, `grade`,
+  `file` filled per shot.
+
+### Deferred honestly
+
+- Broadcast-range exposure legality is a render-QC measurement (T11); the
+  harness carries a structural exposure proxy only, and says so.
+
+### Neighbours re-verified
+
+- Animation harness 58/58 · Camera harness 58/58 · Build harness 52/52 ·
+  `studio.py validate` PASS (13 tasks, 58 shots, 10 scenes).
+
 ## 2026-10-08 — Stage 08 CAMERA complete (T07_CAMERA → VERIFIED)
 
 The cinematography pass. Every shot's CAMERA_PLAN line is now executable

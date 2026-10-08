@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "task_id": "T08_LIGHTING_VFX",
+  "generated": "2026-10-08T01:24:31+00:00",
+  "policy": "no effect without story purpose \u2014 every row below carries one",
+  "wind": "camera-right (+X) in SC05-07 per CONTINUITY_BIBLE \u00a74",
+  "rain_timeline": "begins SC04_SH003, full storm SC05-07, lee calm SC07_SH008, drizzle SC09, clear SC10",
+  "effects": [
+    {
+      "scene": "SC03",
+      "id": "FOG_SC03",
+      "kind": "fog",
+      "purpose": "the horizon withheld \u2014 she cannot see the ship",
+      "shots": "scene-wide",
+      "material": "MAT_FOG_BANK",
+      "object": "FOG_SC03",
+      "status": "VERIFIED",
+      "center": [
+        -1.0,
+        3.5,
+        0.45
+      ],
+      "size": [
+        12.0,
+        10.0,
+        0.8
+      ],
+      "drift": 0.35
+    },
+    {
+      "scene": "SC04",
+      "id": "RAIN_SC04",
+      "kind": "rain",
+      "purpose": "the storm front arrives \u2014 rain begins exactly here",
+      "shots": "SC04_SH003",
+      "material": "MAT_RAIN_STREAK",
+      "object": "RAIN_SC04",
+      "status": "VERIFIED",
+      "center": [
+        -2.0,
+        1.5
+      ],
+      "top": 3.5,
+      "count": 60,
+      "slant_deg": 12,
+      "note": "cloud held off (scale ~0) until SH003, then ramps in over 12 frames"
+    },
+    {
+      "scene": "SC04",
+      "id": "SILT_SC04",
+      "kind": "motes",
+      "purpose": "silt she disturbs at the base \u2014 the work is physical",
+      "shots": "scene-wide",
+      "material": "MAT_DUST_MOTE",
+      "object": "SILT_SC04",
+      "status": "VERIFIED",
+      "center": [
+        -2.0,
+        1.6,
+        0.15
+      ],
+      "radius": 2.0,
+      "count": 36,
+      "mote_r": 0.004,
+      "drift": [
+        0.1,
+        0.06,
+        0.1
+      ]
+    },
+    {
+      "scene": "SC05",
+      "id": "RAIN_SC05",
+      "kind": "rain",
+      "purpose": "full storm \u2014 wind camera-right per continuity bible",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "RAIN_SC05",
+      "status": "VERIFIED",
+      "center": [
+        0.0,
+        4.5
+      ],
+      "top": 5.5,
+      "count": 90,
+      "slant_deg": 62
+    },
+    {
+      "scene": "SC05",
+      "id": "SPRAY_SC05",
+      "kind": "spray",
+      "purpose": "sea attacking the gallery \u2014 she climbs through it",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "SPRAY_SC05",
+      "status": "VERIFIED",
+      "center": [
+        0.0,
+        4.5,
+        -0.3
+      ],
+      "radius": 2.2,
+      "count": 26,
+      "rise": 0.3
+    },
+    {
+      "scene": "SC06",
+      "id": "RAIN_SC06",
+      "kind": "rain",
+      "purpose": "rain on the lamp-room glass \u2014 the world outside kept out",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "RAIN_SC06",
+      "status": "VERIFIED",
+      "center": [
+        2.5,
+        0.0
+      ],
+      "top": 4.5,
+      "count": 80,
+      "slant_deg": 62
+    },
+    {
+      "scene": "SC07",
+      "id": "RAIN_SC07",
+      "kind": "rain",
+      "purpose": "gale sheets \u2014 then the lee is calm at SH008",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "RAIN_SC07",
+      "status": "VERIFIED",
+      "center": [
+        2.5,
+        0.0
+      ],
+      "top": 10.0,
+      "count": 100,
+      "slant_deg": 72,
+      "note": "cloud scale-z eases to 0.15 at SC07_SH008: the lee-side calm is story"
+    },
+    {
+      "scene": "SC07",
+      "id": "SPRAY_SC07",
+      "kind": "spray",
+      "purpose": "breaking water on the lee rocks",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "SPRAY_SC07",
+      "status": "VERIFIED",
+      "center": [
+        4.5,
+        2.0,
+        0.8
+      ],
+      "radius": 3.0,
+      "count": 30,
+      "rise": 0.45
+    },
+    {
+      "scene": "SC08",
+      "id": "DUST_SC08",
+      "kind": "motes",
+      "purpose": "lamp-room air made tangible in her glow",
+      "shots": "scene-wide",
+      "material": "MAT_DUST_MOTE",
+      "object": "DUST_SC08",
+      "status": "VERIFIED",
+      "center": [
+        0.6,
+        0.0,
+        12.9
+      ],
+      "radius": 1.5,
+      "count": 40,
+      "mote_r": 0.005,
+      "drift": [
+        0.05,
+        0.04,
+        0.2
+      ]
+    },
+    {
+      "scene": "SC08",
+      "id": "IGNITION_GLOW",
+      "kind": "glow",
+      "purpose": "the one miraculous moment the film earns",
+      "shots": "SC08_SH007",
+      "material": "MAT_AMBER_GLOW",
+      "object": "IGNITION_GLOW",
+      "status": "VERIFIED",
+      "center": [
+        0.0,
+        0.0,
+        13.4
+      ],
+      "radius": 0.35,
+      "end_scale": 3.5,
+      "note": "sphere scales 0.01 -> 3.5 over the ignition act; SC08_FILL swells 12 -> 60 with it"
+    },
+    {
+      "scene": "SC09",
+      "id": "BEAM_FOG_SC09",
+      "kind": "fog",
+      "purpose": "the beacon beam becomes visible \u2014 dawn finds the fog",
+      "shots": "scene-wide",
+      "material": "MAT_FOG_BANK",
+      "object": "BEAM_FOG_SC09",
+      "status": "VERIFIED",
+      "center": [
+        8.0,
+        3.0,
+        9.5
+      ],
+      "size": [
+        24.0,
+        16.0,
+        8.0
+      ],
+      "drift": 0.5
+    },
+    {
+      "scene": "SC09",
+      "id": "DRIZZLE_SC09",
+      "kind": "rain",
+      "purpose": "rain thinning to drizzle \u2014 the storm is leaving",
+      "shots": "scene-wide",
+      "material": "MAT_RAIN_STREAK",
+      "object": "DRIZZLE_SC09",
+      "status": "VERIFIED",
+      "center": [
+        0.0,
+        0.0
+      ],
+      "top": 8.0,
+      "count": 28,
+      "slant_deg": 8
+    },
+    {
+      "scene": "SC10",
+      "id": "DUST_SC10",
+      "kind": "motes",
+      "purpose": "gold motes settle \u2014 dawn calm closes the loop",
+      "shots": "scene-wide",
+      "material": "MAT_DUST_MOTE",
+      "object": "DUST_SC10",
+      "status": "VERIFIED",
+      "center": [
+        0.8,
+        0.0,
+        12.6
+      ],
+      "radius": 1.8,
+      "count": 36,
+      "mote_r": 0.005,
+      "drift": [
+        0.08,
+        0.05,
+        0.12
+      ]
+    }
+  ]
+}

@@ -3,11 +3,11 @@
   "task_id": "T05_3D_ASSETS",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "created_utc": "2026-10-08T00:34:40Z",
+  "created_utc": "2026-10-08T01:24:24Z",
   "populated_by": "06_ASSETS/scripts/build_manifests.py",
   "local_validation": "tools/blender_stub (structural, no rendering)",
   "test_results": "06_ASSETS/BUILD_TEST_RESULTS.json",
-  "asset_count": 37,
+  "asset_count": 40,
   "assets": [
     {
       "asset_id": "TEX_GAUGE_DIAL",
@@ -155,6 +155,30 @@
       "dependencies": [
         "TEX_GAUGE_DIAL"
       ],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_RAIN_STREAK",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_rain_streak",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_FOG_BANK",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_fog_bank",
+      "version": "1.0.0",
+      "dependencies": [],
+      "status": "STUB_TESTED"
+    },
+    {
+      "asset_id": "MAT_DUST_MOTE",
+      "asset_type": "material",
+      "source": "06_ASSETS/materials/ams_materials.py#build_dust_mote",
+      "version": "1.0.0",
+      "dependencies": [],
       "status": "STUB_TESTED"
     },
     {

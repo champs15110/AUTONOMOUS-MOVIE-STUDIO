@@ -13,7 +13,7 @@
     "05_3D_ASSETS",
     "06_ANIMATION",
     "07_CAMERA",
-    "07_CAMERA"
+    "08_LIGHTING_VFX"
   ],
   "failed_tasks": [],
   "blocked_tasks": [],
@@ -42,7 +42,7 @@
     "05_3D_ASSETS": "VERIFIED",
     "06_ANIMATION": "VERIFIED",
     "07_CAMERA": "VERIFIED",
-    "08_LIGHTING_VFX": "NOT_STARTED",
+    "08_LIGHTING_VFX": "VERIFIED",
     "09_AUDIO": "NOT_STARTED",
     "10_EDIT": "NOT_STARTED",
     "11_QC": "NOT_STARTED",
@@ -131,7 +131,7 @@
     "git_commit": "4aec42e84353570dc2df34ddf241c73f7989fa8f",
     "summary": "Stage 08 CAMERA VERIFIED. 58/58 shots carry executable camera direction: cam_lib motivated-move primitives (hold/push/crane/dolly/tilt/pan/whip/cut/descend/rack/micro-drift), 58 standalone per-shot cam scripts reusing scene cameras, master-axis screen direction enforced (sea frame RIGHT), DOF focus on subject, single fast move = SC06_SH002 whip; ten-check harness 58/58 VERIFIED (lens==plan, keys-in-frames, scale windows, in-frame, axis, motivation license, focus, no clipping, readability); CAMERA_MASTER/INDEX/QC written; registry camera slots all VERIFIED."
   },
-  "last_updated": "2026-10-08T01:02:45Z",
+  "last_updated": "2026-10-08T01:25:41Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }

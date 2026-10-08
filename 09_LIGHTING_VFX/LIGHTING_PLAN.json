@@ -1,0 +1,1049 @@
+{
+  "schema_version": 1,
+  "task_id": "T08_LIGHTING_VFX",
+  "project_id": "AMS-001",
+  "film_title": "NINETY-TWO TURNS",
+  "fps": 24,
+  "generated": "2026-10-08T01:24:31+00:00",
+  "design_rules": [
+    "one shadow-casting light per scene (the planned key) \u2014 coherent shadows",
+    "warm fill within 6 m of every close character \u2014 faces stay readable",
+    "wind is camera-right (+X) in storm scenes SC05-07 (CONTINUITY_BIBLE \u00a74)",
+    "rain begins exactly at SC04_SH003, full storm SC05-07, lee calm at SC07_SH008, drizzle SC09, clear dawn SC10",
+    "world shader never black \u2014 depth from gradient, not void",
+    "all materials from the registered 06_ASSETS library (18 entries)",
+    "no effect without a story purpose (every VFX row carries one)"
+  ],
+  "scenes": {
+    "SC01": {
+      "time": "dusk, still sea",
+      "mood": "lonely ritual; the world withheld",
+      "world": {
+        "color": [
+          0.06,
+          0.1,
+          0.13
+        ],
+        "strength": 0.55
+      },
+      "key": "SC01_SUN_0",
+      "shadow_casters": [
+        "SC01_SUN_0"
+      ],
+      "tuned": {
+        "SC01_SUN_0": {
+          "energy": 2.2,
+          "angle": 0.09,
+          "use_shadow": true
+        },
+        "SC01_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC01_FILL",
+          "type": "POINT",
+          "energy": 10,
+          "color": [
+            1.0,
+            0.75,
+            0.5
+          ],
+          "location": [
+            1.4,
+            -1.8,
+            1.0
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "status": "VERIFIED"
+    },
+    "SC02": {
+      "time": "dusk, first swell",
+      "mood": "the sea begins to speak",
+      "world": {
+        "color": [
+          0.06,
+          0.1,
+          0.14
+        ],
+        "strength": 0.6
+      },
+      "key": "SC02_SUN_0",
+      "shadow_casters": [
+        "SC02_SUN_0"
+      ],
+      "tuned": {
+        "SC02_SUN_0": {
+          "energy": 2.0,
+          "angle": 0.1,
+          "use_shadow": true
+        },
+        "SC02_POINT_1": {
+          "use_shadow": false
+        },
+        "SC02_POINT_2": {
+          "use_shadow": false,
+          "shadow_soft_size": 2.0
+        }
+      },
+      "added": [
+        {
+          "name": "SC02_FILL",
+          "type": "POINT",
+          "energy": 12,
+          "color": [
+            1.0,
+            0.78,
+            0.55
+          ],
+          "location": [
+            -1.4,
+            1.6,
+            1.1
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "status": "VERIFIED"
+    },
+    "SC03": {
+      "time": "dusk, swell",
+      "mood": "the horizon withheld \u2014 fog holds the ship back",
+      "world": {
+        "color": [
+          0.1,
+          0.12,
+          0.16
+        ],
+        "strength": 0.7
+      },
+      "key": "SC03_SUN_0",
+      "shadow_casters": [
+        "SC03_SUN_0"
+      ],
+      "tuned": {
+        "SC03_SUN_0": {
+          "energy": 3.0,
+          "angle": 0.1,
+          "use_shadow": true
+        },
+        "SC03_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC03_FILL",
+          "type": "POINT",
+          "energy": 14,
+          "color": [
+            1.0,
+            0.8,
+            0.55
+          ],
+          "location": [
+            0.6,
+            -1.6,
+            1.0
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "status": "VERIFIED"
+    },
+    "SC04": {
+      "time": "dusk, storm front arrives",
+      "mood": "the light goes cold; the rain starts",
+      "world": {
+        "color": [
+          0.07,
+          0.09,
+          0.12
+        ],
+        "strength": 0.65
+      },
+      "key": "SC04_SUN_0",
+      "shadow_casters": [
+        "SC04_SUN_0"
+      ],
+      "tuned": {
+        "SC04_SUN_0": {
+          "energy": 4.0,
+          "angle": 0.12,
+          "use_shadow": true
+        },
+        "SC04_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC04_FILL",
+          "type": "POINT",
+          "energy": 12,
+          "color": [
+            0.85,
+            0.8,
+            0.75
+          ],
+          "location": [
+            1.2,
+            -1.6,
+            1.2
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "status": "VERIFIED"
+    },
+    "SC05": {
+      "time": "storm, gallery",
+      "mood": "she climbs into the weather",
+      "world": {
+        "color": [
+          0.05,
+          0.06,
+          0.08
+        ],
+        "strength": 0.55
+      },
+      "key": "SC05_SUN_0",
+      "shadow_casters": [
+        "SC05_SUN_0"
+      ],
+      "tuned": {
+        "SC05_SUN_0": {
+          "energy": 4.0,
+          "angle": 0.12,
+          "use_shadow": true
+        },
+        "SC05_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC05_FILL",
+          "type": "POINT",
+          "energy": 40,
+          "color": [
+            1.0,
+            0.72,
+            0.4
+          ],
+          "location": [
+            0.8,
+            2.0,
+            2.6
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "status": "VERIFIED"
+    },
+    "SC06": {
+      "time": "storm, tower door and lower stair",
+      "mood": "the door at last \u2014 rain hammers the plating",
+      "world": {
+        "color": [
+          0.04,
+          0.05,
+          0.07
+        ],
+        "strength": 0.5
+      },
+      "key": "SC06_SUN_0",
+      "shadow_casters": [
+        "SC06_SUN_0"
+      ],
+      "tuned": {
+        "SC06_SUN_0": {
+          "energy": 5.0,
+          "angle": 0.13,
+          "use_shadow": true
+        },
+        "SC06_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC06_FILL",
+          "type": "POINT",
+          "energy": 15,
+          "color": [
+            1.0,
+            0.75,
+            0.5
+          ],
+          "location": [
+            2.0,
+            -1.2,
+            1.4
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "status": "VERIFIED"
+    },
+    "SC07": {
+      "time": "gale, lee of the tower",
+      "mood": "storm-white, near-monochrome; the lee is calm",
+      "world": {
+        "color": [
+          0.08,
+          0.09,
+          0.11
+        ],
+        "strength": 0.7
+      },
+      "key": "SC07_SUN_0",
+      "shadow_casters": [
+        "SC07_SUN_0"
+      ],
+      "tuned": {
+        "SC07_SUN_0": {
+          "energy": 8.0,
+          "angle": 0.13,
+          "use_shadow": true
+        },
+        "SC07_POINT_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC07_FILL",
+          "type": "POINT",
+          "energy": 40,
+          "color": [
+            0.9,
+            0.92,
+            1.0
+          ],
+          "location": [
+            -2.2,
+            0.6,
+            2.6
+          ]
+        },
+        {
+          "name": "SC07_BACK",
+          "type": "POINT",
+          "energy": 25,
+          "color": [
+            0.7,
+            0.8,
+            1.0
+          ],
+          "location": [
+            3.5,
+            -1.0,
+            1.0
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "status": "VERIFIED"
+    },
+    "SC08": {
+      "time": "night, lamp room interior",
+      "mood": "her glow only \u2014 then the ignition bloom",
+      "world": {
+        "color": [
+          0.01,
+          0.015,
+          0.025
+        ],
+        "strength": 0.25
+      },
+      "key": "SC08_POINT_0",
+      "shadow_casters": [
+        "SC08_POINT_0"
+      ],
+      "tuned": {
+        "SC08_POINT_0": {
+          "energy": 15.0,
+          "use_shadow": true
+        },
+        "SC08_AREA_1": {
+          "use_shadow": false
+        }
+      },
+      "added": [
+        {
+          "name": "SC08_FILL",
+          "type": "POINT",
+          "energy": 12,
+          "color": [
+            1.0,
+            0.8,
+            0.55
+          ],
+          "location": [
+            0.9,
+            -0.8,
+            12.9
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "status": "VERIFIED"
+    },
+    "SC09": {
+      "time": "pre-dawn, clearing",
+      "mood": "beacon amber sweeps; rain turns to light",
+      "world": {
+        "color": [
+          0.13,
+          0.12,
+          0.14
+        ],
+        "strength": 0.8
+      },
+      "key": "SC09_SUN_1",
+      "shadow_casters": [
+        "SC09_SUN_1"
+      ],
+      "tuned": {
+        "SC09_SUN_1": {
+          "energy": 3.0,
+          "angle": 0.12,
+          "use_shadow": true
+        },
+        "SC09_SPOT_0": {
+          "use_shadow": false,
+          "shadow_soft_size": 1.5
+        }
+      },
+      "added": [
+        {
+          "name": "SC09_FILL",
+          "type": "POINT",
+          "energy": 50,
+          "color": [
+            1.0,
+            0.85,
+            0.7
+          ],
+          "location": [
+            3.0,
+            2.0,
+            11.5
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+      "status": "VERIFIED"
+    },
+    "SC10": {
+      "time": "dawn, calm sea",
+      "mood": "rose-gold stillness; the loop warms",
+      "world": {
+        "color": [
+          0.16,
+          0.14,
+          0.13
+        ],
+        "strength": 0.9
+      },
+      "key": "SC10_SUN_0",
+      "shadow_casters": [
+        "SC10_SUN_0"
+      ],
+      "tuned": {
+        "SC10_SUN_0": {
+          "energy": 4.0,
+          "angle": 0.1,
+          "use_shadow": true
+        }
+      },
+      "added": [
+        {
+          "name": "SC10_FILL",
+          "type": "POINT",
+          "energy": 12,
+          "color": [
+            1.0,
+            0.85,
+            0.75
+          ],
+          "location": [
+            -0.6,
+            1.2,
+            12.8
+          ]
+        }
+      ],
+      "exposure": [
+        0.5,
+        60.0
+      ],
+      "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "status": "VERIFIED"
+    }
+  },
+  "shots": {
+    "SC01_SH001": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "one warm practical raking the brass; everything else black",
+      "frames": [
+        1,
+        132
+      ]
+    },
+    "SC01_SH002": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "amber internal glow on the coil; the ping reads as a flash",
+      "frames": [
+        133,
+        216
+      ]
+    },
+    "SC01_SH003": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "soft amber defocus over cool brass",
+      "frames": [
+        217,
+        336
+      ]
+    },
+    "SC01_SH004": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "dusk teal; the single amber lamp is the only warm source",
+      "frames": [
+        337,
+        528
+      ]
+    },
+    "SC01_SH005": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "cool dusk with amber eye glow",
+      "frames": [
+        529,
+        648
+      ]
+    },
+    "SC01_SH006": {
+      "scene": "SC01",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+      "grade": "last dusk; tower a black silhouette",
+      "frames": [
+        649,
+        768
+      ]
+    },
+    "SC02_SH001": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "dusk teal; pillar unlit",
+      "frames": [
+        769,
+        924
+      ]
+    },
+    "SC02_SH002": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "raking warm key-light on worn teeth",
+      "frames": [
+        925,
+        1032
+      ]
+    },
+    "SC02_SH003": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "storm-grey sea; one amber point",
+      "frames": [
+        1033,
+        1176
+      ]
+    },
+    "SC02_SH004": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "storm slate rim",
+      "frames": [
+        1177,
+        1320
+      ]
+    },
+    "SC02_SH005": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "amber eye/chest glow over cool brass",
+      "frames": [
+        1321,
+        1440
+      ]
+    },
+    "SC02_SH006": {
+      "scene": "SC02",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+      "grade": "dusk; last warm lamp behind",
+      "frames": [
+        1441,
+        1560
+      ]
+    },
+    "SC03_SH001": {
+      "scene": "SC03",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "grade": "dusk teal; warm practicals sparse",
+      "frames": [
+        1561,
+        1704
+      ]
+    },
+    "SC03_SH002": {
+      "scene": "SC03",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "grade": "soft amber on the dial",
+      "frames": [
+        1705,
+        1824
+      ]
+    },
+    "SC03_SH003": {
+      "scene": "SC03",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "grade": "the film's one warm, calm light",
+      "frames": [
+        1825,
+        1992
+      ]
+    },
+    "SC03_SH004": {
+      "scene": "SC03",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "grade": "cool with a single warm lamp behind",
+      "frames": [
+        1993,
+        2112
+      ]
+    },
+    "SC03_SH005": {
+      "scene": "SC03",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+      "grade": "music cuts; water catches cold light",
+      "frames": [
+        2113,
+        2208
+      ]
+    },
+    "SC04_SH001": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "storm slate, flat cold",
+      "frames": [
+        2209,
+        2328
+      ]
+    },
+    "SC04_SH002": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "cold with her amber chest glow",
+      "frames": [
+        2329,
+        2460
+      ]
+    },
+    "SC04_SH003": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "first countable raindrops catch light",
+      "frames": [
+        2461,
+        2568
+      ]
+    },
+    "SC04_SH004": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "muffled; surface a bright ceiling",
+      "frames": [
+        2569,
+        2712
+      ]
+    },
+    "SC04_SH005": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "amber eye glow in teal murk",
+      "frames": [
+        2713,
+        2832
+      ]
+    },
+    "SC04_SH006": {
+      "scene": "SC04",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+      "grade": "steam off brass; rain steady",
+      "frames": [
+        2833,
+        2928
+      ]
+    },
+    "SC05_SH001": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "storm slate; wind from camera-R",
+      "frames": [
+        2929,
+        3048
+      ]
+    },
+    "SC05_SH002": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "cold steel; spark glow",
+      "frames": [
+        3049,
+        3180
+      ]
+    },
+    "SC05_SH003": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "the hole in the sound matches the hole in the frame",
+      "frames": [
+        3181,
+        3288
+      ]
+    },
+    "SC05_SH004": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "the only quiet in the storm",
+      "frames": [
+        3289,
+        3432
+      ]
+    },
+    "SC05_SH005": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "the spark is the warmest thing in the scene",
+      "frames": [
+        3433,
+        3576
+      ]
+    },
+    "SC05_SH006": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "amber glow vs cold steel",
+      "frames": [
+        3577,
+        3696
+      ]
+    },
+    "SC05_SH007": {
+      "scene": "SC05",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+      "grade": "rain; door dark",
+      "frames": [
+        3697,
+        3792
+      ]
+    },
+    "SC06_SH001": {
+      "scene": "SC06",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "grade": "rain on iron; tower humming",
+      "frames": [
+        3793,
+        3912
+      ]
+    },
+    "SC06_SH002": {
+      "scene": "SC06",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "grade": "her glow + cold iron",
+      "frames": [
+        3913,
+        4080
+      ]
+    },
+    "SC06_SH003": {
+      "scene": "SC06",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "grade": "everything drops out except needle friction",
+      "frames": [
+        4081,
+        4200
+      ]
+    },
+    "SC06_SH004": {
+      "scene": "SC06",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "grade": "her glow is the ONLY light",
+      "frames": [
+        4201,
+        4344
+      ]
+    },
+    "SC06_SH005": {
+      "scene": "SC06",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+      "grade": "storm light through the breach",
+      "frames": [
+        4345,
+        4464
+      ]
+    },
+    "SC07_SH001": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "storm-white rim",
+      "frames": [
+        4465,
+        4596
+      ]
+    },
+    "SC07_SH002": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "storm",
+      "frames": [
+        4597,
+        4728
+      ]
+    },
+    "SC07_SH003": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "storm rim; her glow",
+      "frames": [
+        4729,
+        4920
+      ]
+    },
+    "SC07_SH004": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "storm",
+      "frames": [
+        4921,
+        5064
+      ]
+    },
+    "SC07_SH005": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "a single bright note returns",
+      "frames": [
+        5065,
+        5184
+      ]
+    },
+    "SC07_SH006": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "storm rim",
+      "frames": [
+        5185,
+        5304
+      ]
+    },
+    "SC07_SH007": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "near-monochrome",
+      "frames": [
+        5305,
+        5400
+      ]
+    },
+    "SC07_SH008": {
+      "scene": "SC07",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+      "grade": "gale drops inside the lee",
+      "frames": [
+        5401,
+        5472
+      ]
+    },
+    "SC08_SH001": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "her glow the only light",
+      "frames": [
+        5473,
+        5592
+      ]
+    },
+    "SC08_SH002": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "exposed spark glow",
+      "frames": [
+        5593,
+        5724
+      ]
+    },
+    "SC08_SH003": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "fragile glow on dead brass",
+      "frames": [
+        5725,
+        5832
+      ]
+    },
+    "SC08_SH004": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "absolute; one water drop",
+      "frames": [
+        5833,
+        5952
+      ]
+    },
+    "SC08_SH005": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "her glow low",
+      "frames": [
+        5953,
+        6072
+      ]
+    },
+    "SC08_SH006": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "the spring sings; the glow fades",
+      "frames": [
+        6073,
+        6216
+      ]
+    },
+    "SC08_SH007": {
+      "scene": "SC08",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+      "grade": "black to full amber - the largest contrast event",
+      "frames": [
+        6217,
+        6288
+      ]
+    },
+    "SC09_SH001": {
+      "scene": "SC09",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+      "grade": "amber shaft in the dark",
+      "frames": [
+        6289,
+        6480
+      ]
+    },
+    "SC09_SH002": {
+      "scene": "SC09",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+      "grade": "dawn edge on the water",
+      "frames": [
+        6481,
+        6624
+      ]
+    },
+    "SC09_SH003": {
+      "scene": "SC09",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+      "grade": "beacon dims as the dark goes; dawn",
+      "frames": [
+        6625,
+        6768
+      ]
+    },
+    "SC10_SH001": {
+      "scene": "SC10",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "grade": "dawn rose-gold",
+      "frames": [
+        6769,
+        6876
+      ]
+    },
+    "SC10_SH002": {
+      "scene": "SC10",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "grade": "backlight and rim only",
+      "frames": [
+        6877,
+        6984
+      ]
+    },
+    "SC10_SH003": {
+      "scene": "SC10",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "grade": "dawn rim on the key",
+      "frames": [
+        6985,
+        7092
+      ]
+    },
+    "SC10_SH004": {
+      "scene": "SC10",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "grade": "dawn warm instead of dusk",
+      "frames": [
+        7093,
+        7176
+      ]
+    },
+    "SC10_SH005": {
+      "scene": "SC10",
+      "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+      "grade": "first amber return in the chest",
+      "frames": [
+        7177,
+        7248
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T01:02:09Z",
+  "last_updated": "2026-10-08T01:24:44Z",
   "populated_by_task": "T04_STORYBOARD",
   "status": "POPULATED",
   "shot_id_format": "SCnn_SHmmm",
@@ -105,10 +105,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "one warm practical raking the brass; everything else black",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -160,10 +160,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "amber internal glow on the coil; the ping reads as a flash",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -215,10 +215,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "soft amber defocus over cool brass",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -270,10 +270,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "dusk teal; the single amber lamp is the only warm source",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -325,10 +325,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "cool dusk with amber eye glow",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -380,10 +380,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "grade": "last dusk; tower a black silhouette",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC01.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -435,10 +435,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "dusk teal; pillar unlit",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -490,10 +490,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "raking warm key-light on worn teeth",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -545,10 +545,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "storm-grey sea; one amber point",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -600,10 +600,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "storm slate rim",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -655,10 +655,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "amber eye/chest glow over cool brass",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -710,10 +710,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "grade": "dusk; last warm lamp behind",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC02.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -765,10 +765,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "grade": "dusk teal; warm practicals sparse",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -820,10 +820,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "grade": "soft amber on the dial",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -875,10 +875,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "grade": "the film's one warm, calm light",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -930,10 +930,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "grade": "cool with a single warm lamp behind",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -985,10 +985,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "grade": "music cuts; water catches cold light",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC03.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1040,10 +1040,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "storm slate, flat cold",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1095,10 +1095,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "cold with her amber chest glow",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1150,10 +1150,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "first countable raindrops catch light",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1205,10 +1205,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "muffled; surface a bright ceiling",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1260,10 +1260,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "amber eye glow in teal murk",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1315,10 +1315,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "grade": "steam off brass; rain steady",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC04.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1370,10 +1370,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "storm slate; wind from camera-R",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1425,10 +1425,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "cold steel; spark glow",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1480,10 +1480,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "the hole in the sound matches the hole in the frame",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1535,10 +1535,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "the only quiet in the storm",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1590,10 +1590,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "the spark is the warmest thing in the scene",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1645,10 +1645,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "amber glow vs cold steel",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1700,10 +1700,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "grade": "rain; door dark",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC05.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1755,10 +1755,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "grade": "rain on iron; tower humming",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1810,10 +1810,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "grade": "her glow + cold iron",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1865,10 +1865,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "grade": "everything drops out except needle friction",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1920,10 +1920,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "grade": "her glow is the ONLY light",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -1975,10 +1975,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "grade": "storm light through the breach",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC06.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2030,10 +2030,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "storm-white rim",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2085,10 +2085,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "storm",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2140,10 +2140,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "storm rim; her glow",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2195,10 +2195,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "storm",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2250,10 +2250,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "a single bright note returns",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2305,10 +2305,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "storm rim",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2360,10 +2360,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "near-monochrome",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2415,10 +2415,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "grade": "gale drops inside the lee",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC07.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2470,10 +2470,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "her glow the only light",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2525,10 +2525,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "exposed spark glow",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2580,10 +2580,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "fragile glow on dead brass",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2635,10 +2635,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "absolute; one water drop",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2690,10 +2690,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "her glow low",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2745,10 +2745,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "the spring sings; the glow fades",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2800,10 +2800,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "grade": "black to full amber - the largest contrast event",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC08.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2855,10 +2855,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "grade": "amber shaft in the dark",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2910,10 +2910,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "grade": "dawn edge on the water",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -2965,10 +2965,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "grade": "beacon dims as the dark goes; dawn",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC09.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -3020,10 +3020,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "grade": "dawn rose-gold",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -3075,10 +3075,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "grade": "backlight and rim only",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -3130,10 +3130,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "grade": "dawn rim on the key",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -3185,10 +3185,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "grade": "dawn warm instead of dusk",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,
@@ -3240,10 +3240,10 @@
         "status": "VERIFIED"
       },
       "lighting": {
-        "setup": null,
-        "grade": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "setup": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "grade": "first amber return in the chest",
+        "file": "09_LIGHTING_VFX/SCENE_LIGHTING/light_SC10.py",
+        "status": "VERIFIED"
       },
       "audio": {
         "music_cue": null,

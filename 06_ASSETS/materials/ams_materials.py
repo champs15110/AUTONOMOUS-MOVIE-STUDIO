@@ -188,6 +188,39 @@ def build_gauge_dial():
     return m
 
 
+def build_rain_streak():
+    m = _new_mat("MAT_RAIN_STREAK")
+    b = _bsdf_out(m)
+    _set(b, ["Base Color"], (0.72, 0.80, 0.88, 1))
+    _set(b, ["Roughness"], 0.08)
+    _set(b, ["Metallic"], 0.0)
+    _set(b, ["Alpha"], 0.35)
+    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    return m
+
+
+def build_fog_bank():
+    m = _new_mat("MAT_FOG_BANK")
+    b = _bsdf_out(m)
+    _set(b, ["Base Color"], (0.55, 0.60, 0.66, 1))
+    _set(b, ["Roughness"], 1.0)
+    _set(b, ["Alpha"], 0.07)
+    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    return m
+
+
+def build_dust_mote():
+    m = _new_mat("MAT_DUST_MOTE")
+    b = _bsdf_out(m)
+    _set(b, ["Base Color"], (1.0, 0.85, 0.62, 1))
+    _set(b, ["Roughness"], 0.9)
+    _set(b, ["Alpha"], 0.5)
+    _set(b, ["Emission Color"], (1.0, 0.8, 0.5, 1))
+    _set(b, ["Emission Strength"], 0.4)
+    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    return m
+
+
 MATERIALS = [
     ("MAT_BRASS_AGED", "build_brass_aged", []),
     ("MAT_BRASS_POLISHED", "build_brass_polished", []),
@@ -204,6 +237,9 @@ MATERIALS = [
     ("MAT_WHITEGOLD", "build_whitegold", []),
     ("MAT_EYE_SHUTTER", "build_eye_shutter", []),
     ("MAT_GAUGE_DIAL", "build_gauge_dial", ["TEX_GAUGE_DIAL"]),
+    ("MAT_RAIN_STREAK", "build_rain_streak", []),
+    ("MAT_FOG_BANK", "build_fog_bank", []),
+    ("MAT_DUST_MOTE", "build_dust_mote", []),
 ]
 
 
@@ -223,6 +259,9 @@ _BUILDERS = {
     "MAT_WHITEGOLD": build_whitegold,
     "MAT_EYE_SHUTTER": build_eye_shutter,
     "MAT_GAUGE_DIAL": build_gauge_dial,
+    "MAT_RAIN_STREAK": build_rain_streak,
+    "MAT_FOG_BANK": build_fog_bank,
+    "MAT_DUST_MOTE": build_dust_mote,
 }
 
 

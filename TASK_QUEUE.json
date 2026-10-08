@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T01:02:45Z",
+  "last_updated": "2026-10-08T01:25:41Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -257,7 +257,7 @@
       "task_id": "T08_LIGHTING_VFX",
       "stage": "08_LIGHTING_VFX",
       "title": "Per-scene lighting setups, VFX and compositing grades",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T07_CAMERA"
       ],
@@ -267,8 +267,13 @@
         "08_CAMERA/CAMERA_INDEX.json"
       ],
       "output_files": [
+        "09_LIGHTING_VFX/LIGHTING_PLAN.json",
+        "09_LIGHTING_VFX/VFX_PLAN.json",
         "09_LIGHTING_VFX/LIGHTING_INDEX.json",
         "09_LIGHTING_VFX/vfx/VFX_INDEX.json",
+        "09_LIGHTING_VFX/LIGHTING_QC.md",
+        "09_LIGHTING_VFX/SCENE_LIGHTING",
+        "09_LIGHTING_VFX/scripts",
         "SHOT_REGISTRY.json"
       ],
       "acceptance": [

@@ -217,6 +217,7 @@ class Light(Keyable):
         self.spot_blend = 0.3
         self.angle = 0.1
         self.shadow_soft_size = 0.1
+        self.use_shadow = True
 
 
 class _Aperture:
