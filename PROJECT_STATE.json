@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "08_LIGHTING_VFX",
-  "current_task": "T08_LIGHTING_VFX",
+  "current_stage": "09_AUDIO",
+  "current_task": "T09_AUDIO",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -55,7 +55,7 @@
     "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 8,
+    "checkpoints": 9,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -122,16 +122,24 @@
       "task_id": "T07_CAMERA",
       "summary": "Stage 08 CAMERA VERIFIED. 58/58 shots carry executable camera direction: cam_lib motivated-move primitives (hold/push/crane/dolly/tilt/pan/whip/cut/descend/rack/micro-drift), 58 standalone per-shot cam scripts reusing scene cameras, master-axis screen direction enforced (sea frame RIGHT), DOF focus on subject, single fast move = SC06_SH002 whip; ten-check harness 58/58 VERIFIED (lens==plan, keys-in-frames, scale windows, in-frame, axis, motivation license, focus, no clipping, readability); CAMERA_MASTER/INDEX/QC written; registry camera slots all VERIFIED.",
       "git_commit": "4aec42e84353570dc2df34ddf241c73f7989fa8f"
+    },
+    {
+      "checkpoint_id": "CP-0009",
+      "utc": "2026-10-08T01:25:53Z",
+      "actor": "master_controller",
+      "task_id": "T08_LIGHTING_VFX",
+      "summary": "Stage 09 LIGHTING/VFX VERIFIED. 10/10 scenes carry executable lighting: one coherent shadow-casting key, warm readable fill within 6 m of every close character, tuned world gradients, single-shadow-caster rule enforced; VFX only where story demands - rain begins SC04_SH003, storm slant camera-right +X SC05-07, lee calm keyed at SC07_SH008, ignition glow + fill swell at SC08_SH007, fog withholds the ship SC03/SC09, dust motes SC04/08/10; eleven-check harness 10/10 scenes + 58/58 shot coverage, 0 purposeless effects; LIGHTING_PLAN/VFX_PLAN/indices/QC written; registry lighting slots VERIFIED x58 with setup+grade; materials library 15->18, build harness 52/52; anim 58/58, camera 58/58 neighbours intact.",
+      "git_commit": "e01b3b97775c2defe3915e662d7c2f44de93f569"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0008",
-    "utc": "2026-10-08T01:02:45Z",
-    "task_id": "T07_CAMERA",
-    "git_commit": "4aec42e84353570dc2df34ddf241c73f7989fa8f",
-    "summary": "Stage 08 CAMERA VERIFIED. 58/58 shots carry executable camera direction: cam_lib motivated-move primitives (hold/push/crane/dolly/tilt/pan/whip/cut/descend/rack/micro-drift), 58 standalone per-shot cam scripts reusing scene cameras, master-axis screen direction enforced (sea frame RIGHT), DOF focus on subject, single fast move = SC06_SH002 whip; ten-check harness 58/58 VERIFIED (lens==plan, keys-in-frames, scale windows, in-frame, axis, motivation license, focus, no clipping, readability); CAMERA_MASTER/INDEX/QC written; registry camera slots all VERIFIED."
+    "checkpoint_id": "CP-0009",
+    "utc": "2026-10-08T01:25:53Z",
+    "task_id": "T08_LIGHTING_VFX",
+    "git_commit": "e01b3b97775c2defe3915e662d7c2f44de93f569",
+    "summary": "Stage 09 LIGHTING/VFX VERIFIED. 10/10 scenes carry executable lighting: one coherent shadow-casting key, warm readable fill within 6 m of every close character, tuned world gradients, single-shadow-caster rule enforced; VFX only where story demands - rain begins SC04_SH003, storm slant camera-right +X SC05-07, lee calm keyed at SC07_SH008, ignition glow + fill swell at SC08_SH007, fog withholds the ship SC03/SC09, dust motes SC04/08/10; eleven-check harness 10/10 scenes + 58/58 shot coverage, 0 purposeless effects; LIGHTING_PLAN/VFX_PLAN/indices/QC written; registry lighting slots VERIFIED x58 with setup+grade; materials library 15->18, build harness 52/52; anim 58/58, camera 58/58 neighbours intact."
   },
-  "last_updated": "2026-10-08T01:25:41Z",
+  "last_updated": "2026-10-08T01:25:53Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
