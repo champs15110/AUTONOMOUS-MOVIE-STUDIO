@@ -440,7 +440,18 @@ ENV_BUILDERS = {"PLAZA": build_env_PLAZA, "STREETS": build_env_STREETS, "TOWER":
 # ---------------------------------------------------------------------- #
 # scene orchestrator
 # ---------------------------------------------------------------------- #
+def _purge_startup_objects():
+    """The bpy module starts from Blender's startup file: its default
+    Cube/Camera/Light would leak into every render. Builders create their own
+    named objects (ENV/CHAR/CAM_... prefixes), so these names are safe to drop."""
+    for nm in ("Cube", "Camera", "Light"):
+        ob = bpy.data.objects.get(nm)
+        if ob is not None:
+            bpy.data.objects.remove(ob, do_unlink=True)
+
+
 def build_scene(scene_id):
+    _purge_startup_objects()
     spec = SCENE_SPECS[scene_id]
     L.configure_scene(scene_id)
     env_c = L.new_coll(f"{scene_id}_ENV")

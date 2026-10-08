@@ -81,7 +81,10 @@ def place(cam, loc, target, lens, fstop=5.6, focus=None):
     cam.rotation_euler = look_at_rot(loc, target)
     cam.data.lens = lens
     cam.data.dof.use_dof = True
-    cam.data.dof.aperture.fstop = fstop
+    if hasattr(cam.data.dof, "aperture_fstop"):   # real Blender (flat API)
+        cam.data.dof.aperture_fstop = fstop
+    else:                                          # stub (nested _DOF)
+        cam.data.dof.aperture.fstop = fstop
     d = focus if focus is not None else math.dist(loc, target)
     cam.data.dof.focus_distance = d
     return d

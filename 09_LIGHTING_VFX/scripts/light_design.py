@@ -229,7 +229,8 @@ def _tune_world(color, strength):
     """Retune the existing world Background node (build_scene already made one)."""
     w = bpy.context.scene.world
     for n in w.node_tree.nodes:
-        if (n.inputs["Color"].default_value is not None
+        if ("Color" in n.inputs and "Strength" in n.inputs
+                and n.inputs["Color"].default_value is not None
                 and n.inputs["Strength"].default_value is not None):
             n.inputs["Color"].default_value = (*color, 1.0)
             n.inputs["Strength"].default_value = strength

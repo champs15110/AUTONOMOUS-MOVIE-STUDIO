@@ -26,11 +26,37 @@ def _new_mat(mid):
 
 
 def _bsdf_out(mat):
+    """Reuse the default Principled/Output pair when present (real Blender
+    creates them on use_nodes=True); create them under the stub."""
     nt = mat.node_tree
-    bsdf = nt.nodes.new("ShaderNodeBsdfPrincipled")
-    out = nt.nodes.new("ShaderNodeOutputMaterial")
-    nt.links.new(bsdf.outputs[0], out.inputs[0])
+    bsdf = out = None
+    for n in list(nt.nodes):
+        t = str(getattr(n, "type", ""))
+        if t in ("BSDF_PRINCIPLED", "ShaderNodeBsdfPrincipled") and bsdf is None:
+            bsdf = n
+        elif t in ("OUTPUT_MATERIAL", "ShaderNodeOutputMaterial") and out is None:
+            out = n
+    if bsdf is None:
+        bsdf = nt.nodes.new("ShaderNodeBsdfPrincipled")
+    if out is None:
+        out = nt.nodes.new("ShaderNodeOutputMaterial")
+    linked = False
+    for l in list(getattr(nt.links, "_links", [])) if hasattr(nt.links, "_links") else []:
+        linked = linked or (l[0] is bsdf and l[1] is out)
+    if not linked:
+        try:
+            nt.links.new(bsdf.outputs[0], out.inputs[0])
+        except Exception:
+            pass  # already linked in real Blender default tree
     return bsdf
+
+
+def _blend(mat):
+    """Transparent blend, Blender-version safe (4.2 renamed the enum)."""
+    if hasattr(mat, "surface_blend_method"):
+        mat.surface_blend_method = "ALPHA_BLEND"
+    elif hasattr(mat, "blend_method"):
+        mat.blend_method = "BLEND"
 
 
 def _set(bsdf, names, value):
@@ -195,7 +221,7 @@ def build_rain_streak():
     _set(b, ["Roughness"], 0.08)
     _set(b, ["Metallic"], 0.0)
     _set(b, ["Alpha"], 0.35)
-    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    _blend(m)
     return m
 
 
@@ -205,7 +231,7 @@ def build_fog_bank():
     _set(b, ["Base Color"], (0.55, 0.60, 0.66, 1))
     _set(b, ["Roughness"], 1.0)
     _set(b, ["Alpha"], 0.07)
-    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    _blend(m)
     return m
 
 
@@ -217,7 +243,7 @@ def build_dust_mote():
     _set(b, ["Alpha"], 0.5)
     _set(b, ["Emission Color"], (1.0, 0.8, 0.5, 1))
     _set(b, ["Emission Strength"], 0.4)
-    m.blend_method = "BLEND" if hasattr(m, "blend_method") else None
+    _blend(m)
     return m
 
 

@@ -43,7 +43,10 @@ def key(obj, frame, loc=None, rot=None, scale=None):
 
 def spacing(obj, interp="BEZIER"):
     """Apply spacing to every fcurve on obj (BEZIER=eased, LINEAR=even, CONSTANT=step)."""
-    ad = obj.animation_data
+    ad = getattr(obj, "animation_data", None)
+    if ad is None or ad.action is None:
+        return  # object carries animation_data without an action (e.g. lights
+    # whose energy keys live on the datablock) - nothing to retime
     for fc in ad.action.fcurves:
         for kp in fc.keyframe_points:
             kp.interpolation = interp
@@ -278,13 +281,20 @@ def flicker(light, f0, f1, base=50.0, amp=8.0, seed=7, step=6):
     while f <= f1:
         n += _light_key(light, f, base + rnd.uniform(-amp, amp))
         f += step
-    spacing(light, "LINEAR")
+    spacing(_ldata(light), "LINEAR")
     return n
 
 
+def _ldata(light):
+    """Light datablock from either an object (real bpy) or a bare data (stub)."""
+    d = getattr(light, "data", None)
+    return d if d is not None and hasattr(d, "energy") else light
+
+
 def _light_key(light, frame, energy):
-    light.energy = energy
-    light.keyframe_insert("energy", frame=frame)
+    ld = _ldata(light)
+    ld.energy = energy
+    ld.keyframe_insert("energy", frame=frame)
     return 1
 
 

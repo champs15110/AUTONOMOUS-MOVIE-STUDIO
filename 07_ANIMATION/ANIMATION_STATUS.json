@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "task_id": "T06_ANIMATION",
   "project_id": "AMS-2026-001",
-  "created_utc": "2026-10-08T01:24:30Z",
+  "created_utc": "2026-10-08T04:07:43Z",
   "harness": "tools/blender_stub (structural, keyframe-level checks)",
   "counts": {
     "VERIFIED": 58
@@ -97,7 +97,7 @@
           "passed": true
         },
         {
-          "check": "all 44 keys within 217-336",
+          "check": "all 24 keys within 217-336",
           "passed": true
         },
         {
@@ -203,7 +203,7 @@
           "passed": true
         },
         {
-          "check": "all 38 keys within 649-768",
+          "check": "all 18 keys within 649-768",
           "passed": true
         },
         {
@@ -575,7 +575,7 @@
           "passed": true
         },
         {
-          "check": "all 299 keys within 1993-2112",
+          "check": "all 279 keys within 1993-2112",
           "passed": true
         },
         {
@@ -1036,7 +1036,7 @@
           "passed": true
         },
         {
-          "check": "all 53 keys within 3433-3576",
+          "check": "all 33 keys within 3433-3576",
           "passed": true
         },
         {
@@ -1260,7 +1260,7 @@
           "passed": true
         },
         {
-          "check": "all 261 keys within 4201-4344",
+          "check": "all 237 keys within 4201-4344",
           "passed": true
         },
         {
@@ -1333,7 +1333,7 @@
           "passed": true
         },
         {
-          "check": "all 43 keys within 4465-4596",
+          "check": "all 21 keys within 4465-4596",
           "passed": true
         },
         {
@@ -1718,7 +1718,7 @@
           "passed": true
         },
         {
-          "check": "all 48 keys within 5725-5832",
+          "check": "all 30 keys within 5725-5832",
           "passed": true
         },
         {
@@ -1863,7 +1863,7 @@
           "passed": true
         },
         {
-          "check": "all 28 keys within 6217-6288",
+          "check": "all 24 keys within 6217-6288",
           "passed": true
         },
         {
@@ -1972,7 +1972,7 @@
           "passed": true
         },
         {
-          "check": "all 86 keys within 6625-6768",
+          "check": "all 84 keys within 6625-6768",
           "passed": true
         },
         {

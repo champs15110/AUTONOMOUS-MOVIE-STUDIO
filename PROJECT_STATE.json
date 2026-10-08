@@ -148,7 +148,21 @@
     "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9",
     "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg)."
   },
-  "last_updated": "2026-10-08T01:58:05Z",
+  "last_updated": "2026-10-08 04:13:26 UTC",
   "updated_by": "master_controller",
-  "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
+  "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED.",
+  "stage_11_preview_render": {
+    "status": "COMPLETE",
+    "utc": "2026-10-08 04:13:26 UTC",
+    "previews_dir": "11_RENDER/PREVIEWS/",
+    "scene_statuses": "10/10 PREVIEW_QC_PASS (see 11_RENDER/RENDER_STATUS.json)",
+    "backend": "pypi bpy 4.3.0 / Cycles CPU (JANCTION not configured: ERR-0003)",
+    "camera_defects_queued_for_final": "11 shots, see 11_RENDER/CAMERA_OCCLUSION_AUDIT.json + ERR-0004",
+    "artifacts": [
+      "11_RENDER/RENDER_STATUS.json",
+      "11_RENDER/RENDER_ESTIMATES.json",
+      "11_RENDER/RENDER_ERRORS.json",
+      "11_RENDER/CAMERA_OCCLUSION_AUDIT.json"
+    ]
+  }
 }

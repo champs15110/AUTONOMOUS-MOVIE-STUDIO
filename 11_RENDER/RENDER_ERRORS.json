@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T04:10:43+00:00",
+  "backend_errors": [
+    {
+      "error_id": "ERR-0003",
+      "utc": "2026-10-08T03:42:49+00:00",
+      "task_id": "T12_FINAL_RENDER",
+      "shot_id": null,
+      "scene_id": "ALL",
+      "command_or_step": "submit preview to configured cloud Blender renderer (JANCTION Render preferred)",
+      "error_text": "No JANCTION/cloud render backend is configured in this runtime: no config entry, no credentials, and outbound network is restricted to github/pypi/npm hosts. MASTER_CONFIG blender_local.available=false (unchanged).",
+      "classification": "TOOL_ABSENT",
+      "probable_cause": "cloud render layer was documented at T05 but never materialised in this sandbox",
+      "impact": "no cloud preview/final renders possible from this runtime",
+      "preserved_outputs": "all 06-10 stage artefacts intact",
+      "recovery_attempted": "pypi bpy module (Blender 4.3.0) + Cycles CPU, the MASTER_CONFIG 'blender_headless_cpu' candidate; missing system GL/X libs satisfied with no-op stubs + libxkbcommon from an opencv wheel (headless CPU path never calls them)",
+      "resolution": "MITIGATED",
+      "retry_count_after": 0
+    }
+  ],
+  "scene_problems": [],
+  "camera_occlusion_defects": [
+    {
+      "shot_id": "SC02_SH006",
+      "scene_id": "SC02",
+      "subject": "WICK",
+      "clear_frac": 0.23,
+      "blockers": {
+        "PLAZA_quay": 206
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC03_SH001",
+      "scene_id": "SC03",
+      "subject": "WICK",
+      "clear_frac": 0.28,
+      "blockers": {
+        "PLAZA_quay": 193,
+        "GAUGE_rim": 2
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC03_SH004",
+      "scene_id": "SC03",
+      "subject": "WICK",
+      "clear_frac": 0.24,
+      "blockers": {
+        "PLAZA_quay": 199
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC04_SH001",
+      "scene_id": "SC04",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "STREETS_coping": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC04_SH003",
+      "scene_id": "SC04",
+      "subject": "WICK",
+      "clear_frac": 0.04,
+      "blockers": {
+        "STALL_leg1": 243
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC08_SH001",
+      "scene_id": "SC08",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC08_SH003",
+      "scene_id": "SC08",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "BURNER_body": 33,
+        "TOWER_chamber_floor": 29
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC09_SH002",
+      "scene_id": "SC09",
+      "subject": "SHIP",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 70
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC09_SH003",
+      "scene_id": "SC09",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC10_SH001",
+      "scene_id": "SC10",
+      "subject": "WICK",
+      "clear_frac": 0.1,
+      "blockers": {
+        "TOWER_chamber_floor": 206
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC10_SH002",
+      "scene_id": "SC10",
+      "subject": "CHILD",
+      "clear_frac": 0.0,
+      "blockers": {
+        "BURNER_body": 117
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    }
+  ],
+  "camera_occlusion_note": "fix/re-verify these shots before T12 final render (see ERR-0004)"
+}

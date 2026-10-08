@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T18:42:41Z",
+  "last_updated": "2026-10-08T04:03:31+00:00",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -81,6 +81,38 @@
       "recovery_attempted": "Rewrote the labels in both the JSON and the MD, added an explicit 'scene' field to every turn_budget row so the mapping is machine-checkable, and added a generator assertion that per-scene gauge deltas equal the budget rows for that scene. Verified costs and gauge chain were byte-identical before and after.",
       "resolution": "MITIGATED",
       "retry_count_after": 2
+    },
+    {
+      "error_id": "ERR-0003",
+      "utc": "2026-10-08T03:42:49+00:00",
+      "task_id": "T12_FINAL_RENDER",
+      "shot_id": null,
+      "scene_id": "ALL",
+      "command_or_step": "submit preview to configured cloud Blender renderer (JANCTION Render preferred)",
+      "error_text": "No JANCTION/cloud render backend is configured in this runtime: no config entry, no credentials, and outbound network is restricted to github/pypi/npm hosts. MASTER_CONFIG blender_local.available=false (unchanged).",
+      "classification": "TOOL_ABSENT",
+      "probable_cause": "cloud render layer was documented at T05 but never materialised in this sandbox",
+      "impact": "no cloud preview/final renders possible from this runtime",
+      "preserved_outputs": "all 06-10 stage artefacts intact",
+      "recovery_attempted": "pypi bpy module (Blender 4.3.0) + Cycles CPU, the MASTER_CONFIG 'blender_headless_cpu' candidate; missing system GL/X libs satisfied with no-op stubs + libxkbcommon from an opencv wheel (headless CPU path never calls them)",
+      "resolution": "MITIGATED",
+      "retry_count_after": 0
+    },
+    {
+      "error_id": "ERR-0004",
+      "utc": "2026-10-08T04:03:31+00:00",
+      "task_id": "T10_EDIT",
+      "shot_id": "SC02_SH006, SC03_SH001, SC03_SH004, SC04_SH001, SC04_SH003, SC08_SH001, SC08_SH003, SC09_SH002, SC09_SH003, SC10_SH001, SC10_SH002",
+      "scene_id": "MULTI",
+      "command_or_step": "Stage 11 preview QC + camera occlusion audit (11_RENDER/scripts/occlusion_audit.py)",
+      "error_text": "11 of 46 shot cameras have the subject in frame but the line of sight blocked by set geometry (quay/coping/stall leg/tower shell/burner), e.g. SC04_SH001 fully behind STREETS_coping",
+      "classification": "TECHNICAL_DEFECT",
+      "probable_cause": "T07 camera verification tested projection and framing but never raycast occlusion; preview QC raycasts exposed it",
+      "impact": "affected shots would render the subject hidden behind set geometry in the final",
+      "preserved_outputs": "all shots/frames preserved; audit artefact 11_RENDER/CAMERA_OCCLUSION_AUDIT.json",
+      "recovery_attempted": "representative shots for SC04/SC09 switched to probe-clear shots (SC04_SH004, SC09_SH001); blocked shots queued for camera nudge + re-verification before T12 final render",
+      "resolution": "MITIGATED",
+      "retry_count_after": 0
     }
   ]
 }

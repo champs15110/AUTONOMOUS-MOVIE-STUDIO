@@ -265,7 +265,10 @@ def add_camera(coll, name, lens=50.0, loc=(0, -5, 1.5), rot=(math.radians(90), 0
 
 def parent(child, parent_ob):
     child.parent = parent_ob
-    parent_ob.children.append(child)
+    try:
+        parent_ob.children.append(child)   # stub object bag
+    except AttributeError:
+        pass                               # real bpy derives .children from .parent
 
 
 def instance_hierarchy(root, coll, loc=(0, 0, 0), rot=(0, 0, 0), scale=1.0, suffix=""):
@@ -293,7 +296,10 @@ def instance_hierarchy(root, coll, loc=(0, 0, 0), rot=(0, 0, 0), scale=1.0, suff
         for ch in p.children:
             cc = clone(ch)
             cc.parent = made[id(p)]
-            made[id(p)].children.append(cc)
+            try:
+                made[id(p)].children.append(cc)
+            except AttributeError:
+                pass  # real bpy derives .children
             stack.append(ch)
     top.location = (root.location[0] + loc[0], root.location[1] + loc[1], root.location[2] + loc[2])
     top.rotation_euler = rot

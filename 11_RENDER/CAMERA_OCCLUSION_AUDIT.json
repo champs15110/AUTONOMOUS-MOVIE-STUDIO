@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T04:08:02+00:00",
+  "method": "raycast camera->in-frame subject vertices, fog volumes skipped, clear = first hit is subject or beyond",
+  "threshold_defect": "clear_frac < 0.5 with >= 20 in-frame samples",
+  "shots": {
+    "SC01_SH001": {},
+    "SC01_SH002": {
+      "WICK": {
+        "in_frame": 2,
+        "clear_frac": 0.5,
+        "blockers": {
+          "GAUGE_rim": 1
+        }
+      }
+    },
+    "SC01_SH003": {
+      "WICK": {
+        "in_frame": 1,
+        "clear_frac": 0.0,
+        "blockers": {
+          "GAUGE_rim": 1
+        }
+      }
+    },
+    "SC01_SH004": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC01_SH005": {
+      "WICK": {
+        "in_frame": 133,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC01_SH006": {},
+    "SC02_SH001": {},
+    "SC02_SH002": {},
+    "SC02_SH003": {
+      "SHIP": {
+        "in_frame": 70,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC02_SH004": {},
+    "SC02_SH005": {
+      "WICK": {
+        "in_frame": 105,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC02_SH006": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.23,
+        "blockers": {
+          "PLAZA_quay": 206
+        }
+      }
+    },
+    "SC03_SH001": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.28,
+        "blockers": {
+          "PLAZA_quay": 193,
+          "GAUGE_rim": 2
+        }
+      }
+    },
+    "SC03_SH002": {},
+    "SC03_SH003": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC03_SH004": {
+      "WICK": {
+        "in_frame": 263,
+        "clear_frac": 0.24,
+        "blockers": {
+          "PLAZA_quay": 199
+        }
+      }
+    },
+    "SC03_SH005": {
+      "WICK": {
+        "in_frame": 176,
+        "clear_frac": 0.85,
+        "blockers": {
+          "KEY_tooth1.001": 7,
+          "KEY_shaft.001": 15,
+          "POLE_shaft": 4,
+          "KEY_tooth2.001": 1
+        }
+      }
+    },
+    "SC04_SH001": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.0,
+        "blockers": {
+          "STREETS_coping": 269
+        }
+      }
+    },
+    "SC04_SH002": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.79,
+        "blockers": {
+          "STALL_top": 57
+        }
+      }
+    },
+    "SC04_SH003": {
+      "WICK": {
+        "in_frame": 253,
+        "clear_frac": 0.04,
+        "blockers": {
+          "STALL_leg1": 243
+        }
+      }
+    },
+    "SC04_SH004": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC04_SH005": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.94,
+        "blockers": {
+          "GAUGE_rim": 10,
+          "GAUGE_dial": 3,
+          "GAUGE_dial.001": 2,
+          "STALL_top": 2
+        }
+      }
+    },
+    "SC04_SH006": {
+      "WICK": {
+        "in_frame": 215,
+        "clear_frac": 0.99,
+        "blockers": {
+          "STALL_top": 3
+        }
+      }
+    },
+    "SC05_SH001": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.94,
+        "blockers": {
+          "STREETS_gantry_walk": 16
+        }
+      }
+    },
+    "SC05_SH002": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.65,
+        "blockers": {
+          "RAIL_post2.001": 79,
+          "STREETS_gantry_walk": 14
+        }
+      }
+    },
+    "SC05_SH003": {},
+    "SC05_SH004": {
+      "WICK": {
+        "in_frame": 84,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC05_SH005": {},
+    "SC05_SH006": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC05_SH007": {},
+    "SC06_SH001": {},
+    "SC06_SH002": {
+      "WICK": {
+        "in_frame": 196,
+        "clear_frac": 0.99,
+        "blockers": {
+          "GAUGE_rim.001": 2
+        }
+      }
+    },
+    "SC06_SH003": {
+      "WICK": {
+        "in_frame": 3,
+        "clear_frac": 0.0,
+        "blockers": {
+          "GAUGE_dial": 3
+        }
+      }
+    },
+    "SC06_SH004": {},
+    "SC06_SH005": {},
+    "SC07_SH001": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC07_SH002": {},
+    "SC07_SH003": {
+      "WICK": {
+        "in_frame": 191,
+        "clear_frac": 0.83,
+        "blockers": {
+          "TOWER_shell": 31,
+          "GAUGE_rim": 2
+        }
+      }
+    },
+    "SC07_SH004": {
+      "WICK": {
+        "in_frame": 30,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC07_SH005": {},
+    "SC07_SH006": {
+      "WICK": {
+        "in_frame": 205,
+        "clear_frac": 0.97,
+        "blockers": {
+          "TOWER_shell": 1,
+          "GAUGE_dial": 3,
+          "GAUGE_needle": 1,
+          "GAUGE_rim": 1
+        }
+      }
+    },
+    "SC07_SH007": {},
+    "SC07_SH008": {},
+    "SC08_SH001": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.0,
+        "blockers": {
+          "TOWER_shell": 269
+        }
+      }
+    },
+    "SC08_SH002": {},
+    "SC08_SH003": {
+      "WICK": {
+        "in_frame": 62,
+        "clear_frac": 0.0,
+        "blockers": {
+          "BURNER_body": 33,
+          "TOWER_chamber_floor": 29
+        }
+      }
+    },
+    "SC08_SH004": {},
+    "SC08_SH005": {
+      "WICK": {
+        "in_frame": 60,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC08_SH006": {
+      "WICK": {
+        "in_frame": 6,
+        "clear_frac": 1.0,
+        "blockers": {}
+      }
+    },
+    "SC08_SH007": {},
+    "SC09_SH001": {
+      "SHIP": {
+        "in_frame": 70,
+        "clear_frac": 0.86,
+        "blockers": {
+          "TOWER_shell": 10
+        }
+      }
+    },
+    "SC09_SH002": {
+      "SHIP": {
+        "in_frame": 70,
+        "clear_frac": 0.0,
+        "blockers": {
+          "TOWER_shell": 70
+        }
+      }
+    },
+    "SC09_SH003": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.0,
+        "blockers": {
+          "TOWER_shell": 269
+        }
+      }
+    },
+    "SC10_SH001": {
+      "WICK": {
+        "in_frame": 230,
+        "clear_frac": 0.1,
+        "blockers": {
+          "TOWER_chamber_floor": 206
+        }
+      }
+    },
+    "SC10_SH002": {
+      "WICK": {
+        "in_frame": 269,
+        "clear_frac": 0.0,
+        "blockers": {
+          "BURNER_body": 269
+        }
+      },
+      "CHILD": {
+        "in_frame": 117,
+        "clear_frac": 0.0,
+        "blockers": {
+          "BURNER_body": 117
+        }
+      }
+    },
+    "SC10_SH003": {},
+    "SC10_SH004": {},
+    "SC10_SH005": {
+      "WICK": {
+        "in_frame": 14,
+        "clear_frac": 0.0,
+        "blockers": {
+          "GAUGE_needle": 3,
+          "GAUGE_dial": 11
+        }
+      }
+    }
+  },
+  "defects": [
+    {
+      "shot_id": "SC02_SH006",
+      "scene_id": "SC02",
+      "subject": "WICK",
+      "clear_frac": 0.23,
+      "blockers": {
+        "PLAZA_quay": 206
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC03_SH001",
+      "scene_id": "SC03",
+      "subject": "WICK",
+      "clear_frac": 0.28,
+      "blockers": {
+        "PLAZA_quay": 193,
+        "GAUGE_rim": 2
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC03_SH004",
+      "scene_id": "SC03",
+      "subject": "WICK",
+      "clear_frac": 0.24,
+      "blockers": {
+        "PLAZA_quay": 199
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC04_SH001",
+      "scene_id": "SC04",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "STREETS_coping": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC04_SH003",
+      "scene_id": "SC04",
+      "subject": "WICK",
+      "clear_frac": 0.04,
+      "blockers": {
+        "STALL_leg1": 243
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC08_SH001",
+      "scene_id": "SC08",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC08_SH003",
+      "scene_id": "SC08",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "BURNER_body": 33,
+        "TOWER_chamber_floor": 29
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC09_SH002",
+      "scene_id": "SC09",
+      "subject": "SHIP",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 70
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC09_SH003",
+      "scene_id": "SC09",
+      "subject": "WICK",
+      "clear_frac": 0.0,
+      "blockers": {
+        "TOWER_shell": 269
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC10_SH001",
+      "scene_id": "SC10",
+      "subject": "WICK",
+      "clear_frac": 0.1,
+      "blockers": {
+        "TOWER_chamber_floor": 206
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    },
+    {
+      "shot_id": "SC10_SH002",
+      "scene_id": "SC10",
+      "subject": "CHILD",
+      "clear_frac": 0.0,
+      "blockers": {
+        "BURNER_body": 117
+      },
+      "note": "subject in frame but line of sight blocked - fix camera before final render"
+    }
+  ]
+}

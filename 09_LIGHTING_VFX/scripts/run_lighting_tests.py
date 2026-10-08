@@ -70,7 +70,8 @@ def world_settings(w):
     """(color, strength) from the world's Background node."""
     found = ((0, 0, 0), 0.0)
     for n in w.node_tree.nodes:
-        if (n.inputs["Color"].default_value is not None
+        if ("Color" in n.inputs and "Strength" in n.inputs
+                and n.inputs["Color"].default_value is not None
                 and n.inputs["Strength"].default_value is not None):
             found = (tuple(n.inputs["Color"].default_value[:3]),
                      n.inputs["Strength"].default_value)

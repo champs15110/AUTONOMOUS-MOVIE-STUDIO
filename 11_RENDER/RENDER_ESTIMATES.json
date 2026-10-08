@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T04:10:43+00:00",
+  "method": "measured preview cost extrapolated by pixel x sample ratio; JANCTION estimate API unavailable",
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "frames": 768,
+      "preview_seconds": 8.1,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 518.4,
+      "est_final_scene_minutes": 6635.5,
+      "render_units_of_240": [
+        [
+          1,
+          240
+        ],
+        [
+          241,
+          480
+        ],
+        [
+          481,
+          720
+        ],
+        [
+          721,
+          768
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC02",
+      "frames": 792,
+      "preview_seconds": 6.4,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 409.6,
+      "est_final_scene_minutes": 5406.7,
+      "render_units_of_240": [
+        [
+          769,
+          1008
+        ],
+        [
+          1009,
+          1248
+        ],
+        [
+          1249,
+          1488
+        ],
+        [
+          1489,
+          1560
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC03",
+      "frames": 648,
+      "preview_seconds": 8.2,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 524.8,
+      "est_final_scene_minutes": 5667.8,
+      "render_units_of_240": [
+        [
+          1561,
+          1800
+        ],
+        [
+          1801,
+          2040
+        ],
+        [
+          2041,
+          2208
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC04",
+      "frames": 720,
+      "preview_seconds": 8.9,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 569.6,
+      "est_final_scene_minutes": 6835.2,
+      "render_units_of_240": [
+        [
+          2209,
+          2448
+        ],
+        [
+          2449,
+          2688
+        ],
+        [
+          2689,
+          2928
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC05",
+      "frames": 864,
+      "preview_seconds": 9.1,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 582.4,
+      "est_final_scene_minutes": 8386.6,
+      "render_units_of_240": [
+        [
+          2929,
+          3168
+        ],
+        [
+          3169,
+          3408
+        ],
+        [
+          3409,
+          3648
+        ],
+        [
+          3649,
+          3792
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC06",
+      "frames": 672,
+      "preview_seconds": 11.5,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 736.0,
+      "est_final_scene_minutes": 8243.2,
+      "render_units_of_240": [
+        [
+          3793,
+          4032
+        ],
+        [
+          4033,
+          4272
+        ],
+        [
+          4273,
+          4464
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC07",
+      "frames": 1008,
+      "preview_seconds": 5.5,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 352.0,
+      "est_final_scene_minutes": 5913.6,
+      "render_units_of_240": [
+        [
+          4465,
+          4704
+        ],
+        [
+          4705,
+          4944
+        ],
+        [
+          4945,
+          5184
+        ],
+        [
+          5185,
+          5424
+        ],
+        [
+          5425,
+          5472
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC08",
+      "frames": 816,
+      "preview_seconds": 14.4,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 921.6,
+      "est_final_scene_minutes": 12533.8,
+      "render_units_of_240": [
+        [
+          5473,
+          5712
+        ],
+        [
+          5713,
+          5952
+        ],
+        [
+          5953,
+          6192
+        ],
+        [
+          6193,
+          6288
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC09",
+      "frames": 480,
+      "preview_seconds": 9.8,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 627.2,
+      "est_final_scene_minutes": 5017.6,
+      "render_units_of_240": [
+        [
+          6289,
+          6528
+        ],
+        [
+          6529,
+          6768
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    },
+    {
+      "scene_id": "SC10",
+      "frames": 480,
+      "preview_seconds": 12.4,
+      "preview_spec": "480x270 Cycles 32spp CPU",
+      "final_spec": "1920x1080 Cycles 128spp CPU (denoised)",
+      "est_seconds_per_final_frame": 793.6,
+      "est_final_scene_minutes": 6348.8,
+      "render_units_of_240": [
+        [
+          6769,
+          7008
+        ],
+        [
+          7009,
+          7248
+        ]
+      ],
+      "janction_estimate": "UNAVAILABLE - no backend configured"
+    }
+  ]
+}

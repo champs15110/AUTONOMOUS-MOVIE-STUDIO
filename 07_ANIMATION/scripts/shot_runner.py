@@ -165,7 +165,7 @@ def _settle(o, f0, f1):
 def _dim(light, f0, f1, peak=2000.0):
     n = AN._light_key(light, f0, peak)
     n += AN._light_key(light, f1, 40.0)
-    AN.spacing(light, "LINEAR")
+    AN.spacing(AN._ldata(light), "LINEAR")
     return n
 
 

@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T04:10:43+00:00",
+  "backend": {
+    "preferred": "JANCTION Render",
+    "configured": false,
+    "used": "pypi bpy 4.3.0 / CYCLES CPU (no GPU)"
+  },
+  "job_limit_frames": 240,
+  "statuses": {
+    "SC01": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC01_SH004",
+      "preview_file": "11_RENDER/PREVIEWS/SC01_preview.png",
+      "frame": 432,
+      "render_seconds": 8.1,
+      "qc": {
+        "mean": 17.1,
+        "nonblack_pct": 30.2,
+        "clipped_pct": 0.0,
+        "edge_density": 0.007,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {},
+      "preflight": true
+    },
+    "SC02": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC02_SH003",
+      "preview_file": "11_RENDER/PREVIEWS/SC02_preview.png",
+      "frame": 1104,
+      "render_seconds": 6.4,
+      "qc": {
+        "mean": 48.9,
+        "nonblack_pct": 84.8,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0054,
+        "subject_in_frame": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 1.0
+        },
+        "subject_visible": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 1.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "macro_fstop": "5.60 -> 8.0 (DOF unreadable at 0.20 m)"
+      },
+      "preflight": true
+    },
+    "SC03": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC03_SH003",
+      "preview_file": "11_RENDER/PREVIEWS/SC03_preview.png",
+      "frame": 1908,
+      "render_seconds": 8.2,
+      "qc": {
+        "mean": 44.2,
+        "nonblack_pct": 57.2,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0099,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {},
+      "preflight": true
+    },
+    "SC04": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC04_SH002",
+      "preview_file": "11_RENDER/PREVIEWS/SC04_preview.png",
+      "frame": 2394,
+      "render_seconds": 8.9,
+      "qc": {
+        "mean": 32.1,
+        "nonblack_pct": 62.2,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0325,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 0.73,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "exposure_stops": -0.43
+      },
+      "preflight": true
+    },
+    "SC05": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC05_SH005",
+      "preview_file": "11_RENDER/PREVIEWS/SC05_preview.png",
+      "frame": 3504,
+      "render_seconds": 9.1,
+      "qc": {
+        "mean": 31.1,
+        "nonblack_pct": 79.4,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0057,
+        "subject_in_frame": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": true,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "macro_fstop": "2.80 -> 8.0 (DOF unreadable at 0.12 m)",
+        "exposure_stops": -1.44,
+        "exposure_pull_stops": 2.81
+      },
+      "preflight": true
+    },
+    "SC06": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC06_SH002",
+      "preview_file": "11_RENDER/PREVIEWS/SC06_preview.png",
+      "frame": 3996,
+      "render_seconds": 11.5,
+      "qc": {
+        "mean": 40.4,
+        "nonblack_pct": 77.8,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0782,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "exposure_stops": -0.49
+      },
+      "preflight": true
+    },
+    "SC07": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC07_SH003",
+      "preview_file": "11_RENDER/PREVIEWS/SC07_preview.png",
+      "frame": 4824,
+      "render_seconds": 5.5,
+      "qc": {
+        "mean": 60.5,
+        "nonblack_pct": 84.6,
+        "clipped_pct": 0.0,
+        "edge_density": 0.1455,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 0.83,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {},
+      "preflight": true
+    },
+    "SC08": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC08_SH005",
+      "preview_file": "11_RENDER/PREVIEWS/SC08_preview.png",
+      "frame": 6012,
+      "render_seconds": 14.4,
+      "qc": {
+        "mean": 42.4,
+        "nonblack_pct": 76.1,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0314,
+        "subject_in_frame": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 1.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "macro_fstop": "5.60 -> 8.0 (DOF unreadable at 0.40 m)",
+        "exposure_stops": -4.0
+      },
+      "preflight": true
+    },
+    "SC09": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC09_SH001",
+      "preview_file": "11_RENDER/PREVIEWS/SC09_preview.png",
+      "frame": 6384,
+      "render_seconds": 9.8,
+      "qc": {
+        "mean": 27.2,
+        "nonblack_pct": 29.8,
+        "clipped_pct": 0.0,
+        "edge_density": 0.009,
+        "subject_in_frame": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 1.0
+        },
+        "subject_visible": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 0.79
+        },
+        "foreground_prop_subject": false,
+        "problems": []
+      },
+      "technical_adjustments": {},
+      "preflight": true
+    },
+    "SC10": {
+      "status": "PREVIEW_QC_PASS",
+      "representative_shot": "SC10_SH004",
+      "preview_file": "11_RENDER/PREVIEWS/SC10_preview.png",
+      "frame": 7134,
+      "render_seconds": 12.4,
+      "qc": {
+        "mean": 31.2,
+        "nonblack_pct": 76.9,
+        "clipped_pct": 0.0,
+        "edge_density": 0.0016,
+        "subject_in_frame": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "subject_visible": {
+          "WICK": 0.0,
+          "CHILD": 0.0,
+          "SHIP": 0.0
+        },
+        "foreground_prop_subject": true,
+        "problems": []
+      },
+      "technical_adjustments": {
+        "exposure_pull_stops": 3.64
+      },
+      "preflight": true
+    }
+  }
+}
