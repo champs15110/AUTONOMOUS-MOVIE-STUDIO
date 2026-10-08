@@ -150,7 +150,7 @@
     "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9",
     "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg)."
   },
-  "last_updated": "2026-10-08T17:21:43+00:00 UTC",
+  "last_updated": "2026-10-08 21:15 UTC",
   "updated_by": "master_controller",
   "notes": "FINAL FILM VERIFIED. See FINAL/FINAL_REPORT.json + known_limitations (local CPU spec per ERR-0003; AAC track -15.97 LUFS; ERR-0007 mux workaround; ERR-0005 animatic superseded).",
   "stage_11_preview_render": {
@@ -208,5 +208,13 @@
       "FINAL/FINAL_MANIFEST.json",
       "FINAL/VERIFY_FRAMES/"
     ]
+  },
+  "step_15_agent_protocol": {
+    "status": "COMPLETE",
+    "utc": "2026-10-08 21:15 UTC",
+    "file": "AGENT_PROTOCOL.md",
+    "version": "1.0",
+    "previous_version_preserved_as": "AGENT_PROTOCOL_v001.md",
+    "note": "MASTER AGENT PROTOCOL v1.0 installed at repo root per Step 15; prior draft preserved, not destroyed"
   }
 }
