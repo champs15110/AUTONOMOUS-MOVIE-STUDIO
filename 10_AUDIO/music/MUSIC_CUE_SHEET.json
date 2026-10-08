@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "task_id": "T09_AUDIO",
+  "generated": "2026-10-08T01:56:46+00:00",
+  "score_note": "procedurally synthesized scratch score (original); final performance/re-recording is a post-production decision documented in MUSIC_PLAN.md",
+  "cues": [
+    {
+      "id": "MUS_BEACON_SUSTAIN",
+      "path": "10_AUDIO/assets/music/MUS_BEACON_SUSTAIN.wav",
+      "dur": 15.99,
+      "loop": false,
+      "purpose": "SC09_SH001-002: score sustained, no melody",
+      "shots_used": [
+        "SC09_SH001"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_A",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_A.wav",
+      "dur": 4.4,
+      "loop": false,
+      "purpose": "SC01_SH005: her clock motif, first statement - three thin notes, slow",
+      "shots_used": [
+        "SC01_SH005"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_B",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_B.wav",
+      "dur": 3.7,
+      "loop": false,
+      "purpose": "SC02_SH005: second statement - noticeably faster than the first",
+      "shots_used": [
+        "SC02_SH005",
+        "SC03_SH004"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_COMPLETE",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_COMPLETE.wav",
+      "dur": 4.7,
+      "loop": false,
+      "purpose": "SC08_SH005: the only complete statement in the film, single instrument",
+      "shots_used": [
+        "SC08_SH005"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_DIST",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_DIST.wav",
+      "dur": 4.5005,
+      "loop": false,
+      "purpose": "SC04_SH004/SC07_SH007: the motif distorted, slowing, losing pitch",
+      "shots_used": [
+        "SC04_SH004",
+        "SC07_SH007"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_SKIP",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_SKIP.wav",
+      "dur": 2.4005,
+      "loop": false,
+      "purpose": "SC07_SH006: the motif stuttering - audibly skipping the middle note",
+      "shots_used": [
+        "SC07_SH006"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_CLOCK_UNRESOLVED",
+      "path": "10_AUDIO/assets/music/MUS_CLOCK_UNRESOLVED.wav",
+      "dur": 1.7804,
+      "loop": false,
+      "purpose": "SC01_SH006: the motif does not resolve - two notes, then it simply stops",
+      "shots_used": [
+        "SC01_SH006"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_FORWARD",
+      "path": "10_AUDIO/assets/music/MUS_FORWARD.wav",
+      "dur": 9.8005,
+      "loop": false,
+      "purpose": "SC02_SH006: the score's first forward motion underneath",
+      "shots_used": [
+        "SC02_SH006"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_IGNITION_FULL",
+      "path": "10_AUDIO/assets/music/MUS_IGNITION_FULL.wav",
+      "dur": 9.9936,
+      "loop": false,
+      "purpose": "SC08_SH007: the score in full, for the first and only time",
+      "shots_used": [
+        "SC08_SH007"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_SHIP_MOTIF",
+      "path": "10_AUDIO/assets/music/MUS_SHIP_MOTIF.wav",
+      "dur": 2.9001,
+      "loop": false,
+      "purpose": "SC02_SH003: the ship's motif - two descending notes, first statement",
+      "shots_used": [
+        "SC02_SH003"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_SHIP_RESOLVE",
+      "path": "10_AUDIO/assets/music/MUS_SHIP_RESOLVE.wav",
+      "dur": 2.9002,
+      "loop": false,
+      "purpose": "SC09_SH002: the ship's motif resolved upward for the first time",
+      "shots_used": [
+        "SC09_SH002"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_SINGLE_NOTE",
+      "path": "10_AUDIO/assets/music/MUS_SINGLE_NOTE.wav",
+      "dur": 5.0,
+      "loop": false,
+      "purpose": "SC07_SH005: the score returns - one bright note, one instrument only",
+      "shots_used": [
+        "SC07_SH005"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_STRINGS_MAJOR",
+      "path": "10_AUDIO/assets/music/MUS_STRINGS_MAJOR.wav",
+      "dur": 11.9945,
+      "loop": false,
+      "purpose": "SC03_SH003: the music opens out - the only major-key passage in the film",
+      "shots_used": [
+        "SC03_SH003"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    },
+    {
+      "id": "MUS_THINNING",
+      "path": "10_AUDIO/assets/music/MUS_THINNING.wav",
+      "dur": 9.4656,
+      "loop": false,
+      "purpose": "SC09_SH003: the score thinning to nothing",
+      "shots_used": [
+        "SC09_SH003"
+      ],
+      "provenance": "procedurally synthesized in-repo (audio_synth.py, pure Python stdlib) - original, no samples, no license needed"
+    }
+  ],
+  "events": [
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_A",
+      "frame_in": 529,
+      "frame_out": 635,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC01_SH005",
+      "note": "SC01_SH005 her clock motif, first statement - three thin notes on a single instrument"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_UNRESOLVED",
+      "frame_in": 649,
+      "frame_out": 692,
+      "gain": 0.85,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC01_SH006",
+      "note": "SC01_SH006 the motif does not resolve; it simply stops"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_SHIP_MOTIF",
+      "frame_in": 1045,
+      "frame_out": 1115,
+      "gain": 0.8,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC02_SH003",
+      "note": "SC02_SH003 the ship's motif - two descending notes, first statement"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_B",
+      "frame_in": 1321,
+      "frame_out": 1410,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC02_SH005",
+      "note": "SC02_SH005 second statement - noticeably faster"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_FORWARD",
+      "frame_in": 1441,
+      "frame_out": 1677,
+      "gain": 0.7,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC02_SH006",
+      "note": "SC02_SH006 the score's first forward motion underneath"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_STRINGS_MAJOR",
+      "frame_in": 1825,
+      "frame_out": 2112,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 24,
+      "loop": false,
+      "shot": "SC03_SH003",
+      "note": "SC03_SH003 the music opens out - the only major-key passage in the film"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_B",
+      "frame_in": 1993,
+      "frame_out": 2082,
+      "gain": 0.4,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC03_SH004",
+      "note": "SC03_SH004 the clock motif continues under the strings"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_DIST",
+      "frame_in": 2569,
+      "frame_out": 2678,
+      "gain": 0.8,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC04_SH004",
+      "note": "SC04_SH004 her clock motif distorted and slowing"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_SINGLE_NOTE",
+      "frame_in": 5065,
+      "frame_out": 5185,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC07_SH005",
+      "note": "SC07_SH005 a single bright note - the score returns, one instrument only"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_SKIP",
+      "frame_in": 5185,
+      "frame_out": 5243,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC07_SH006",
+      "note": "SC07_SH006 the motif stuttering - audibly skipping a note"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_DIST",
+      "frame_in": 5305,
+      "frame_out": 5414,
+      "gain": 0.55,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC07_SH007",
+      "note": "SC07_SH007 the clock motif has stopped being a melody"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_CLOCK_COMPLETE",
+      "frame_in": 5953,
+      "frame_out": 6066,
+      "gain": 1.0,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC08_SH005",
+      "note": "SC08_SH005 stated once, complete - the only complete statement in the film"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_IGNITION_FULL",
+      "frame_in": 6241,
+      "frame_out": 6481,
+      "gain": 1.0,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC08_SH007",
+      "note": "SC08_SH007 the ignition - the score in full, for the first and only time (one beat of silence first)"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_BEACON_SUSTAIN",
+      "frame_in": 6380,
+      "frame_out": 6624,
+      "gain": 0.8,
+      "fade_in": 0,
+      "fade_out": 48,
+      "loop": false,
+      "shot": "SC09_SH001",
+      "note": "SC09_SH001-002 score sustained, no melody"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_SHIP_RESOLVE",
+      "frame_in": 6490,
+      "frame_out": 6560,
+      "gain": 0.9,
+      "fade_in": 0,
+      "fade_out": 0,
+      "loop": false,
+      "shot": "SC09_SH002",
+      "note": "SC09_SH002 the ship's two-note motif, resolved upward for the first time"
+    },
+    {
+      "track": "music",
+      "asset": "MUS_THINNING",
+      "frame_in": 6625,
+      "frame_out": 6768,
+      "gain": 0.7,
+      "fade_in": 0,
+      "fade_out": 72,
+      "loop": false,
+      "shot": "SC09_SH003",
+      "note": "SC09_SH003 the score thinning to nothing - gone by the scene turn; SC10 is diegetic only ('water dripping. nothing else.')"
+    }
+  ]
+}

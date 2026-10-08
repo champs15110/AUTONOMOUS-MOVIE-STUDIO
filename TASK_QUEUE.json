@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T01:25:53Z",
+  "last_updated": "2026-10-08T01:58:04Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -290,7 +290,7 @@
       "task_id": "T09_AUDIO",
       "stage": "09_AUDIO",
       "title": "Music, SFX, voice and mix stems",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T02_SCREENPLAY"
       ],
@@ -298,10 +298,17 @@
         "02_SCREENPLAY/SHOT_LIST.json"
       ],
       "output_files": [
+        "10_AUDIO/DIALOGUE_PLAN.md",
+        "10_AUDIO/MUSIC_PLAN.md",
+        "10_AUDIO/SFX_PLAN.json",
+        "10_AUDIO/AUDIO_TIMELINE.json",
         "10_AUDIO/AUDIO_INDEX.json",
+        "10_AUDIO/AUDIO_QC.md",
+        "10_AUDIO/assets",
         "10_AUDIO/music/MUSIC_CUE_SHEET.json",
         "10_AUDIO/sfx/SFX_CUE_SHEET.json",
-        "10_AUDIO/mix/MIX_PLAN.json"
+        "10_AUDIO/mix/MIX_PLAN.json",
+        "SHOT_REGISTRY.json"
       ],
       "acceptance": [
         "Every scene has music and ambience coverage; no silent gap longer than 6s unless intentional.",

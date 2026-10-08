@@ -3,6 +3,57 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-08 — Stage 10 AUDIO complete (T09_AUDIO → VERIFIED)
+
+The sound pass. The film is wordless by design, so the soundtrack IS the
+performance: 65 original audio assets synthesized in-repo (pure Python
+stdlib - no samples, no libraries, nothing licensed; deterministic - the
+generator reproduces byte-identical WAVs, sha256-verified), and a
+frame-accurate 141-event timeline traced to the approved sound_intention
+line of every one of the 58 shots.
+
+### Built
+
+- **`10_AUDIO/scripts/audio_synth.py`** - procedural DSP engine: plucked
+  partials (music box), horn, string pads, inharmonic bells, filtered
+  noise beds (wind/rain/water), Schroeder-ish reverb, seamless loop
+  crossfading, 48 kHz 16-bit WAV out.
+- **`10_AUDIO/scripts/make_audio_assets.py`** -> **`10_AUDIO/assets/`**:
+  9 ambience beds, 42 SFX/foley one-shots + loops, 14 music cues
+  (228 s total, 25 MB). The clock motif (A5-C6-E6) degrades exactly per
+  the CHARACTER_BIBLE schedule: complete->faster->distorted->skipping->
+  the single complete statement at SC08_SH005; the ship's two-note motif
+  resolves upward only at SC09_SH002.
+- **`10_AUDIO/scripts/audio_plan.py`** - the authored structure: 21
+  ambience, 16 music, 104 SFX events on approved frames (rain starts
+  exactly at SC04_SH003 f2461; ignition at SC08_SH007 f0+24 after one beat
+  of true silence; the gait's four-beat tick locked, then irregular,
+  skipping, dragging), 5 declared intentional silences, mix plan.
+- **`10_AUDIO/scripts/run_audio_tests.py`** - ten-check harness:
+  asset integrity (48 kHz/16-bit, peak <= -1 dBFS, provenance), loop
+  seamlessness, full-frame coverage with no undeclared gap > 6 s, scene
+  coverage, sync anchors, gait schedule, wordless enforcement, event
+  bounds, mix targets. **All 10 PASS.**
+
+### Written
+
+- `DIALOGUE_PLAN.md` (voice identity/delivery/timing per character - all
+  sound design, zero spoken words), `MUSIC_PLAN.md` (motif table, scene
+  structure, orchestration intent; cues honestly marked as original
+  procedural scratch, not a final performance), `SFX_PLAN.json`
+  (foley/hard-SFX/ambience sections, every asset traced to its shots),
+  `AUDIO_TIMELINE.json` (4 tracks; dialogue empty by design),
+  `AUDIO_INDEX.json` (65 assets, 0 missing), `AUDIO_QC.md`,
+  `music/MUSIC_CUE_SHEET.json`, `sfx/SFX_CUE_SHEET.json`,
+  `mix/MIX_PLAN.json` (-16 LUFS / -1.5 dBTP / 48 kHz stereo targets).
+- `SHOT_REGISTRY.json` - audio slot VERIFIED x58.
+
+### Deferred honestly
+
+- Integrated LUFS / true-peak measurement requires ffmpeg (absent here);
+  it is marked PENDING_MEASUREMENT and belongs to render QC (T11).
+  Structural peak legality (<= -1 dBFS per asset) is verified now.
+
 ## 2026-10-08 — Stage 09 LIGHTING/VFX complete (T08_LIGHTING_VFX → VERIFIED)
 
 The lighting pass. Every scene now carries an executable lighting design -

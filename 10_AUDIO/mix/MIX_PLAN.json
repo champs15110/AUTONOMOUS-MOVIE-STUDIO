@@ -1,0 +1,30 @@
+{
+  "target": {
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.5,
+    "sample_rate": 48000,
+    "channels": 2,
+    "format": "WAV PCM 16-bit"
+  },
+  "stems": {
+    "DIALOGUE": {
+      "level": "-inf (track exists but is empty - the film is wordless)"
+    },
+    "MUSIC": {
+      "level_db": -14.0,
+      "note": "never competes with the gait ticks; ducks 3 dB under IGNITION_BLOOM"
+    },
+    "SFX": {
+      "level_db": -8.0,
+      "note": "the gait ticks are the lead voice of the film - always intelligible over ambience"
+    },
+    "AMBIENCE": {
+      "level_db": -18.0,
+      "note": "ducks 4 dB for 12 frames under dialogue-grade SFX (clicks, ignition)"
+    }
+  },
+  "measurement": {
+    "status": "PENDING_MEASUREMENT",
+    "note": "Integrated LUFS / true-peak measurement requires ffmpeg (loudnorm/ebur128), which is not available in this environment. Structural levels (per-asset peak <= -1 dBFS) are verified by run_audio_tests.py; full loudness compliance is measured at render QC (T11)."
+  }
+}
