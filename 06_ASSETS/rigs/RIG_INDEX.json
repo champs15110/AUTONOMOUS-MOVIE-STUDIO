@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-10-07T23:27:53Z",
+  "created_utc": "2026-10-08T00:34:40Z",
   "note": "Rigs are hierarchy-based (parent/child pivots). Full deformation rigs are a later animation-stage concern; no animation has been authored yet.",
   "rig_count": 3,
   "rigs": [

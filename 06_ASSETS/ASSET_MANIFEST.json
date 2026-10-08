@@ -3,7 +3,7 @@
   "task_id": "T05_3D_ASSETS",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "created_utc": "2026-10-07T23:27:53Z",
+  "created_utc": "2026-10-08T00:34:40Z",
   "populated_by": "06_ASSETS/scripts/build_manifests.py",
   "local_validation": "tools/blender_stub (structural, no rendering)",
   "test_results": "06_ASSETS/BUILD_TEST_RESULTS.json",

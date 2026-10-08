@@ -307,10 +307,12 @@ SCENE_SPECS = {
                 ("POINT", 50.0, (1.0, 0.55, 0.2), (2.5, 1.0, 1.7)),
                 ("POINT", 2000.0, (1.0, 0.6, 0.25), (60, 30, 2))],
         actors=[("WICK", dict(), (0, 1.2, 0), 0.0), ("SHIP", dict(), (60, 30, -0.3), RAD(-35))],
-        props=[],
+        props=[("PROP_BELLBUOY", dict(), (12, 8, -0.3), 0),
+               ("PROP_POLE", dict(), (0.9, 1.0, 0.02), (0, RAD(90), 0))],
         camera=dict(lens=50, loc=(0, -5, 1.4), rot=(RAD(85), 0, 0))),
     "SC03": dict(env="PLAZA", world=(0.08, 0.10, 0.10), world_strength=0.8,
-        lights=[("SUN", 3.0, (1.0, 0.75, 0.5), (5, -8, 6), (RAD(60), 0, RAD(30)))],
+        lights=[("SUN", 3.0, (1.0, 0.75, 0.5), (5, -8, 6), (RAD(60), 0, RAD(30))),
+                ("POINT", 60.0, (1.0, 0.55, 0.2), (-3.2, 2.0, 2.6))],
         actors=[("WICK", dict(), (-1.5, 0.5, 0), RAD(-90))],
         props=[("PROP_POLE", dict(), (-1.5, 0.5, 0.0), (0, 0, 0))],
         camera=dict(lens=24, loc=(0, -9, 7), rot=(RAD(58), 0, 0))),
@@ -324,7 +326,7 @@ SCENE_SPECS = {
         lights=[("SUN", 4.0, (0.5, 0.6, 0.7), (3, -5, 7), (RAD(40), 0, RAD(20))),
                 ("POINT", 20.0, (1.0, 0.62, 0.18), (0, 4.3, 1.1))],
         actors=[("WICK", dict(include_spark=True), (0, 4.5, 0.83), RAD(-90))],
-        props=[],
+        props=[("PROP_POLE", dict(), (0.9, 4.6, 0.85), (0, RAD(80), 0))],
         camera=dict(lens=28, loc=(0, -1, 1.6), rot=(RAD(80), 0, 0))),
     "SC06": dict(env="TOWER", world=(0.04, 0.06, 0.08), world_strength=0.7,
         lights=[("SUN", 5.0, (0.55, 0.65, 0.75), (8, -4, 8), (RAD(50), 0, RAD(60))),
@@ -347,8 +349,9 @@ SCENE_SPECS = {
     "SC09": dict(env="TOWER", beacon_lit=True, world=(0.10, 0.08, 0.07), world_strength=0.8,
         lights=[("SPOT", 5000.0, (1.0, 0.85, 0.55), (0, 0, 14.2), (RAD(90), 0, RAD(-90)), 0.5),
                 ("SUN", 3.0, (1.0, 0.6, 0.4), (10, -6, 2), (RAD(80), 0, RAD(60)))],
-        actors=[("SHIP", dict(), (60, 20, -0.3), RAD(-90))],
-        props=[],
+        actors=[("SHIP", dict(), (60, 20, -0.3), RAD(-90)),
+                ("WICK", dict(include_spark=True), (0.9, 0, 12.0), RAD(90))],
+        props=[("PROP_BELLBUOY", dict(), (14, 6, -0.3), 0)],
         camera=dict(lens=35, loc=(-5, 0, 14.6), rot=(RAD(88), 0, RAD(-90)))),
     "SC10": dict(env="TOWER", world=(0.12, 0.08, 0.07), world_strength=0.9,
         lights=[("SUN", 4.0, (1.0, 0.65, 0.45), (6, -4, 15), (RAD(50), 0, RAD(55)))],
@@ -450,7 +453,7 @@ def build_scene(scene_id):
         CHAR_BUILDERS[name](char_c, loc=loc, rot_z=rotz, **kw)
     for pid, kw, loc, rot in spec["props"]:
         ob = PROP_BUILDERS[pid](prop_c, loc=loc, **({k: v for k, v in kw.items()}))
-        ob.rotation_euler = rot
+        ob.rotation_euler = rot if isinstance(rot, tuple) else (0, 0, float(rot))
 
     for li in spec["lights"]:
         ltype, energy, color, loc = li[0], li[1], li[2], li[3]

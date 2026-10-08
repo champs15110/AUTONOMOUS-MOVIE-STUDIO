@@ -17,6 +17,62 @@ are skipped here and only fire under a real Blender binary (cloud render layer).
 import os
 
 
+class _KeyframePoint:
+    def __init__(self, co):
+        self.co = tuple(co)
+        self.interpolation = "BEZIER"
+        self.handle_left_type = "AUTO_CLAMPED"
+        self.handle_right_type = "AUTO_CLAMPED"
+
+
+class _FCurve:
+    def __init__(self, data_path, array_index):
+        self.data_path = data_path
+        self.array_index = array_index
+        self.keyframe_points = []
+
+
+class _Action:
+    def __init__(self):
+        self.fcurves = []
+
+
+class _AnimData:
+    def __init__(self):
+        self.action = _Action()
+
+
+class Keyable:
+    """Minimal animation_data/keyframe_insert matching the bpy API subset."""
+
+    def _anim(self):
+        ad = getattr(self, "_animation_data", None)
+        if ad is None:
+            ad = self._animation_data = _AnimData()
+        return ad
+
+    @property
+    def animation_data(self):
+        return self._anim()
+
+    def keyframe_insert(self, data_path, index=-1, frame=0):
+        value = getattr(self, data_path)
+        if isinstance(value, (int, float)):
+            chans = {0: float(value)}
+        else:
+            chans = {i: float(value[i]) for i in range(len(value))
+                     if index in (-1, i)}
+        ad = self._anim()
+        for i, v in chans.items():
+            fc = next((f for f in ad.action.fcurves
+                       if f.data_path == data_path and f.array_index == i), None)
+            if fc is None:
+                fc = _FCurve(data_path, i)
+                ad.action.fcurves.append(fc)
+            fc.keyframe_points.append(_KeyframePoint((frame, v)))
+        return True
+
+
 class _Socket:
     def __init__(self, name):
         self.name = name
@@ -132,7 +188,7 @@ class Mesh:
         return True
 
 
-class Object:
+class Object(Keyable):
     def __init__(self, name, data):
         self.name = name
         self.data = data
@@ -148,7 +204,7 @@ class Object:
         return f"<Object {self.name}>"
 
 
-class Light:
+class Light(Keyable):
     def __init__(self, name, ltype):
         if ltype not in ("POINT", "SUN", "SPOT", "AREA"):
             raise ValueError(f"unknown light type {ltype}")

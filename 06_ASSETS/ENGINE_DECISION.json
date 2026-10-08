@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "task_id": "T05_3D_ASSETS",
-  "created_utc": "2026-10-07T23:27:53Z",
+  "created_utc": "2026-10-08T00:34:40Z",
   "decision": "BLENDER_BPY_PROCEDURAL",
   "summary": "Build engine: Blender via procedural .bpy scripts (this repo). Blender is NOT installed in this runtime, so local execution is proven through the structural stub harness; real execution happens on a cloud Blender/render layer with the documented commands. Render engine: EEVEE-Next primary on the cloud layer, Cycles with denoising + low samples as quality fallback; the T12 assembly keeps the pre-existing python_software_raster fallback if no cloud layer materialises (risks R-001/R-002).",
   "blender_local": {

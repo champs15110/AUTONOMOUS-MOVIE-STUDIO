@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-10-07T23:27:53Z",
+  "created_utc": "2026-10-08T00:34:40Z",
   "builders": "06_ASSETS/materials/ams_materials.py",
   "material_count": 15,
   "materials": [

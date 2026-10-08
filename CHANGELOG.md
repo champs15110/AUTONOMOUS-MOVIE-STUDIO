@@ -3,6 +3,63 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-08 — Stage 07 ANIMATION complete (T06_ANIMATION → VERIFIED)
+
+**NINETY-TWO TURNS** now moves. Every one of the 58 shots carries authored,
+principle-named keyframe animation - and the camera placeholders stay static:
+no camera move anywhere substitutes for missing body animation.
+
+### Built
+
+- **`07_ANIMATION/scripts/ams_anim_lib.py`** — procedural animation primitives.
+  Body: `walk` (anticipation + arcs + overlapping action + follow-through),
+  `climb` (hand-over-hand arcs with weight sway), `brace`, `collapse`, `look`,
+  `iris` (shutter-aperture facial performance). Props: `needle` (gauge ratchet,
+  CONSTANT-interpolated discrete steps; angle = `RAD(225 − 2.7·v) − RAD(90)`,
+  matching the dial texture), `key_slip`, `turns_free`, `spin_away`,
+  `reach_grab`, `push_door`, `turn_key`, `unspool`, `kneel_turn`. Environment
+  secondary action: `flicker`, `bob`, `sway`, `tear_fall`, `bloom`, `dim`,
+  `beam_sweep`, `ship_turn` and friends.
+- **`07_ANIMATION/scripts/shot_specs.py`** — all 58 shot specs: ordered acts
+  with t0/t1 sub-timing inside each shot's exact frame range, continuity-matched
+  gauge values (92 → 0 → 1 across the film), prop-state beats (pole lifted
+  SC02_SH006, lost to the wind SC05_SH003, recovered wedged SC07_SH005), and a
+  `PRINCIPLES` map naming what each primitive applies.
+- **`07_ANIMATION/scripts/shot_runner.py`** — token resolver (`WICK`, `GAUGE`,
+  `POLE`, `SPOT`, …), dispatch table, `build_shot()`; auto-holds the gauge
+  needle at `gauge_in/out` in shots without an explicit needle act so the
+  countdown is continuous scene to scene.
+- **`07_ANIMATION/SHOT_ANIMATION/anim_<SHOT>.py`** — 58 standalone scripts.
+  Each builds ONLY its scene and keys ONLY its shot's frames (never the whole
+  film in one operation) and saves `<SHOT>.blend` under real Blender.
+- **Harness** `07_ANIMATION/scripts/run_anim_tests.py` — runs every shot on the
+  structural stub and checks: keys exist, ALL keys inside the shot's exact
+  SHOT_LIST frame range, needle end-angle matches `gauge_out`, camera
+  placeholders carry zero keys, ≥2 distinct principles per shot.
+- **Scene fixes surfaced by animation** (assets re-verified 49/49 afterwards):
+  `PROP_POLE` added to SC02/SC05 (she must pick it up before she loses it),
+  one burning lamp (POINT light) added to SC03, WICK added to SC09 actors
+  (her silhouette is in-frame), prop `rot` int → euler normalization.
+
+### Verified
+
+- Harness: **58/58 VERIFIED**, 1,747 keys, 0 PARTIAL / 0 BLOCKED →
+  `07_ANIMATION/ANIMATION_STATUS.json` (per-shot checks + principles).
+- `07_ANIMATION/ANIMATION_INDEX.json` (58 rows: script, blend, frames, fps,
+  keys, status) and `07_ANIMATION/ANIMATION_NOTES.md` (per-scene direction
+  notes + honesty clause: structural verification done here, visual performance
+  review deferred to the cloud Blender layer before render).
+- Sample standalone runs under the stub: SC01_SH001/SC02_SH006/SC05_SH003/
+  SC07_SH003/SC09_SH001/SC10_SH004 all exit 0 with keys inside their frames.
+- `SHOT_REGISTRY.json`: all 58 `animation` slots VERIFIED with artefact paths.
+- Bugs found and fixed en route: stepped needle keyed ascending regardless of
+  direction (broke 92→88 continuity); `climb` arm keys overshooting shot end by
+  2 frames; eager `CHAR_WICK` lookup crashing WICK-less SC09; buoy `bob`
+  subscripting an int rotation; `dim` aimed at the dawn sun instead of the
+  beacon beam.
+
+---
+
 ## 2026-10-07 — Stage 05 3D ASSET PIPELINE complete (T05_3D_ASSETS → VERIFIED)
 
 ### Added

@@ -1,5 +1,5 @@
 {
-  "utc": "2026-10-07T23:27:53Z",
+  "utc": "2026-10-08T00:34:40Z",
   "harness": "tools/blender_stub (structural, no rendering)",
   "checks": [
     {
@@ -205,12 +205,12 @@
     {
       "name": "scene SC02",
       "status": "PASS",
-      "detail": "frames 769-1560, objects {'SC02_ENV': 32, 'SC02_CHARS': 30, 'SC02_PROPS': 0, 'SC02_LIGHTS': 3, 'SC02_CAM': 1}, lights ok, camera ok"
+      "detail": "frames 769-1560, objects {'SC02_ENV': 32, 'SC02_CHARS': 30, 'SC02_PROPS': 7, 'SC02_LIGHTS': 3, 'SC02_CAM': 1}, lights ok, camera ok"
     },
     {
       "name": "scene SC03",
       "status": "PASS",
-      "detail": "frames 1561-2208, objects {'SC03_ENV': 32, 'SC03_CHARS': 24, 'SC03_PROPS': 4, 'SC03_LIGHTS': 1, 'SC03_CAM': 1}, lights ok, camera ok"
+      "detail": "frames 1561-2208, objects {'SC03_ENV': 32, 'SC03_CHARS': 24, 'SC03_PROPS': 4, 'SC03_LIGHTS': 2, 'SC03_CAM': 1}, lights ok, camera ok"
     },
     {
       "name": "scene SC04",
@@ -220,7 +220,7 @@
     {
       "name": "scene SC05",
       "status": "PASS",
-      "detail": "frames 2929-3792, objects {'SC05_ENV': 34, 'SC05_CHARS': 27, 'SC05_PROPS': 0, 'SC05_LIGHTS': 2, 'SC05_CAM': 1}, lights ok, camera ok"
+      "detail": "frames 2929-3792, objects {'SC05_ENV': 34, 'SC05_CHARS': 27, 'SC05_PROPS': 4, 'SC05_LIGHTS': 2, 'SC05_CAM': 1}, lights ok, camera ok"
     },
     {
       "name": "scene SC06",
@@ -240,7 +240,7 @@
     {
       "name": "scene SC09",
       "status": "PASS",
-      "detail": "frames 6289-6768, objects {'SC09_ENV': 30, 'SC09_CHARS': 6, 'SC09_PROPS': 0, 'SC09_LIGHTS': 2, 'SC09_CAM': 1}, lights ok, camera ok"
+      "detail": "frames 6289-6768, objects {'SC09_ENV': 30, 'SC09_CHARS': 33, 'SC09_PROPS': 3, 'SC09_LIGHTS': 2, 'SC09_CAM': 1}, lights ok, camera ok"
     },
     {
       "name": "scene SC10",

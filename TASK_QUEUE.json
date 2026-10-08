@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-07T23:28:38Z",
+  "last_updated": "2026-10-08T00:36:35Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -196,7 +196,7 @@
       "task_id": "T06_ANIMATION",
       "stage": "06_ANIMATION",
       "title": "Per-shot layout, blocking and polish animation",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T05_3D_ASSETS"
       ],
@@ -208,6 +208,9 @@
       ],
       "output_files": [
         "07_ANIMATION/ANIMATION_INDEX.json",
+        "07_ANIMATION/ANIMATION_STATUS.json",
+        "07_ANIMATION/ANIMATION_NOTES.md",
+        "07_ANIMATION/SHOT_ANIMATION/anim_SC01_SH001.py",
         "SHOT_REGISTRY.json"
       ],
       "acceptance": [

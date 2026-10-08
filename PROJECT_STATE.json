@@ -10,7 +10,8 @@
     "02_SCREENPLAY",
     "03_CHARACTER_WORLD",
     "04_STORYBOARD",
-    "05_3D_ASSETS"
+    "05_3D_ASSETS",
+    "06_ANIMATION"
   ],
   "failed_tasks": [],
   "blocked_tasks": [],
@@ -37,7 +38,7 @@
     "03_CHARACTER_WORLD": "VERIFIED",
     "04_STORYBOARD": "VERIFIED",
     "05_3D_ASSETS": "VERIFIED",
-    "06_ANIMATION": "NOT_STARTED",
+    "06_ANIMATION": "VERIFIED",
     "07_CAMERA": "NOT_STARTED",
     "08_LIGHTING_VFX": "NOT_STARTED",
     "09_AUDIO": "NOT_STARTED",
@@ -112,7 +113,7 @@
     "git_commit": "2939c50be04e6d99a3aea4e2c565a61165a990c6",
     "summary": "Stage 05 3D ASSET PIPELINE VERIFIED. Procedural bpy pipeline: 37 assets (3 chars/14 props/3 envs/15 mats/2 textures), 10 independent scene builders, hierarchy rigs; 49/49 stub-harness checks; inventory coverage 40/40 (0 BLOCKED); ENGINE_DECISION: BLENDER_BPY_PROCEDURAL cloud, Blender absent locally (no fabricated runs)."
   },
-  "last_updated": "2026-10-07T23:28:38Z",
+  "last_updated": "2026-10-08T00:36:35Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }

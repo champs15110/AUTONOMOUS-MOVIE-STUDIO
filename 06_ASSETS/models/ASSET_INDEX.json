@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-10-07T23:27:53Z",
+  "created_utc": "2026-10-08T00:34:40Z",
   "note": "Models are procedural bpy builders; no binary model files are produced locally. blend outputs land in 06_ASSETS/blender/scenes/ on the cloud layer.",
   "model_count": 20,
   "models": [
