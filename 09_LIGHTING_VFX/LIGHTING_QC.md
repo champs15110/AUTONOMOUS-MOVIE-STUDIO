@@ -1,6 +1,6 @@
 # Stage 09 — Lighting/VFX QC (NINETY-TWO TURNS)
 
-Generated: 2026-10-08T01:24:31+00:00 · harness: `run_lighting_tests.py` (structural, stub bpy)
+Generated: 2026-10-08T01:26:00+00:00 · harness: `run_lighting_tests.py` (structural, stub bpy)
 
 Checks per scene: shadow-coherence, character-lit, face-readability, materials,
 background, design-adherence, vfx-objects, wind-direction (storm scenes),
