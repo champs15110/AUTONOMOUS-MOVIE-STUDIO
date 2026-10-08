@@ -55,7 +55,7 @@
     "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 7,
+    "checkpoints": 8,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -114,16 +114,24 @@
       "task_id": "T06_ANIMATION",
       "summary": "Stage 07 ANIMATION VERIFIED. 58/58 shots animated shot-by-shot: ams_anim_lib principles-as-code primitives, 58 standalone per-shot scripts keying only their own frame ranges (1747 keys), needle continuity 92->0->1, camera placeholders provably static; harness 58/58 VERIFIED (keys-in-range, gauge continuity, >=2 principles); registry animation slots all VERIFIED; ANIMATION_INDEX/STATUS/NOTES written; scene fixes (POLE SC02/SC05, SC03 lamp, WICK in SC09) re-verified 49/49.",
       "git_commit": "d158b1efa77c4f3d2430748b3deba986fb0c0754"
+    },
+    {
+      "checkpoint_id": "CP-0008",
+      "utc": "2026-10-08T01:02:45Z",
+      "actor": "master_controller",
+      "task_id": "T07_CAMERA",
+      "summary": "Stage 08 CAMERA VERIFIED. 58/58 shots carry executable camera direction: cam_lib motivated-move primitives (hold/push/crane/dolly/tilt/pan/whip/cut/descend/rack/micro-drift), 58 standalone per-shot cam scripts reusing scene cameras, master-axis screen direction enforced (sea frame RIGHT), DOF focus on subject, single fast move = SC06_SH002 whip; ten-check harness 58/58 VERIFIED (lens==plan, keys-in-frames, scale windows, in-frame, axis, motivation license, focus, no clipping, readability); CAMERA_MASTER/INDEX/QC written; registry camera slots all VERIFIED.",
+      "git_commit": "4aec42e84353570dc2df34ddf241c73f7989fa8f"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0007",
-    "utc": "2026-10-08T00:36:45Z",
-    "task_id": "T06_ANIMATION",
-    "git_commit": "d158b1efa77c4f3d2430748b3deba986fb0c0754",
-    "summary": "Stage 07 ANIMATION VERIFIED. 58/58 shots animated shot-by-shot: ams_anim_lib principles-as-code primitives, 58 standalone per-shot scripts keying only their own frame ranges (1747 keys), needle continuity 92->0->1, camera placeholders provably static; harness 58/58 VERIFIED (keys-in-range, gauge continuity, >=2 principles); registry animation slots all VERIFIED; ANIMATION_INDEX/STATUS/NOTES written; scene fixes (POLE SC02/SC05, SC03 lamp, WICK in SC09) re-verified 49/49."
+    "checkpoint_id": "CP-0008",
+    "utc": "2026-10-08T01:02:45Z",
+    "task_id": "T07_CAMERA",
+    "git_commit": "4aec42e84353570dc2df34ddf241c73f7989fa8f",
+    "summary": "Stage 08 CAMERA VERIFIED. 58/58 shots carry executable camera direction: cam_lib motivated-move primitives (hold/push/crane/dolly/tilt/pan/whip/cut/descend/rack/micro-drift), 58 standalone per-shot cam scripts reusing scene cameras, master-axis screen direction enforced (sea frame RIGHT), DOF focus on subject, single fast move = SC06_SH002 whip; ten-check harness 58/58 VERIFIED (lens==plan, keys-in-frames, scale windows, in-frame, axis, motivation license, focus, no clipping, readability); CAMERA_MASTER/INDEX/QC written; registry camera slots all VERIFIED."
   },
-  "last_updated": "2026-10-08T01:02:37Z",
+  "last_updated": "2026-10-08T01:02:45Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
