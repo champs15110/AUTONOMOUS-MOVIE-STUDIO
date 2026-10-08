@@ -122,7 +122,15 @@ LIGHTING = {
         world=((0.16, 0.14, 0.13), 0.90),
         key="SC10_SUN_0", shadow_casters=("SC10_SUN_0",),
         tune={"SC10_SUN_0": dict(energy=4.0, angle=0.10, use_shadow=True)},
-        add=[("SC10_FILL", "POINT", 12, (1.00, 0.85, 0.75), (-0.6, 1.2, 12.8))],
+        # CP-0017 (Step 17 repair, ERR-0008): the sealed chamber received no
+        # effective light (sun occluded by tower shell, 12 W fill only) and
+        # SC10_SH001-SH004 rendered black. Add a warm dawn key just inside the
+        # chamber doorway (east wall) plus a soft overhead lift; fills never
+        # cast shadows so the one-shadow-caster rule holds.
+        add=[("SC10_FILL", "POINT", 12, (1.00, 0.85, 0.75), (-0.6, 1.2, 12.8)),
+             ("SC10_DAWN_KEY", "POINT", 55, (1.00, 0.72, 0.55), (1.7, 0.0, 13.1)),
+             ("SC10_CHAMBER_LIFT", "POINT", 22, (1.00, 0.85, 0.72),
+              (-1.2, -1.0, 13.6))],
         exposure=(0.5, 60.0)),
 }
 

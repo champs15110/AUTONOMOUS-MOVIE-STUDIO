@@ -150,7 +150,7 @@
     "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9",
     "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg)."
   },
-  "last_updated": "2026-10-08 21:36 UTC",
+  "last_updated": "2026-10-08 21:55 UTC",
   "updated_by": "master_controller",
   "notes": "FINAL FILM VERIFIED. See FINAL/FINAL_REPORT.json + known_limitations (local CPU spec per ERR-0003; AAC track -15.97 LUFS; ERR-0007 mux workaround; ERR-0005 animatic superseded).",
   "stage_11_preview_render": {
@@ -229,5 +229,15 @@
       "FINAL/FINAL_VERIFICATION.md",
       "FINAL/INDEPENDENT_VERIFY/"
     ]
+  },
+  "step_17_sc10_repair": {
+    "status": "COMPLETE",
+    "utc": "2026-10-08 21:55 UTC",
+    "candidate": "FINAL/FINAL_FILM_REPAIRED_CANDIDATE.mp4",
+    "candidate_bytes": 7052141,
+    "promoted": false,
+    "lighting_change": "SC10_DAWN_KEY 55W + SC10_CHAMBER_LIFT 22W (light_design.py)",
+    "sc10_luma_after": "11.8-28.1 across SH001-SH004; SH005 exact black",
+    "next_step": "Step 18 independent re-verification before any promotion"
   }
 }

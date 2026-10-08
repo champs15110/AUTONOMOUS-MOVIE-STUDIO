@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08 20:15 UTC",
+  "last_updated": "2026-10-08 21:55 UTC",
   "policy": "Every failure, however small, is captured here BEFORE any recovery attempt. Never blindly repeat a failed command. Never lose completed outputs.",
   "entry_schema": {
     "error_id": "ERR-nnnn",
@@ -156,6 +156,38 @@
       "recovery_attempted": "rebuilt the measured mix to 10_AUDIO/mix/FINAL_MIX.wav (identical numpy pipeline to measure_mix.py; re-verified -16.34 LUFS/-1.50 dBTP), then 13_RENDER/scripts/mux_audio.py transcodes the video once (libx264 CRF18) and AAC-encodes FINAL_MIX.wav with PyAV 18, timestamp-merged; delivered AAC decodes to 302.02 s, -15.97 LUFS / -1.43 dBTP",
       "resolution": "RESOLVED",
       "retry_count_after": 1
+    },
+    {
+      "id": "ERR-0008",
+      "utc": "2026-10-08 21:55 UTC",
+      "task_id": "T14_SC10_REPAIR",
+      "shot_id": "SC10_SH001..SH004",
+      "scene_id": "SC10",
+      "command_or_step": "Stage 14 final render of SC10 (and Step 16 independent verification)",
+      "error_text": "SC10 frames 6768-7176 rendered near-black (mean luma 0.58-1.82/255): sealed tower chamber with sun fully occluded by shell, world ambient blocked, single 12 W fill",
+      "classification": "AUTHORING",
+      "probable_cause": "light_design.py SC10 entry lacked an effective interior key for a sealed interior; Stage-11 preview representative caught emissive macro; Stage-13 harness and Stage-14 visual pass did not sample SC10 wide shots",
+      "impact": "Step 16 verdict FAILED / FINAL MP4 NOT VERIFIED",
+      "preserved_outputs": "all chunks/segments/final untouched; original FINAL_FILM.mp4 preserved",
+      "recovery_attempted": "Step 17 targeted repair: SC10_DAWN_KEY 55W + SC10_CHAMBER_LIFT 22W fills; per-shot re-render of SH001-SH004 only (480 frames); candidate assembled and verified (luma 11.8-28.1; ending black preserved)",
+      "resolution": "RESOLVED_AT_CANDIDATE_LEVEL (promotion pending Step 18)",
+      "retry_count_after": 0
+    },
+    {
+      "id": "ERR-0009",
+      "utc": "2026-10-08 21:55 UTC",
+      "task_id": "T14_SC10_REPAIR",
+      "shot_id": null,
+      "scene_id": "SC01..SC09",
+      "command_or_step": "Step 17 within-scene frame comparison of FINAL_FILM.mp4",
+      "error_text": "Stage-14 final render used one representative camera per scene (render_chunks.py PR.build(scene, REPRESENTATIVE)) - the 58-shot cut structure of EDIT_TIMELINE (macro/close-up beats, motivated cuts) is not visually present in SC01-SC09; e.g. SC02 SH002/SH003/SH005 all show the same static wide",
+      "classification": "PIPELINE_GAP",
+      "probable_cause": "render_chunks built only the representative shot camera per scene; Stage 12-16 verifications sampled across scenes, not within them",
+      "impact": "delivered film tells the story in 10 static setups instead of 58 shots; SC10 in the Step-17 candidate IS per-shot",
+      "preserved_outputs": "candidate and all prior artefacts intact",
+      "recovery_attempted": "none this step - fixing requires per-shot re-render of all scenes (whole-film regeneration, explicitly out of Step 17 scope)",
+      "resolution": "DEFERRED",
+      "retry_count_after": 0
     }
   ]
 }

@@ -440,6 +440,35 @@
       "checkpoint": null,
       "notes": "Project is NOT complete until this task is VERIFIED.",
       "verified_utc": "2026-10-08 20:15 UTC"
+    },
+    {
+      "task_id": "T14_SC10_REPAIR",
+      "stage": "17_REPAIR",
+      "title": "Targeted SC10 lighting repair + candidate recovery",
+      "status": "VERIFIED",
+      "verified_utc": "2026-10-08 21:55 UTC",
+      "dependencies": [
+        "T13_FINAL_VERIFICATION"
+      ],
+      "input_files": [
+        "09_LIGHTING_VFX/scripts/light_design.py",
+        "11_EDIT/EDIT_TIMELINE.json",
+        "FINAL/FINAL_FILM.mp4"
+      ],
+      "output_files": [
+        "13_RENDER/REPAIR_CHUNKS/SC10_SH001.mp4",
+        "13_RENDER/REPAIR_CHUNKS/SC10_SH002.mp4",
+        "13_RENDER/REPAIR_CHUNKS/SC10_SH003.mp4",
+        "13_RENDER/REPAIR_CHUNKS/SC10_SH004.mp4",
+        "FINAL/FINAL_FILM_REPAIRED_CANDIDATE.mp4",
+        "FINAL/SC10_REPAIR_REPORT.json",
+        "FINAL/SC10_REPAIR_REPORT.md"
+      ],
+      "acceptance": "SC10 SH001-SH004 visibly lit (luma 11.8-28.1), ending 7177-7248 exact black, 7248 frames/302.0s/24fps, audio -15.97 LUFS unchanged, unaffected ranges preserved; promotion deferred to Step 18",
+      "retry_count": 0,
+      "last_error": "ERR-0008",
+      "checkpoint": "CP-0017",
+      "notes": "SC10 rendered per-shot; ERR-0009 (other scenes scene-static) deferred"
     }
   ]
 }

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task": "STEP 17 - TARGETED SC10 LIGHTING REPAIR AND MP4 RECOVERY",
+  "generated_utc": "2026-10-08 21:55 UTC",
+  "scope": "SC10 visible shots only (SC10_SH001-SH004, frames 6769-7176); authored cut-to-black 7177-7248 preserved; no other scene regenerated",
+  "source_recovery": {
+    "scene_scripts_animation_assets": "all present in repo (06-09 stage scripts, CAMERA_MASTER, EDIT_TIMELINE); bpy 4.3.0 (original render version) reinstalled after sandbox reset - NOT a version switch",
+    "original_chunk_mp4s": "NOT recoverable: 13_RENDER/FINAL_CHUNKS/*.mp4 were gitignored and lost in sandbox reset (git ls-tree of CP-0014 shows only chunk_*.json). Unaffected range 1-6768 therefore sourced verbatim by decoding the existing verified FINAL/FINAL_FILM.mp4; original file left untouched",
+    "final_mix_wav": "rebuilt deterministically via 10_AUDIO/scripts/build_final_mix.py; re-measured identical -16.34 LUFS / -1.50 dBTP"
+  },
+  "root_cause_confirmed": "SC10 sealed tower chamber received no effective light: key sun (4.0 W, shadows) fully occluded by tower shell; world ambient cannot reach interior; single 12 W fill. Measured mean luma 0.58-1.82/255 over 6768-7247 in the old final.",
+  "lighting_change_exact": {
+    "file": "09_LIGHTING_VFX/scripts/light_design.py (SC10 entry)",
+    "added": [
+      ["SC10_DAWN_KEY", "POINT", 55, [1.0, 0.72, 0.55], [1.7, 0.0, 13.1], "warm dawn key just inside chamber doorway (east wall)"],
+      ["SC10_CHAMBER_LIFT", "POINT", 22, [1.0, 0.85, 0.72], [-1.2, -1.0, 13.6], "soft overhead lift for shell/gauge readability"]
+    ],
+    "unchanged": ["SC10_SUN_0 tune (4.0, angle 0.10, shadows)", "SC10_FILL 12 W", "world (0.16,0.14,0.13)x0.90", "exposure bounds (0.5,60)", "all cameras, animation, timing, character/environment design"],
+    "shadow_rule": "added lights are fills (use_shadow=False); single shadow caster preserved"
+  },
+  "preview_inspection": {
+    "method": "160x90 / 4spp stills per shot before final render",
+    "frames": {"6800": "WICK shell + chamber visible, dawn warmth, no clipping", "6930": "cloaked child in chamber recognizable", "7040": "brass key macro readable", "7150": "chest-drum macro warm, matches Stage-11 preview style"},
+    "stills": "13_RENDER/REPAIR_CHUNKS/preview_SC10_SH00*.png"
+  },
+  "renders": {
+    "backend": "pypi bpy 4.3.0 / Cycles CPU, 320x180, 6spp adaptive + OIDN (same spec as original finals)",
+    "segments": {
+      "SC10_SH001": {"frames": [6769, 6876], "decoded_frames": 108, "file": "13_RENDER/REPAIR_CHUNKS/SC10_SH001.mp4", "bytes": 25501},
+      "SC10_SH002": {"frames": [6877, 6984], "decoded_frames": 108, "file": "13_RENDER/REPAIR_CHUNKS/SC10_SH002.mp4"},
+      "SC10_SH003": {"frames": [6985, 7092], "decoded_frames": 108, "file": "13_RENDER/REPAIR_CHUNKS/SC10_SH003.mp4"},
+      "SC10_SH004": {"frames": [7093, 7176], "decoded_frames": 84, "file": "13_RENDER/REPAIR_CHUNKS/SC10_SH004.mp4", "bytes": 21867}
+    },
+    "actually_rendered": true
+  },
+  "candidate": {
+    "path": "FINAL/FINAL_FILM_REPAIRED_CANDIDATE.mp4",
+    "bytes": 7052141,
+    "composition": "frames 1-6768 decoded verbatim from FINAL/FINAL_FILM.mp4; 6769-7176 repaired per-shot segments; 7177-7248 authored black; audio AAC 128k from FINAL_MIX.wav",
+    "promoted_to_final": false
+  },
+  "candidate_verification": {
+    "decode": "7248/7248 frames, 0 errors; h264 320x180 24.0 fps; 302.0 s",
+    "audio": "aac 48k, 302.016 s, peak 0.835, -15.97 LUFS, -1.43 dBTP (unchanged from delivered mix)",
+    "sc10_luma_before_after": {"SH001": ["0.85-1.0", "11.81-12.05"], "SH002": ["~1", "20.15-21.28"], "SH003": ["~1", "15.27-17.42"], "SH004": ["~1", "13.67-28.07"]},
+    "ending_black_preserved": "7177-7248 mean luma 0.0 (exact)",
+    "unaffected_ranges_unchanged": "SC02 41.8-42.2, SC09 25.8-27.0 (match old final within one re-encode generation)",
+    "visual_inspection": ["6770 WICK shell + gauge at burner foot readable", "6930 cloaked child entrance recognizable, gold dust motes", "7040 key macro readable", "7150 chest-drum macro warm", "7200 black as authored"],
+    "stills": "FINAL/INDEPENDENT_VERIFY/r_*.png"
+  },
+  "remaining_blockers": [
+    "Candidate NOT promoted; independent re-verification (Step 18) required before FINAL/FINAL_FILM.mp4 replacement",
+    "ERR-0009: unaffected scenes in the film were rendered with one representative camera per scene - the 58-shot cut structure of EDIT_TIMELINE is not visually present outside SC10 (which the candidate now renders per-shot). Fixing it requires per-shot re-render of all scenes: out of Step 17 scope (would regenerate the entire film)",
+    "Resolution remains 320x180 vs MASTER_CONFIG 1920x1080 (ERR-0003); not claimed met"
+  ],
+  "verdict": "REPAIR SUCCESSFUL AT CANDIDATE LEVEL - final delivery verdict deferred to Step 18"
+}
