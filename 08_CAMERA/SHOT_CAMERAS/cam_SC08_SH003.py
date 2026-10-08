@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC08_SH003 (scene SC08, frames 5725-5832 @24fps).
-Static tight at burner level: the gap between spark and brass is the point.
+Static tight at burner level: the gap between spark and brass is the point. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC08_SH003.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

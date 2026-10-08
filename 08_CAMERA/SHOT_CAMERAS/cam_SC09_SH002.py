@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC09_SH002 (scene SC09, frames 6481-6624 @24fps).
-300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it.
+300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC09_SH002.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

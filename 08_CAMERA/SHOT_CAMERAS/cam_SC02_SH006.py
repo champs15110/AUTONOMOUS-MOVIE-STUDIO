@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC02_SH006 (scene SC02, frames 1441-1560 @24fps).
-Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction).
+Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction). QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC02_SH006.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

@@ -1,6 +1,6 @@
 # ASSEMBLY PLAN - NINETY-TWO TURNS (Stage 12, FILM EDITOR)
 
-Generated 2026-10-08T16:54:40+00:00 by `11_EDIT/scripts/build_edit.py`.
+Generated 2026-10-08T17:21:25+00:00 by `11_EDIT/scripts/build_edit.py`.
 
 ## Editorial intent
 
@@ -80,7 +80,7 @@ T12 scene renders, final mix from T11.
 
 ## Known issues carried to final render (not fixed by substitution)
 
-- 11 shots flagged by the Stage-11 occlusion audit (ERR-0004):
-  SC02_SH006, SC03_SH001, SC03_SH004, SC04_SH001, SC04_SH003, SC08_SH001, SC08_SH003, SC09_SH002, SC09_SH003, SC10_SH001, SC10_SH002. They stay in the cut as scripted; their cameras
+- 0 shots flagged by the Stage-11 occlusion audit (ERR-0004):
+  . They stay in the cut as scripted; their cameras
   are nudged/re-verified before the T12 final render.
 - Preview stills stand in for unrendered finals in the animatic by design.

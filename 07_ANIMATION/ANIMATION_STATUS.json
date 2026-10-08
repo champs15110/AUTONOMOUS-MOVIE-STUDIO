@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "task_id": "T06_ANIMATION",
   "project_id": "AMS-2026-001",
-  "created_utc": "2026-10-08T04:07:43Z",
+  "created_utc": "2026-10-08T17:21:00Z",
   "harness": "tools/blender_stub (structural, keyframe-level checks)",
   "counts": {
     "VERIFIED": 58

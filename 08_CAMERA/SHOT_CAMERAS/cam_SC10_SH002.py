@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC10_SH002 (scene SC10, frames 6877-6984 @24fps).
-Wide from inside the chamber, low: the child enters backlit as a silhouette. Static.
+Wide from inside the chamber, low: the child enters backlit as a silhouette. Static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC10_SH002.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

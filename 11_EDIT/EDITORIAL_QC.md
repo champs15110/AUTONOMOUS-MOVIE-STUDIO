@@ -1,6 +1,6 @@
 # EDITORIAL QC - NINETY-TWO TURNS (Stage 12)
 
-Generated 2026-10-08T16:54:40+00:00 by `11_EDIT/scripts/build_edit.py`. All values measured from
+Generated 2026-10-08T17:21:25+00:00 by `11_EDIT/scripts/build_edit.py`. All values measured from
 `EDIT_TIMELINE.json` inputs this run; overall: **ALL PASS**.
 
 | Check | Result | Measured detail |
@@ -20,7 +20,7 @@ Generated 2026-10-08T16:54:40+00:00 by `11_EDIT/scripts/build_edit.py`. All valu
 | ending: final click + hard cut to black, gauge resolved 0->1 | PASS | SC10_SH005 gauge 0->1, out='Hard cut to black.' |
 | pacing curve measured (climax density vs bookends) | PASS | SC08 avg shot 4.86s vs film range 4.00-6.67s; emotional ladder curiosity, then dread -> dread hardening into resolve -> wonder, underpinned by a counting dread -> alarm -> loss, then tenderness, then a colder determination -> foreboding -> desperation, then a single moment of recognition -> recognition, sacrifice, awe -> relief, then mourning -> mourning resolving into hope |
 | all 10 scenes cleared preview QC before edit | PASS | statuses: ['PREVIEW_QC_PASS'] |
-| occlusion-defective shots noted for pre-final camera fix (edit order kept) | PASS | 11 shots queued (ERR-0004); edit keeps scripted order - fixes land in T12 final render, not by substitution |
+| occlusion-defective shots noted for pre-final camera fix (edit order kept) | PASS | 0 shots queued (ERR-0004); edit keeps scripted order - fixes land in T12 final render, not by substitution |
 | opening hook | PASS | SC01_SH001 extreme macro of the winding key, gauge 92 - the contract of the title in the first 5.5 s |
 | story comprehension | PASS | cause/effect cut grammar on every out; gauge spine 92->0->1 unbroken; wordless intent intact |
 | pacing | PASS | see pacing table in ASSEMBLY_PLAN; bookends breathe, storm/climb tighten |
@@ -33,5 +33,5 @@ Generated 2026-10-08T16:54:40+00:00 by `11_EDIT/scripts/build_edit.py`. All valu
 | low-res preview (NOT final) | PASS | `ASSEMBLY_PREVIEW_LOWRES.mp4` present (9.0 MB), VSE animatic of all 58 shots + 143 audio events; labelled non-final |
 
 Editorial issues found: **0** blocking;
-camera-occlusion fixes for 11 shots are queued to the final
+camera-occlusion fixes for 0 shots are queued to the final
 render (ERR-0004), not handled by shot substitution.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC10_SH001 (scene SC10, frames 6769-6876 @24fps).
-Low medium, held long enough to be uncomfortable. Do not soften; static.
+Low medium, held long enough to be uncomfortable. Do not soften; static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC10_SH001.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

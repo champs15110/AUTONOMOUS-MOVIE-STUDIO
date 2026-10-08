@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC08_SH001 (scene SC08, frames 5473-5592 @24fps).
-Wide from the chamber floor: scale contrast is the whole shot. Static.
+Wide from the chamber floor: scale contrast is the whole shot. Static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC08_SH001.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

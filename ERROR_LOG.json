@@ -111,8 +111,9 @@
       "impact": "affected shots would render the subject hidden behind set geometry in the final",
       "preserved_outputs": "all shots/frames preserved; audit artefact 11_RENDER/CAMERA_OCCLUSION_AUDIT.json",
       "recovery_attempted": "representative shots for SC04/SC09 switched to probe-clear shots (SC04_SH004, SC09_SH001); blocked shots queued for camera nudge + re-verification before T12 final render",
-      "resolution": "MITIGATED",
-      "retry_count_after": 0
+      "resolution": "RESOLVED",
+      "retry_count_after": 0,
+      "resolution_note": "11/11 cameras nudged at Stage 13 (QC-13); occlusion audit 0 defects; camera harness 58/58 after regeneration"
     },
     {
       "error_id": "ERR-0005",

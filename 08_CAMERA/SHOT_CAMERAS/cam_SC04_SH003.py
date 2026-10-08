@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Shot camera: SC04_SH003 (scene SC04, frames 2461-2568 @24fps).
-Static profile from the sea side; she crosses frame. The line gives the traverse legibility.
+Static profile from the sea side; she crosses frame. The line gives the traverse legibility. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.
 
 Run under Blender:  blender -b -P cam_SC04_SH003.py
 Local structural test: python3 08_CAMERA/scripts/run_camera_tests.py

@@ -1,6 +1,6 @@
 # Stage 10 — Audio QC (NINETY-TWO TURNS)
 
-Generated: 2026-10-08T16:47:22+00:00 · harness: `run_audio_tests.py`
+Generated: 2026-10-08T17:21:01+00:00 · harness: `run_audio_tests.py`
 
 - 65 assets (all original, synthesized in-repo; none missing)
 - 143 timeline events across ambience/music/sfx tracks

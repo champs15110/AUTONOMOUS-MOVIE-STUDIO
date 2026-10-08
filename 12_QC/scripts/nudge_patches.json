@@ -1,0 +1,261 @@
+{
+  "patches": {
+    "SC02_SH006": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 40,
+        "dist": 1.8,
+        "h": 0.25,
+        "az": 0,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.2,
+          0.7
+        ],
+        "subj_h": 0.4,
+        "note": "Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction)."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.435
+    },
+    "SC03_SH001": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 40,
+        "dist": 1.5,
+        "h": 0.25,
+        "az": 0,
+        "motion": [
+          "dolly",
+          -0.8,
+          0.0
+        ],
+        "scale": [
+          0.2,
+          0.8
+        ],
+        "subj_h": 0.4,
+        "note": "Lateral dolly at her height matching her stride: the camera walks with her, motivated by her walk."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.52
+    },
+    "SC03_SH004": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 40,
+        "dist": 1.4,
+        "h": 0.25,
+        "az": 0,
+        "motion": [
+          "dolly",
+          -1.0,
+          0.0
+        ],
+        "scale": [
+          0.2,
+          0.8
+        ],
+        "subj_h": 0.4,
+        "note": "Tracking medium; foreground poles strobe past - rhythm from the dolly matched to her stride."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.556
+    },
+    "SC04_SH001": {
+      "spec": {
+        "loc": [
+          -2.0,
+          -4.0,
+          0.68
+        ],
+        "target": [
+          -2.0,
+          1.6,
+          0.3
+        ],
+        "lens": 24,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.02,
+          0.2
+        ],
+        "subj_h": 0.4,
+        "note": "Wide at water level: the flood is the reveal. Static."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.084
+    },
+    "SC04_SH003": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 50,
+        "dist": 2.2,
+        "h": 0.0,
+        "az": 100,
+        "reverse": true,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.2,
+          0.7
+        ],
+        "subj_h": 0.4,
+        "note": "Static profile from the sea side; she crosses frame. The line gives the traverse legibility."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.449
+    },
+    "SC09_SH002": {
+      "spec": {
+        "loc": [
+          0.0,
+          -1.0,
+          14.55
+        ],
+        "target": [
+          60.0,
+          20.0,
+          0.5
+        ],
+        "lens": 300,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.25,
+          0.9
+        ],
+        "subj_h": 2.5,
+        "note": "300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.569
+    },
+    "SC09_SH003": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 35,
+        "dist": 2.4,
+        "h": 0.3,
+        "az": -10,
+        "motion": [
+          "push_in",
+          1.6
+        ],
+        "scale": [
+          0.1,
+          0.45
+        ],
+        "subj_h": 0.4,
+        "note": "One continuous move: the beacon dies behind the push and the push finds her at the burner's foot. Dawn."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.425
+    },
+    "SC10_SH001": {
+      "spec": {
+        "subj": "WICK",
+        "lens": 50,
+        "dist": 1.5,
+        "h": 0.15,
+        "az": 0,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.25,
+          0.9
+        ],
+        "subj_h": 0.4,
+        "note": "Low medium, held long enough to be uncomfortable. Do not soften; static."
+      },
+      "clear": 1.0,
+      "scale_frac": 0.655
+    },
+    "SC08_SH003": {
+      "spec": {
+        "subj": "BURNER",
+        "lens": 100,
+        "dist": 0.3,
+        "h": 0.0,
+        "az": -60,
+        "fstop": 2.8,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.8,
+          4.5
+        ],
+        "subj_h": 0.15,
+        "exempt": true,
+        "note": "Static tight at burner level: the gap between spark and brass is the point."
+      },
+      "clear": 0.0,
+      "seen": 0,
+      "scale_frac": 2.469
+    },
+    "SC10_SH002": {
+      "spec": {
+        "loc": [
+          -0.4,
+          -1.9,
+          12.3
+        ],
+        "target": [
+          1.6,
+          -0.5,
+          12.1
+        ],
+        "lens": 35,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.2,
+          0.9
+        ],
+        "subj_h": 1.1,
+        "exempt": true,
+        "note": "Wide from inside the chamber, low: the child enters backlit as a silhouette. Static."
+      },
+      "clear": 1.0,
+      "seen": 48,
+      "scale_frac": 0.776
+    },
+    "SC08_SH001": {
+      "spec": {
+        "loc": [
+          1.9,
+          0.0,
+          12.25
+        ],
+        "target": [
+          0.4,
+          0.0,
+          12.8
+        ],
+        "lens": 18,
+        "motion": [
+          "hold"
+        ],
+        "scale": [
+          0.3,
+          1.4
+        ],
+        "subj_h": 2.4,
+        "exempt": true,
+        "note": "Wide from the chamber floor: scale contrast is the whole shot. Static."
+      },
+      "clear": 0.75,
+      "scale_frac": null
+    }
+  },
+  "unfixed": []
+}

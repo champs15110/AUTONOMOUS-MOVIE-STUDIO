@@ -4,7 +4,7 @@
   "project_id": "AMS-001",
   "film_title": "NINETY-TWO TURNS",
   "fps": 24,
-  "generated": "2026-10-08T01:26:00+00:00",
+  "generated": "2026-10-08T17:21:01+00:00",
   "design_rules": [
     "one shadow-casting light per scene (the planned key) \u2014 coherent shadows",
     "warm fill within 6 m of every close character \u2014 faces stay readable",

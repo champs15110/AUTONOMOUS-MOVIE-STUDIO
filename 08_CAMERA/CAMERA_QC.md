@@ -1,6 +1,6 @@
 # CAMERA QC - NINETY-TWO TURNS
 
-Generated 2026-10-08T16:54:40Z by 08_CAMERA/scripts/run_camera_tests.py (structural stub).
+Generated 2026-10-08T17:21:25Z by 08_CAMERA/scripts/run_camera_tests.py (structural stub).
 Status counts: {'VERIFIED': 58}. VERIFIED = all ten checks passed for the shot.
 
 ## Method
@@ -35,13 +35,13 @@ render, same as animation.
 | SC02_SH003 | 200mm | hold | 0.3705 | 66.642 | VERIFIED |
 | SC02_SH004 | 18mm | hold | 0.7182 | 11.138 | VERIFIED |
 | SC02_SH005 | 85mm | hold | 0.8395 | 0.45 | VERIFIED |
-| SC02_SH006 | 40mm | hold | 0.439 | 1.8 | VERIFIED |
-| SC03_SH001 | 40mm | dolly | 0.5267 | 1.5 | VERIFIED |
+| SC02_SH006 | 40mm | hold | 0.4348 | 1.817 | VERIFIED |
+| SC03_SH001 | 40mm | dolly | 0.5196 | 1.521 | VERIFIED |
 | SC03_SH002 | 100mm | hold | 4.0404 | 0.11 | VERIFIED |
 | SC03_SH003 | 24mm | push_in | 0.0377 | 12.578 | VERIFIED |
-| SC03_SH004 | 40mm | dolly | 0.5644 | 1.4 | VERIFIED |
+| SC03_SH004 | 40mm | dolly | 0.5556 | 1.422 | VERIFIED |
 | SC03_SH005 | 35mm | hold | 0.4857 | 3.559 | VERIFIED |
-| SC04_SH001 | 24mm | hold | 0.0846 | 5.601 | VERIFIED |
+| SC04_SH001 | 24mm | hold | 0.0845 | 5.613 | VERIFIED |
 | SC04_SH002 | 50mm | micro_drift | 0.5486 | 1.8 | VERIFIED |
 | SC04_SH003 | 50mm | hold | 0.4489 | 2.2 | VERIFIED |
 | SC04_SH004 | 35mm | descend | 0.5286 | 1.308 | VERIFIED |
@@ -67,7 +67,7 @@ render, same as animation.
 | SC07_SH006 | 50mm | hold | 0.7899 | 1.25 | VERIFIED |
 | SC07_SH007 | 85mm | hold | 1.7172 | 0.22 | VERIFIED |
 | SC07_SH008 | 35mm | hold | 0.4058 | 1.704 | VERIFIED |
-| SC08_SH001 | 18mm | hold | 0.812 | 2.627 | VERIFIED |
+| SC08_SH001 | 18mm | hold | 1.3353 | 1.598 | VERIFIED |
 | SC08_SH002 | 85mm | push_in | 1.1993 | 0.35 | VERIFIED |
 | SC08_SH003 | 100mm | hold | 2.4691 | 0.3 | VERIFIED |
 | SC08_SH004 | 100mm | hold | 3.2922 | 0.09 | VERIFIED |
@@ -75,10 +75,10 @@ render, same as animation.
 | SC08_SH006 | 100mm | hold | 2.4691 | 0.1 | VERIFIED |
 | SC08_SH007 | 50mm | hold | 0.587 | 2.524 | VERIFIED |
 | SC09_SH001 | 35mm | hold | 0.1244 | 34.747 | VERIFIED |
-| SC09_SH002 | 300mm | hold | 0.5703 | 64.945 | VERIFIED |
+| SC09_SH002 | 300mm | hold | 0.5689 | 65.103 | VERIFIED |
 | SC09_SH003 | 35mm | push_in | 0.4247 | 1.628 | VERIFIED |
-| SC10_SH001 | 50mm | hold | 0.657 | 1.503 | VERIFIED |
-| SC10_SH002 | 35mm | hold | 0.6151 | 3.091 | VERIFIED |
+| SC10_SH001 | 50mm | hold | 0.6552 | 1.507 | VERIFIED |
+| SC10_SH002 | 35mm | hold | 0.7762 | 2.449 | VERIFIED |
 | SC10_SH003 | 85mm | hold | 0.8395 | 0.4 | VERIFIED |
 | SC10_SH004 | 100mm | hold | 2.4691 | 0.1 | VERIFIED |
 | SC10_SH005 | 100mm | hold | 4.0404 | 0.11 | VERIFIED |

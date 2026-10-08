@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "task_id": "T08_LIGHTING_VFX",
-  "generated": "2026-10-08T01:26:00+00:00",
+  "generated": "2026-10-08T17:21:01+00:00",
   "policy": "no effect without story purpose \u2014 every row below carries one",
   "wind": "camera-right (+X) in SC05-07 per CONTINUITY_BIBLE \u00a74",
   "rain_timeline": "begins SC04_SH003, full storm SC05-07, lee calm SC07_SH008, drizzle SC09, clear SC10",

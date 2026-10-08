@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated": "2026-10-08T04:08:02+00:00",
+  "generated": "2026-10-08T17:21:25+00:00",
   "method": "raycast camera->in-frame subject vertices, fog volumes skipped, clear = first hit is subject or beyond",
   "threshold_defect": "clear_frac < 0.5 with >= 20 in-frame samples",
   "shots": {
@@ -58,19 +58,16 @@
     "SC02_SH006": {
       "WICK": {
         "in_frame": 269,
-        "clear_frac": 0.23,
-        "blockers": {
-          "PLAZA_quay": 206
-        }
+        "clear_frac": 1.0,
+        "blockers": {}
       }
     },
     "SC03_SH001": {
       "WICK": {
         "in_frame": 269,
-        "clear_frac": 0.28,
+        "clear_frac": 0.99,
         "blockers": {
-          "PLAZA_quay": 193,
-          "GAUGE_rim": 2
+          "GAUGE_rim": 3
         }
       }
     },
@@ -84,11 +81,9 @@
     },
     "SC03_SH004": {
       "WICK": {
-        "in_frame": 263,
-        "clear_frac": 0.24,
-        "blockers": {
-          "PLAZA_quay": 199
-        }
+        "in_frame": 262,
+        "clear_frac": 1.0,
+        "blockers": {}
       }
     },
     "SC03_SH005": {
@@ -106,9 +101,9 @@
     "SC04_SH001": {
       "WICK": {
         "in_frame": 269,
-        "clear_frac": 0.0,
+        "clear_frac": 0.88,
         "blockers": {
-          "STREETS_coping": 269
+          "STREETS_coping": 32
         }
       }
     },
@@ -123,10 +118,11 @@
     },
     "SC04_SH003": {
       "WICK": {
-        "in_frame": 253,
-        "clear_frac": 0.04,
+        "in_frame": 256,
+        "clear_frac": 0.97,
         "blockers": {
-          "STALL_leg1": 243
+          "KEY_shaft.001": 4,
+          "KEY_tooth1.001": 3
         }
       }
     },
@@ -257,24 +253,16 @@
     "SC07_SH008": {},
     "SC08_SH001": {
       "WICK": {
-        "in_frame": 269,
-        "clear_frac": 0.0,
+        "in_frame": 237,
+        "clear_frac": 0.77,
         "blockers": {
-          "TOWER_shell": 269
+          "GAUGE_rim.001": 23,
+          "GAUGE_dial.001": 32
         }
       }
     },
     "SC08_SH002": {},
-    "SC08_SH003": {
-      "WICK": {
-        "in_frame": 62,
-        "clear_frac": 0.0,
-        "blockers": {
-          "BURNER_body": 33,
-          "TOWER_chamber_floor": 29
-        }
-      }
-    },
+    "SC08_SH003": {},
     "SC08_SH004": {},
     "SC08_SH005": {
       "WICK": {
@@ -303,44 +291,38 @@
     "SC09_SH002": {
       "SHIP": {
         "in_frame": 70,
-        "clear_frac": 0.0,
-        "blockers": {
-          "TOWER_shell": 70
-        }
+        "clear_frac": 1.0,
+        "blockers": {}
       }
     },
     "SC09_SH003": {
       "WICK": {
         "in_frame": 269,
-        "clear_frac": 0.0,
-        "blockers": {
-          "TOWER_shell": 269
-        }
+        "clear_frac": 1.0,
+        "blockers": {}
       }
     },
     "SC10_SH001": {
       "WICK": {
-        "in_frame": 230,
-        "clear_frac": 0.1,
+        "in_frame": 224,
+        "clear_frac": 0.98,
         "blockers": {
-          "TOWER_chamber_floor": 206
+          "BURNER_body": 4
         }
       }
     },
     "SC10_SH002": {
       "WICK": {
-        "in_frame": 269,
-        "clear_frac": 0.0,
+        "in_frame": 173,
+        "clear_frac": 0.82,
         "blockers": {
-          "BURNER_body": 269
+          "BURNER_body": 32
         }
       },
       "CHILD": {
-        "in_frame": 117,
-        "clear_frac": 0.0,
-        "blockers": {
-          "BURNER_body": 117
-        }
+        "in_frame": 99,
+        "clear_frac": 1.0,
+        "blockers": {}
       }
     },
     "SC10_SH003": {},
@@ -356,118 +338,5 @@
       }
     }
   },
-  "defects": [
-    {
-      "shot_id": "SC02_SH006",
-      "scene_id": "SC02",
-      "subject": "WICK",
-      "clear_frac": 0.23,
-      "blockers": {
-        "PLAZA_quay": 206
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC03_SH001",
-      "scene_id": "SC03",
-      "subject": "WICK",
-      "clear_frac": 0.28,
-      "blockers": {
-        "PLAZA_quay": 193,
-        "GAUGE_rim": 2
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC03_SH004",
-      "scene_id": "SC03",
-      "subject": "WICK",
-      "clear_frac": 0.24,
-      "blockers": {
-        "PLAZA_quay": 199
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC04_SH001",
-      "scene_id": "SC04",
-      "subject": "WICK",
-      "clear_frac": 0.0,
-      "blockers": {
-        "STREETS_coping": 269
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC04_SH003",
-      "scene_id": "SC04",
-      "subject": "WICK",
-      "clear_frac": 0.04,
-      "blockers": {
-        "STALL_leg1": 243
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC08_SH001",
-      "scene_id": "SC08",
-      "subject": "WICK",
-      "clear_frac": 0.0,
-      "blockers": {
-        "TOWER_shell": 269
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC08_SH003",
-      "scene_id": "SC08",
-      "subject": "WICK",
-      "clear_frac": 0.0,
-      "blockers": {
-        "BURNER_body": 33,
-        "TOWER_chamber_floor": 29
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC09_SH002",
-      "scene_id": "SC09",
-      "subject": "SHIP",
-      "clear_frac": 0.0,
-      "blockers": {
-        "TOWER_shell": 70
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC09_SH003",
-      "scene_id": "SC09",
-      "subject": "WICK",
-      "clear_frac": 0.0,
-      "blockers": {
-        "TOWER_shell": 269
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC10_SH001",
-      "scene_id": "SC10",
-      "subject": "WICK",
-      "clear_frac": 0.1,
-      "blockers": {
-        "TOWER_chamber_floor": 206
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    },
-    {
-      "shot_id": "SC10_SH002",
-      "scene_id": "SC10",
-      "subject": "CHILD",
-      "clear_frac": 0.0,
-      "blockers": {
-        "BURNER_body": 117
-      },
-      "note": "subject in frame but line of sight blocked - fix camera before final render"
-    }
-  ]
+  "defects": []
 }

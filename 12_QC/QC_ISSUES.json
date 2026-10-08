@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-08T17:21:00+00:00",
+  "issues": [
+    {
+      "severity": "MINOR",
+      "domain": "audio",
+      "problem": "integrated -16.34 LUFS vs -16.0 target: true-peak ceiling -1.5 dBTP binds first; within ±0.5 LU tolerance; final mix uses a true-peak limiter to reach exact -16.0",
+      "status": "DOCUMENTED",
+      "detail": ""
+    },
+    {
+      "severity": "MINOR",
+      "domain": "technical",
+      "problem": "ERR-0003: no cloud/JANCTION renderer in this runtime; finals render on pypi bpy Cycles CPU (documented, MITIGATED)",
+      "status": "DOCUMENTED",
+      "detail": ""
+    },
+    {
+      "severity": "MINOR",
+      "domain": "audio",
+      "problem": "130 assets tiled in the numpy measurement mix; final mix loops beds properly at T12",
+      "status": "DOCUMENTED",
+      "detail": ""
+    }
+  ]
+}

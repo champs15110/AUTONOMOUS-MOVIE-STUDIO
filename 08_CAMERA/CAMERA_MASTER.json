@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "task_id": "T07_CAMERA",
   "project_id": "AMS-2026-001",
-  "created_utc": "2026-10-08T16:54:40Z",
+  "created_utc": "2026-10-08T17:21:25Z",
   "master_axis": "Master line of action: the sea and the returning ship sit FRAME RIGHT; the tower sits FRAME LEFT. WICK's journey runs frame RIGHT to LEFT. The climb runs vertically with the tower wall to the left. After the ignition the payoff looks back FRAME RIGHT to the sea. No shot crosses this axis without a neutral macro or POV buffer.",
   "counts": {
     "VERIFIED": 58
@@ -895,17 +895,17 @@
       "framing": {
         "lens_mm": 40.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.439,
-        "dist_to_subject_m": 1.8
+        "subject_scale_fraction": 0.4348,
+        "dist_to_subject_m": 1.817
       },
       "camera_end": {
         "loc": [
           -0.35,
           -0.6,
-          0.0
+          0.25
         ],
         "rot_deg": [
-          90.0,
+          82.09,
           0.0,
           -0.0
         ]
@@ -924,7 +924,7 @@
         "composition": "medium profile; she crosses and exits frame L on the footfall",
         "screen_direction": "travels frame L (journey axis)"
       },
-      "direction_note": "Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction).",
+      "direction_note": "Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction). QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -939,7 +939,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.439 in [0.2, 0.7]",
+          "check": "subject scale 0.435 in [0.2, 0.7]",
           "passed": true
         },
         {
@@ -955,11 +955,11 @@
           "passed": true
         },
         {
-          "check": "focus 1.80m ~ subject 1.80m",
+          "check": "focus 1.82m ~ subject 1.82m",
           "passed": true
         },
         {
-          "check": "no clipping (min 2.06m to geometry)",
+          "check": "no clipping (min 1.98m to geometry)",
           "passed": true
         },
         {
@@ -975,17 +975,17 @@
       "framing": {
         "lens_mm": 40.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.5267,
-        "dist_to_subject_m": 1.5
+        "subject_scale_fraction": 0.5196,
+        "dist_to_subject_m": 1.521
       },
       "camera_end": {
         "loc": [
           -2.7,
           -1.0,
-          0.0
+          0.25
         ],
         "rot_deg": [
-          90.0,
+          80.54,
           0.0,
           -0.0
         ]
@@ -1004,7 +1004,7 @@
         "composition": "lateral tracking; gauge held in frame as she moves R->L",
         "screen_direction": "travels frame L"
       },
-      "direction_note": "Lateral dolly at her height matching her stride: the camera walks with her, motivated by her walk.",
+      "direction_note": "Lateral dolly at her height matching her stride: the camera walks with her, motivated by her walk. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -1019,7 +1019,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.527 in [0.2, 0.8]",
+          "check": "subject scale 0.520 in [0.2, 0.8]",
           "passed": true
         },
         {
@@ -1035,11 +1035,11 @@
           "passed": true
         },
         {
-          "check": "focus 1.50m ~ subject 1.50m",
+          "check": "focus 1.52m ~ subject 1.52m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.62m to geometry)",
+          "check": "no clipping (min 1.57m to geometry)",
           "passed": true
         },
         {
@@ -1215,17 +1215,17 @@
       "framing": {
         "lens_mm": 40.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.5644,
-        "dist_to_subject_m": 1.4
+        "subject_scale_fraction": 0.5556,
+        "dist_to_subject_m": 1.422
       },
       "camera_end": {
         "loc": [
           -2.5,
           -0.9,
-          0.0
+          0.25
         ],
         "rot_deg": [
-          90.0,
+          79.88,
           0.0,
           -0.0
         ]
@@ -1244,7 +1244,7 @@
         "composition": "medium tracking; lamp posts strobe the foreground",
         "screen_direction": "travels frame L"
       },
-      "direction_note": "Tracking medium; foreground poles strobe past - rhythm from the dolly matched to her stride.",
+      "direction_note": "Tracking medium; foreground poles strobe past - rhythm from the dolly matched to her stride. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -1259,7 +1259,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.564 in [0.2, 0.8]",
+          "check": "subject scale 0.556 in [0.2, 0.8]",
           "passed": true
         },
         {
@@ -1275,11 +1275,11 @@
           "passed": true
         },
         {
-          "check": "focus 1.40m ~ subject 1.40m",
+          "check": "focus 1.42m ~ subject 1.42m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.48m to geometry)",
+          "check": "no clipping (min 1.42m to geometry)",
           "passed": true
         },
         {
@@ -1375,17 +1375,17 @@
       "framing": {
         "lens_mm": 24.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.0846,
-        "dist_to_subject_m": 5.601
+        "subject_scale_fraction": 0.0845,
+        "dist_to_subject_m": 5.613
       },
       "camera_end": {
         "loc": [
           -2.0,
           -4.0,
-          0.18
+          0.68
         ],
         "rot_deg": [
-          91.23,
+          86.12,
           0.0,
           -0.0
         ]
@@ -1404,7 +1404,7 @@
         "composition": "wide low; water fills the lower half, she at the right edge",
         "screen_direction": "faces frame L"
       },
-      "direction_note": "Wide at water level: the flood is the reveal. Static.",
+      "direction_note": "Wide at water level: the flood is the reveal. Static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -1419,7 +1419,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.085 in [0.02, 0.2]",
+          "check": "subject scale 0.084 in [0.02, 0.2]",
           "passed": true
         },
         {
@@ -1435,11 +1435,11 @@
           "passed": true
         },
         {
-          "check": "focus 5.60m ~ subject 5.60m",
+          "check": "focus 5.61m ~ subject 5.61m",
           "passed": true
         },
         {
-          "check": "no clipping (min 2.16m to geometry)",
+          "check": "no clipping (min 2.19m to geometry)",
           "passed": true
         },
         {
@@ -1540,14 +1540,14 @@
       },
       "camera_end": {
         "loc": [
-          -0.9,
-          1.6,
+          -0.933,
+          1.982,
           0.15
         ],
         "rot_deg": [
           90.0,
           0.0,
-          90.0
+          100.0
         ]
       },
       "motion": "hold",
@@ -1564,7 +1564,7 @@
         "composition": "profile; the railing a hard horizontal line, she above it",
         "screen_direction": "travels frame L"
       },
-      "direction_note": "Static profile from the sea side; she crosses frame. The line gives the traverse legibility.",
+      "direction_note": "Static profile from the sea side; she crosses frame. The line gives the traverse legibility. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -1599,7 +1599,7 @@
           "passed": true
         },
         {
-          "check": "no clipping (min 0.56m to geometry)",
+          "check": "no clipping (min 0.65m to geometry)",
           "passed": true
         },
         {
@@ -3455,19 +3455,19 @@
       "framing": {
         "lens_mm": 18.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.812,
-        "dist_to_subject_m": 2.627
+        "subject_scale_fraction": 1.3353,
+        "dist_to_subject_m": 1.598
       },
       "camera_end": {
         "loc": [
-          2.2,
-          -1.8,
-          12.15
+          1.9,
+          0.0,
+          12.25
         ],
         "rot_deg": [
-          104.32,
+          110.14,
           0.0,
-          45.0
+          90.0
         ]
       },
       "motion": "hold",
@@ -3484,7 +3484,7 @@
         "composition": "wide; she is tiny in an enormous brass room",
         "screen_direction": "faces the burner"
       },
-      "direction_note": "Wide from the chamber floor: scale contrast is the whole shot. Static.",
+      "direction_note": "Wide from the chamber floor: scale contrast is the whole shot. Static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -3499,7 +3499,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.812 in [0.3, 1.4]",
+          "check": "subject scale 1.335 in [0.3, 1.4]",
           "passed": true
         },
         {
@@ -3515,11 +3515,11 @@
           "passed": true
         },
         {
-          "check": "focus 2.63m ~ subject 2.63m",
+          "check": "focus 1.60m ~ subject 1.60m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.70m to geometry)",
+          "check": "no clipping (min 0.76m to geometry)",
           "passed": true
         },
         {
@@ -3620,14 +3620,14 @@
       },
       "camera_end": {
         "loc": [
-          -0.3,
-          -0.0,
+          -0.26,
+          -0.15,
           12.0
         ],
         "rot_deg": [
           90.0,
           0.0,
-          -90.0
+          -60.0
         ]
       },
       "motion": "hold",
@@ -3644,7 +3644,7 @@
         "composition": "tight on the spark and the cold brass; the gap is the subject",
         "screen_direction": "reaches"
       },
-      "direction_note": "Static tight at burner level: the gap between spark and brass is the point.",
+      "direction_note": "Static tight at burner level: the gap between spark and brass is the point. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -4095,17 +4095,17 @@
       "framing": {
         "lens_mm": 300.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.5703,
-        "dist_to_subject_m": 64.945
+        "subject_scale_fraction": 0.5689,
+        "dist_to_subject_m": 65.103
       },
       "camera_end": {
         "loc": [
           0.0,
           -1.0,
-          13.8
+          14.55
         ],
         "rot_deg": [
-          78.18,
+          77.54,
           0.0,
           -70.71
         ]
@@ -4124,7 +4124,7 @@
         "composition": "extreme long lens; the ship tiny; its turn small and easy to miss",
         "screen_direction": "the ship turns frame L (to harbour)"
       },
-      "direction_note": "300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it.",
+      "direction_note": "300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -4139,7 +4139,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.570 in [0.25, 0.9]",
+          "check": "subject scale 0.569 in [0.25, 0.9]",
           "passed": true
         },
         {
@@ -4155,11 +4155,11 @@
           "passed": true
         },
         {
-          "check": "focus 64.95m ~ subject 64.95m",
+          "check": "focus 65.10m ~ subject 65.10m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.04m to geometry)",
+          "check": "no clipping (min 1.06m to geometry)",
           "passed": true
         },
         {
@@ -4180,14 +4180,14 @@
       },
       "camera_end": {
         "loc": [
-          0.9,
-          -1.6,
+          0.622,
+          -1.576,
           12.3
         ],
         "rot_deg": [
           79.38,
           0.0,
-          -0.0
+          -10.0
         ]
       },
       "motion": "push_in",
@@ -4204,7 +4204,7 @@
         "composition": "wide as the light dies, then a slow push to her silhouette",
         "screen_direction": "to her"
       },
-      "direction_note": "One continuous move: the beacon dies behind the push and the push finds her at the burner's foot. Dawn.",
+      "direction_note": "One continuous move: the beacon dies behind the push and the push finds her at the burner's foot. Dawn. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -4227,7 +4227,7 @@
           "passed": true
         },
         {
-          "check": "screen direction sea-frame-right (dot +1.00)",
+          "check": "screen direction sea-frame-right (dot +0.98)",
           "passed": true
         },
         {
@@ -4239,7 +4239,7 @@
           "passed": true
         },
         {
-          "check": "no clipping (min 1.84m to geometry)",
+          "check": "no clipping (min 1.70m to geometry)",
           "passed": true
         },
         {
@@ -4255,17 +4255,17 @@
       "framing": {
         "lens_mm": 50.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.657,
-        "dist_to_subject_m": 1.503
+        "subject_scale_fraction": 0.6552,
+        "dist_to_subject_m": 1.507
       },
       "camera_end": {
         "loc": [
           0.6,
           -1.5,
-          11.9
+          12.15
         ],
         "rot_deg": [
-          93.81,
+          84.29,
           0.0,
           -0.0
         ]
@@ -4284,7 +4284,7 @@
         "composition": "medium held; her shell at the foot of the burner, held long",
         "screen_direction": "static"
       },
-      "direction_note": "Low medium, held long enough to be uncomfortable. Do not soften; static.",
+      "direction_note": "Low medium, held long enough to be uncomfortable. Do not soften; static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -4299,7 +4299,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.657 in [0.25, 0.9]",
+          "check": "subject scale 0.655 in [0.25, 0.9]",
           "passed": true
         },
         {
@@ -4315,11 +4315,11 @@
           "passed": true
         },
         {
-          "check": "focus 1.50m ~ subject 1.50m",
+          "check": "focus 1.51m ~ subject 1.51m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.02m to geometry)",
+          "check": "no clipping (min 0.95m to geometry)",
           "passed": true
         },
         {
@@ -4335,19 +4335,19 @@
       "framing": {
         "lens_mm": 35.0,
         "fstop": 5.6,
-        "subject_scale_fraction": 0.6151,
-        "dist_to_subject_m": 3.091
+        "subject_scale_fraction": 0.7762,
+        "dist_to_subject_m": 2.449
       },
       "camera_end": {
         "loc": [
-          -1.2,
-          0.8,
-          12.25
+          -0.4,
+          -1.9,
+          12.3
         ],
         "rot_deg": [
-          87.22,
+          85.32,
           0.0,
-          -114.9
+          -55.01
         ]
       },
       "motion": "hold",
@@ -4364,7 +4364,7 @@
         "composition": "wide interior; the child a silhouette in the doorway",
         "screen_direction": "child enters from the doorway"
       },
-      "direction_note": "Wide from inside the chamber, low: the child enters backlit as a silhouette. Static.",
+      "direction_note": "Wide from inside the chamber, low: the child enters backlit as a silhouette. Static. QC-13 nudge: camera re-placed for clear subject line of sight (ERR-0004 fix), framing window kept.",
       "checks": [
         {
           "check": "camera present",
@@ -4379,7 +4379,7 @@
           "passed": true
         },
         {
-          "check": "subject scale 0.615 in [0.2, 0.9]",
+          "check": "subject scale 0.776 in [0.2, 0.9]",
           "passed": true
         },
         {
@@ -4395,11 +4395,11 @@
           "passed": true
         },
         {
-          "check": "focus 3.09m ~ subject 3.09m",
+          "check": "focus 2.45m ~ subject 2.45m",
           "passed": true
         },
         {
-          "check": "no clipping (min 1.46m to geometry)",
+          "check": "no clipping (min 1.74m to geometry)",
           "passed": true
         },
         {
