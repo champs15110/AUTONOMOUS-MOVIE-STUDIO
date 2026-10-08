@@ -1,0 +1,4652 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "T07_CAMERA",
+  "project_id": "AMS-2026-001",
+  "created_utc": "2026-10-08T01:02:06Z",
+  "master_axis": "Master line of action: the sea and the returning ship sit FRAME RIGHT; the tower sits FRAME LEFT. WICK's journey runs frame RIGHT to LEFT. The climb runs vertically with the tower wall to the left. After the ignition the payoff looks back FRAME RIGHT to the sea. No shot crosses this axis without a neutral macro or POV buffer.",
+  "counts": {
+    "VERIFIED": 58
+  },
+  "shots": [
+    {
+      "shot_id": "SC01_SH001",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 2.4691,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          0.2,
+          -0.415,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1,
+        132
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest-height of a 40cm machine (macro)",
+        "camera_motion": "locked-off. Motivation: nothing moves but the key, so the camera must not add motion.",
+        "composition": "centre-weighted macro; the key is the entire frame",
+        "screen_direction": "static; no travel"
+      },
+      "direction_note": "ECU macro on the slipping key, dead-on from her back side. Locked off: nothing moves but the key.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1-132",
+          "passed": true
+        },
+        {
+          "check": "subject scale 2.469 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.78m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC01_SH002",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.4444,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          0.4,
+          -0.595,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "push_in",
+      "frames": [
+        133,
+        216
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "very slight push-in. Motivation: the audience leans toward the failure.",
+        "composition": "rule-of-thirds; the shearing tooth at an upper intersection",
+        "screen_direction": "static"
+      },
+      "direction_note": "Macro on 92. Very slight push-in - the audience leans toward the failure; 2cm total.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 133-216",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.444 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'push_in' licensed by plan ('push(-in)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.12m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.56m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC01_SH003",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.4444,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          0.4,
+          -0.595,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        217,
+        336
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "static. Motivation: the first true stillness lets the number land.",
+        "composition": "centred gauge; the number 92 dead-centre",
+        "screen_direction": "static"
+      },
+      "direction_note": "Static macro. The first true stillness lets the number land.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 217-336",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.444 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.58m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC01_SH004",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 24.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.025,
+        "dist_to_subject_m": 18.974
+      },
+      "camera_end": {
+        "loc": [
+          0.3,
+          -18.5,
+          6.0
+        ],
+        "rot_deg": [
+          71.57,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "crane_back_up",
+      "frames": [
+        337,
+        528
+      ],
+      "keys": 15,
+      "plan": {
+        "shot_type": "extreme wide",
+        "lens_intention": "24mm",
+        "camera_height": "rising from her eye height to a high crane",
+        "camera_motion": "slow continuous crane back and up. Motivation: the world is the reveal; the move is the reveal.",
+        "composition": "reveal: subject low-centre, vast negative space above",
+        "screen_direction": "static frame; she is still"
+      },
+      "direction_note": "The reveal: one continuous crane back and up, macro-ish to extreme wide. Unhurried so the scale change reads as a single thought.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 24mm == plan 24mm",
+          "passed": true
+        },
+        {
+          "check": "all 42 camera keys within 337-528",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.025 in [0.005, 0.08]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 20.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'crane_back_up' licensed by plan ('crane')",
+          "passed": true
+        },
+        {
+          "check": "focus 18.97m ~ subject 18.97m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.74m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC01_SH005",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.6348,
+        "dist_to_subject_m": 0.35
+      },
+      "camera_end": {
+        "loc": [
+          0.65,
+          -0.494,
+          0.315
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "micro_drift",
+      "frames": [
+        529,
+        648
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "close-up",
+        "lens_intention": "50mm",
+        "camera_height": "her eye height (~0.35m)",
+        "camera_motion": "handheld micro-drift. Motivation: a living, breathing (ticking) machine.",
+        "composition": "close, head-centred; eyes on the top third",
+        "screen_direction": "eyeline: gauge down, tower up/left"
+      },
+      "direction_note": "CU at her eye height. One slow 6mm drift across the whole shot - a living ticking machine, not handheld noise.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 529-648",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.635 in [0.3, 1.0]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (1.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'micro_drift' licensed by plan ('handheld')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.35m ~ subject 0.35m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.32m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC01_SH006",
+      "scene_id": "SC01",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.7969,
+        "dist_to_subject_m": 8.676
+      },
+      "camera_end": {
+        "loc": [
+          0.3,
+          -0.6,
+          0.35
+        ],
+        "rot_deg": [
+          175.57,
+          0.0,
+          26.57
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        649,
+        768
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "POV wide",
+        "lens_intention": "35mm",
+        "camera_height": "her eye height",
+        "camera_motion": "static. Motivation: it is her gaze, not a camera idea.",
+        "composition": "her POV; tower small at the left-third horizon line",
+        "screen_direction": "looks frame L"
+      },
+      "direction_note": "POV wide: her gaze up the tower to the dark beacon. Static - it is her gaze, not a camera idea.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 649-768",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.797 in [0.5, 1.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 8.68m ~ subject 8.68m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.62m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH001",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4318,
+        "dist_to_subject_m": 1.601
+      },
+      "camera_end": {
+        "loc": [
+          -0.3,
+          -0.3,
+          1.16
+        ],
+        "rot_deg": [
+          87.85,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        769,
+        924
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium low",
+        "lens_intention": "35mm",
+        "camera_height": "ankle-height of a human / her full height",
+        "camera_motion": "static. Motivation: the habit is the point; no motion needed.",
+        "composition": "low medium; the pillar looms over her, apex off-frame",
+        "screen_direction": "static"
+      },
+      "direction_note": "Medium low (ankle height) covering her full height; static. The habit is the point.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 769-924",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.432 in [0.2, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.60m ~ subject 1.60m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.78m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH002",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 2.4691,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          -0.1,
+          1.285,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        925,
+        1032
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro / insert",
+        "lens_intention": "100mm macro",
+        "camera_height": "back height",
+        "camera_motion": "static. Motivation: the repetition of the failure is the content; the camera gives no help.",
+        "composition": "macro socket centred; the worn teeth on the lower third",
+        "screen_direction": "static"
+      },
+      "direction_note": "Back-height macro insert, identical grammar to SC01_SH001: the repetition of failure is the content.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 925-1032",
+          "passed": true
+        },
+        {
+          "check": "subject scale 2.469 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.27m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH003",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 200.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.3705,
+        "dist_to_subject_m": 66.642
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          1.0,
+          0.35
+        ],
+        "rot_deg": [
+          90.39,
+          0.0,
+          -64.2
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1033,
+        1176
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme wide",
+        "lens_intention": "200mm",
+        "camera_height": "her eye height",
+        "camera_motion": "held. Motivation: the ship is distant and slow; motion would falsify it.",
+        "composition": "extreme long lens; the running light a point on the right-third",
+        "screen_direction": "looks frame R"
+      },
+      "direction_note": "ELS 200mm: the returning ship, frame RIGHT on the master axis. Held - motion would falsify its distance.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 200mm == plan 200mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1033-1176",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.371 in [0.15, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 2.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.44)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 66.64m ~ subject 66.64m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.16m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH004",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 18.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.7182,
+        "dist_to_subject_m": 11.138
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          -8.0,
+          0.25
+        ],
+        "rot_deg": [
+          134.09,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1177,
+        1320
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide",
+        "lens_intention": "18mm",
+        "camera_height": "waterline (very low)",
+        "camera_motion": "static. Motivation: let the height be felt, not pushed.",
+        "composition": "wide; tower leans from the left edge, sky dominant",
+        "screen_direction": "the destination frame L"
+      },
+      "direction_note": "18mm at the waterline looking up the tower. Static: the height is felt, not pushed.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 18mm == plan 18mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1177-1320",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.718 in [0.4, 1.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 26.4deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 11.14m ~ subject 11.14m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 8.75m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH005",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.8395,
+        "dist_to_subject_m": 0.45
+      },
+      "camera_end": {
+        "loc": [
+          0.39,
+          0.975,
+          0.315
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          60.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1321,
+        1440
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "close-up",
+        "lens_intention": "85mm",
+        "camera_height": "chest height",
+        "camera_motion": "static. Motivation: the reflection completes the three-point eyeline.",
+        "composition": "close; gauge lower-third, tower reflected in the lenses above",
+        "screen_direction": "reflection frame L"
+      },
+      "direction_note": "CU 85mm, chest height. Static: the reflection completes the three-point eyeline.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1321-1440",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.840 in [0.3, 1.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.45m ~ subject 0.45m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.54m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC02_SH006",
+      "scene_id": "SC02",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 40.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.439,
+        "dist_to_subject_m": 1.8
+      },
+      "camera_end": {
+        "loc": [
+          -0.35,
+          -0.6,
+          0.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1441,
+        1560
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium",
+        "lens_intention": "40mm",
+        "camera_height": "her eye height",
+        "camera_motion": "static; she provides the motion and exits frame L. Motivation: cut on the step, not after it.",
+        "composition": "medium profile; she crosses and exits frame L on the footfall",
+        "screen_direction": "travels frame L (journey axis)"
+      },
+      "direction_note": "Medium at her eye height; static - she provides the motion and exits frame LEFT (tower direction).",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 40mm == plan 40mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1441-1560",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.439 in [0.2, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 12.8deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.80m ~ subject 1.80m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.06m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC03_SH001",
+      "scene_id": "SC03",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 40.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5267,
+        "dist_to_subject_m": 1.5
+      },
+      "camera_end": {
+        "loc": [
+          -2.7,
+          -1.0,
+          0.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "dolly",
+      "frames": [
+        1561,
+        1704
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "tracking medium",
+        "lens_intention": "40mm",
+        "camera_height": "her eye height",
+        "camera_motion": "lateral dolly at her height, matching her stride. Motivation: keep the gauge legible while she travels.",
+        "composition": "lateral tracking; gauge held in frame as she moves R->L",
+        "screen_direction": "travels frame L"
+      },
+      "direction_note": "Lateral dolly at her height matching her stride: the camera walks with her, motivated by her walk.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 40mm == plan 40mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1561-1704",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.527 in [0.2, 0.8]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 12.8deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'dolly' licensed by plan ('dolly')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.50m ~ subject 1.50m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.62m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC03_SH002",
+      "scene_id": "SC03",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.0404,
+        "dist_to_subject_m": 0.11
+      },
+      "camera_end": {
+        "loc": [
+          -1.485,
+          0.5,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        1705,
+        1824
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "insert",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "static. Motivation: locked insert grammar.",
+        "composition": "centred insert; identical gauge framing to SC01_SH003",
+        "screen_direction": "static"
+      },
+      "direction_note": "Locked insert grammar: chest macro, dead still.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1705-1824",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.040 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.11m ~ subject 0.11m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.28m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC03_SH003",
+      "scene_id": "SC03",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 24.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.0377,
+        "dist_to_subject_m": 12.578
+      },
+      "camera_end": {
+        "loc": [
+          -2.2,
+          -10.5,
+          6.1
+        ],
+        "rot_deg": [
+          60.99,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "push_in",
+      "frames": [
+        1825,
+        1992
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "extreme wide",
+        "lens_intention": "24mm",
+        "camera_height": "high crane",
+        "camera_motion": "high crane, slow push. Motivation: the beauty pass is earned by height and patience.",
+        "composition": "high crane; the drowned town fills frame, WICK small lower-third",
+        "screen_direction": "away / frame L"
+      },
+      "direction_note": "High crane beauty pass with a slow push - the height is earned, the move glacial.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 24mm == plan 24mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1825-1992",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.038 in [0.005, 0.1]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 20.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'push_in' licensed by plan ('push(-in)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 12.58m ~ subject 12.58m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 11.86m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC03_SH004",
+      "scene_id": "SC03",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 40.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5644,
+        "dist_to_subject_m": 1.4
+      },
+      "camera_end": {
+        "loc": [
+          -2.5,
+          -0.9,
+          0.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "dolly",
+      "frames": [
+        1993,
+        2112
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "tracking medium",
+        "lens_intention": "40mm",
+        "camera_height": "her eye height",
+        "camera_motion": "tracking; foreground poles strobe past. Motivation: rhythm and the row of dead lamps.",
+        "composition": "medium tracking; lamp posts strobe the foreground",
+        "screen_direction": "travels frame L"
+      },
+      "direction_note": "Tracking medium; foreground poles strobe past - rhythm from the dolly matched to her stride.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 40mm == plan 40mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 1993-2112",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.564 in [0.2, 0.8]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 12.8deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'dolly' licensed by plan ('tracking')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.40m ~ subject 1.40m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.48m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC03_SH005",
+      "scene_id": "SC03",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4857,
+        "dist_to_subject_m": 3.559
+      },
+      "camera_end": {
+        "loc": [
+          -1.25,
+          0.5,
+          0.15
+        ],
+        "rot_deg": [
+          85.97,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2113,
+        2208
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "over-shoulder",
+        "lens_intention": "35mm",
+        "camera_height": "her eye height",
+        "camera_motion": "static hold on the water. Motivation: the water is the next obstacle; let it be seen.",
+        "composition": "over-shoulder; black water ahead fills the frame",
+        "screen_direction": "faces frame L"
+      },
+      "direction_note": "OTS: over her shoulder at the edge, holding on the black water - the next obstacle. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2113-2208",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.486 in [0.05, 0.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (11.2deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 3.56m ~ subject 3.56m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.41m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH001",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 24.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.0846,
+        "dist_to_subject_m": 5.601
+      },
+      "camera_end": {
+        "loc": [
+          -2.0,
+          -4.0,
+          0.18
+        ],
+        "rot_deg": [
+          91.23,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2209,
+        2328
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide low",
+        "lens_intention": "24mm",
+        "camera_height": "water level",
+        "camera_motion": "static. Motivation: the flood is the reveal.",
+        "composition": "wide low; water fills the lower half, she at the right edge",
+        "screen_direction": "faces frame L"
+      },
+      "direction_note": "Wide at water level: the flood is the reveal. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 24mm == plan 24mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2209-2328",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.085 in [0.02, 0.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 20.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 5.60m ~ subject 5.60m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.16m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH002",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5486,
+        "dist_to_subject_m": 1.8
+      },
+      "camera_end": {
+        "loc": [
+          -1.97,
+          -0.2,
+          0.7
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "micro_drift",
+      "frames": [
+        2329,
+        2460
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium",
+        "lens_intention": "50mm",
+        "camera_height": "her height, handheld",
+        "camera_motion": "handheld instability. Motivation: the effort should feel unstable.",
+        "composition": "tight at her height on the stall climb",
+        "screen_direction": "climbs frame L/up"
+      },
+      "direction_note": "Medium at her height. Motivated instability: ONE slow 3cm drift - the effort feels unstable without fake shake.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2329-2460",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.549 in [0.25, 0.8]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (1.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'micro_drift' licensed by plan ('handheld')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.80m ~ subject 1.80m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.96m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH003",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4489,
+        "dist_to_subject_m": 2.2
+      },
+      "camera_end": {
+        "loc": [
+          -0.9,
+          1.6,
+          0.15
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2461,
+        2568
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "profile medium",
+        "lens_intention": "50mm",
+        "camera_height": "her height",
+        "camera_motion": "static profile; she crosses. Motivation: the line gives the traverse legibility.",
+        "composition": "profile; the railing a hard horizontal line, she above it",
+        "screen_direction": "travels frame L"
+      },
+      "direction_note": "Static profile from the sea side; she crosses frame. The line gives the traverse legibility.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2461-2568",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.449 in [0.2, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 2.20m ~ subject 2.20m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.56m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH004",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5286,
+        "dist_to_subject_m": 1.308
+      },
+      "camera_end": {
+        "loc": [
+          -2.0,
+          0.4,
+          0.02
+        ],
+        "rot_deg": [
+          66.57,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "descend",
+      "frames": [
+        2569,
+        2712
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "underwater",
+        "lens_intention": "35mm",
+        "camera_height": "below the surface, looking up",
+        "camera_motion": "goes under with her. Motivation: the drop must be felt, not observed.",
+        "composition": "underwater; the bright surface as a ceiling above",
+        "screen_direction": "down"
+      },
+      "direction_note": "The camera goes under with her - the drop must be felt, not observed.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2569-2712",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.529 in [0.1, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'descend' licensed by plan ('goes under')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.31m ~ subject 1.31m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.28m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH005",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.8704,
+        "dist_to_subject_m": 0.794
+      },
+      "camera_end": {
+        "loc": [
+          -2.5,
+          1.2,
+          0.03
+        ],
+        "rot_deg": [
+          126.28,
+          0.0,
+          -51.34
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2713,
+        2832
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "low underwater",
+        "lens_intention": "35mm",
+        "camera_height": "lane floor, looking up",
+        "camera_motion": "static low; she rises past. Motivation: her glow is the only warm thing in the murk.",
+        "composition": "low underwater looking up at her amber eyes",
+        "screen_direction": "up"
+      },
+      "direction_note": "Static low from the lane floor looking up; she rises past. Her glow is the only warm thing.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2713-2832",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.870 in [0.3, 1.3]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.62)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.79m ~ subject 0.79m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.55m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC04_SH006",
+      "scene_id": "SC04",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.6945,
+        "dist_to_subject_m": 1.422
+      },
+      "camera_end": {
+        "loc": [
+          -2.0,
+          0.2,
+          0.75
+        ],
+        "rot_deg": [
+          79.88,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2833,
+        2928
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "tight medium",
+        "lens_intention": "50mm",
+        "camera_height": "coping level, low",
+        "camera_motion": "low and tight; water on the lens. Motivation: imperfect on purpose - she is damaged.",
+        "composition": "tight low; she breaks the surface and hauls onto the coping",
+        "screen_direction": "up / frame L"
+      },
+      "direction_note": "Low and tight at coping level; water on the lens (grade/VFX). Imperfect on purpose.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2833-2928",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.694 in [0.3, 0.9]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.42m ~ subject 1.42m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.33m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH001",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 28.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.0787,
+        "dist_to_subject_m": 7.024
+      },
+      "camera_end": {
+        "loc": [
+          0.5,
+          -2.5,
+          0.9
+        ],
+        "rot_deg": [
+          92.45,
+          0.0,
+          4.09
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        2929,
+        3048
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide",
+        "lens_intention": "28mm",
+        "camera_height": "gantry level, low",
+        "camera_motion": "static. Motivation: the destination must stay visible during the obstacle.",
+        "composition": "wide; the gantry a diagonal across frame, tower at its far (L) end",
+        "screen_direction": "crosses frame L"
+      },
+      "direction_note": "Wide, gantry level low: the destination stays visible during the obstacle. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 28mm == plan 28mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 2929-3048",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.079 in [0.02, 0.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 17.9deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 7.02m ~ subject 7.02m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.05m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH002",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4321,
+        "dist_to_subject_m": 1.6
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          2.9,
+          0.83
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        3049,
+        3180
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium low",
+        "lens_intention": "35mm",
+        "camera_height": "her height",
+        "camera_motion": "static; the gust supplies motion. Motivation: brace against, don't chase.",
+        "composition": "medium low; wind from camera-R bends the rain horizontal",
+        "screen_direction": "holds frame L against wind R"
+      },
+      "direction_note": "Medium at her height, static; the gust supplies the motion. Brace against, don't chase.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3049-3180",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.432 in [0.2, 0.7]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.60m ~ subject 1.60m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.27m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH003",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.1693,
+        "dist_to_subject_m": 5.832
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          2.7,
+          0.83
+        ],
+        "rot_deg": [
+          83.8,
+          0.0,
+          -57.68
+        ]
+      },
+      "motion": "pan_hold",
+      "frames": [
+        3181,
+        3288
+      ],
+      "keys": 7,
+      "plan": {
+        "shot_type": "medium, then hold on water",
+        "lens_intention": "50mm",
+        "camera_height": "gantry level",
+        "camera_motion": "follows the pole out of frame, then holds on the water. Motivation: the loss is the subject; the absence is held.",
+        "composition": "follow the pole out of frame; hold on empty water",
+        "screen_direction": "pole exits; she is left frame R of centre"
+      },
+      "direction_note": "Follows the pole out of frame with a pan, then holds on the water. The loss gets one clean move, then silence.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 18 camera keys within 3181-3288",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.169 in [0.05, 0.4]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.53)",
+          "passed": true
+        },
+        {
+          "check": "motion 'pan_hold' licensed by plan ('follow(s|ing)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 5.83m ~ subject 5.83m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.47m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH004",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.9444,
+        "dist_to_subject_m": 0.4
+      },
+      "camera_end": {
+        "loc": [
+          0.4,
+          4.5,
+          1.145
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        3289,
+        3432
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "close-up",
+        "lens_intention": "85mm",
+        "camera_height": "her height",
+        "camera_motion": "static, no cut. Motivation: the stillness IS the beat; wind drops for it.",
+        "composition": "close static; the whole decision in one frame",
+        "screen_direction": "hand, then frame L"
+      },
+      "direction_note": "CU, static, no cut: the stillness IS the beat; the wind drops for her.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3289-3432",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.944 in [0.4, 1.3]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.40m ~ subject 0.40m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.53m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH005",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.4444,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          0.005,
+          4.5,
+          1.03
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        3433,
+        3576
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "static. Motivation: protect the image; let it be looked at.",
+        "composition": "macro; the signature image - amber spark behind rain-streaked glass",
+        "screen_direction": "static"
+      },
+      "direction_note": "Chest macro, static. Protect the image; let it be looked at.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3433-3576",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.444 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.23m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH006",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 40.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5267,
+        "dist_to_subject_m": 1.5
+      },
+      "camera_end": {
+        "loc": [
+          -0.9,
+          3.0,
+          0.83
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "dolly",
+      "frames": [
+        3577,
+        3696
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "tracking medium",
+        "lens_intention": "40mm",
+        "camera_height": "her height",
+        "camera_motion": "tracking; the glow leads the frame. Motivation: the thing she shields is the light source.",
+        "composition": "tracking; the glow the brightest element",
+        "screen_direction": "travels frame L"
+      },
+      "direction_note": "Tracking medium; the shielded glow leads the frame. Dolly matched to her guarded walk.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 40mm == plan 40mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3577-3696",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.527 in [0.2, 0.8]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 12.8deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'dolly' licensed by plan ('tracking')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.50m ~ subject 1.50m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.89m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC05_SH007",
+      "scene_id": "SC05",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 3.7037,
+        "dist_to_subject_m": 0.12
+      },
+      "camera_end": {
+        "loc": [
+          0.025,
+          4.5,
+          1.03
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "rack",
+      "frames": [
+        3697,
+        3792
+      ],
+      "keys": 8,
+      "plan": {
+        "shot_type": "insert with rack focus",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "rack focus gauge->door. Motivation: hand SC06 its first image in a single move.",
+        "composition": "macro gauge, then rack to the door - one move",
+        "screen_direction": "faces frame L"
+      },
+      "direction_note": "Macro on the gauge, rack focus gauge->door (story-space anchor at the tower base): hands SC06 its first image in one move.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3697-3792",
+          "passed": true
+        },
+        {
+          "check": "subject scale 3.704 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'rack' licensed by plan ('rack')",
+          "passed": true
+        },
+        {
+          "check": "rack focus ends at target (4.98m ~ 4.98m)",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.23m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC06_SH001",
+      "scene_id": "SC06",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 24.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.8873,
+        "dist_to_subject_m": 4.541
+      },
+      "camera_end": {
+        "loc": [
+          3.5,
+          -2.5,
+          0.15
+        ],
+        "rot_deg": [
+          128.87,
+          0.0,
+          45.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        3793,
+        3912
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide low",
+        "lens_intention": "24mm",
+        "camera_height": "ground, looking up",
+        "camera_motion": "static. Motivation: compress her against the bottom edge.",
+        "composition": "wide low; the swollen door fills the frame above her",
+        "screen_direction": "faces frame L (the door)"
+      },
+      "direction_note": "Wide low looking up: compress her against the bottom edge under the tower. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 24mm == plan 24mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 3793-3912",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.887 in [0.3, 1.3]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 20.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 4.54m ~ subject 4.54m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.30m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC06_SH002",
+      "scene_id": "SC06",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.3223,
+        "dist_to_subject_m": 0.689
+      },
+      "camera_end": {
+        "loc": [
+          3.4,
+          -0.0,
+          0.665
+        ],
+        "rot_deg": [
+          47.58,
+          0.0,
+          100.76
+        ]
+      },
+      "motion": "whip",
+      "frames": [
+        3913,
+        4080
+      ],
+      "keys": 7,
+      "plan": {
+        "shot_type": "tight medium to insert",
+        "lens_intention": "50mm",
+        "camera_height": "her height",
+        "camera_motion": "tight, then a whip to the gauge. Motivation: the single fast move of the film is the cost.",
+        "composition": "tight on the effort, then whip to the gauge",
+        "screen_direction": "pushes frame L"
+      },
+      "direction_note": "Tight on her, then THE single fast move of the film: a 6-frame whip to the gauge at 55%. Motivated by the two-push failure.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 18 camera keys within 3913-4080",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.322 in [0.3, 1.0]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'whip' licensed by plan ('whip')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.69m ~ subject 0.69m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.99m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC06_SH003",
+      "scene_id": "SC06",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.4444,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          3.095,
+          -0.0,
+          0.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        4081,
+        4200
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "insert",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "dead still. Motivation: the quietest moment in the film.",
+        "composition": "centred insert; the needle crossing into the red arc",
+        "screen_direction": "static"
+      },
+      "direction_note": "Insert macro, dead still. The quietest moment in the film.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 4081-4200",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.444 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.08m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC06_SH004",
+      "scene_id": "SC06",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 18.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.6724,
+        "dist_to_subject_m": 4.627
+      },
+      "camera_end": {
+        "loc": [
+          1.9,
+          -0.4,
+          0.3
+        ],
+        "rot_deg": [
+          155.19,
+          0.0,
+          72.9
+        ]
+      },
+      "motion": "tilt_to",
+      "frames": [
+        4201,
+        4344
+      ],
+      "keys": 6,
+      "plan": {
+        "shot_type": "interior tilt-up",
+        "lens_intention": "18mm",
+        "camera_height": "her height, tilting up",
+        "camera_motion": "she enters; tilt up the stair, and keep tilting. Motivation: the tower's height in one move.",
+        "composition": "interior; she enters low, the stair tilts up out of frame",
+        "screen_direction": "up"
+      },
+      "direction_note": "Interior 18mm: she enters; tilt up the stair and keep tilting. The tower is a vertical promise.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 18mm == plan 18mm",
+          "passed": true
+        },
+        {
+          "check": "all 15 camera keys within 4201-4344",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.672 in [0.5, 2.0]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (2.2deg < 26.4deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'tilt_to' licensed by plan ('tilt')",
+          "passed": true
+        },
+        {
+          "check": "focus 4.63m ~ subject 4.63m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.45m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC06_SH005",
+      "scene_id": "SC06",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 1.6724,
+        "dist_to_subject_m": 2.067
+      },
+      "camera_end": {
+        "loc": [
+          1.0,
+          -0.8,
+          0.4
+        ],
+        "rot_deg": [
+          85.84,
+          0.0,
+          -67.17
+        ]
+      },
+      "motion": "cut_to",
+      "frames": [
+        4345,
+        4464
+      ],
+      "keys": 9,
+      "plan": {
+        "shot_type": "POV then reverse",
+        "lens_intention": "35mm",
+        "camera_height": "her height",
+        "camera_motion": "POV then reverse, two angles, no motion. Motivation: the gap is the information.",
+        "composition": "POV across the gap, then back to her",
+        "screen_direction": "POV across, then to her"
+      },
+      "direction_note": "POV at the socket, then in-shot hard cut to the reverse at 50%: two angles, no motion. The gap is the information.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 24 camera keys within 4345-4464",
+          "passed": true
+        },
+        {
+          "check": "subject scale 1.672 in [1.0, 5.0]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'cut_to' licensed by plan ('pov then reverse')",
+          "passed": true
+        },
+        {
+          "check": "focus 2.07m ~ subject 2.07m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.83m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH001",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 24.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.7342,
+        "dist_to_subject_m": 14.528
+      },
+      "camera_end": {
+        "loc": [
+          6.0,
+          -14.0,
+          8.0
+        ],
+        "rot_deg": [
+          86.05,
+          0.0,
+          15.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        4465,
+        4596
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme wide",
+        "lens_intention": "24mm",
+        "camera_height": "exterior, wide",
+        "camera_motion": "static. Motivation: she is a speck on a vertical; scale is the shot.",
+        "composition": "extreme wide; the tower a vertical line, sea white far below",
+        "screen_direction": "on the wall; climb begins up/left"
+      },
+      "direction_note": "EWS: she is a speck on a vertical. Scale is the shot; static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 24mm == plan 24mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 4465-4596",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.734 in [0.3, 1.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 20.6deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 14.53m ~ subject 14.53m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 14.51m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH002",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4623,
+        "dist_to_subject_m": 8.011
+      },
+      "camera_end": {
+        "loc": [
+          4.5,
+          -3.0,
+          7.0
+        ],
+        "rot_deg": [
+          29.09,
+          0.0,
+          30.7
+        ]
+      },
+      "motion": "tilt_to",
+      "frames": [
+        4597,
+        4728
+      ],
+      "keys": 6,
+      "plan": {
+        "shot_type": "follow then hold",
+        "lens_intention": "50mm",
+        "camera_height": "exterior",
+        "camera_motion": "follows the stair section down out of frame; holds on the void. Motivation: the last easy option leaves.",
+        "composition": "follow the iron down, hold on empty air",
+        "screen_direction": "down"
+      },
+      "direction_note": "Follows the torn stair section down out of frame with a tilt, then holds on the void. One motivated move, then nothing.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 15 camera keys within 4597-4728",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.462 in [0.1, 0.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.7deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.86)",
+          "passed": true
+        },
+        {
+          "check": "motion 'tilt_to' licensed by plan ('follow(s|ing)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 8.01m ~ subject 8.01m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 3.76m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH003",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.2765,
+        "dist_to_subject_m": 2.5
+      },
+      "camera_end": {
+        "loc": [
+          2.25,
+          -2.5,
+          8.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "crane_rise",
+      "frames": [
+        4729,
+        4920
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "rising track",
+        "lens_intention": "35mm",
+        "camera_height": "matching her ascent",
+        "camera_motion": "slow rising track matched to her climb. Motivation: height felt, not shown.",
+        "composition": "rising track; the horizon progressively tilts off-level",
+        "screen_direction": "up"
+      },
+      "direction_note": "Slow rising track matched to her six-reach climb - height felt, not stated.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 4729-4920",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.277 in [0.1, 0.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'crane_rise' licensed by plan ('rising track')",
+          "passed": true
+        },
+        {
+          "check": "focus 2.50m ~ subject 2.50m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.70m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH004",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 135.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.9243,
+        "dist_to_subject_m": 7.212
+      },
+      "camera_end": {
+        "loc": [
+          2.6,
+          0.3,
+          9.2
+        ],
+        "rot_deg": [
+          3.37,
+          0.0,
+          135.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        4921,
+        5064
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "long lens down",
+        "lens_intention": "135mm",
+        "camera_height": "her hand, looking down",
+        "camera_motion": "reveal the drop with a long lens. Motivation: the height is the danger.",
+        "composition": "long lens straight down the drop",
+        "screen_direction": "down"
+      },
+      "direction_note": "135mm looking down past her hand: the long lens reveals the drop as compressed danger. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 135mm == plan 135mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 4921-5064",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.924 in [0.3, 1.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 3.9deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 7.21m ~ subject 7.21m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.84m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH005",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5996,
+        "dist_to_subject_m": 0.35
+      },
+      "camera_end": {
+        "loc": [
+          2.103,
+          -0.047,
+          5.4
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -45.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5065,
+        5184
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "insert",
+        "lens_intention": "85mm",
+        "camera_height": "her reach",
+        "camera_motion": "insert then her hand - two frames, no exposition. Motivation: the earlier loss pays off mechanically.",
+        "composition": "insert: the wedged pole, then her hand closing on it",
+        "screen_direction": "reach"
+      },
+      "direction_note": "Insert on the wedged pole, then her hand enters frame - two frames, no exposition. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5065-5184",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.600 in [0.2, 1.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.35m ~ subject 0.35m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.62m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH006",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.7899,
+        "dist_to_subject_m": 1.25
+      },
+      "camera_end": {
+        "loc": [
+          2.925,
+          -1.169,
+          6.95
+        ],
+        "rot_deg": [
+          87.71,
+          0.0,
+          27.4
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5185,
+        5304
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "tight medium",
+        "lens_intention": "50mm",
+        "camera_height": "her height",
+        "camera_motion": "tight; the gauge rides the corner. Motivation: the cost must be visible during the win.",
+        "composition": "tight on the haul; the gauge kept in the corner of frame",
+        "screen_direction": "up"
+      },
+      "direction_note": "Tight medium with the gauge riding the corner (aim offset). The cost must be visible while she climbs.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5185-5304",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.790 in [0.5, 1.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (2.6deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.89)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.25m ~ subject 1.25m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.59m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH007",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 1.7172,
+        "dist_to_subject_m": 0.22
+      },
+      "camera_end": {
+        "loc": [
+          2.091,
+          -0.205,
+          6.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          60.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5305,
+        5400
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "abstract tight",
+        "lens_intention": "85mm",
+        "camera_height": "her hands",
+        "camera_motion": "very tight, almost abstract. Motivation: hold on the broken motion, don't cover it.",
+        "composition": "abstract tight: brass, rivets, rain - the world reduced",
+        "screen_direction": "up"
+      },
+      "direction_note": "Very tight on the hands, almost abstract. Hold on the broken motion; do not explain.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5305-5400",
+          "passed": true
+        },
+        {
+          "check": "subject scale 1.717 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.22m ~ subject 0.22m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.51m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC07_SH008",
+      "scene_id": "SC07",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4058,
+        "dist_to_subject_m": 1.704
+      },
+      "camera_end": {
+        "loc": [
+          3.0,
+          -1.5,
+          8.5
+        ],
+        "rot_deg": [
+          79.86,
+          0.0,
+          26.57
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5401,
+        5472
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium, held",
+        "lens_intention": "35mm",
+        "camera_height": "gallery level",
+        "camera_motion": "she collapses into frame; hold. Motivation: let her be still before cutting.",
+        "composition": "medium held; she collapses over the rail into the lee",
+        "screen_direction": "into the lee"
+      },
+      "direction_note": "Gallery level medium: she collapses into frame; hold. Let her be still before the cut.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5401-5472",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.406 in [0.1, 0.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.89)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.70m ~ subject 1.70m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.34m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH001",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 18.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.812,
+        "dist_to_subject_m": 2.627
+      },
+      "camera_end": {
+        "loc": [
+          2.2,
+          -1.8,
+          12.15
+        ],
+        "rot_deg": [
+          104.32,
+          0.0,
+          45.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5473,
+        5592
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide",
+        "lens_intention": "18mm",
+        "camera_height": "chamber floor, wide",
+        "camera_motion": "static. Motivation: scale contrast is the whole shot.",
+        "composition": "wide; she is tiny in an enormous brass room",
+        "screen_direction": "faces the burner"
+      },
+      "direction_note": "Wide from the chamber floor: scale contrast is the whole shot. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 18mm == plan 18mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5473-5592",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.812 in [0.3, 1.4]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 26.4deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 2.63m ~ subject 2.63m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.70m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH002",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 1.1993,
+        "dist_to_subject_m": 0.35
+      },
+      "camera_end": {
+        "loc": [
+          -0.175,
+          -0.303,
+          12.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -30.0
+        ]
+      },
+      "motion": "push_in",
+      "frames": [
+        5593,
+        5724
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "close",
+        "lens_intention": "85mm",
+        "camera_height": "her reach",
+        "camera_motion": "close, following the hands, unhurried. Motivation: it is not an action beat.",
+        "composition": "close following her hands up the last rungs",
+        "screen_direction": "up to the burner"
+      },
+      "direction_note": "Close on the reaching hands, unhurried 10cm push. It is not an action scene; it is a decision.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5593-5724",
+          "passed": true
+        },
+        {
+          "check": "subject scale 1.199 in [0.6, 1.6]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.87)",
+          "passed": true
+        },
+        {
+          "check": "motion 'push_in' licensed by plan ('follow(s|ing)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.35m ~ subject 0.35m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.35m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH003",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 2.4691,
+        "dist_to_subject_m": 0.3
+      },
+      "camera_end": {
+        "loc": [
+          -0.3,
+          -0.0,
+          12.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5725,
+        5832
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "tight",
+        "lens_intention": "100mm macro",
+        "camera_height": "burner level",
+        "camera_motion": "static tight. Motivation: the gap between spark and brass is the point.",
+        "composition": "tight on the spark and the cold brass; the gap is the subject",
+        "screen_direction": "reaches"
+      },
+      "direction_note": "Static tight at burner level: the gap between spark and brass is the point.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5725-5832",
+          "passed": true
+        },
+        {
+          "check": "subject scale 2.469 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.30m ~ subject 0.30m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.30m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH004",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 3.2922,
+        "dist_to_subject_m": 0.09
+      },
+      "camera_end": {
+        "loc": [
+          0.87,
+          -0.0,
+          12.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5833,
+        5952
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "static insert",
+        "lens_intention": "100mm macro",
+        "camera_height": "burner heart",
+        "camera_motion": "locked-off, no movement, no music. Motivation: the most important shot must not be decorated.",
+        "composition": "locked-off static insert of the socket; no movement, no help",
+        "screen_direction": "static"
+      },
+      "direction_note": "Locked-off macro on the burner heart. No movement, no music. The most important shot in the film.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5833-5952",
+          "passed": true
+        },
+        {
+          "check": "subject scale 3.292 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.09m ~ subject 0.09m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.65m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH005",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 1.1111,
+        "dist_to_subject_m": 0.4
+      },
+      "camera_end": {
+        "loc": [
+          1.3,
+          -0.0,
+          12.315
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        5953,
+        6072
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "close-up",
+        "lens_intention": "100mm",
+        "camera_height": "her head",
+        "camera_motion": "static; the aperture is the only motion. Motivation: the whole decision without a cut.",
+        "composition": "close-up on the shutter eyes; the aperture closes, then opens",
+        "screen_direction": "socket, then chest"
+      },
+      "direction_note": "CU on her head; static - the aperture is the only motion. The whole decision without a cut.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 5953-6072",
+          "passed": true
+        },
+        {
+          "check": "subject scale 1.111 in [0.5, 1.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.40m ~ subject 0.40m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.43m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH006",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 2.4691,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          1.0,
+          -0.0,
+          12.0
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6073,
+        6216
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "burner heart",
+        "camera_motion": "macro, unhurried. Motivation: the sacrifice is mechanical and must be watched.",
+        "composition": "macro; unspooling the spring into the socket, unhurried",
+        "screen_direction": "into the socket"
+      },
+      "direction_note": "Macro on the unspooling mainspring, unhurried. The sacrifice is mechanical and must read as mechanical.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6073-6216",
+          "passed": true
+        },
+        {
+          "check": "subject scale 2.469 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.69m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC08_SH007",
+      "scene_id": "SC08",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.587,
+        "dist_to_subject_m": 2.524
+      },
+      "camera_end": {
+        "loc": [
+          1.8,
+          -1.2,
+          12.1
+        ],
+        "rot_deg": [
+          121.0,
+          0.0,
+          56.31
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6217,
+        6288
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "silhouette to bloom",
+        "lens_intention": "50mm",
+        "camera_height": "chamber floor",
+        "camera_motion": "held on the silhouette; the bloom fills the frame without a cut. Motivation: the ignition is the payoff.",
+        "composition": "her dark silhouette held as light blooms to white-gold",
+        "screen_direction": "static"
+      },
+      "direction_note": "Held on her silhouette at the burner; the bloom fills the frame without a cut (lighting stage owns the bloom).",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6217-6288",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.587 in [0.2, 1.2]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 2.52m ~ subject 2.52m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.02m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC09_SH001",
+      "scene_id": "SC09",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.1244,
+        "dist_to_subject_m": 34.747
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          -2.0,
+          14.4
+        ],
+        "rot_deg": [
+          65.52,
+          0.0,
+          -71.57
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6289,
+        6480
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme wide, held",
+        "lens_intention": "35mm",
+        "camera_height": "gallery/exterior, wide",
+        "camera_motion": "locked wide, 8-second protected hold. Motivation: decompression; no coverage.",
+        "composition": "extreme wide held; the beam sweeps black water",
+        "screen_direction": "looks frame R to the sea"
+      },
+      "direction_note": "Locked wide from the gallery, 8-second protected hold: the beam sweeps black water, sea frame RIGHT. Never covered, no camera motion.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6289-6480",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.124 in [0.02, 0.4]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.32)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 34.75m ~ subject 34.75m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 2.01m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC09_SH002",
+      "scene_id": "SC09",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 300.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.5703,
+        "dist_to_subject_m": 64.945
+      },
+      "camera_end": {
+        "loc": [
+          0.0,
+          -1.0,
+          13.8
+        ],
+        "rot_deg": [
+          78.18,
+          0.0,
+          -70.71
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6481,
+        6624
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme long lens",
+        "lens_intention": "300mm",
+        "camera_height": "sea level",
+        "camera_motion": "held. Motivation: the turn is ponderous; motion would falsify it.",
+        "composition": "extreme long lens; the ship tiny; its turn small and easy to miss",
+        "screen_direction": "the ship turns frame L (to harbour)"
+      },
+      "direction_note": "300mm from the gallery: the running light pauses, then turns toward harbour. Held - motion would falsify it.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 300mm == plan 300mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6481-6624",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.570 in [0.25, 0.9]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 1.7deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +0.33)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 64.95m ~ subject 64.95m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.04m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC09_SH003",
+      "scene_id": "SC09",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.4247,
+        "dist_to_subject_m": 1.628
+      },
+      "camera_end": {
+        "loc": [
+          0.9,
+          -1.6,
+          12.3
+        ],
+        "rot_deg": [
+          79.38,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "push_in",
+      "frames": [
+        6625,
+        6768
+      ],
+      "keys": 5,
+      "plan": {
+        "shot_type": "wide to slow push",
+        "lens_intention": "35mm",
+        "camera_height": "chamber floor",
+        "camera_motion": "one continuous move: the light dies, the push finds her. Motivation: carry the mood across the cut.",
+        "composition": "wide as the light dies, then a slow push to her silhouette",
+        "screen_direction": "to her"
+      },
+      "direction_note": "One continuous move: the beacon dies behind the push and the push finds her at the burner's foot. Dawn.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6625-6768",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.425 in [0.1, 0.45]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'push_in' licensed by plan ('push(-in)?\\b')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.63m ~ subject 1.63m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.84m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC10_SH001",
+      "scene_id": "SC10",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 50.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.657,
+        "dist_to_subject_m": 1.503
+      },
+      "camera_end": {
+        "loc": [
+          0.6,
+          -1.5,
+          11.9
+        ],
+        "rot_deg": [
+          93.81,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6769,
+        6876
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "medium, held",
+        "lens_intention": "50mm",
+        "camera_height": "floor, low",
+        "camera_motion": "static, held long enough to be uncomfortable. Motivation: do not soften it.",
+        "composition": "medium held; her shell at the foot of the burner, held long",
+        "screen_direction": "static"
+      },
+      "direction_note": "Low medium, held long enough to be uncomfortable. Do not soften; static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 50mm == plan 50mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6769-6876",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.657 in [0.25, 0.9]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 10.3deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction sea-frame-right (dot +1.00)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 1.50m ~ subject 1.50m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.02m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (static framing wide enough or staged exit)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC10_SH002",
+      "scene_id": "SC10",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 35.0,
+        "fstop": 5.6,
+        "subject_scale_fraction": 0.6151,
+        "dist_to_subject_m": 3.091
+      },
+      "camera_end": {
+        "loc": [
+          -1.2,
+          0.8,
+          12.25
+        ],
+        "rot_deg": [
+          87.22,
+          0.0,
+          -114.9
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6877,
+        6984
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "wide interior",
+        "lens_intention": "35mm",
+        "camera_height": "interior, low",
+        "camera_motion": "static from inside the chamber. Motivation: the child is a silhouette, never resolved.",
+        "composition": "wide interior; the child a silhouette in the doorway",
+        "screen_direction": "child enters from the doorway"
+      },
+      "direction_note": "Wide from inside the chamber, low: the child enters backlit as a silhouette. Static.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 35mm == plan 35mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6877-6984",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.615 in [0.2, 0.9]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 14.5deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 3.09m ~ subject 3.09m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.46m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC10_SH003",
+      "scene_id": "SC10",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 85.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 0.8395,
+        "dist_to_subject_m": 0.4
+      },
+      "camera_end": {
+        "loc": [
+          1.533,
+          -1.084,
+          12.16
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        6985,
+        7092
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "close",
+        "lens_intention": "85mm",
+        "camera_height": "kneel height",
+        "camera_motion": "static close on the hands. Motivation: the hesitation is the beat.",
+        "composition": "close on the child's hands and the key; the face out of focus",
+        "screen_direction": "to her back"
+      },
+      "direction_note": "Static close on the hands at kneel height: the hesitation is the beat.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 85mm == plan 85mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 6985-7092",
+          "passed": true
+        },
+        {
+          "check": "subject scale 0.840 in [0.3, 1.3]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 6.1deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.40m ~ subject 0.40m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.35m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC10_SH004",
+      "scene_id": "SC10",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 2.4691,
+        "dist_to_subject_m": 0.1
+      },
+      "camera_end": {
+        "loc": [
+          1.433,
+          -0.684,
+          12.5
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          -90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        7093,
+        7176
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "extreme macro",
+        "lens_intention": "100mm macro",
+        "camera_height": "back-plate macro",
+        "camera_motion": "locked-off, identical to SC01_SH001. Motivation: the loop; one turn instead of four.",
+        "composition": "macro, identical framing to SC01_SH001, warmed to dawn - the loop",
+        "screen_direction": "static"
+      },
+      "direction_note": "Extreme macro, locked-off, geometrically identical to SC01_SH001: the loop. One turn into the back plate.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 7093-7176",
+          "passed": true
+        },
+        {
+          "check": "subject scale 2.469 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.10m ~ subject 0.10m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 1.04m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "shot_id": "SC10_SH005",
+      "scene_id": "SC10",
+      "status": "VERIFIED",
+      "framing": {
+        "lens_mm": 100.0,
+        "fstop": 2.8,
+        "subject_scale_fraction": 4.0404,
+        "dist_to_subject_m": 0.11
+      },
+      "camera_end": {
+        "loc": [
+          0.802,
+          0.025,
+          12.2
+        ],
+        "rot_deg": [
+          90.0,
+          0.0,
+          90.0
+        ]
+      },
+      "motion": "hold",
+      "frames": [
+        7177,
+        7248
+      ],
+      "keys": 4,
+      "plan": {
+        "shot_type": "macro to black",
+        "lens_intention": "100mm macro",
+        "camera_height": "chest macro",
+        "camera_motion": "macro, then hard cut to black. Motivation: end on the same click that opened the film.",
+        "composition": "macro chest drum; the coil catches; the eyes flicker; cut to black",
+        "screen_direction": "static"
+      },
+      "direction_note": "Chest macro on the needle at 1; hard cut to black is an edit/grade beat - the camera stays absolutely still.",
+      "checks": [
+        {
+          "check": "camera present",
+          "passed": true
+        },
+        {
+          "check": "lens 100mm == plan 100mm",
+          "passed": true
+        },
+        {
+          "check": "all 12 camera keys within 7177-7248",
+          "passed": true
+        },
+        {
+          "check": "subject scale 4.040 in [0.8, 4.5]",
+          "passed": true
+        },
+        {
+          "check": "subject in frame (0.0deg < 5.2deg)",
+          "passed": true
+        },
+        {
+          "check": "screen direction (reverse/axis-buffer, exempt)",
+          "passed": true
+        },
+        {
+          "check": "motion 'hold' licensed by plan ('static-fallback')",
+          "passed": true
+        },
+        {
+          "check": "focus 0.11m ~ subject 0.11m",
+          "passed": true
+        },
+        {
+          "check": "no clipping (min 0.31m to geometry)",
+          "passed": true
+        },
+        {
+          "check": "readability (moving camera tracks the action)",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

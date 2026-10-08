@@ -3,6 +3,60 @@
 Reverse-chronological record of every meaningful change to this production.
 Checkpoint rows are appended automatically by `tools/studio.py checkpoint`.
 
+## 2026-10-08 — Stage 08 CAMERA complete (T07_CAMERA → VERIFIED)
+
+The cinematography pass. Every shot's CAMERA_PLAN line is now executable
+Blender camera data - framing, angle, height, focal length, subject scale,
+composition, motivated motion, focus and screen direction, verified per shot.
+
+### Built
+
+- **`08_CAMERA/scripts/cam_lib.py`** — camera primitives: Blender-convention
+  `look_at` (pitch 90deg = horizontal), yaw-aware `world_pos`, DOF placement,
+  and the motivated-move set: `hold`, `push_in`, `crane_back_up`,
+  `dolly_lateral` (parallel track, subject kept centred), `crane_rise`,
+  `descend_with`, `tilt` (with hold-at), `pan_hold`, `whip_to` (the film's
+  single fast move, SC06_SH002), `cut_to` (in-shot POV/reverse hard cut,
+  SC06_SH005), `micro_drift` (motivated "handheld" beats as ONE slow drift -
+  never noise), `rack_focus` (SC05_SH007 gauge->door).
+- **`08_CAMERA/scripts/shot_cams.py`** — 58-shot camera table: subject anchors
+  resolved in the built+animated scene, lenses exactly as planned (18mm to
+  300mm incl. 100mm macros), distances/heights/azimuths, aim offsets for
+  off-centre compositions ("gauge rides the corner"), authored subject-scale
+  windows, reverse/axis-buffer flags per the master axis (sea +X = frame
+  RIGHT, tower -X = frame LEFT).
+- **`08_CAMERA/scripts/cam_runner.py`** — per-shot build: scene -> that shot's
+  animation (subjects at final pose) -> camera placement + keys. Reuses the
+  scene camera object; focus keyed to end on the subject after any move.
+- **`08_CAMERA/SHOT_CAMERAS/cam_<SHOT>.py`** — 58 standalone, independently
+  recoverable scripts; each saves `<SHOT>.blend` under real Blender.
+- **`08_CAMERA/scripts/run_camera_tests.py`** — ten-check harness per shot:
+  camera present; lens == plan; keys inside exact frames; subject-scale
+  fraction inside the authored window; subject within 90% of half-FOV of
+  centre; frame-right . +X > 0 unless reverse/axis-buffer; move licensed by
+  the plan's motivation sentence (static means static); DOF focus matches
+  subject distance (rack ends on target); path >= 0.12 m from non-subject
+  geometry; static framing of moving subjects readable or staged.
+
+### Verified
+
+- Harness: **58/58 VERIFIED**, 0 PARTIAL / 0 BLOCKED ->
+  `08_CAMERA/CAMERA_MASTER.json` (full spec + measurements + checks),
+  `08_CAMERA/CAMERA_INDEX.json` (58 rows), `08_CAMERA/CAMERA_QC.md`.
+- Variety as planned: 34 static/held setups, 24 motivated moves; only fast
+  move is the SC06_SH002 whip; SC09_SH001 protected hold stays locked.
+- Standalone sample runs under the stub (SC01_SH004 crane, SC03_SH001 dolly,
+  SC06_SH002 whip, SC06_SH005 cut, SC07_SH003 rise, SC09_SH002 300mm) exit 0.
+- Neighbours re-verified after stub Camera gained DOF: animation 58/58,
+  asset build 49/49.
+- Bugs found and fixed en route: look_at pitch convention (90deg = horizontal,
+  not 0); macro framing windows that denied real 100mm-macro crop physics;
+  focus not following push-ins; dollies that left walking subjects drifting
+  out of frame; SC06_SH004 camera sitting on stair step 0; POV cameras
+  legitimately inside the subject rig (excluded per-shot, logged in QC).
+
+---
+
 ## 2026-10-08 — Stage 07 ANIMATION complete (T06_ANIMATION → VERIFIED)
 
 **NINETY-TWO TURNS** now moves. Every one of the 58 shots carries authored,

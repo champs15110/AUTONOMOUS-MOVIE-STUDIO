@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T00:36:45Z",
+  "last_updated": "2026-10-08T01:02:37Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -227,7 +227,7 @@
       "task_id": "T07_CAMERA",
       "stage": "07_CAMERA",
       "title": "Camera rigs, lens choices and per-shot moves",
-      "status": "NOT_STARTED",
+      "status": "VERIFIED",
       "dependencies": [
         "T06_ANIMATION"
       ],
@@ -238,6 +238,9 @@
       ],
       "output_files": [
         "08_CAMERA/CAMERA_INDEX.json",
+        "08_CAMERA/CAMERA_MASTER.json",
+        "08_CAMERA/CAMERA_QC.md",
+        "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH001.py",
         "SHOT_REGISTRY.json"
       ],
       "acceptance": [

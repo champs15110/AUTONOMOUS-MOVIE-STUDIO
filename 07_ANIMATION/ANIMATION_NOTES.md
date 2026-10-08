@@ -1,6 +1,6 @@
 # ANIMATION NOTES - NINETY-TWO TURNS
 
-Generated 2026-10-08T00:34:52Z from the authored shot specs (07_ANIMATION/scripts/shot_specs.py).
+Generated 2026-10-08T01:01:30Z from the authored shot specs (07_ANIMATION/scripts/shot_specs.py).
 Status counts: {'VERIFIED': 58}. VERIFIED = every structural keyframe check passed under the
 stub harness (keys inside exact shot frames, needle/gauge continuity, static camera
 placeholders, >=2 principles). Visual performance review still happens on the cloud

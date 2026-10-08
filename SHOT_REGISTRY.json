@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T00:35:22Z",
+  "last_updated": "2026-10-08T01:02:09Z",
   "populated_by_task": "T04_STORYBOARD",
   "status": "POPULATED",
   "shot_id_format": "SCnn_SHmmm",
@@ -101,8 +101,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -156,8 +156,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -211,8 +211,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -266,8 +266,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -321,8 +321,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -376,8 +376,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC01_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -431,8 +431,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -486,8 +486,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -541,8 +541,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -596,8 +596,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -651,8 +651,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -706,8 +706,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC02_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -761,8 +761,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC03_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -816,8 +816,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC03_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -871,8 +871,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC03_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -926,8 +926,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC03_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -981,8 +981,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC03_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1036,8 +1036,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1091,8 +1091,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1146,8 +1146,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1201,8 +1201,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1256,8 +1256,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1311,8 +1311,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC04_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1366,8 +1366,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1421,8 +1421,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1476,8 +1476,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1531,8 +1531,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1586,8 +1586,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1641,8 +1641,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1696,8 +1696,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC05_SH007.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1751,8 +1751,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC06_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1806,8 +1806,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC06_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1861,8 +1861,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC06_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1916,8 +1916,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC06_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -1971,8 +1971,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC06_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2026,8 +2026,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2081,8 +2081,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2136,8 +2136,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2191,8 +2191,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2246,8 +2246,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2301,8 +2301,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2356,8 +2356,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH007.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2411,8 +2411,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC07_SH008.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2466,8 +2466,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2521,8 +2521,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2576,8 +2576,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2631,8 +2631,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2686,8 +2686,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2741,8 +2741,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH006.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2796,8 +2796,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC08_SH007.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2851,8 +2851,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC09_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2906,8 +2906,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC09_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -2961,8 +2961,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC09_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -3016,8 +3016,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC10_SH001.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -3071,8 +3071,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC10_SH002.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -3126,8 +3126,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC10_SH003.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -3181,8 +3181,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC10_SH004.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,
@@ -3236,8 +3236,8 @@
       "camera": {
         "move": null,
         "lens_mm": null,
-        "file": null,
-        "status": "NOT_STARTED"
+        "file": "08_CAMERA/SHOT_CAMERAS/cam_SC10_SH005.py",
+        "status": "VERIFIED"
       },
       "lighting": {
         "setup": null,

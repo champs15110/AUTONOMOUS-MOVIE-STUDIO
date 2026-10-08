@@ -219,12 +219,25 @@ class Light(Keyable):
         self.shadow_soft_size = 0.1
 
 
+class _Aperture:
+    def __init__(self):
+        self.fstop = 5.6
+
+
+class _DOF(Keyable):
+    def __init__(self):
+        self.use_dof = False
+        self.focus_distance = 10.0
+        self.aperture = _Aperture()
+
+
 class Camera:
     def __init__(self, name):
         self.name = name
         self.lens = 50.0
         self.clip_end = 1000.0
         self.sensor_width = 36.0
+        self.dof = _DOF()
 
 
 class Image:

@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "06_ANIMATION",
-  "current_task": "T06_ANIMATION",
+  "current_stage": "08_LIGHTING_VFX",
+  "current_task": "T08_LIGHTING_VFX",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -11,7 +11,9 @@
     "03_CHARACTER_WORLD",
     "04_STORYBOARD",
     "05_3D_ASSETS",
-    "06_ANIMATION"
+    "06_ANIMATION",
+    "07_CAMERA",
+    "07_CAMERA"
   ],
   "failed_tasks": [],
   "blocked_tasks": [],
@@ -39,7 +41,7 @@
     "04_STORYBOARD": "VERIFIED",
     "05_3D_ASSETS": "VERIFIED",
     "06_ANIMATION": "VERIFIED",
-    "07_CAMERA": "NOT_STARTED",
+    "07_CAMERA": "VERIFIED",
     "08_LIGHTING_VFX": "NOT_STARTED",
     "09_AUDIO": "NOT_STARTED",
     "10_EDIT": "NOT_STARTED",
@@ -121,7 +123,7 @@
     "git_commit": "d158b1efa77c4f3d2430748b3deba986fb0c0754",
     "summary": "Stage 07 ANIMATION VERIFIED. 58/58 shots animated shot-by-shot: ams_anim_lib principles-as-code primitives, 58 standalone per-shot scripts keying only their own frame ranges (1747 keys), needle continuity 92->0->1, camera placeholders provably static; harness 58/58 VERIFIED (keys-in-range, gauge continuity, >=2 principles); registry animation slots all VERIFIED; ANIMATION_INDEX/STATUS/NOTES written; scene fixes (POLE SC02/SC05, SC03 lamp, WICK in SC09) re-verified 49/49."
   },
-  "last_updated": "2026-10-08T00:36:45Z",
+  "last_updated": "2026-10-08T01:02:37Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
