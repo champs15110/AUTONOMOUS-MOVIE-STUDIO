@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
-  "last_updated": "2026-10-08T01:58:04Z",
+  "last_updated": "2026-10-08T01:58:05Z",
   "status_enum": [
     "NOT_STARTED",
     "IN_PROGRESS",
@@ -317,7 +317,7 @@
       ],
       "retry_count": 0,
       "last_error": null,
-      "checkpoint": null,
+      "checkpoint": "CP-0010",
       "notes": "Only dependency is T02 - audio can run in parallel with visuals from that point."
     },
     {

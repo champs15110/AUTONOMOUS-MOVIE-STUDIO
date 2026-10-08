@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
-  "current_stage": "09_AUDIO",
-  "current_task": "T09_AUDIO",
+  "current_stage": "10_EDIT",
+  "current_task": "T10_EDIT",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -56,7 +56,7 @@
     "scenes_planned": 10,
     "scenes_rendered": 0,
     "scenes_verified": 0,
-    "checkpoints": 9,
+    "checkpoints": 10,
     "errors_logged": 2
   },
   "checkpoints": [
@@ -131,16 +131,24 @@
       "task_id": "T08_LIGHTING_VFX",
       "summary": "Stage 09 LIGHTING/VFX VERIFIED. 10/10 scenes carry executable lighting: one coherent shadow-casting key, warm readable fill within 6 m of every close character, tuned world gradients, single-shadow-caster rule enforced; VFX only where story demands - rain begins SC04_SH003, storm slant camera-right +X SC05-07, lee calm keyed at SC07_SH008, ignition glow + fill swell at SC08_SH007, fog withholds the ship SC03/SC09, dust motes SC04/08/10; eleven-check harness 10/10 scenes + 58/58 shot coverage, 0 purposeless effects; LIGHTING_PLAN/VFX_PLAN/indices/QC written; registry lighting slots VERIFIED x58 with setup+grade; materials library 15->18, build harness 52/52; anim 58/58, camera 58/58 neighbours intact.",
       "git_commit": "e01b3b97775c2defe3915e662d7c2f44de93f569"
+    },
+    {
+      "checkpoint_id": "CP-0010",
+      "utc": "2026-10-08T01:58:05Z",
+      "actor": "master_controller",
+      "task_id": "T09_AUDIO",
+      "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg).",
+      "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9"
     }
   ],
   "last_checkpoint": {
-    "checkpoint_id": "CP-0009",
-    "utc": "2026-10-08T01:25:53Z",
-    "task_id": "T08_LIGHTING_VFX",
-    "git_commit": "e01b3b97775c2defe3915e662d7c2f44de93f569",
-    "summary": "Stage 09 LIGHTING/VFX VERIFIED. 10/10 scenes carry executable lighting: one coherent shadow-casting key, warm readable fill within 6 m of every close character, tuned world gradients, single-shadow-caster rule enforced; VFX only where story demands - rain begins SC04_SH003, storm slant camera-right +X SC05-07, lee calm keyed at SC07_SH008, ignition glow + fill swell at SC08_SH007, fog withholds the ship SC03/SC09, dust motes SC04/08/10; eleven-check harness 10/10 scenes + 58/58 shot coverage, 0 purposeless effects; LIGHTING_PLAN/VFX_PLAN/indices/QC written; registry lighting slots VERIFIED x58 with setup+grade; materials library 15->18, build harness 52/52; anim 58/58, camera 58/58 neighbours intact."
+    "checkpoint_id": "CP-0010",
+    "utc": "2026-10-08T01:58:05Z",
+    "task_id": "T09_AUDIO",
+    "git_commit": "357d685217a532bef1476a84ffe8804cd9e06fb9",
+    "summary": "Stage 10 AUDIO VERIFIED. 65 original in-repo synthesized assets (9 ambience beds, 42 SFX/foley, 14 music cues, 228 s, deterministic sha256-verified); 141-event frame-accurate timeline across ambience/music/sfx tracks traced to all 58 approved sound_intentions; wordless enforced - dialogue track empty, voice identity is sound design (WICK's four-beat gait degradation locked/irregular/skipping/dragging per CHARACTER_BIBLE; CHILD near-silent bare feet; SHIP two-note motif resolved upward only at SC09_SH002); rain starts exactly f2461, ignition bloom f6241 after one beat of true silence, 5 declared intentional silences; ten-check harness all PASS; DIALOGUE_PLAN/MUSIC_PLAN/SFX_PLAN/AUDIO_TIMELINE/AUDIO_INDEX/QC + MUSIC_CUE_SHEET/SFX_CUE_SHEET/MIX_PLAN written; loudness measurement honestly deferred to T11 (needs ffmpeg)."
   },
-  "last_updated": "2026-10-08T01:58:04Z",
+  "last_updated": "2026-10-08T01:58:05Z",
   "updated_by": "master_controller",
   "notes": "Stage 03 CHARACTER_WORLD VERIFIED and checkpointed (CP-0004). Visual bible complete: 3 characters, 3 environments, 14 props, 8 reference images, asset inventory with provenance. current_task is a pointer only - T04_STORYBOARD is NOT_STARTED."
 }
