@@ -3,7 +3,7 @@
   "project_id": "AMS-2026-001",
   "film_title": "NINETY-TWO TURNS",
   "current_stage": "14_FINAL_DELIVERY_COMPLETE",
-  "current_task": "COMPLETE",
+  "current_task": "T15_FULL_DELIVERY",
   "overall_status": "IN_PROGRESS",
   "completed_stages": [
     "01_DEVELOPMENT",
@@ -152,7 +152,7 @@
   },
   "last_updated": "2026-10-08 21:55 UTC",
   "updated_by": "master_controller",
-  "notes": "FINAL FILM VERIFIED. See FINAL/FINAL_REPORT.json + known_limitations (local CPU spec per ERR-0003; AAC track -15.97 LUFS; ERR-0007 mux workaround; ERR-0005 animatic superseded).",
+  "notes": "FINAL FILM VERIFIED. See FINAL/FINAL_REPORT.json + known_limitations (local CPU spec per ERR-0003; AAC track -15.97 LUFS; ERR-0007 mux workaround; ERR-0005 animatic superseded). Step 18: full autonomous delivery in progress - per-shot re-render at 640x360 running (58 shots, ~6h); assembler+verifier written.",
   "stage_11_preview_render": {
     "status": "COMPLETE",
     "utc": "2026-10-08 04:13:26 UTC",

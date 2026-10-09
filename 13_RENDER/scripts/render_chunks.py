@@ -2,6 +2,13 @@
 """
 render_chunks - Stage 14 FINAL RENDER driver (local fallback backend).
 
+SUPERSEDED (Step 18 / ERR-0009 root cause): this driver rendered one
+representative scene per chunk and ignored per-shot camera/scene records,
+which collapsed all 58 authored shots into 10 static tableaux. Kept for
+history only - DO NOT USE. Replaced by 13_RENDER/scripts/render_shots.py
+(per-shot builds honouring EDIT_TIMELINE + SHOT_RECORDS) and
+13_RENDER/scripts/assemble_master.py.
+
 JANCTION Render is absent (ERR-0003); finals render on pypi bpy Cycles CPU at
 an honest local spec: 320x180, 24 fps, 6 samples adaptive + OIDN denoise
 (1080p/128spp measures ~49 days on this 2-core box - see RENDER_ESTIMATES).

@@ -469,6 +469,38 @@
       "last_error": "ERR-0008",
       "checkpoint": "CP-0017",
       "notes": "SC10 rendered per-shot; ERR-0009 (other scenes scene-static) deferred"
+    },
+    {
+      "task_id": "T15_FULL_DELIVERY",
+      "stage": "18_FULL_DELIVERY",
+      "title": "Shot-accurate whole-film re-render + assembly + verification + promotion",
+      "status": "IN_PROGRESS",
+      "dependencies": [
+        "T14_SC10_REPAIR"
+      ],
+      "input_files": [
+        "11_EDIT/EDIT_TIMELINE.json",
+        "13_RENDER/scripts/render_shots.py",
+        "10_AUDIO/mix/FINAL_MIX.wav"
+      ],
+      "output_files": [
+        "13_RENDER/SHOT_RENDERS/",
+        "FINAL/FINAL_FILM_CANDIDATE_V2.mp4",
+        "FINAL/FINAL_FILM.mp4",
+        "FINAL/FINAL_QC.md",
+        "FINAL/FINAL_REPORT.json",
+        "FINAL/FINAL_MANIFEST.json"
+      ],
+      "acceptance": [
+        "All 58 EDIT_TIMELINE shots rendered per authored shot records (camera/scene/lighting/animation/frame range) - ERR-0009 root cause fixed",
+        "Assembled master honours shot order, durations, cut boundaries; SC10 illuminated; authored cut-to-black ending",
+        "verify_master.py all checks pass on assembled candidate",
+        "Old master + Step-17 candidate archived until replacement verified; three final docs written"
+      ],
+      "retry_count": 0,
+      "last_error": null,
+      "checkpoint": "CP-0018a",
+      "notes": "640x360/24fps/2spp+OIDN chosen after measured calibration (1080p ~52h infeasible on 2-core box; 960x540 ~13h; 640x360 ~6h). Resolution deviation from MASTER_CONFIG 1920x1080 documented honestly."
     }
   ]
 }
